@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Menu
+Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,125 +22,230 @@ Partial Class Menu
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Me.TabControlPrincipal = New System.Windows.Forms.TabControl()
+        Me.TabPageMenu = New System.Windows.Forms.TabPage()
+        Me.ButtonUsuarios = New System.Windows.Forms.Button()
+        Me.ButtonProfesores = New System.Windows.Forms.Button()
+        Me.ButtonPagos = New System.Windows.Forms.Button()
+        Me.ButtonDescuentos = New System.Windows.Forms.Button()
+        Me.ButtonPeriodos = New System.Windows.Forms.Button()
+        Me.ButtonEstudinates = New System.Windows.Forms.Button()
+        Me.ButtonGrupos = New System.Windows.Forms.Button()
+        Me.ButtonCursos = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.SqlSelectCommand1 = New System.Data.SqlClient.SqlCommand()
-        Me.Conn = New System.Data.SqlClient.SqlConnection()
-        Me.SqlInsertCommand1 = New System.Data.SqlClient.SqlCommand()
-        Me.SqlUpdateCommand1 = New System.Data.SqlClient.SqlCommand()
-        Me.SqlDeleteCommand1 = New System.Data.SqlClient.SqlCommand()
-        Me.db1 = New System.Data.SqlClient.SqlDataAdapter()
-        Me.MatriculasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MatriculaPECDataSet = New MatriculaPEC.MatriculaPECDataSet()
-        Me.MatriculasTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter()
-        Me.mta1 = New MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter()
-        Me.Button2 = New System.Windows.Forms.Button()
-        CType(Me.MatriculasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TextBoxBuscar = New System.Windows.Forms.TextBox()
+        Me.ButtonMatricula = New System.Windows.Forms.Button()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TabControlPrincipal.SuspendLayout()
+        Me.TabPageMenu.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'TabControlPrincipal
+        '
+        Me.TabControlPrincipal.Controls.Add(Me.TabPageMenu)
+        Me.TabControlPrincipal.Controls.Add(Me.TabPage2)
+        Me.TabControlPrincipal.Controls.Add(Me.TabPage1)
+        Me.TabControlPrincipal.ItemSize = New System.Drawing.Size(42, 20)
+        Me.TabControlPrincipal.Location = New System.Drawing.Point(-2, 0)
+        Me.TabControlPrincipal.Name = "TabControlPrincipal"
+        Me.TabControlPrincipal.SelectedIndex = 0
+        Me.TabControlPrincipal.ShowToolTips = True
+        Me.TabControlPrincipal.Size = New System.Drawing.Size(1158, 638)
+        Me.TabControlPrincipal.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight
+        Me.TabControlPrincipal.TabIndex = 0
+        '
+        'TabPageMenu
+        '
+        Me.TabPageMenu.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.TabPageMenu.Controls.Add(Me.ButtonUsuarios)
+        Me.TabPageMenu.Controls.Add(Me.ButtonProfesores)
+        Me.TabPageMenu.Controls.Add(Me.ButtonPagos)
+        Me.TabPageMenu.Controls.Add(Me.ButtonDescuentos)
+        Me.TabPageMenu.Controls.Add(Me.ButtonPeriodos)
+        Me.TabPageMenu.Controls.Add(Me.ButtonEstudinates)
+        Me.TabPageMenu.Controls.Add(Me.ButtonGrupos)
+        Me.TabPageMenu.Controls.Add(Me.ButtonCursos)
+        Me.TabPageMenu.Controls.Add(Me.Button1)
+        Me.TabPageMenu.Controls.Add(Me.TextBoxBuscar)
+        Me.TabPageMenu.Controls.Add(Me.ButtonMatricula)
+        Me.TabPageMenu.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageMenu.Name = "TabPageMenu"
+        Me.TabPageMenu.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageMenu.Size = New System.Drawing.Size(1150, 610)
+        Me.TabPageMenu.TabIndex = 0
+        Me.TabPageMenu.Text = "Menu"
+        '
+        'ButtonUsuarios
+        '
+        Me.ButtonUsuarios.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.ButtonUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonUsuarios.Location = New System.Drawing.Point(631, 413)
+        Me.ButtonUsuarios.Name = "ButtonUsuarios"
+        Me.ButtonUsuarios.Size = New System.Drawing.Size(169, 77)
+        Me.ButtonUsuarios.TabIndex = 11
+        Me.ButtonUsuarios.Text = "Usuarios"
+        Me.ButtonUsuarios.UseVisualStyleBackColor = False
+        '
+        'ButtonProfesores
+        '
+        Me.ButtonProfesores.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.ButtonProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonProfesores.Location = New System.Drawing.Point(338, 413)
+        Me.ButtonProfesores.Name = "ButtonProfesores"
+        Me.ButtonProfesores.Size = New System.Drawing.Size(169, 77)
+        Me.ButtonProfesores.TabIndex = 10
+        Me.ButtonProfesores.Text = "Profesores"
+        Me.ButtonProfesores.UseVisualStyleBackColor = False
+        '
+        'ButtonPagos
+        '
+        Me.ButtonPagos.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.ButtonPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPagos.Location = New System.Drawing.Point(40, 413)
+        Me.ButtonPagos.Name = "ButtonPagos"
+        Me.ButtonPagos.Size = New System.Drawing.Size(169, 77)
+        Me.ButtonPagos.TabIndex = 9
+        Me.ButtonPagos.Text = "Pagos"
+        Me.ButtonPagos.UseVisualStyleBackColor = False
+        '
+        'ButtonDescuentos
+        '
+        Me.ButtonDescuentos.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ButtonDescuentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonDescuentos.Location = New System.Drawing.Point(631, 286)
+        Me.ButtonDescuentos.Name = "ButtonDescuentos"
+        Me.ButtonDescuentos.Size = New System.Drawing.Size(169, 77)
+        Me.ButtonDescuentos.TabIndex = 8
+        Me.ButtonDescuentos.Text = "Descuentos"
+        Me.ButtonDescuentos.UseVisualStyleBackColor = False
+        '
+        'ButtonPeriodos
+        '
+        Me.ButtonPeriodos.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ButtonPeriodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPeriodos.Location = New System.Drawing.Point(338, 286)
+        Me.ButtonPeriodos.Name = "ButtonPeriodos"
+        Me.ButtonPeriodos.Size = New System.Drawing.Size(169, 77)
+        Me.ButtonPeriodos.TabIndex = 7
+        Me.ButtonPeriodos.Text = "Periodos"
+        Me.ButtonPeriodos.UseVisualStyleBackColor = False
+        '
+        'ButtonEstudinates
+        '
+        Me.ButtonEstudinates.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ButtonEstudinates.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEstudinates.Location = New System.Drawing.Point(40, 286)
+        Me.ButtonEstudinates.Name = "ButtonEstudinates"
+        Me.ButtonEstudinates.Size = New System.Drawing.Size(169, 77)
+        Me.ButtonEstudinates.TabIndex = 6
+        Me.ButtonEstudinates.Text = "Estudiantes"
+        Me.ButtonEstudinates.UseVisualStyleBackColor = False
+        '
+        'ButtonGrupos
+        '
+        Me.ButtonGrupos.BackColor = System.Drawing.Color.SteelBlue
+        Me.ButtonGrupos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonGrupos.Location = New System.Drawing.Point(631, 145)
+        Me.ButtonGrupos.Name = "ButtonGrupos"
+        Me.ButtonGrupos.Size = New System.Drawing.Size(169, 77)
+        Me.ButtonGrupos.TabIndex = 5
+        Me.ButtonGrupos.Text = "Grupos"
+        Me.ButtonGrupos.UseVisualStyleBackColor = False
+        '
+        'ButtonCursos
+        '
+        Me.ButtonCursos.BackColor = System.Drawing.Color.SteelBlue
+        Me.ButtonCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonCursos.Location = New System.Drawing.Point(338, 145)
+        Me.ButtonCursos.Name = "ButtonCursos"
+        Me.ButtonCursos.Size = New System.Drawing.Size(169, 77)
+        Me.ButtonCursos.TabIndex = 4
+        Me.ButtonCursos.Text = "Cursos"
+        Me.ButtonCursos.UseVisualStyleBackColor = False
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(79, 70)
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(641, 51)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(127, 71)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Matriculas"
+        Me.Button1.Size = New System.Drawing.Size(38, 27)
+        Me.Button1.TabIndex = 3
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'SqlSelectCommand1
+        'TextBoxBuscar
         '
-        Me.SqlSelectCommand1.CommandText = "dbo.nseleccionarMatriculas"
-        Me.SqlSelectCommand1.CommandType = System.Data.CommandType.StoredProcedure
-        Me.SqlSelectCommand1.Connection = Me.Conn
-        Me.SqlSelectCommand1.Parameters.AddRange(New System.Data.SqlClient.SqlParameter() {New System.Data.SqlClient.SqlParameter("@RETURN_VALUE", System.Data.SqlDbType.[Variant], 0, System.Data.ParameterDirection.ReturnValue, False, CType(0, Byte), CType(0, Byte), "", System.Data.DataRowVersion.Current, Nothing)})
+        Me.TextBoxBuscar.Location = New System.Drawing.Point(413, 51)
+        Me.TextBoxBuscar.Multiline = True
+        Me.TextBoxBuscar.Name = "TextBoxBuscar"
+        Me.TextBoxBuscar.Size = New System.Drawing.Size(222, 25)
+        Me.TextBoxBuscar.TabIndex = 2
         '
-        'Conn
+        'ButtonMatricula
         '
-        Me.Conn.ConnectionString = "Data Source=MAU-PC;Initial Catalog=MatriculaPEC;Integrated Security=True"
-        Me.Conn.FireInfoMessageEventOnUserErrors = False
+        Me.ButtonMatricula.BackColor = System.Drawing.Color.SteelBlue
+        Me.ButtonMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonMatricula.Location = New System.Drawing.Point(40, 145)
+        Me.ButtonMatricula.Name = "ButtonMatricula"
+        Me.ButtonMatricula.Size = New System.Drawing.Size(169, 77)
+        Me.ButtonMatricula.TabIndex = 0
+        Me.ButtonMatricula.Text = "Matricula"
+        Me.ButtonMatricula.UseVisualStyleBackColor = False
         '
-        'SqlInsertCommand1
+        'TabPage2
         '
-        Me.SqlInsertCommand1.CommandText = "dbo.ninsertarMatriculas"
-        Me.SqlInsertCommand1.CommandType = System.Data.CommandType.StoredProcedure
-        Me.SqlInsertCommand1.Connection = Me.Conn
-        Me.SqlInsertCommand1.Parameters.AddRange(New System.Data.SqlClient.SqlParameter() {New System.Data.SqlClient.SqlParameter("@RETURN_VALUE", System.Data.SqlDbType.[Variant], 0, System.Data.ParameterDirection.ReturnValue, False, CType(0, Byte), CType(0, Byte), "", System.Data.DataRowVersion.Current, Nothing), New System.Data.SqlClient.SqlParameter("@cod_grupo", System.Data.SqlDbType.Int, 0, "cod_grupo"), New System.Data.SqlClient.SqlParameter("@cod_alumno", System.Data.SqlDbType.Int, 0, "cod_alumno"), New System.Data.SqlClient.SqlParameter("@fecha", System.Data.SqlDbType.[Date], 0, "fecha")})
+        Me.TabPage2.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(1150, 610)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "TabPage2"
+        Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'SqlUpdateCommand1
+        'TabPage1
         '
-        Me.SqlUpdateCommand1.CommandText = "dbo.nactualizarMatriculas"
-        Me.SqlUpdateCommand1.CommandType = System.Data.CommandType.StoredProcedure
-        Me.SqlUpdateCommand1.Connection = Me.Conn
-        Me.SqlUpdateCommand1.Parameters.AddRange(New System.Data.SqlClient.SqlParameter() {New System.Data.SqlClient.SqlParameter("@RETURN_VALUE", System.Data.SqlDbType.[Variant], 0, System.Data.ParameterDirection.ReturnValue, False, CType(0, Byte), CType(0, Byte), "", System.Data.DataRowVersion.Current, Nothing), New System.Data.SqlClient.SqlParameter("@cod_grupo", System.Data.SqlDbType.Int, 0, "cod_grupo"), New System.Data.SqlClient.SqlParameter("@cod_alumno", System.Data.SqlDbType.Int, 0, "cod_alumno"), New System.Data.SqlClient.SqlParameter("@fecha", System.Data.SqlDbType.[Date], 0, "fecha"), New System.Data.SqlClient.SqlParameter("@Original_cod_matricula", System.Data.SqlDbType.Int, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "cod_matricula", System.Data.DataRowVersion.Original, Nothing), New System.Data.SqlClient.SqlParameter("@Original_cod_grupo", System.Data.SqlDbType.Int, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "cod_grupo", System.Data.DataRowVersion.Original, Nothing), New System.Data.SqlClient.SqlParameter("@Original_cod_alumno", System.Data.SqlDbType.Int, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "cod_alumno", System.Data.DataRowVersion.Original, Nothing), New System.Data.SqlClient.SqlParameter("@IsNull_fecha", System.Data.SqlDbType.Int, 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "fecha", System.Data.DataRowVersion.Original, True, Nothing, "", "", ""), New System.Data.SqlClient.SqlParameter("@Original_fecha", System.Data.SqlDbType.[Date], 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "fecha", System.Data.DataRowVersion.Original, Nothing), New System.Data.SqlClient.SqlParameter("@cod_matricula", System.Data.SqlDbType.Int, 4, "cod_matricula")})
+        Me.TabPage1.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(1150, 610)
+        Me.TabPage1.TabIndex = 2
+        Me.TabPage1.Text = "TabPage1"
+        Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'SqlDeleteCommand1
-        '
-        Me.SqlDeleteCommand1.CommandText = "dbo.nborrarMatriculas"
-        Me.SqlDeleteCommand1.CommandType = System.Data.CommandType.StoredProcedure
-        Me.SqlDeleteCommand1.Connection = Me.Conn
-        Me.SqlDeleteCommand1.Parameters.AddRange(New System.Data.SqlClient.SqlParameter() {New System.Data.SqlClient.SqlParameter("@RETURN_VALUE", System.Data.SqlDbType.[Variant], 0, System.Data.ParameterDirection.ReturnValue, False, CType(0, Byte), CType(0, Byte), "", System.Data.DataRowVersion.Current, Nothing), New System.Data.SqlClient.SqlParameter("@Original_cod_matricula", System.Data.SqlDbType.Int, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "cod_matricula", System.Data.DataRowVersion.Original, Nothing), New System.Data.SqlClient.SqlParameter("@Original_cod_grupo", System.Data.SqlDbType.Int, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "cod_grupo", System.Data.DataRowVersion.Original, Nothing), New System.Data.SqlClient.SqlParameter("@Original_cod_alumno", System.Data.SqlDbType.Int, 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "cod_alumno", System.Data.DataRowVersion.Original, Nothing), New System.Data.SqlClient.SqlParameter("@IsNull_fecha", System.Data.SqlDbType.Int, 0, System.Data.ParameterDirection.Input, CType(0, Byte), CType(0, Byte), "fecha", System.Data.DataRowVersion.Original, True, Nothing, "", "", ""), New System.Data.SqlClient.SqlParameter("@Original_fecha", System.Data.SqlDbType.[Date], 0, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "fecha", System.Data.DataRowVersion.Original, Nothing)})
-        '
-        'db1
-        '
-        Me.db1.DeleteCommand = Me.SqlDeleteCommand1
-        Me.db1.InsertCommand = Me.SqlInsertCommand1
-        Me.db1.SelectCommand = Me.SqlSelectCommand1
-        Me.db1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "nseleccionarMatriculas", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("cod_matricula", "cod_matricula"), New System.Data.Common.DataColumnMapping("cod_grupo", "cod_grupo"), New System.Data.Common.DataColumnMapping("cod_alumno", "cod_alumno"), New System.Data.Common.DataColumnMapping("fecha", "fecha")})})
-        Me.db1.UpdateCommand = Me.SqlUpdateCommand1
-        '
-        'MatriculasBindingSource
-        '
-        Me.MatriculasBindingSource.DataMember = "matriculas"
-        Me.MatriculasBindingSource.DataSource = Me.MatriculaPECDataSet
-        '
-        'MatriculaPECDataSet
-        '
-        Me.MatriculaPECDataSet.DataSetName = "MatriculaPECDataSet"
-        Me.MatriculaPECDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'MatriculasTableAdapter
-        '
-        Me.MatriculasTableAdapter.ClearBeforeFill = True
-        '
-        'mta1
-        '
-        Me.mta1.ClearBeforeFill = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(239, 70)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(127, 71)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Estudiantes"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Menu
+        'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(860, 443)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Name = "Menu"
-        Me.Text = "Matricula "
-        CType(Me.MatriculasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.AutoSize = True
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(872, 580)
+        Me.Controls.Add(Me.TabControlPrincipal)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "Form1"
+        Me.Text = "Matricula Educación Continua"
+        Me.TabControlPrincipal.ResumeLayout(False)
+        Me.TabPageMenu.ResumeLayout(False)
+        Me.TabPageMenu.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
+    Friend WithEvents TabControlPrincipal As System.Windows.Forms.TabControl
+    Friend WithEvents TabPageMenu As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
+    Friend WithEvents ButtonMatricula As System.Windows.Forms.Button
+    Friend WithEvents TextBoxBuscar As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents SqlSelectCommand1 As System.Data.SqlClient.SqlCommand
-    Friend WithEvents SqlInsertCommand1 As System.Data.SqlClient.SqlCommand
-    Friend WithEvents SqlUpdateCommand1 As System.Data.SqlClient.SqlCommand
-    Friend WithEvents SqlDeleteCommand1 As System.Data.SqlClient.SqlCommand
-    Friend WithEvents db1 As System.Data.SqlClient.SqlDataAdapter
-    Friend WithEvents Conn As System.Data.SqlClient.SqlConnection
-    Friend WithEvents MatriculaPECDataSet As MatriculaPEC.MatriculaPECDataSet
-    Friend WithEvents MatriculasBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents MatriculasTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter
-    Friend WithEvents mta1 As MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents ButtonUsuarios As System.Windows.Forms.Button
+    Friend WithEvents ButtonProfesores As System.Windows.Forms.Button
+    Friend WithEvents ButtonPagos As System.Windows.Forms.Button
+    Friend WithEvents ButtonDescuentos As System.Windows.Forms.Button
+    Friend WithEvents ButtonPeriodos As System.Windows.Forms.Button
+    Friend WithEvents ButtonEstudinates As System.Windows.Forms.Button
+    Friend WithEvents ButtonGrupos As System.Windows.Forms.Button
+    Friend WithEvents ButtonCursos As System.Windows.Forms.Button
+    Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
 
 End Class
