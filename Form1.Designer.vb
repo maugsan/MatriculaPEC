@@ -39,8 +39,10 @@ Partial Class Form1
         Me.TabPageMatricula = New System.Windows.Forms.TabPage()
         Me.TabPageCursos = New System.Windows.Forms.TabPage()
         Me.TabPageEstudiante = New System.Windows.Forms.TabPage()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabControlPrincipal.SuspendLayout()
         Me.TabPageMenu.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControlPrincipal
@@ -61,6 +63,7 @@ Partial Class Form1
         'TabPageMenu
         '
         Me.TabPageMenu.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.TabPageMenu.Controls.Add(Me.PictureBox1)
         Me.TabPageMenu.Controls.Add(Me.ButtonUsuarios)
         Me.TabPageMenu.Controls.Add(Me.ButtonProfesores)
         Me.TabPageMenu.Controls.Add(Me.ButtonPagos)
@@ -138,7 +141,7 @@ Partial Class Form1
         '
         Me.ButtonEstudinates.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ButtonEstudinates.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEstudinates.Location = New System.Drawing.Point(40, 286)
+        Me.ButtonEstudinates.Location = New System.Drawing.Point(40, 330)
         Me.ButtonEstudinates.Name = "ButtonEstudinates"
         Me.ButtonEstudinates.Size = New System.Drawing.Size(169, 77)
         Me.ButtonEstudinates.TabIndex = 6
@@ -190,7 +193,7 @@ Partial Class Form1
         '
         Me.ButtonMatricula.BackColor = System.Drawing.Color.SteelBlue
         Me.ButtonMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonMatricula.Location = New System.Drawing.Point(40, 145)
+        Me.ButtonMatricula.Location = New System.Drawing.Point(40, 247)
         Me.ButtonMatricula.Name = "ButtonMatricula"
         Me.ButtonMatricula.Size = New System.Drawing.Size(169, 77)
         Me.ButtonMatricula.TabIndex = 0
@@ -227,13 +230,22 @@ Partial Class Form1
         Me.TabPageEstudiante.Text = "Estudiante"
         Me.TabPageEstudiante.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(23, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(186, 231)
+        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(872, 580)
+        Me.ClientSize = New System.Drawing.Size(887, 580)
         Me.Controls.Add(Me.TabControlPrincipal)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
@@ -241,6 +253,7 @@ Partial Class Form1
         Me.TabControlPrincipal.ResumeLayout(False)
         Me.TabPageMenu.ResumeLayout(False)
         Me.TabPageMenu.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -260,5 +273,6 @@ Partial Class Form1
     Friend WithEvents ButtonCursos As System.Windows.Forms.Button
     Friend WithEvents TabPageCursos As System.Windows.Forms.TabPage
     Friend WithEvents TabPageEstudiante As System.Windows.Forms.TabPage
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class
