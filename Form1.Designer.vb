@@ -36,8 +36,9 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBoxBuscar = New System.Windows.Forms.TextBox()
         Me.ButtonMatricula = New System.Windows.Forms.Button()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TabPageMatricula = New System.Windows.Forms.TabPage()
+        Me.TabPageCursos = New System.Windows.Forms.TabPage()
+        Me.TabPageEstudiante = New System.Windows.Forms.TabPage()
         Me.TabControlPrincipal.SuspendLayout()
         Me.TabPageMenu.SuspendLayout()
         Me.SuspendLayout()
@@ -45,8 +46,9 @@ Partial Class Form1
         'TabControlPrincipal
         '
         Me.TabControlPrincipal.Controls.Add(Me.TabPageMenu)
-        Me.TabControlPrincipal.Controls.Add(Me.TabPage2)
-        Me.TabControlPrincipal.Controls.Add(Me.TabPage1)
+        Me.TabControlPrincipal.Controls.Add(Me.TabPageMatricula)
+        Me.TabControlPrincipal.Controls.Add(Me.TabPageCursos)
+        Me.TabControlPrincipal.Controls.Add(Me.TabPageEstudiante)
         Me.TabControlPrincipal.ItemSize = New System.Drawing.Size(42, 20)
         Me.TabControlPrincipal.Location = New System.Drawing.Point(-2, 0)
         Me.TabControlPrincipal.Name = "TabControlPrincipal"
@@ -195,25 +197,35 @@ Partial Class Form1
         Me.ButtonMatricula.Text = "Matricula"
         Me.ButtonMatricula.UseVisualStyleBackColor = False
         '
-        'TabPage2
+        'TabPageMatricula
         '
-        Me.TabPage2.Location = New System.Drawing.Point(4, 24)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1150, 610)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "TabPage2"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.TabPageMatricula.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageMatricula.Name = "TabPageMatricula"
+        Me.TabPageMatricula.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageMatricula.Size = New System.Drawing.Size(1150, 610)
+        Me.TabPageMatricula.TabIndex = 1
+        Me.TabPageMatricula.Text = "Matricula"
+        Me.TabPageMatricula.UseVisualStyleBackColor = True
         '
-        'TabPage1
+        'TabPageCursos
         '
-        Me.TabPage1.Location = New System.Drawing.Point(4, 24)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1150, 610)
-        Me.TabPage1.TabIndex = 2
-        Me.TabPage1.Text = "TabPage1"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        Me.TabPageCursos.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageCursos.Name = "TabPageCursos"
+        Me.TabPageCursos.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageCursos.Size = New System.Drawing.Size(1150, 610)
+        Me.TabPageCursos.TabIndex = 2
+        Me.TabPageCursos.Text = "Cursos"
+        Me.TabPageCursos.UseVisualStyleBackColor = True
+        '
+        'TabPageEstudiante
+        '
+        Me.TabPageEstudiante.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageEstudiante.Name = "TabPageEstudiante"
+        Me.TabPageEstudiante.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageEstudiante.Size = New System.Drawing.Size(1150, 610)
+        Me.TabPageEstudiante.TabIndex = 3
+        Me.TabPageEstudiante.Text = "Estudiante"
+        Me.TabPageEstudiante.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -234,7 +246,7 @@ Partial Class Form1
     End Sub
     Friend WithEvents TabControlPrincipal As System.Windows.Forms.TabControl
     Friend WithEvents TabPageMenu As System.Windows.Forms.TabPage
-    Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPageMatricula As System.Windows.Forms.TabPage
     Friend WithEvents ButtonMatricula As System.Windows.Forms.Button
     Friend WithEvents TextBoxBuscar As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
@@ -246,6 +258,7 @@ Partial Class Form1
     Friend WithEvents ButtonEstudinates As System.Windows.Forms.Button
     Friend WithEvents ButtonGrupos As System.Windows.Forms.Button
     Friend WithEvents ButtonCursos As System.Windows.Forms.Button
-    Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPageCursos As System.Windows.Forms.TabPage
+    Friend WithEvents TabPageEstudiante As System.Windows.Forms.TabPage
 
 End Class

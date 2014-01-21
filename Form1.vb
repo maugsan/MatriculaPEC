@@ -19,4 +19,8 @@
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles ButtonPagos.Click
 
     End Sub
+
+    Private Sub ButtonEstudinates_Click(sender As Object, e As EventArgs) Handles ButtonEstudinates.Click
+        TabControlPrincipal.SelectTab(3)
+    End Sub
 End Class
