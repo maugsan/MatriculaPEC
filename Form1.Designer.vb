@@ -327,7 +327,7 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label2.Location = New System.Drawing.Point(141, 143)
+        Me.Label2.Location = New System.Drawing.Point(253, 202)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(111, 39)
         Me.Label2.TabIndex = 4
@@ -338,7 +338,7 @@ Partial Class Form1
         Me.ButtonRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonRegresar.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.ButtonRegresar.Image = CType(resources.GetObject("ButtonRegresar.Image"), System.Drawing.Image)
-        Me.ButtonRegresar.Location = New System.Drawing.Point(3, 118)
+        Me.ButtonRegresar.Location = New System.Drawing.Point(115, 177)
         Me.ButtonRegresar.Margin = New System.Windows.Forms.Padding(0)
         Me.ButtonRegresar.Name = "ButtonRegresar"
         Me.ButtonRegresar.Size = New System.Drawing.Size(145, 83)
@@ -351,7 +351,7 @@ Partial Class Form1
         Me.ButtonMMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonMMatricula.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonMMatricula.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonMMatricula.Location = New System.Drawing.Point(854, 143)
+        Me.ButtonMMatricula.Location = New System.Drawing.Point(966, 202)
         Me.ButtonMMatricula.Margin = New System.Windows.Forms.Padding(0)
         Me.ButtonMMatricula.Name = "ButtonMMatricula"
         Me.ButtonMMatricula.Size = New System.Drawing.Size(221, 77)
@@ -362,7 +362,7 @@ Partial Class Form1
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(282, 237)
+        Me.DataGridView1.Location = New System.Drawing.Point(394, 296)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(793, 274)
         Me.DataGridView1.TabIndex = 1
@@ -372,7 +372,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label1.Location = New System.Drawing.Point(258, 143)
+        Me.Label1.Location = New System.Drawing.Point(370, 202)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(155, 39)
         Me.Label1.TabIndex = 0

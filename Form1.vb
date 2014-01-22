@@ -91,4 +91,27 @@
     Private Sub ButtonPrAtras_Click(sender As Object, e As EventArgs) Handles ButtonPrAtras.Click
         TabControlPrincipal.SelectTab(0)
     End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub ButtonMMatricula_Click(sender As Object, e As EventArgs) Handles ButtonMMatricula.Click
+        Dim matri As New Matricula
+        matri.Show()
+
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub ButtonCCursos_Click(sender As Object, e As EventArgs) Handles ButtonCCursos.Click
+        Dim matri As New Cursos
+        matri.Show()
+    End Sub
 End Class
