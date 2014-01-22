@@ -101,8 +101,8 @@
     End Sub
 
     Private Sub ButtonMMatricula_Click(sender As Object, e As EventArgs) Handles ButtonMMatricula.Click
-        Dim matri As New Matricula
-        matri.Show()
+        Dim ventana As New Matricula
+        ventana.Show()
 
     End Sub
 
@@ -111,7 +111,45 @@
     End Sub
 
     Private Sub ButtonCCursos_Click(sender As Object, e As EventArgs) Handles ButtonCCursos.Click
-        Dim matri As New Cursos
-        matri.Show()
+        Dim ventana As New Cursos
+        ventana.Show()
+    End Sub
+
+    Private Sub ButtonGGrupos_Click(sender As Object, e As EventArgs) Handles ButtonGGrupos.Click
+        Dim ventana As New Grupos
+
+        ventana.Show()
+    End Sub
+
+    Private Sub ButtonEEstudiantes_Click(sender As Object, e As EventArgs) Handles ButtonEEstudiantes.Click
+        Dim ventana As New Estudiantes
+
+
+        ventana.Show()
+    End Sub
+
+    Private Sub ButtonPPeriodos_Click(sender As Object, e As EventArgs) Handles ButtonPPeriodos.Click
+        Dim ventana As New Periodos
+
+        ventana.Show()
+    End Sub
+
+    Private Sub ButtonDDescuentos_Click(sender As Object, e As EventArgs) Handles ButtonDDescuentos.Click
+        Dim ventana As New Descuentos
+
+        ventana.Show()
+    End Sub
+
+    Private Sub ButtonPPagos_Click(sender As Object, e As EventArgs) Handles ButtonPPagos.Click
+        Dim ventana As New Pagos
+
+
+        ventana.Show()
+    End Sub
+
+    Private Sub ButtonPProfesores_Click(sender As Object, e As EventArgs) Handles ButtonPProfesores.Click
+        Dim ventana As New Profesores
+
+        ventana.Show()
     End Sub
 End Class
