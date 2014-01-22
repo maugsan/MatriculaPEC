@@ -34,58 +34,108 @@ Partial Class Form1
         Me.ButtonEstudintes = New System.Windows.Forms.Button()
         Me.ButtonGrupos = New System.Windows.Forms.Button()
         Me.ButtonCursos = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBoxBuscar = New System.Windows.Forms.TextBox()
         Me.ButtonMatricula = New System.Windows.Forms.Button()
         Me.TabPageMatricula = New System.Windows.Forms.TabPage()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ButtonRegresar = New System.Windows.Forms.Button()
         Me.ButtonMMatricula = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPageCursos = New System.Windows.Forms.TabPage()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ButtonAtras = New System.Windows.Forms.Button()
         Me.ButtonCCursos = New System.Windows.Forms.Button()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TabPageGrupos = New System.Windows.Forms.TabPage()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ButtonGAtras = New System.Windows.Forms.Button()
         Me.ButtonGGrupos = New System.Windows.Forms.Button()
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TabPageEstudiante = New System.Windows.Forms.TabPage()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ButtonEAtras = New System.Windows.Forms.Button()
         Me.ButtonEEstudiantes = New System.Windows.Forms.Button()
         Me.DataGridView4 = New System.Windows.Forms.DataGridView()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TabPagePeriodos = New System.Windows.Forms.TabPage()
-        Me.TabPageDescuentos = New System.Windows.Forms.TabPage()
-        Me.TabPagePagos = New System.Windows.Forms.TabPage()
-        Me.TabPageProfesores = New System.Windows.Forms.TabPage()
-        Me.TabPageUsuarios = New System.Windows.Forms.TabPage()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.ButtonPAtras = New System.Windows.Forms.Button()
         Me.ButtonPPeriodos = New System.Windows.Forms.Button()
         Me.DataGridView5 = New System.Windows.Forms.DataGridView()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.TabPageDescuentos = New System.Windows.Forms.TabPage()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.ButtonDAtras = New System.Windows.Forms.Button()
         Me.ButtonDDescuentos = New System.Windows.Forms.Button()
         Me.DataGridView6 = New System.Windows.Forms.DataGridView()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.TabPagePagos = New System.Windows.Forms.TabPage()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.ButtonPaAtras = New System.Windows.Forms.Button()
         Me.ButtonPPagos = New System.Windows.Forms.Button()
         Me.DataGridView7 = New System.Windows.Forms.DataGridView()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.TabPageProfesores = New System.Windows.Forms.TabPage()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.ButtonPrAtras = New System.Windows.Forms.Button()
         Me.ButtonPProfesores = New System.Windows.Forms.Button()
         Me.DataGridView8 = New System.Windows.Forms.DataGridView()
         Me.Label16 = New System.Windows.Forms.Label()
+        Me.TabPageUsuarios = New System.Windows.Forms.TabPage()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonRegresar = New System.Windows.Forms.Button()
+        Me.ButtonAtras = New System.Windows.Forms.Button()
+        Me.ButtonGAtras = New System.Windows.Forms.Button()
+        Me.ButtonEAtras = New System.Windows.Forms.Button()
+        Me.ButtonPAtras = New System.Windows.Forms.Button()
+        Me.ButtonDAtras = New System.Windows.Forms.Button()
+        Me.ButtonPaAtras = New System.Windows.Forms.Button()
+        Me.ButtonPrAtras = New System.Windows.Forms.Button()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TabControlPrincipal.SuspendLayout()
         Me.TabPageMenu.SuspendLayout()
         Me.TabPageMatricula.SuspendLayout()
@@ -97,13 +147,34 @@ Partial Class Form1
         Me.TabPageEstudiante.SuspendLayout()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPagePeriodos.SuspendLayout()
-        Me.TabPageDescuentos.SuspendLayout()
-        Me.TabPagePagos.SuspendLayout()
-        Me.TabPageProfesores.SuspendLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageDescuentos.SuspendLayout()
         CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPagePagos.SuspendLayout()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageProfesores.SuspendLayout()
         CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageUsuarios.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControlPrincipal
@@ -129,7 +200,13 @@ Partial Class Form1
         '
         'TabPageMenu
         '
+        Me.TabPageMenu.AutoScroll = True
         Me.TabPageMenu.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageMenu.Controls.Add(Me.PictureBox2)
+        Me.TabPageMenu.Controls.Add(Me.PictureBox1)
+        Me.TabPageMenu.Controls.Add(Me.Button4)
+        Me.TabPageMenu.Controls.Add(Me.Button3)
+        Me.TabPageMenu.Controls.Add(Me.Button2)
         Me.TabPageMenu.Controls.Add(Me.ComboBoxOpciones)
         Me.TabPageMenu.Controls.Add(Me.ButtonUsuarios)
         Me.TabPageMenu.Controls.Add(Me.ButtonDescuentos)
@@ -155,7 +232,7 @@ Partial Class Form1
         Me.ComboBoxOpciones.IntegralHeight = False
         Me.ComboBoxOpciones.ItemHeight = 13
         Me.ComboBoxOpciones.Items.AddRange(New Object() {"Cursos", "Descuentos", "Estudiantes", "Grupos", "Matricula", "Pagos", "Periodos", "Profesores", "Usuarios"})
-        Me.ComboBoxOpciones.Location = New System.Drawing.Point(703, 44)
+        Me.ComboBoxOpciones.Location = New System.Drawing.Point(710, 76)
         Me.ComboBoxOpciones.Name = "ComboBoxOpciones"
         Me.ComboBoxOpciones.Size = New System.Drawing.Size(121, 21)
         Me.ComboBoxOpciones.TabIndex = 20
@@ -272,24 +349,12 @@ Partial Class Form1
         Me.ButtonCursos.Text = "Cursos"
         Me.ButtonCursos.UseVisualStyleBackColor = False
         '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(830, 36)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(46, 34)
-        Me.Button1.TabIndex = 3
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'TextBoxBuscar
         '
-        Me.TextBoxBuscar.Location = New System.Drawing.Point(476, 36)
-        Me.TextBoxBuscar.Multiline = True
+        Me.TextBoxBuscar.Location = New System.Drawing.Point(482, 76)
         Me.TextBoxBuscar.Name = "TextBoxBuscar"
         Me.TextBoxBuscar.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TextBoxBuscar.Size = New System.Drawing.Size(222, 32)
+        Me.TextBoxBuscar.Size = New System.Drawing.Size(222, 20)
         Me.TextBoxBuscar.TabIndex = 2
         '
         'ButtonMatricula
@@ -309,11 +374,16 @@ Partial Class Form1
         'TabPageMatricula
         '
         Me.TabPageMatricula.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageMatricula.Controls.Add(Me.PictureBox3)
+        Me.TabPageMatricula.Controls.Add(Me.PictureBox4)
+        Me.TabPageMatricula.Controls.Add(Me.ComboBox1)
+        Me.TabPageMatricula.Controls.Add(Me.Button5)
+        Me.TabPageMatricula.Controls.Add(Me.TextBox1)
         Me.TabPageMatricula.Controls.Add(Me.Label2)
-        Me.TabPageMatricula.Controls.Add(Me.ButtonRegresar)
         Me.TabPageMatricula.Controls.Add(Me.ButtonMMatricula)
         Me.TabPageMatricula.Controls.Add(Me.DataGridView1)
         Me.TabPageMatricula.Controls.Add(Me.Label1)
+        Me.TabPageMatricula.Controls.Add(Me.ButtonRegresar)
         Me.TabPageMatricula.Location = New System.Drawing.Point(4, 24)
         Me.TabPageMatricula.Margin = New System.Windows.Forms.Padding(0)
         Me.TabPageMatricula.Name = "TabPageMatricula"
@@ -332,18 +402,6 @@ Partial Class Form1
         Me.Label2.Size = New System.Drawing.Size(111, 39)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Menu/"
-        '
-        'ButtonRegresar
-        '
-        Me.ButtonRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonRegresar.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonRegresar.Image = CType(resources.GetObject("ButtonRegresar.Image"), System.Drawing.Image)
-        Me.ButtonRegresar.Location = New System.Drawing.Point(115, 177)
-        Me.ButtonRegresar.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonRegresar.Name = "ButtonRegresar"
-        Me.ButtonRegresar.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonRegresar.TabIndex = 3
-        Me.ButtonRegresar.UseVisualStyleBackColor = True
         '
         'ButtonMMatricula
         '
@@ -381,11 +439,16 @@ Partial Class Form1
         'TabPageCursos
         '
         Me.TabPageCursos.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageCursos.Controls.Add(Me.PictureBox5)
+        Me.TabPageCursos.Controls.Add(Me.PictureBox6)
+        Me.TabPageCursos.Controls.Add(Me.ComboBox2)
+        Me.TabPageCursos.Controls.Add(Me.Button6)
+        Me.TabPageCursos.Controls.Add(Me.TextBox2)
         Me.TabPageCursos.Controls.Add(Me.Label3)
-        Me.TabPageCursos.Controls.Add(Me.ButtonAtras)
         Me.TabPageCursos.Controls.Add(Me.ButtonCCursos)
         Me.TabPageCursos.Controls.Add(Me.DataGridView2)
         Me.TabPageCursos.Controls.Add(Me.Label4)
+        Me.TabPageCursos.Controls.Add(Me.ButtonAtras)
         Me.TabPageCursos.Location = New System.Drawing.Point(4, 24)
         Me.TabPageCursos.Name = "TabPageCursos"
         Me.TabPageCursos.Padding = New System.Windows.Forms.Padding(3)
@@ -403,18 +466,6 @@ Partial Class Form1
         Me.Label3.Size = New System.Drawing.Size(111, 39)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Menu/"
-        '
-        'ButtonAtras
-        '
-        Me.ButtonAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonAtras.Image = CType(resources.GetObject("ButtonAtras.Image"), System.Drawing.Image)
-        Me.ButtonAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonAtras.Name = "ButtonAtras"
-        Me.ButtonAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonAtras.TabIndex = 8
-        Me.ButtonAtras.UseVisualStyleBackColor = True
         '
         'ButtonCCursos
         '
@@ -452,11 +503,16 @@ Partial Class Form1
         'TabPageGrupos
         '
         Me.TabPageGrupos.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageGrupos.Controls.Add(Me.PictureBox7)
+        Me.TabPageGrupos.Controls.Add(Me.PictureBox8)
+        Me.TabPageGrupos.Controls.Add(Me.ComboBox3)
+        Me.TabPageGrupos.Controls.Add(Me.Button7)
+        Me.TabPageGrupos.Controls.Add(Me.TextBox3)
         Me.TabPageGrupos.Controls.Add(Me.Label5)
-        Me.TabPageGrupos.Controls.Add(Me.ButtonGAtras)
         Me.TabPageGrupos.Controls.Add(Me.ButtonGGrupos)
         Me.TabPageGrupos.Controls.Add(Me.DataGridView3)
         Me.TabPageGrupos.Controls.Add(Me.Label6)
+        Me.TabPageGrupos.Controls.Add(Me.ButtonGAtras)
         Me.TabPageGrupos.Location = New System.Drawing.Point(4, 24)
         Me.TabPageGrupos.Name = "TabPageGrupos"
         Me.TabPageGrupos.Padding = New System.Windows.Forms.Padding(3)
@@ -475,19 +531,6 @@ Partial Class Form1
         Me.Label5.Size = New System.Drawing.Size(111, 39)
         Me.Label5.TabIndex = 14
         Me.Label5.Text = "Menu/"
-        '
-        'ButtonGAtras
-        '
-        Me.ButtonGAtras.AllowDrop = True
-        Me.ButtonGAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonGAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonGAtras.Image = CType(resources.GetObject("ButtonGAtras.Image"), System.Drawing.Image)
-        Me.ButtonGAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonGAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonGAtras.Name = "ButtonGAtras"
-        Me.ButtonGAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonGAtras.TabIndex = 13
-        Me.ButtonGAtras.UseVisualStyleBackColor = True
         '
         'ButtonGGrupos
         '
@@ -528,11 +571,16 @@ Partial Class Form1
         'TabPageEstudiante
         '
         Me.TabPageEstudiante.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageEstudiante.Controls.Add(Me.PictureBox9)
+        Me.TabPageEstudiante.Controls.Add(Me.PictureBox10)
+        Me.TabPageEstudiante.Controls.Add(Me.ComboBox4)
+        Me.TabPageEstudiante.Controls.Add(Me.Button8)
+        Me.TabPageEstudiante.Controls.Add(Me.TextBox4)
         Me.TabPageEstudiante.Controls.Add(Me.Label7)
-        Me.TabPageEstudiante.Controls.Add(Me.ButtonEAtras)
         Me.TabPageEstudiante.Controls.Add(Me.ButtonEEstudiantes)
         Me.TabPageEstudiante.Controls.Add(Me.DataGridView4)
         Me.TabPageEstudiante.Controls.Add(Me.Label8)
+        Me.TabPageEstudiante.Controls.Add(Me.ButtonEAtras)
         Me.TabPageEstudiante.Location = New System.Drawing.Point(4, 24)
         Me.TabPageEstudiante.Name = "TabPageEstudiante"
         Me.TabPageEstudiante.Padding = New System.Windows.Forms.Padding(3)
@@ -551,19 +599,6 @@ Partial Class Form1
         Me.Label7.Size = New System.Drawing.Size(111, 39)
         Me.Label7.TabIndex = 19
         Me.Label7.Text = "Menu/"
-        '
-        'ButtonEAtras
-        '
-        Me.ButtonEAtras.AllowDrop = True
-        Me.ButtonEAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonEAtras.Image = CType(resources.GetObject("ButtonEAtras.Image"), System.Drawing.Image)
-        Me.ButtonEAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonEAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonEAtras.Name = "ButtonEAtras"
-        Me.ButtonEAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonEAtras.TabIndex = 18
-        Me.ButtonEAtras.UseVisualStyleBackColor = True
         '
         'ButtonEEstudiantes
         '
@@ -604,72 +639,22 @@ Partial Class Form1
         'TabPagePeriodos
         '
         Me.TabPagePeriodos.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPagePeriodos.Controls.Add(Me.PictureBox11)
+        Me.TabPagePeriodos.Controls.Add(Me.PictureBox12)
+        Me.TabPagePeriodos.Controls.Add(Me.ComboBox5)
+        Me.TabPagePeriodos.Controls.Add(Me.Button9)
+        Me.TabPagePeriodos.Controls.Add(Me.TextBox5)
         Me.TabPagePeriodos.Controls.Add(Me.Label9)
-        Me.TabPagePeriodos.Controls.Add(Me.ButtonPAtras)
         Me.TabPagePeriodos.Controls.Add(Me.ButtonPPeriodos)
         Me.TabPagePeriodos.Controls.Add(Me.DataGridView5)
         Me.TabPagePeriodos.Controls.Add(Me.Label10)
+        Me.TabPagePeriodos.Controls.Add(Me.ButtonPAtras)
         Me.TabPagePeriodos.Location = New System.Drawing.Point(4, 24)
         Me.TabPagePeriodos.Name = "TabPagePeriodos"
         Me.TabPagePeriodos.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPagePeriodos.Size = New System.Drawing.Size(1358, 740)
         Me.TabPagePeriodos.TabIndex = 5
         Me.TabPagePeriodos.Text = "Periodos"
-        '
-        'TabPageDescuentos
-        '
-        Me.TabPageDescuentos.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TabPageDescuentos.Controls.Add(Me.Label11)
-        Me.TabPageDescuentos.Controls.Add(Me.ButtonDAtras)
-        Me.TabPageDescuentos.Controls.Add(Me.ButtonDDescuentos)
-        Me.TabPageDescuentos.Controls.Add(Me.DataGridView6)
-        Me.TabPageDescuentos.Controls.Add(Me.Label12)
-        Me.TabPageDescuentos.Location = New System.Drawing.Point(4, 24)
-        Me.TabPageDescuentos.Name = "TabPageDescuentos"
-        Me.TabPageDescuentos.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageDescuentos.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPageDescuentos.TabIndex = 6
-        Me.TabPageDescuentos.Text = "Descuentos"
-        '
-        'TabPagePagos
-        '
-        Me.TabPagePagos.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TabPagePagos.Controls.Add(Me.Label13)
-        Me.TabPagePagos.Controls.Add(Me.ButtonPaAtras)
-        Me.TabPagePagos.Controls.Add(Me.ButtonPPagos)
-        Me.TabPagePagos.Controls.Add(Me.DataGridView7)
-        Me.TabPagePagos.Controls.Add(Me.Label14)
-        Me.TabPagePagos.Location = New System.Drawing.Point(4, 24)
-        Me.TabPagePagos.Name = "TabPagePagos"
-        Me.TabPagePagos.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPagePagos.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPagePagos.TabIndex = 7
-        Me.TabPagePagos.Text = "Pagos"
-        '
-        'TabPageProfesores
-        '
-        Me.TabPageProfesores.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TabPageProfesores.Controls.Add(Me.Label15)
-        Me.TabPageProfesores.Controls.Add(Me.ButtonPrAtras)
-        Me.TabPageProfesores.Controls.Add(Me.ButtonPProfesores)
-        Me.TabPageProfesores.Controls.Add(Me.DataGridView8)
-        Me.TabPageProfesores.Controls.Add(Me.Label16)
-        Me.TabPageProfesores.Location = New System.Drawing.Point(4, 24)
-        Me.TabPageProfesores.Name = "TabPageProfesores"
-        Me.TabPageProfesores.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageProfesores.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPageProfesores.TabIndex = 8
-        Me.TabPageProfesores.Text = "Profesores"
-        '
-        'TabPageUsuarios
-        '
-        Me.TabPageUsuarios.Location = New System.Drawing.Point(4, 24)
-        Me.TabPageUsuarios.Name = "TabPageUsuarios"
-        Me.TabPageUsuarios.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageUsuarios.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPageUsuarios.TabIndex = 9
-        Me.TabPageUsuarios.Text = "Usuarios"
-        Me.TabPageUsuarios.UseVisualStyleBackColor = True
         '
         'Label9
         '
@@ -682,19 +667,6 @@ Partial Class Form1
         Me.Label9.Size = New System.Drawing.Size(111, 39)
         Me.Label9.TabIndex = 24
         Me.Label9.Text = "Menu/"
-        '
-        'ButtonPAtras
-        '
-        Me.ButtonPAtras.AllowDrop = True
-        Me.ButtonPAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonPAtras.Image = CType(resources.GetObject("ButtonPAtras.Image"), System.Drawing.Image)
-        Me.ButtonPAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonPAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPAtras.Name = "ButtonPAtras"
-        Me.ButtonPAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonPAtras.TabIndex = 23
-        Me.ButtonPAtras.UseVisualStyleBackColor = True
         '
         'ButtonPPeriodos
         '
@@ -732,6 +704,26 @@ Partial Class Form1
         Me.Label10.TabIndex = 20
         Me.Label10.Text = "Periodos"
         '
+        'TabPageDescuentos
+        '
+        Me.TabPageDescuentos.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageDescuentos.Controls.Add(Me.PictureBox13)
+        Me.TabPageDescuentos.Controls.Add(Me.PictureBox14)
+        Me.TabPageDescuentos.Controls.Add(Me.ComboBox6)
+        Me.TabPageDescuentos.Controls.Add(Me.Button10)
+        Me.TabPageDescuentos.Controls.Add(Me.TextBox6)
+        Me.TabPageDescuentos.Controls.Add(Me.Label11)
+        Me.TabPageDescuentos.Controls.Add(Me.ButtonDDescuentos)
+        Me.TabPageDescuentos.Controls.Add(Me.DataGridView6)
+        Me.TabPageDescuentos.Controls.Add(Me.Label12)
+        Me.TabPageDescuentos.Controls.Add(Me.ButtonDAtras)
+        Me.TabPageDescuentos.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageDescuentos.Name = "TabPageDescuentos"
+        Me.TabPageDescuentos.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageDescuentos.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPageDescuentos.TabIndex = 6
+        Me.TabPageDescuentos.Text = "Descuentos"
+        '
         'Label11
         '
         Me.Label11.AllowDrop = True
@@ -743,19 +735,6 @@ Partial Class Form1
         Me.Label11.Size = New System.Drawing.Size(111, 39)
         Me.Label11.TabIndex = 29
         Me.Label11.Text = "Menu/"
-        '
-        'ButtonDAtras
-        '
-        Me.ButtonDAtras.AllowDrop = True
-        Me.ButtonDAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonDAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonDAtras.Image = CType(resources.GetObject("ButtonDAtras.Image"), System.Drawing.Image)
-        Me.ButtonDAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonDAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonDAtras.Name = "ButtonDAtras"
-        Me.ButtonDAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonDAtras.TabIndex = 28
-        Me.ButtonDAtras.UseVisualStyleBackColor = True
         '
         'ButtonDDescuentos
         '
@@ -793,6 +772,26 @@ Partial Class Form1
         Me.Label12.TabIndex = 25
         Me.Label12.Text = "Descuentos"
         '
+        'TabPagePagos
+        '
+        Me.TabPagePagos.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPagePagos.Controls.Add(Me.PictureBox15)
+        Me.TabPagePagos.Controls.Add(Me.PictureBox16)
+        Me.TabPagePagos.Controls.Add(Me.ComboBox7)
+        Me.TabPagePagos.Controls.Add(Me.Button11)
+        Me.TabPagePagos.Controls.Add(Me.TextBox7)
+        Me.TabPagePagos.Controls.Add(Me.Label13)
+        Me.TabPagePagos.Controls.Add(Me.ButtonPPagos)
+        Me.TabPagePagos.Controls.Add(Me.DataGridView7)
+        Me.TabPagePagos.Controls.Add(Me.Label14)
+        Me.TabPagePagos.Controls.Add(Me.ButtonPaAtras)
+        Me.TabPagePagos.Location = New System.Drawing.Point(4, 24)
+        Me.TabPagePagos.Name = "TabPagePagos"
+        Me.TabPagePagos.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPagePagos.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPagePagos.TabIndex = 7
+        Me.TabPagePagos.Text = "Pagos"
+        '
         'Label13
         '
         Me.Label13.AllowDrop = True
@@ -804,19 +803,6 @@ Partial Class Form1
         Me.Label13.Size = New System.Drawing.Size(111, 39)
         Me.Label13.TabIndex = 34
         Me.Label13.Text = "Menu/"
-        '
-        'ButtonPaAtras
-        '
-        Me.ButtonPaAtras.AllowDrop = True
-        Me.ButtonPaAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPaAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonPaAtras.Image = CType(resources.GetObject("ButtonPaAtras.Image"), System.Drawing.Image)
-        Me.ButtonPaAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonPaAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPaAtras.Name = "ButtonPaAtras"
-        Me.ButtonPaAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonPaAtras.TabIndex = 33
-        Me.ButtonPaAtras.UseVisualStyleBackColor = True
         '
         'ButtonPPagos
         '
@@ -854,6 +840,26 @@ Partial Class Form1
         Me.Label14.TabIndex = 30
         Me.Label14.Text = "Pagos"
         '
+        'TabPageProfesores
+        '
+        Me.TabPageProfesores.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageProfesores.Controls.Add(Me.PictureBox17)
+        Me.TabPageProfesores.Controls.Add(Me.PictureBox18)
+        Me.TabPageProfesores.Controls.Add(Me.ComboBox8)
+        Me.TabPageProfesores.Controls.Add(Me.Button12)
+        Me.TabPageProfesores.Controls.Add(Me.TextBox8)
+        Me.TabPageProfesores.Controls.Add(Me.Label15)
+        Me.TabPageProfesores.Controls.Add(Me.ButtonPProfesores)
+        Me.TabPageProfesores.Controls.Add(Me.DataGridView8)
+        Me.TabPageProfesores.Controls.Add(Me.Label16)
+        Me.TabPageProfesores.Controls.Add(Me.ButtonPrAtras)
+        Me.TabPageProfesores.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageProfesores.Name = "TabPageProfesores"
+        Me.TabPageProfesores.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageProfesores.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPageProfesores.TabIndex = 8
+        Me.TabPageProfesores.Text = "Profesores"
+        '
         'Label15
         '
         Me.Label15.AllowDrop = True
@@ -865,19 +871,6 @@ Partial Class Form1
         Me.Label15.Size = New System.Drawing.Size(111, 39)
         Me.Label15.TabIndex = 39
         Me.Label15.Text = "Menu/"
-        '
-        'ButtonPrAtras
-        '
-        Me.ButtonPrAtras.AllowDrop = True
-        Me.ButtonPrAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPrAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonPrAtras.Image = CType(resources.GetObject("ButtonPrAtras.Image"), System.Drawing.Image)
-        Me.ButtonPrAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonPrAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPrAtras.Name = "ButtonPrAtras"
-        Me.ButtonPrAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonPrAtras.TabIndex = 38
-        Me.ButtonPrAtras.UseVisualStyleBackColor = True
         '
         'ButtonPProfesores
         '
@@ -915,13 +908,633 @@ Partial Class Form1
         Me.Label16.TabIndex = 35
         Me.Label16.Text = "Profesores"
         '
+        'TabPageUsuarios
+        '
+        Me.TabPageUsuarios.Controls.Add(Me.PictureBox19)
+        Me.TabPageUsuarios.Controls.Add(Me.PictureBox20)
+        Me.TabPageUsuarios.Controls.Add(Me.ComboBox9)
+        Me.TabPageUsuarios.Controls.Add(Me.Button13)
+        Me.TabPageUsuarios.Controls.Add(Me.TextBox9)
+        Me.TabPageUsuarios.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageUsuarios.Name = "TabPageUsuarios"
+        Me.TabPageUsuarios.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageUsuarios.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPageUsuarios.TabIndex = 9
+        Me.TabPageUsuarios.Text = "Usuarios"
+        Me.TabPageUsuarios.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Location = New System.Drawing.Point(288, 536)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(221, 77)
+        Me.Button2.TabIndex = 21
+        Me.Button2.Text = "Formas"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button3.Location = New System.Drawing.Point(603, 536)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(221, 77)
+        Me.Button3.TabIndex = 22
+        Me.Button3.Text = "Medios"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button4.Location = New System.Drawing.Point(909, 536)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(221, 77)
+        Me.Button4.TabIndex = 23
+        Me.Button4.Text = "Listas"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox2.Location = New System.Drawing.Point(1095, 44)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(140, 81)
+        Me.PictureBox2.TabIndex = 25
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox1.Location = New System.Drawing.Point(43, 44)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(217, 89)
+        Me.PictureBox1.TabIndex = 24
+        Me.PictureBox1.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(837, 68)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(46, 34)
+        Me.Button1.TabIndex = 3
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'ButtonRegresar
+        '
+        Me.ButtonRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonRegresar.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonRegresar.Image = CType(resources.GetObject("ButtonRegresar.Image"), System.Drawing.Image)
+        Me.ButtonRegresar.Location = New System.Drawing.Point(115, 177)
+        Me.ButtonRegresar.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonRegresar.Name = "ButtonRegresar"
+        Me.ButtonRegresar.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonRegresar.TabIndex = 3
+        Me.ButtonRegresar.UseVisualStyleBackColor = True
+        '
+        'ButtonAtras
+        '
+        Me.ButtonAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonAtras.Image = CType(resources.GetObject("ButtonAtras.Image"), System.Drawing.Image)
+        Me.ButtonAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonAtras.Name = "ButtonAtras"
+        Me.ButtonAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonAtras.TabIndex = 8
+        Me.ButtonAtras.UseVisualStyleBackColor = True
+        '
+        'ButtonGAtras
+        '
+        Me.ButtonGAtras.AllowDrop = True
+        Me.ButtonGAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonGAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonGAtras.Image = CType(resources.GetObject("ButtonGAtras.Image"), System.Drawing.Image)
+        Me.ButtonGAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonGAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonGAtras.Name = "ButtonGAtras"
+        Me.ButtonGAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonGAtras.TabIndex = 13
+        Me.ButtonGAtras.UseVisualStyleBackColor = True
+        '
+        'ButtonEAtras
+        '
+        Me.ButtonEAtras.AllowDrop = True
+        Me.ButtonEAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonEAtras.Image = CType(resources.GetObject("ButtonEAtras.Image"), System.Drawing.Image)
+        Me.ButtonEAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonEAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonEAtras.Name = "ButtonEAtras"
+        Me.ButtonEAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonEAtras.TabIndex = 18
+        Me.ButtonEAtras.UseVisualStyleBackColor = True
+        '
+        'ButtonPAtras
+        '
+        Me.ButtonPAtras.AllowDrop = True
+        Me.ButtonPAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonPAtras.Image = CType(resources.GetObject("ButtonPAtras.Image"), System.Drawing.Image)
+        Me.ButtonPAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonPAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPAtras.Name = "ButtonPAtras"
+        Me.ButtonPAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonPAtras.TabIndex = 23
+        Me.ButtonPAtras.UseVisualStyleBackColor = True
+        '
+        'ButtonDAtras
+        '
+        Me.ButtonDAtras.AllowDrop = True
+        Me.ButtonDAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonDAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonDAtras.Image = CType(resources.GetObject("ButtonDAtras.Image"), System.Drawing.Image)
+        Me.ButtonDAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonDAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonDAtras.Name = "ButtonDAtras"
+        Me.ButtonDAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonDAtras.TabIndex = 28
+        Me.ButtonDAtras.UseVisualStyleBackColor = True
+        '
+        'ButtonPaAtras
+        '
+        Me.ButtonPaAtras.AllowDrop = True
+        Me.ButtonPaAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPaAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonPaAtras.Image = CType(resources.GetObject("ButtonPaAtras.Image"), System.Drawing.Image)
+        Me.ButtonPaAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonPaAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPaAtras.Name = "ButtonPaAtras"
+        Me.ButtonPaAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonPaAtras.TabIndex = 33
+        Me.ButtonPaAtras.UseVisualStyleBackColor = True
+        '
+        'ButtonPrAtras
+        '
+        Me.ButtonPrAtras.AllowDrop = True
+        Me.ButtonPrAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPrAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonPrAtras.Image = CType(resources.GetObject("ButtonPrAtras.Image"), System.Drawing.Image)
+        Me.ButtonPrAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonPrAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPrAtras.Name = "ButtonPrAtras"
+        Me.ButtonPrAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonPrAtras.TabIndex = 38
+        Me.ButtonPrAtras.UseVisualStyleBackColor = True
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox3.Location = New System.Drawing.Point(1106, 41)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(140, 81)
+        Me.PictureBox3.TabIndex = 30
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox4.Location = New System.Drawing.Point(54, 41)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(217, 89)
+        Me.PictureBox4.TabIndex = 29
+        Me.PictureBox4.TabStop = False
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox1.IntegralHeight = False
+        Me.ComboBox1.ItemHeight = 13
+        Me.ComboBox1.Items.AddRange(New Object() {"Cursos", "Descuentos", "Estudiantes", "Grupos", "Matricula", "Pagos", "Periodos", "Profesores", "Usuarios"})
+        Me.ComboBox1.Location = New System.Drawing.Point(721, 73)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 28
+        '
+        'Button5
+        '
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
+        Me.Button5.Location = New System.Drawing.Point(848, 65)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(46, 34)
+        Me.Button5.TabIndex = 27
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(493, 73)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBox1.Size = New System.Drawing.Size(222, 20)
+        Me.TextBox1.TabIndex = 26
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox5.Location = New System.Drawing.Point(1123, 41)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(140, 81)
+        Me.PictureBox5.TabIndex = 30
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox6.Location = New System.Drawing.Point(71, 41)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(217, 89)
+        Me.PictureBox6.TabIndex = 29
+        Me.PictureBox6.TabStop = False
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox2.IntegralHeight = False
+        Me.ComboBox2.ItemHeight = 13
+        Me.ComboBox2.Items.AddRange(New Object() {"Cursos", "Descuentos", "Estudiantes", "Grupos", "Matricula", "Pagos", "Periodos", "Profesores", "Usuarios"})
+        Me.ComboBox2.Location = New System.Drawing.Point(738, 73)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.TabIndex = 28
+        '
+        'Button6
+        '
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
+        Me.Button6.Location = New System.Drawing.Point(865, 65)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(46, 34)
+        Me.Button6.TabIndex = 27
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(510, 73)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBox2.Size = New System.Drawing.Size(222, 20)
+        Me.TextBox2.TabIndex = 26
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox7.Location = New System.Drawing.Point(1123, 51)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(140, 81)
+        Me.PictureBox7.TabIndex = 30
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox8.Location = New System.Drawing.Point(71, 51)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(217, 89)
+        Me.PictureBox8.TabIndex = 29
+        Me.PictureBox8.TabStop = False
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox3.IntegralHeight = False
+        Me.ComboBox3.ItemHeight = 13
+        Me.ComboBox3.Items.AddRange(New Object() {"Cursos", "Descuentos", "Estudiantes", "Grupos", "Matricula", "Pagos", "Periodos", "Profesores", "Usuarios"})
+        Me.ComboBox3.Location = New System.Drawing.Point(738, 83)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox3.TabIndex = 28
+        '
+        'Button7
+        '
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
+        Me.Button7.Location = New System.Drawing.Point(865, 75)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(46, 34)
+        Me.Button7.TabIndex = 27
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(510, 83)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBox3.Size = New System.Drawing.Size(222, 20)
+        Me.TextBox3.TabIndex = 26
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox9.Location = New System.Drawing.Point(1123, 40)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(140, 81)
+        Me.PictureBox9.TabIndex = 30
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox10.Location = New System.Drawing.Point(71, 40)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(217, 89)
+        Me.PictureBox10.TabIndex = 29
+        Me.PictureBox10.TabStop = False
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox4.IntegralHeight = False
+        Me.ComboBox4.ItemHeight = 13
+        Me.ComboBox4.Items.AddRange(New Object() {"Cursos", "Descuentos", "Estudiantes", "Grupos", "Matricula", "Pagos", "Periodos", "Profesores", "Usuarios"})
+        Me.ComboBox4.Location = New System.Drawing.Point(738, 72)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox4.TabIndex = 28
+        '
+        'Button8
+        '
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
+        Me.Button8.Location = New System.Drawing.Point(865, 64)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(46, 34)
+        Me.Button8.TabIndex = 27
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(510, 72)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBox4.Size = New System.Drawing.Size(222, 20)
+        Me.TextBox4.TabIndex = 26
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox11.Location = New System.Drawing.Point(1145, 33)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(140, 81)
+        Me.PictureBox11.TabIndex = 30
+        Me.PictureBox11.TabStop = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox12.Location = New System.Drawing.Point(93, 33)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(217, 89)
+        Me.PictureBox12.TabIndex = 29
+        Me.PictureBox12.TabStop = False
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox5.IntegralHeight = False
+        Me.ComboBox5.ItemHeight = 13
+        Me.ComboBox5.Items.AddRange(New Object() {"Cursos", "Descuentos", "Estudiantes", "Grupos", "Matricula", "Pagos", "Periodos", "Profesores", "Usuarios"})
+        Me.ComboBox5.Location = New System.Drawing.Point(760, 65)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox5.TabIndex = 28
+        '
+        'Button9
+        '
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Image = CType(resources.GetObject("Button9.Image"), System.Drawing.Image)
+        Me.Button9.Location = New System.Drawing.Point(887, 57)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(46, 34)
+        Me.Button9.TabIndex = 27
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(532, 65)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBox5.Size = New System.Drawing.Size(222, 20)
+        Me.TextBox5.TabIndex = 26
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox13.Location = New System.Drawing.Point(1138, 32)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(140, 81)
+        Me.PictureBox13.TabIndex = 34
+        Me.PictureBox13.TabStop = False
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox14.Location = New System.Drawing.Point(52, 32)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(217, 89)
+        Me.PictureBox14.TabIndex = 33
+        Me.PictureBox14.TabStop = False
+        '
+        'ComboBox6
+        '
+        Me.ComboBox6.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox6.IntegralHeight = False
+        Me.ComboBox6.ItemHeight = 13
+        Me.ComboBox6.Items.AddRange(New Object() {"Cursos", "Descuentos", "Estudiantes", "Grupos", "Matricula", "Pagos", "Periodos", "Profesores", "Usuarios"})
+        Me.ComboBox6.Location = New System.Drawing.Point(753, 64)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox6.TabIndex = 32
+        '
+        'Button10
+        '
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Image = CType(resources.GetObject("Button10.Image"), System.Drawing.Image)
+        Me.Button10.Location = New System.Drawing.Point(880, 56)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(46, 34)
+        Me.Button10.TabIndex = 31
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(525, 64)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBox6.Size = New System.Drawing.Size(222, 20)
+        Me.TextBox6.TabIndex = 30
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox15.Location = New System.Drawing.Point(1123, 32)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(140, 81)
+        Me.PictureBox15.TabIndex = 39
+        Me.PictureBox15.TabStop = False
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox16.Location = New System.Drawing.Point(71, 32)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(217, 89)
+        Me.PictureBox16.TabIndex = 38
+        Me.PictureBox16.TabStop = False
+        '
+        'ComboBox7
+        '
+        Me.ComboBox7.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox7.IntegralHeight = False
+        Me.ComboBox7.ItemHeight = 13
+        Me.ComboBox7.Items.AddRange(New Object() {"Cursos", "Descuentos", "Estudiantes", "Grupos", "Matricula", "Pagos", "Periodos", "Profesores", "Usuarios"})
+        Me.ComboBox7.Location = New System.Drawing.Point(738, 64)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox7.TabIndex = 37
+        '
+        'Button11
+        '
+        Me.Button11.FlatAppearance.BorderSize = 0
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Image = CType(resources.GetObject("Button11.Image"), System.Drawing.Image)
+        Me.Button11.Location = New System.Drawing.Point(865, 56)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(46, 34)
+        Me.Button11.TabIndex = 36
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(510, 64)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBox7.Size = New System.Drawing.Size(222, 20)
+        Me.TextBox7.TabIndex = 35
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox17.Location = New System.Drawing.Point(1123, 37)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(140, 81)
+        Me.PictureBox17.TabIndex = 44
+        Me.PictureBox17.TabStop = False
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox18.Location = New System.Drawing.Point(71, 37)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(217, 89)
+        Me.PictureBox18.TabIndex = 43
+        Me.PictureBox18.TabStop = False
+        '
+        'ComboBox8
+        '
+        Me.ComboBox8.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox8.IntegralHeight = False
+        Me.ComboBox8.ItemHeight = 13
+        Me.ComboBox8.Items.AddRange(New Object() {"Cursos", "Descuentos", "Estudiantes", "Grupos", "Matricula", "Pagos", "Periodos", "Profesores", "Usuarios"})
+        Me.ComboBox8.Location = New System.Drawing.Point(738, 69)
+        Me.ComboBox8.Name = "ComboBox8"
+        Me.ComboBox8.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox8.TabIndex = 42
+        '
+        'Button12
+        '
+        Me.Button12.FlatAppearance.BorderSize = 0
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Image = CType(resources.GetObject("Button12.Image"), System.Drawing.Image)
+        Me.Button12.Location = New System.Drawing.Point(865, 61)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(46, 34)
+        Me.Button12.TabIndex = 41
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(510, 69)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBox8.Size = New System.Drawing.Size(222, 20)
+        Me.TextBox8.TabIndex = 40
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox19.Location = New System.Drawing.Point(1125, 30)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(140, 81)
+        Me.PictureBox19.TabIndex = 30
+        Me.PictureBox19.TabStop = False
+        '
+        'PictureBox20
+        '
+        Me.PictureBox20.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox20.Location = New System.Drawing.Point(73, 30)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(217, 89)
+        Me.PictureBox20.TabIndex = 29
+        Me.PictureBox20.TabStop = False
+        '
+        'ComboBox9
+        '
+        Me.ComboBox9.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox9.IntegralHeight = False
+        Me.ComboBox9.ItemHeight = 13
+        Me.ComboBox9.Items.AddRange(New Object() {"Cursos", "Descuentos", "Estudiantes", "Grupos", "Matricula", "Pagos", "Periodos", "Profesores", "Usuarios"})
+        Me.ComboBox9.Location = New System.Drawing.Point(740, 62)
+        Me.ComboBox9.Name = "ComboBox9"
+        Me.ComboBox9.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox9.TabIndex = 28
+        '
+        'Button13
+        '
+        Me.Button13.FlatAppearance.BorderSize = 0
+        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button13.Image = CType(resources.GetObject("Button13.Image"), System.Drawing.Image)
+        Me.Button13.Location = New System.Drawing.Point(867, 54)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(46, 34)
+        Me.Button13.TabIndex = 27
+        Me.Button13.UseVisualStyleBackColor = True
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(512, 62)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBox9.Size = New System.Drawing.Size(222, 20)
+        Me.TextBox9.TabIndex = 26
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ClientSize = New System.Drawing.Size(1350, 729)
+        Me.ClientSize = New System.Drawing.Size(1284, 729)
         Me.Controls.Add(Me.TabControlPrincipal)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
@@ -943,16 +1556,38 @@ Partial Class Form1
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPagePeriodos.ResumeLayout(False)
         Me.TabPagePeriodos.PerformLayout()
+        CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageDescuentos.ResumeLayout(False)
         Me.TabPageDescuentos.PerformLayout()
+        CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPagePagos.ResumeLayout(False)
         Me.TabPagePagos.PerformLayout()
+        CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageProfesores.ResumeLayout(False)
         Me.TabPageProfesores.PerformLayout()
-        CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPageUsuarios.ResumeLayout(False)
+        Me.TabPageUsuarios.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1019,5 +1654,55 @@ Partial Class Form1
     Friend WithEvents ButtonPProfesores As System.Windows.Forms.Button
     Friend WithEvents DataGridView8 As System.Windows.Forms.DataGridView
     Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
+    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox12 As System.Windows.Forms.PictureBox
+    Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox13 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox14 As System.Windows.Forms.PictureBox
+    Friend WithEvents ComboBox6 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button10 As System.Windows.Forms.Button
+    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox15 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox16 As System.Windows.Forms.PictureBox
+    Friend WithEvents ComboBox7 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button11 As System.Windows.Forms.Button
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox18 As System.Windows.Forms.PictureBox
+    Friend WithEvents ComboBox8 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button12 As System.Windows.Forms.Button
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox19 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox20 As System.Windows.Forms.PictureBox
+    Friend WithEvents ComboBox9 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button13 As System.Windows.Forms.Button
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
 
 End Class
