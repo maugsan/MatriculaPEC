@@ -54,4 +54,41 @@
     Private Sub ButtonUsuarios_Click(sender As Object, e As EventArgs) Handles ButtonUsuarios.Click
         TabControlPrincipal.SelectTab(9)
     End Sub
+
+    Private Sub ButtonRegresar_Click(sender As Object, e As EventArgs) Handles ButtonRegresar.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub TabPageMatricula_Click(sender As Object, e As EventArgs) Handles TabPageMatricula.Click
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ButtonAtras.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+
+ 
+
+ 
+
+    Private Sub Button2_Click_2(sender As Object, e As EventArgs) Handles ButtonEAtras.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub ButtonPAtras_Click(sender As Object, e As EventArgs) Handles ButtonPAtras.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub ButtonDAtras_Click(sender As Object, e As EventArgs) Handles ButtonDAtras.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub ButtonPaAtras_Click(sender As Object, e As EventArgs) Handles ButtonPaAtras.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub ButtonPrAtras_Click(sender As Object, e As EventArgs) Handles ButtonPrAtras.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
 End Class
