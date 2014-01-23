@@ -28,8 +28,8 @@ Partial Class Matricula
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,7 +49,7 @@ Partial Class Matricula
         '
         'TextBoxBuscar
         '
-        Me.TextBoxBuscar.Location = New System.Drawing.Point(489, 252)
+        Me.TextBoxBuscar.Location = New System.Drawing.Point(455, 252)
         Me.TextBoxBuscar.Name = "TextBoxBuscar"
         Me.TextBoxBuscar.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.TextBoxBuscar.Size = New System.Drawing.Size(222, 20)
@@ -94,25 +94,23 @@ Partial Class Matricula
         Me.Button3.Text = "Cancelar"
         Me.Button3.UseVisualStyleBackColor = False
         '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(717, 244)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(46, 34)
-        Me.Button1.TabIndex = 5
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(42, 21)
+        Me.PictureBox1.Location = New System.Drawing.Point(33, 21)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(214, 78)
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(683, 250)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "Elegir"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Matricula
         '
@@ -120,11 +118,11 @@ Partial Class Matricula
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(863, 503)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBoxBuscar)
         Me.Controls.Add(Me.ButtonMatricula)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -138,10 +136,10 @@ Partial Class Matricula
 
     End Sub
     Friend WithEvents ButtonMatricula As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBoxBuscar As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

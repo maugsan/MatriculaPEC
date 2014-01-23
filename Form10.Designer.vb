@@ -93,7 +93,7 @@ Partial Class Matricula2
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(42, 183)
+        Me.ComboBox1.Location = New System.Drawing.Point(42, 189)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(173, 21)
         Me.ComboBox1.TabIndex = 13
@@ -101,7 +101,7 @@ Partial Class Matricula2
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(42, 285)
+        Me.ComboBox2.Location = New System.Drawing.Point(42, 291)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(173, 21)
         Me.ComboBox2.TabIndex = 14
@@ -109,7 +109,7 @@ Partial Class Matricula2
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(267, 183)
+        Me.ComboBox3.Location = New System.Drawing.Point(267, 189)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(173, 21)
         Me.ComboBox3.TabIndex = 15
@@ -117,7 +117,7 @@ Partial Class Matricula2
         'ComboBox4
         '
         Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(267, 285)
+        Me.ComboBox4.Location = New System.Drawing.Point(267, 291)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(173, 21)
         Me.ComboBox4.TabIndex = 16
@@ -127,7 +127,7 @@ Partial Class Matricula2
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label1.Location = New System.Drawing.Point(35, 122)
+        Me.Label1.Location = New System.Drawing.Point(35, 128)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(125, 39)
         Me.Label1.TabIndex = 17
@@ -138,7 +138,7 @@ Partial Class Matricula2
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label2.Location = New System.Drawing.Point(35, 226)
+        Me.Label2.Location = New System.Drawing.Point(35, 232)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(128, 39)
         Me.Label2.TabIndex = 18
@@ -149,7 +149,7 @@ Partial Class Matricula2
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label3.Location = New System.Drawing.Point(260, 122)
+        Me.Label3.Location = New System.Drawing.Point(260, 128)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(132, 39)
         Me.Label3.TabIndex = 19
@@ -160,7 +160,7 @@ Partial Class Matricula2
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label4.Location = New System.Drawing.Point(260, 226)
+        Me.Label4.Location = New System.Drawing.Point(260, 232)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(197, 39)
         Me.Label4.TabIndex = 20

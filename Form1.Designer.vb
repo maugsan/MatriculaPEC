@@ -22,9 +22,16 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControlPrincipal = New System.Windows.Forms.TabControl()
         Me.TabPageMenu = New System.Windows.Forms.TabPage()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBoxOpciones = New System.Windows.Forms.ComboBox()
         Me.ButtonUsuarios = New System.Windows.Forms.Button()
         Me.ButtonDescuentos = New System.Windows.Forms.Button()
@@ -34,147 +41,155 @@ Partial Class Form1
         Me.ButtonEstudintes = New System.Windows.Forms.Button()
         Me.ButtonGrupos = New System.Windows.Forms.Button()
         Me.ButtonCursos = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBoxBuscar = New System.Windows.Forms.TextBox()
         Me.ButtonMatricula = New System.Windows.Forms.Button()
         Me.TabPageMatricula = New System.Windows.Forms.TabPage()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ButtonMMatricula = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TabPageCursos = New System.Windows.Forms.TabPage()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.ButtonCCursos = New System.Windows.Forms.Button()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TabPageGrupos = New System.Windows.Forms.TabPage()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.ButtonGGrupos = New System.Windows.Forms.Button()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TabPageEstudiante = New System.Windows.Forms.TabPage()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.ButtonEEstudiantes = New System.Windows.Forms.Button()
-        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TabPagePeriodos = New System.Windows.Forms.TabPage()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.ButtonPPeriodos = New System.Windows.Forms.Button()
-        Me.DataGridView5 = New System.Windows.Forms.DataGridView()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.TabPageDescuentos = New System.Windows.Forms.TabPage()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.ButtonDDescuentos = New System.Windows.Forms.Button()
-        Me.DataGridView6 = New System.Windows.Forms.DataGridView()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.TabPagePagos = New System.Windows.Forms.TabPage()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.ButtonPPagos = New System.Windows.Forms.Button()
-        Me.DataGridView7 = New System.Windows.Forms.DataGridView()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.TabPageProfesores = New System.Windows.Forms.TabPage()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.ButtonPProfesores = New System.Windows.Forms.Button()
-        Me.DataGridView8 = New System.Windows.Forms.DataGridView()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.TabPageUsuarios = New System.Windows.Forms.TabPage()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ButtonRegresar = New System.Windows.Forms.Button()
-        Me.ButtonAtras = New System.Windows.Forms.Button()
-        Me.ButtonGAtras = New System.Windows.Forms.Button()
-        Me.ButtonEAtras = New System.Windows.Forms.Button()
-        Me.ButtonPAtras = New System.Windows.Forms.Button()
-        Me.ButtonDAtras = New System.Windows.Forms.Button()
-        Me.ButtonPaAtras = New System.Windows.Forms.Button()
-        Me.ButtonPrAtras = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ButtonMMatricula = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ButtonRegresar = New System.Windows.Forms.Button()
+        Me.TabPageCursos = New System.Windows.Forms.TabPage()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ButtonCCursos = New System.Windows.Forms.Button()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.ButtonAtras = New System.Windows.Forms.Button()
+        Me.TabPageGrupos = New System.Windows.Forms.TabPage()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.ButtonGGrupos = New System.Windows.Forms.Button()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.ButtonGAtras = New System.Windows.Forms.Button()
+        Me.TabPageEstudiante = New System.Windows.Forms.TabPage()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.ButtonEEstudiantes = New System.Windows.Forms.Button()
+        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
+        Me.CedulaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TelefonoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EliminarEstudiantes = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.AlumnosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MatriculaPECDataSet = New MatriculaPEC.MatriculaPECDataSet()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.ButtonEAtras = New System.Windows.Forms.Button()
+        Me.TabPagePeriodos = New System.Windows.Forms.TabPage()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.ButtonPPeriodos = New System.Windows.Forms.Button()
+        Me.DataGridView5 = New System.Windows.Forms.DataGridView()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.ButtonPAtras = New System.Windows.Forms.Button()
+        Me.TabPageDescuentos = New System.Windows.Forms.TabPage()
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.ButtonDDescuentos = New System.Windows.Forms.Button()
+        Me.DataGridView6 = New System.Windows.Forms.DataGridView()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.ButtonDAtras = New System.Windows.Forms.Button()
+        Me.TabPagePagos = New System.Windows.Forms.TabPage()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.ButtonPPagos = New System.Windows.Forms.Button()
+        Me.DataGridView7 = New System.Windows.Forms.DataGridView()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.ButtonPaAtras = New System.Windows.Forms.Button()
+        Me.TabPageProfesores = New System.Windows.Forms.TabPage()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.ComboBox8 = New System.Windows.Forms.ComboBox()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.ButtonPProfesores = New System.Windows.Forms.Button()
+        Me.DataGridView8 = New System.Windows.Forms.DataGridView()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.ButtonPrAtras = New System.Windows.Forms.Button()
+        Me.TabPageUsuarios = New System.Windows.Forms.TabPage()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.PictureBox20 = New System.Windows.Forms.PictureBox()
         Me.ComboBox9 = New System.Windows.Forms.ComboBox()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.MatriculaPECDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.AlumnosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
         Me.TabControlPrincipal.SuspendLayout()
         Me.TabPageMenu.SuspendLayout()
-        Me.TabPageMatricula.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageCursos.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageGrupos.SuspendLayout()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageEstudiante.SuspendLayout()
-        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPagePeriodos.SuspendLayout()
-        CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageDescuentos.SuspendLayout()
-        CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPagePagos.SuspendLayout()
-        CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageProfesores.SuspendLayout()
-        CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageUsuarios.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageMatricula.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageCursos.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageGrupos.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageEstudiante.SuspendLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AlumnosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPagePeriodos.SuspendLayout()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageDescuentos.SuspendLayout()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPagePagos.SuspendLayout()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageProfesores.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageUsuarios.SuspendLayout()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MatriculaPECDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControlPrincipal
@@ -225,6 +240,66 @@ Partial Class Form1
         Me.TabPageMenu.Size = New System.Drawing.Size(1358, 740)
         Me.TabPageMenu.TabIndex = 0
         Me.TabPageMenu.Text = "Menu"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox2.Location = New System.Drawing.Point(1095, 44)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(140, 81)
+        Me.PictureBox2.TabIndex = 25
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox1.Location = New System.Drawing.Point(43, 44)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(217, 89)
+        Me.PictureBox1.TabIndex = 24
+        Me.PictureBox1.TabStop = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button4.Location = New System.Drawing.Point(909, 536)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(221, 77)
+        Me.Button4.TabIndex = 23
+        Me.Button4.Text = "Listas"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button3.Location = New System.Drawing.Point(603, 536)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(221, 77)
+        Me.Button3.TabIndex = 22
+        Me.Button3.Text = "Medios"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Location = New System.Drawing.Point(288, 536)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(221, 77)
+        Me.Button2.TabIndex = 21
+        Me.Button2.Text = "Formas"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'ComboBoxOpciones
         '
@@ -349,6 +424,17 @@ Partial Class Form1
         Me.ButtonCursos.Text = "Cursos"
         Me.ButtonCursos.UseVisualStyleBackColor = False
         '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(837, 68)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(46, 34)
+        Me.Button1.TabIndex = 3
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'TextBoxBuscar
         '
         Me.TextBoxBuscar.Location = New System.Drawing.Point(482, 76)
@@ -391,710 +477,6 @@ Partial Class Form1
         Me.TabPageMatricula.Size = New System.Drawing.Size(1358, 740)
         Me.TabPageMatricula.TabIndex = 1
         Me.TabPageMatricula.Text = "Matricula"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label2.Location = New System.Drawing.Point(253, 202)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(111, 39)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Menu/"
-        '
-        'ButtonMMatricula
-        '
-        Me.ButtonMMatricula.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonMMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonMMatricula.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonMMatricula.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonMMatricula.Location = New System.Drawing.Point(966, 202)
-        Me.ButtonMMatricula.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonMMatricula.Name = "ButtonMMatricula"
-        Me.ButtonMMatricula.Size = New System.Drawing.Size(221, 77)
-        Me.ButtonMMatricula.TabIndex = 2
-        Me.ButtonMMatricula.Text = "Matricular"
-        Me.ButtonMMatricula.UseVisualStyleBackColor = False
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(394, 296)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(793, 274)
-        Me.DataGridView1.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label1.Location = New System.Drawing.Point(370, 202)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(155, 39)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Matricula"
-        '
-        'TabPageCursos
-        '
-        Me.TabPageCursos.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TabPageCursos.Controls.Add(Me.PictureBox5)
-        Me.TabPageCursos.Controls.Add(Me.PictureBox6)
-        Me.TabPageCursos.Controls.Add(Me.ComboBox2)
-        Me.TabPageCursos.Controls.Add(Me.Button6)
-        Me.TabPageCursos.Controls.Add(Me.TextBox2)
-        Me.TabPageCursos.Controls.Add(Me.Label3)
-        Me.TabPageCursos.Controls.Add(Me.ButtonCCursos)
-        Me.TabPageCursos.Controls.Add(Me.DataGridView2)
-        Me.TabPageCursos.Controls.Add(Me.Label4)
-        Me.TabPageCursos.Controls.Add(Me.ButtonAtras)
-        Me.TabPageCursos.Location = New System.Drawing.Point(4, 24)
-        Me.TabPageCursos.Name = "TabPageCursos"
-        Me.TabPageCursos.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageCursos.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPageCursos.TabIndex = 2
-        Me.TabPageCursos.Text = "Cursos"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label3.Location = New System.Drawing.Point(281, 199)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(111, 39)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "Menu/"
-        '
-        'ButtonCCursos
-        '
-        Me.ButtonCCursos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonCCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonCCursos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonCCursos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonCCursos.Location = New System.Drawing.Point(994, 199)
-        Me.ButtonCCursos.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonCCursos.Name = "ButtonCCursos"
-        Me.ButtonCCursos.Size = New System.Drawing.Size(221, 77)
-        Me.ButtonCCursos.TabIndex = 7
-        Me.ButtonCCursos.Text = "Cursos"
-        Me.ButtonCCursos.UseVisualStyleBackColor = False
-        '
-        'DataGridView2
-        '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(422, 293)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(793, 274)
-        Me.DataGridView2.TabIndex = 6
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label4.Location = New System.Drawing.Point(398, 199)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(125, 39)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Cursos"
-        '
-        'TabPageGrupos
-        '
-        Me.TabPageGrupos.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TabPageGrupos.Controls.Add(Me.PictureBox7)
-        Me.TabPageGrupos.Controls.Add(Me.PictureBox8)
-        Me.TabPageGrupos.Controls.Add(Me.ComboBox3)
-        Me.TabPageGrupos.Controls.Add(Me.Button7)
-        Me.TabPageGrupos.Controls.Add(Me.TextBox3)
-        Me.TabPageGrupos.Controls.Add(Me.Label5)
-        Me.TabPageGrupos.Controls.Add(Me.ButtonGGrupos)
-        Me.TabPageGrupos.Controls.Add(Me.DataGridView3)
-        Me.TabPageGrupos.Controls.Add(Me.Label6)
-        Me.TabPageGrupos.Controls.Add(Me.ButtonGAtras)
-        Me.TabPageGrupos.Location = New System.Drawing.Point(4, 24)
-        Me.TabPageGrupos.Name = "TabPageGrupos"
-        Me.TabPageGrupos.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageGrupos.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPageGrupos.TabIndex = 3
-        Me.TabPageGrupos.Text = "Grupos"
-        '
-        'Label5
-        '
-        Me.Label5.AllowDrop = True
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label5.Location = New System.Drawing.Point(281, 199)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(111, 39)
-        Me.Label5.TabIndex = 14
-        Me.Label5.Text = "Menu/"
-        '
-        'ButtonGGrupos
-        '
-        Me.ButtonGGrupos.AllowDrop = True
-        Me.ButtonGGrupos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonGGrupos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonGGrupos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonGGrupos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonGGrupos.Location = New System.Drawing.Point(994, 199)
-        Me.ButtonGGrupos.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonGGrupos.Name = "ButtonGGrupos"
-        Me.ButtonGGrupos.Size = New System.Drawing.Size(221, 77)
-        Me.ButtonGGrupos.TabIndex = 12
-        Me.ButtonGGrupos.Text = "Grupos"
-        Me.ButtonGGrupos.UseVisualStyleBackColor = False
-        '
-        'DataGridView3
-        '
-        Me.DataGridView3.AllowDrop = True
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Location = New System.Drawing.Point(422, 293)
-        Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.Size = New System.Drawing.Size(793, 274)
-        Me.DataGridView3.TabIndex = 11
-        '
-        'Label6
-        '
-        Me.Label6.AllowDrop = True
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label6.Location = New System.Drawing.Point(398, 199)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(128, 39)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Grupos"
-        '
-        'TabPageEstudiante
-        '
-        Me.TabPageEstudiante.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TabPageEstudiante.Controls.Add(Me.PictureBox9)
-        Me.TabPageEstudiante.Controls.Add(Me.PictureBox10)
-        Me.TabPageEstudiante.Controls.Add(Me.ComboBox4)
-        Me.TabPageEstudiante.Controls.Add(Me.Button8)
-        Me.TabPageEstudiante.Controls.Add(Me.TextBox4)
-        Me.TabPageEstudiante.Controls.Add(Me.Label7)
-        Me.TabPageEstudiante.Controls.Add(Me.ButtonEEstudiantes)
-        Me.TabPageEstudiante.Controls.Add(Me.DataGridView4)
-        Me.TabPageEstudiante.Controls.Add(Me.Label8)
-        Me.TabPageEstudiante.Controls.Add(Me.ButtonEAtras)
-        Me.TabPageEstudiante.Location = New System.Drawing.Point(4, 24)
-        Me.TabPageEstudiante.Name = "TabPageEstudiante"
-        Me.TabPageEstudiante.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageEstudiante.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPageEstudiante.TabIndex = 4
-        Me.TabPageEstudiante.Text = "Estudiante"
-        '
-        'Label7
-        '
-        Me.Label7.AllowDrop = True
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label7.Location = New System.Drawing.Point(281, 199)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(111, 39)
-        Me.Label7.TabIndex = 19
-        Me.Label7.Text = "Menu/"
-        '
-        'ButtonEEstudiantes
-        '
-        Me.ButtonEEstudiantes.AllowDrop = True
-        Me.ButtonEEstudiantes.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonEEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEEstudiantes.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEEstudiantes.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonEEstudiantes.Location = New System.Drawing.Point(994, 199)
-        Me.ButtonEEstudiantes.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonEEstudiantes.Name = "ButtonEEstudiantes"
-        Me.ButtonEEstudiantes.Size = New System.Drawing.Size(221, 77)
-        Me.ButtonEEstudiantes.TabIndex = 17
-        Me.ButtonEEstudiantes.Text = "Estudiantes"
-        Me.ButtonEEstudiantes.UseVisualStyleBackColor = False
-        '
-        'DataGridView4
-        '
-        Me.DataGridView4.AllowDrop = True
-        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView4.Location = New System.Drawing.Point(422, 293)
-        Me.DataGridView4.Name = "DataGridView4"
-        Me.DataGridView4.Size = New System.Drawing.Size(793, 274)
-        Me.DataGridView4.TabIndex = 16
-        '
-        'Label8
-        '
-        Me.Label8.AllowDrop = True
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label8.Location = New System.Drawing.Point(398, 199)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(195, 39)
-        Me.Label8.TabIndex = 15
-        Me.Label8.Text = "Estudiantes"
-        '
-        'TabPagePeriodos
-        '
-        Me.TabPagePeriodos.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TabPagePeriodos.Controls.Add(Me.PictureBox11)
-        Me.TabPagePeriodos.Controls.Add(Me.PictureBox12)
-        Me.TabPagePeriodos.Controls.Add(Me.ComboBox5)
-        Me.TabPagePeriodos.Controls.Add(Me.Button9)
-        Me.TabPagePeriodos.Controls.Add(Me.TextBox5)
-        Me.TabPagePeriodos.Controls.Add(Me.Label9)
-        Me.TabPagePeriodos.Controls.Add(Me.ButtonPPeriodos)
-        Me.TabPagePeriodos.Controls.Add(Me.DataGridView5)
-        Me.TabPagePeriodos.Controls.Add(Me.Label10)
-        Me.TabPagePeriodos.Controls.Add(Me.ButtonPAtras)
-        Me.TabPagePeriodos.Location = New System.Drawing.Point(4, 24)
-        Me.TabPagePeriodos.Name = "TabPagePeriodos"
-        Me.TabPagePeriodos.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPagePeriodos.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPagePeriodos.TabIndex = 5
-        Me.TabPagePeriodos.Text = "Periodos"
-        '
-        'Label9
-        '
-        Me.Label9.AllowDrop = True
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label9.Location = New System.Drawing.Point(281, 199)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(111, 39)
-        Me.Label9.TabIndex = 24
-        Me.Label9.Text = "Menu/"
-        '
-        'ButtonPPeriodos
-        '
-        Me.ButtonPPeriodos.AllowDrop = True
-        Me.ButtonPPeriodos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonPPeriodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPPeriodos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonPPeriodos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonPPeriodos.Location = New System.Drawing.Point(994, 199)
-        Me.ButtonPPeriodos.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPPeriodos.Name = "ButtonPPeriodos"
-        Me.ButtonPPeriodos.Size = New System.Drawing.Size(221, 77)
-        Me.ButtonPPeriodos.TabIndex = 22
-        Me.ButtonPPeriodos.Text = "Periodos"
-        Me.ButtonPPeriodos.UseVisualStyleBackColor = False
-        '
-        'DataGridView5
-        '
-        Me.DataGridView5.AllowDrop = True
-        Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView5.Location = New System.Drawing.Point(422, 293)
-        Me.DataGridView5.Name = "DataGridView5"
-        Me.DataGridView5.Size = New System.Drawing.Size(793, 274)
-        Me.DataGridView5.TabIndex = 21
-        '
-        'Label10
-        '
-        Me.Label10.AllowDrop = True
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label10.Location = New System.Drawing.Point(398, 199)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(152, 39)
-        Me.Label10.TabIndex = 20
-        Me.Label10.Text = "Periodos"
-        '
-        'TabPageDescuentos
-        '
-        Me.TabPageDescuentos.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TabPageDescuentos.Controls.Add(Me.PictureBox13)
-        Me.TabPageDescuentos.Controls.Add(Me.PictureBox14)
-        Me.TabPageDescuentos.Controls.Add(Me.ComboBox6)
-        Me.TabPageDescuentos.Controls.Add(Me.Button10)
-        Me.TabPageDescuentos.Controls.Add(Me.TextBox6)
-        Me.TabPageDescuentos.Controls.Add(Me.Label11)
-        Me.TabPageDescuentos.Controls.Add(Me.ButtonDDescuentos)
-        Me.TabPageDescuentos.Controls.Add(Me.DataGridView6)
-        Me.TabPageDescuentos.Controls.Add(Me.Label12)
-        Me.TabPageDescuentos.Controls.Add(Me.ButtonDAtras)
-        Me.TabPageDescuentos.Location = New System.Drawing.Point(4, 24)
-        Me.TabPageDescuentos.Name = "TabPageDescuentos"
-        Me.TabPageDescuentos.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageDescuentos.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPageDescuentos.TabIndex = 6
-        Me.TabPageDescuentos.Text = "Descuentos"
-        '
-        'Label11
-        '
-        Me.Label11.AllowDrop = True
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label11.Location = New System.Drawing.Point(281, 199)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(111, 39)
-        Me.Label11.TabIndex = 29
-        Me.Label11.Text = "Menu/"
-        '
-        'ButtonDDescuentos
-        '
-        Me.ButtonDDescuentos.AllowDrop = True
-        Me.ButtonDDescuentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonDDescuentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonDDescuentos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonDDescuentos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonDDescuentos.Location = New System.Drawing.Point(994, 199)
-        Me.ButtonDDescuentos.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonDDescuentos.Name = "ButtonDDescuentos"
-        Me.ButtonDDescuentos.Size = New System.Drawing.Size(221, 77)
-        Me.ButtonDDescuentos.TabIndex = 27
-        Me.ButtonDDescuentos.Text = "Descuentos"
-        Me.ButtonDDescuentos.UseVisualStyleBackColor = False
-        '
-        'DataGridView6
-        '
-        Me.DataGridView6.AllowDrop = True
-        Me.DataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView6.Location = New System.Drawing.Point(422, 293)
-        Me.DataGridView6.Name = "DataGridView6"
-        Me.DataGridView6.Size = New System.Drawing.Size(793, 274)
-        Me.DataGridView6.TabIndex = 26
-        '
-        'Label12
-        '
-        Me.Label12.AllowDrop = True
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label12.Location = New System.Drawing.Point(398, 199)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(197, 39)
-        Me.Label12.TabIndex = 25
-        Me.Label12.Text = "Descuentos"
-        '
-        'TabPagePagos
-        '
-        Me.TabPagePagos.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TabPagePagos.Controls.Add(Me.PictureBox15)
-        Me.TabPagePagos.Controls.Add(Me.PictureBox16)
-        Me.TabPagePagos.Controls.Add(Me.ComboBox7)
-        Me.TabPagePagos.Controls.Add(Me.Button11)
-        Me.TabPagePagos.Controls.Add(Me.TextBox7)
-        Me.TabPagePagos.Controls.Add(Me.Label13)
-        Me.TabPagePagos.Controls.Add(Me.ButtonPPagos)
-        Me.TabPagePagos.Controls.Add(Me.DataGridView7)
-        Me.TabPagePagos.Controls.Add(Me.Label14)
-        Me.TabPagePagos.Controls.Add(Me.ButtonPaAtras)
-        Me.TabPagePagos.Location = New System.Drawing.Point(4, 24)
-        Me.TabPagePagos.Name = "TabPagePagos"
-        Me.TabPagePagos.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPagePagos.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPagePagos.TabIndex = 7
-        Me.TabPagePagos.Text = "Pagos"
-        '
-        'Label13
-        '
-        Me.Label13.AllowDrop = True
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label13.Location = New System.Drawing.Point(281, 199)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(111, 39)
-        Me.Label13.TabIndex = 34
-        Me.Label13.Text = "Menu/"
-        '
-        'ButtonPPagos
-        '
-        Me.ButtonPPagos.AllowDrop = True
-        Me.ButtonPPagos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonPPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPPagos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonPPagos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonPPagos.Location = New System.Drawing.Point(994, 199)
-        Me.ButtonPPagos.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPPagos.Name = "ButtonPPagos"
-        Me.ButtonPPagos.Size = New System.Drawing.Size(221, 77)
-        Me.ButtonPPagos.TabIndex = 32
-        Me.ButtonPPagos.Text = "Pagos"
-        Me.ButtonPPagos.UseVisualStyleBackColor = False
-        '
-        'DataGridView7
-        '
-        Me.DataGridView7.AllowDrop = True
-        Me.DataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView7.Location = New System.Drawing.Point(422, 293)
-        Me.DataGridView7.Name = "DataGridView7"
-        Me.DataGridView7.Size = New System.Drawing.Size(793, 274)
-        Me.DataGridView7.TabIndex = 31
-        '
-        'Label14
-        '
-        Me.Label14.AllowDrop = True
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label14.Location = New System.Drawing.Point(398, 199)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(114, 39)
-        Me.Label14.TabIndex = 30
-        Me.Label14.Text = "Pagos"
-        '
-        'TabPageProfesores
-        '
-        Me.TabPageProfesores.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TabPageProfesores.Controls.Add(Me.PictureBox17)
-        Me.TabPageProfesores.Controls.Add(Me.PictureBox18)
-        Me.TabPageProfesores.Controls.Add(Me.ComboBox8)
-        Me.TabPageProfesores.Controls.Add(Me.Button12)
-        Me.TabPageProfesores.Controls.Add(Me.TextBox8)
-        Me.TabPageProfesores.Controls.Add(Me.Label15)
-        Me.TabPageProfesores.Controls.Add(Me.ButtonPProfesores)
-        Me.TabPageProfesores.Controls.Add(Me.DataGridView8)
-        Me.TabPageProfesores.Controls.Add(Me.Label16)
-        Me.TabPageProfesores.Controls.Add(Me.ButtonPrAtras)
-        Me.TabPageProfesores.Location = New System.Drawing.Point(4, 24)
-        Me.TabPageProfesores.Name = "TabPageProfesores"
-        Me.TabPageProfesores.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageProfesores.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPageProfesores.TabIndex = 8
-        Me.TabPageProfesores.Text = "Profesores"
-        '
-        'Label15
-        '
-        Me.Label15.AllowDrop = True
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label15.Location = New System.Drawing.Point(281, 199)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(111, 39)
-        Me.Label15.TabIndex = 39
-        Me.Label15.Text = "Menu/"
-        '
-        'ButtonPProfesores
-        '
-        Me.ButtonPProfesores.AllowDrop = True
-        Me.ButtonPProfesores.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonPProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPProfesores.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonPProfesores.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonPProfesores.Location = New System.Drawing.Point(994, 199)
-        Me.ButtonPProfesores.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPProfesores.Name = "ButtonPProfesores"
-        Me.ButtonPProfesores.Size = New System.Drawing.Size(221, 77)
-        Me.ButtonPProfesores.TabIndex = 37
-        Me.ButtonPProfesores.Text = "Profesores"
-        Me.ButtonPProfesores.UseVisualStyleBackColor = False
-        '
-        'DataGridView8
-        '
-        Me.DataGridView8.AllowDrop = True
-        Me.DataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView8.Location = New System.Drawing.Point(422, 293)
-        Me.DataGridView8.Name = "DataGridView8"
-        Me.DataGridView8.Size = New System.Drawing.Size(793, 274)
-        Me.DataGridView8.TabIndex = 36
-        '
-        'Label16
-        '
-        Me.Label16.AllowDrop = True
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label16.Location = New System.Drawing.Point(398, 199)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(181, 39)
-        Me.Label16.TabIndex = 35
-        Me.Label16.Text = "Profesores"
-        '
-        'TabPageUsuarios
-        '
-        Me.TabPageUsuarios.Controls.Add(Me.PictureBox19)
-        Me.TabPageUsuarios.Controls.Add(Me.PictureBox20)
-        Me.TabPageUsuarios.Controls.Add(Me.ComboBox9)
-        Me.TabPageUsuarios.Controls.Add(Me.Button13)
-        Me.TabPageUsuarios.Controls.Add(Me.TextBox9)
-        Me.TabPageUsuarios.Location = New System.Drawing.Point(4, 24)
-        Me.TabPageUsuarios.Name = "TabPageUsuarios"
-        Me.TabPageUsuarios.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageUsuarios.Size = New System.Drawing.Size(1358, 740)
-        Me.TabPageUsuarios.TabIndex = 9
-        Me.TabPageUsuarios.Text = "Usuarios"
-        Me.TabPageUsuarios.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(288, 536)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(221, 77)
-        Me.Button2.TabIndex = 21
-        Me.Button2.Text = "Formas"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Location = New System.Drawing.Point(603, 536)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(221, 77)
-        Me.Button3.TabIndex = 22
-        Me.Button3.Text = "Medios"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button4.Location = New System.Drawing.Point(909, 536)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(221, 77)
-        Me.Button4.TabIndex = 23
-        Me.Button4.Text = "Listas"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox2.Location = New System.Drawing.Point(1095, 44)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(140, 81)
-        Me.PictureBox2.TabIndex = 25
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox1.Location = New System.Drawing.Point(43, 44)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(217, 89)
-        Me.PictureBox1.TabIndex = 24
-        Me.PictureBox1.TabStop = False
-        '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(837, 68)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(46, 34)
-        Me.Button1.TabIndex = 3
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'ButtonRegresar
-        '
-        Me.ButtonRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonRegresar.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonRegresar.Image = CType(resources.GetObject("ButtonRegresar.Image"), System.Drawing.Image)
-        Me.ButtonRegresar.Location = New System.Drawing.Point(115, 177)
-        Me.ButtonRegresar.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonRegresar.Name = "ButtonRegresar"
-        Me.ButtonRegresar.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonRegresar.TabIndex = 3
-        Me.ButtonRegresar.UseVisualStyleBackColor = True
-        '
-        'ButtonAtras
-        '
-        Me.ButtonAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonAtras.Image = CType(resources.GetObject("ButtonAtras.Image"), System.Drawing.Image)
-        Me.ButtonAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonAtras.Name = "ButtonAtras"
-        Me.ButtonAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonAtras.TabIndex = 8
-        Me.ButtonAtras.UseVisualStyleBackColor = True
-        '
-        'ButtonGAtras
-        '
-        Me.ButtonGAtras.AllowDrop = True
-        Me.ButtonGAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonGAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonGAtras.Image = CType(resources.GetObject("ButtonGAtras.Image"), System.Drawing.Image)
-        Me.ButtonGAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonGAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonGAtras.Name = "ButtonGAtras"
-        Me.ButtonGAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonGAtras.TabIndex = 13
-        Me.ButtonGAtras.UseVisualStyleBackColor = True
-        '
-        'ButtonEAtras
-        '
-        Me.ButtonEAtras.AllowDrop = True
-        Me.ButtonEAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonEAtras.Image = CType(resources.GetObject("ButtonEAtras.Image"), System.Drawing.Image)
-        Me.ButtonEAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonEAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonEAtras.Name = "ButtonEAtras"
-        Me.ButtonEAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonEAtras.TabIndex = 18
-        Me.ButtonEAtras.UseVisualStyleBackColor = True
-        '
-        'ButtonPAtras
-        '
-        Me.ButtonPAtras.AllowDrop = True
-        Me.ButtonPAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonPAtras.Image = CType(resources.GetObject("ButtonPAtras.Image"), System.Drawing.Image)
-        Me.ButtonPAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonPAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPAtras.Name = "ButtonPAtras"
-        Me.ButtonPAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonPAtras.TabIndex = 23
-        Me.ButtonPAtras.UseVisualStyleBackColor = True
-        '
-        'ButtonDAtras
-        '
-        Me.ButtonDAtras.AllowDrop = True
-        Me.ButtonDAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonDAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonDAtras.Image = CType(resources.GetObject("ButtonDAtras.Image"), System.Drawing.Image)
-        Me.ButtonDAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonDAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonDAtras.Name = "ButtonDAtras"
-        Me.ButtonDAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonDAtras.TabIndex = 28
-        Me.ButtonDAtras.UseVisualStyleBackColor = True
-        '
-        'ButtonPaAtras
-        '
-        Me.ButtonPaAtras.AllowDrop = True
-        Me.ButtonPaAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPaAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonPaAtras.Image = CType(resources.GetObject("ButtonPaAtras.Image"), System.Drawing.Image)
-        Me.ButtonPaAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonPaAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPaAtras.Name = "ButtonPaAtras"
-        Me.ButtonPaAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonPaAtras.TabIndex = 33
-        Me.ButtonPaAtras.UseVisualStyleBackColor = True
-        '
-        'ButtonPrAtras
-        '
-        Me.ButtonPrAtras.AllowDrop = True
-        Me.ButtonPrAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPrAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonPrAtras.Image = CType(resources.GetObject("ButtonPrAtras.Image"), System.Drawing.Image)
-        Me.ButtonPrAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonPrAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPrAtras.Name = "ButtonPrAtras"
-        Me.ButtonPrAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonPrAtras.TabIndex = 38
-        Me.ButtonPrAtras.UseVisualStyleBackColor = True
         '
         'PictureBox3
         '
@@ -1144,6 +526,82 @@ Partial Class Form1
         Me.TextBox1.Size = New System.Drawing.Size(222, 20)
         Me.TextBox1.TabIndex = 26
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.LightSkyBlue
+        Me.Label2.Location = New System.Drawing.Point(253, 202)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(111, 39)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Menu/"
+        '
+        'ButtonMMatricula
+        '
+        Me.ButtonMMatricula.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonMMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonMMatricula.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonMMatricula.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ButtonMMatricula.Location = New System.Drawing.Point(966, 202)
+        Me.ButtonMMatricula.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonMMatricula.Name = "ButtonMMatricula"
+        Me.ButtonMMatricula.Size = New System.Drawing.Size(221, 77)
+        Me.ButtonMMatricula.TabIndex = 2
+        Me.ButtonMMatricula.Text = "Matricular"
+        Me.ButtonMMatricula.UseVisualStyleBackColor = False
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(394, 296)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(793, 274)
+        Me.DataGridView1.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label1.Location = New System.Drawing.Point(370, 202)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(155, 39)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Matricula"
+        '
+        'ButtonRegresar
+        '
+        Me.ButtonRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonRegresar.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonRegresar.Image = CType(resources.GetObject("ButtonRegresar.Image"), System.Drawing.Image)
+        Me.ButtonRegresar.Location = New System.Drawing.Point(115, 177)
+        Me.ButtonRegresar.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonRegresar.Name = "ButtonRegresar"
+        Me.ButtonRegresar.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonRegresar.TabIndex = 3
+        Me.ButtonRegresar.UseVisualStyleBackColor = True
+        '
+        'TabPageCursos
+        '
+        Me.TabPageCursos.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageCursos.Controls.Add(Me.PictureBox5)
+        Me.TabPageCursos.Controls.Add(Me.PictureBox6)
+        Me.TabPageCursos.Controls.Add(Me.ComboBox2)
+        Me.TabPageCursos.Controls.Add(Me.Button6)
+        Me.TabPageCursos.Controls.Add(Me.TextBox2)
+        Me.TabPageCursos.Controls.Add(Me.Label3)
+        Me.TabPageCursos.Controls.Add(Me.ButtonCCursos)
+        Me.TabPageCursos.Controls.Add(Me.DataGridView2)
+        Me.TabPageCursos.Controls.Add(Me.Label4)
+        Me.TabPageCursos.Controls.Add(Me.ButtonAtras)
+        Me.TabPageCursos.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageCursos.Name = "TabPageCursos"
+        Me.TabPageCursos.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageCursos.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPageCursos.TabIndex = 2
+        Me.TabPageCursos.Text = "Cursos"
+        '
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.MatriculaPEC.My.Resources.Resources.ec
@@ -1191,6 +649,82 @@ Partial Class Form1
         Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.TextBox2.Size = New System.Drawing.Size(222, 20)
         Me.TextBox2.TabIndex = 26
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.LightSkyBlue
+        Me.Label3.Location = New System.Drawing.Point(281, 199)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(111, 39)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "Menu/"
+        '
+        'ButtonCCursos
+        '
+        Me.ButtonCCursos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonCCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonCCursos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonCCursos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ButtonCCursos.Location = New System.Drawing.Point(994, 199)
+        Me.ButtonCCursos.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonCCursos.Name = "ButtonCCursos"
+        Me.ButtonCCursos.Size = New System.Drawing.Size(221, 77)
+        Me.ButtonCCursos.TabIndex = 7
+        Me.ButtonCCursos.Text = "Cursos"
+        Me.ButtonCCursos.UseVisualStyleBackColor = False
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(422, 293)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(793, 274)
+        Me.DataGridView2.TabIndex = 6
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label4.Location = New System.Drawing.Point(398, 199)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(125, 39)
+        Me.Label4.TabIndex = 5
+        Me.Label4.Text = "Cursos"
+        '
+        'ButtonAtras
+        '
+        Me.ButtonAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonAtras.Image = CType(resources.GetObject("ButtonAtras.Image"), System.Drawing.Image)
+        Me.ButtonAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonAtras.Name = "ButtonAtras"
+        Me.ButtonAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonAtras.TabIndex = 8
+        Me.ButtonAtras.UseVisualStyleBackColor = True
+        '
+        'TabPageGrupos
+        '
+        Me.TabPageGrupos.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageGrupos.Controls.Add(Me.PictureBox7)
+        Me.TabPageGrupos.Controls.Add(Me.PictureBox8)
+        Me.TabPageGrupos.Controls.Add(Me.ComboBox3)
+        Me.TabPageGrupos.Controls.Add(Me.Button7)
+        Me.TabPageGrupos.Controls.Add(Me.TextBox3)
+        Me.TabPageGrupos.Controls.Add(Me.Label5)
+        Me.TabPageGrupos.Controls.Add(Me.ButtonGGrupos)
+        Me.TabPageGrupos.Controls.Add(Me.DataGridView3)
+        Me.TabPageGrupos.Controls.Add(Me.Label6)
+        Me.TabPageGrupos.Controls.Add(Me.ButtonGAtras)
+        Me.TabPageGrupos.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageGrupos.Name = "TabPageGrupos"
+        Me.TabPageGrupos.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageGrupos.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPageGrupos.TabIndex = 3
+        Me.TabPageGrupos.Text = "Grupos"
         '
         'PictureBox7
         '
@@ -1240,6 +774,87 @@ Partial Class Form1
         Me.TextBox3.Size = New System.Drawing.Size(222, 20)
         Me.TextBox3.TabIndex = 26
         '
+        'Label5
+        '
+        Me.Label5.AllowDrop = True
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.LightSkyBlue
+        Me.Label5.Location = New System.Drawing.Point(281, 199)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(111, 39)
+        Me.Label5.TabIndex = 14
+        Me.Label5.Text = "Menu/"
+        '
+        'ButtonGGrupos
+        '
+        Me.ButtonGGrupos.AllowDrop = True
+        Me.ButtonGGrupos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonGGrupos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonGGrupos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonGGrupos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ButtonGGrupos.Location = New System.Drawing.Point(994, 199)
+        Me.ButtonGGrupos.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonGGrupos.Name = "ButtonGGrupos"
+        Me.ButtonGGrupos.Size = New System.Drawing.Size(221, 77)
+        Me.ButtonGGrupos.TabIndex = 12
+        Me.ButtonGGrupos.Text = "Grupos"
+        Me.ButtonGGrupos.UseVisualStyleBackColor = False
+        '
+        'DataGridView3
+        '
+        Me.DataGridView3.AllowDrop = True
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Location = New System.Drawing.Point(422, 293)
+        Me.DataGridView3.Name = "DataGridView3"
+        Me.DataGridView3.Size = New System.Drawing.Size(793, 274)
+        Me.DataGridView3.TabIndex = 11
+        '
+        'Label6
+        '
+        Me.Label6.AllowDrop = True
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label6.Location = New System.Drawing.Point(398, 199)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(128, 39)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Grupos"
+        '
+        'ButtonGAtras
+        '
+        Me.ButtonGAtras.AllowDrop = True
+        Me.ButtonGAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonGAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonGAtras.Image = CType(resources.GetObject("ButtonGAtras.Image"), System.Drawing.Image)
+        Me.ButtonGAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonGAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonGAtras.Name = "ButtonGAtras"
+        Me.ButtonGAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonGAtras.TabIndex = 13
+        Me.ButtonGAtras.UseVisualStyleBackColor = True
+        '
+        'TabPageEstudiante
+        '
+        Me.TabPageEstudiante.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageEstudiante.Controls.Add(Me.PictureBox9)
+        Me.TabPageEstudiante.Controls.Add(Me.PictureBox10)
+        Me.TabPageEstudiante.Controls.Add(Me.ComboBox4)
+        Me.TabPageEstudiante.Controls.Add(Me.Button8)
+        Me.TabPageEstudiante.Controls.Add(Me.TextBox4)
+        Me.TabPageEstudiante.Controls.Add(Me.Label7)
+        Me.TabPageEstudiante.Controls.Add(Me.ButtonEEstudiantes)
+        Me.TabPageEstudiante.Controls.Add(Me.DataGridView4)
+        Me.TabPageEstudiante.Controls.Add(Me.Label8)
+        Me.TabPageEstudiante.Controls.Add(Me.ButtonEAtras)
+        Me.TabPageEstudiante.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageEstudiante.Name = "TabPageEstudiante"
+        Me.TabPageEstudiante.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageEstudiante.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPageEstudiante.TabIndex = 4
+        Me.TabPageEstudiante.Text = "Estudiante"
+        '
         'PictureBox9
         '
         Me.PictureBox9.Image = Global.MatriculaPEC.My.Resources.Resources.ec
@@ -1287,6 +902,156 @@ Partial Class Form1
         Me.TextBox4.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.TextBox4.Size = New System.Drawing.Size(222, 20)
         Me.TextBox4.TabIndex = 26
+        '
+        'Label7
+        '
+        Me.Label7.AllowDrop = True
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.LightSkyBlue
+        Me.Label7.Location = New System.Drawing.Point(281, 199)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(111, 39)
+        Me.Label7.TabIndex = 19
+        Me.Label7.Text = "Menu/"
+        '
+        'ButtonEEstudiantes
+        '
+        Me.ButtonEEstudiantes.AllowDrop = True
+        Me.ButtonEEstudiantes.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonEEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEEstudiantes.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonEEstudiantes.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ButtonEEstudiantes.Location = New System.Drawing.Point(994, 199)
+        Me.ButtonEEstudiantes.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonEEstudiantes.Name = "ButtonEEstudiantes"
+        Me.ButtonEEstudiantes.Size = New System.Drawing.Size(221, 77)
+        Me.ButtonEEstudiantes.TabIndex = 17
+        Me.ButtonEEstudiantes.Text = "Crear Estudiantes"
+        Me.ButtonEEstudiantes.UseVisualStyleBackColor = False
+        '
+        'DataGridView4
+        '
+        Me.DataGridView4.AllowUserToAddRows = False
+        Me.DataGridView4.AllowUserToDeleteRows = False
+        Me.DataGridView4.AllowUserToResizeColumns = False
+        Me.DataGridView4.AllowUserToResizeRows = False
+        Me.DataGridView4.AutoGenerateColumns = False
+        Me.DataGridView4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CedulaDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.Apellido1DataGridViewTextBoxColumn, Me.Apellido2DataGridViewTextBoxColumn, Me.TelefonoDataGridViewTextBoxColumn, Me.EliminarEstudiantes})
+        Me.DataGridView4.DataSource = Me.AlumnosBindingSource
+        Me.DataGridView4.GridColor = System.Drawing.SystemColors.Control
+        Me.DataGridView4.Location = New System.Drawing.Point(422, 294)
+        Me.DataGridView4.Name = "DataGridView4"
+        Me.DataGridView4.ReadOnly = True
+        Me.DataGridView4.Size = New System.Drawing.Size(793, 274)
+        Me.DataGridView4.TabIndex = 16
+        '
+        'CedulaDataGridViewTextBoxColumn
+        '
+        Me.CedulaDataGridViewTextBoxColumn.DataPropertyName = "cedula"
+        Me.CedulaDataGridViewTextBoxColumn.HeaderText = "cedula"
+        Me.CedulaDataGridViewTextBoxColumn.Name = "CedulaDataGridViewTextBoxColumn"
+        Me.CedulaDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'NombreDataGridViewTextBoxColumn
+        '
+        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'Apellido1DataGridViewTextBoxColumn
+        '
+        Me.Apellido1DataGridViewTextBoxColumn.DataPropertyName = "apellido1"
+        Me.Apellido1DataGridViewTextBoxColumn.HeaderText = "apellido1"
+        Me.Apellido1DataGridViewTextBoxColumn.Name = "Apellido1DataGridViewTextBoxColumn"
+        Me.Apellido1DataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'Apellido2DataGridViewTextBoxColumn
+        '
+        Me.Apellido2DataGridViewTextBoxColumn.DataPropertyName = "apellido2"
+        Me.Apellido2DataGridViewTextBoxColumn.HeaderText = "apellido2"
+        Me.Apellido2DataGridViewTextBoxColumn.Name = "Apellido2DataGridViewTextBoxColumn"
+        Me.Apellido2DataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TelefonoDataGridViewTextBoxColumn
+        '
+        Me.TelefonoDataGridViewTextBoxColumn.DataPropertyName = "telefono"
+        Me.TelefonoDataGridViewTextBoxColumn.HeaderText = "telefono"
+        Me.TelefonoDataGridViewTextBoxColumn.Name = "TelefonoDataGridViewTextBoxColumn"
+        Me.TelefonoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'EliminarEstudiantes
+        '
+        Me.EliminarEstudiantes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.EliminarEstudiantes.DataPropertyName = "cod_alumno"
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.DeepSkyBlue
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        Me.EliminarEstudiantes.DefaultCellStyle = DataGridViewCellStyle3
+        Me.EliminarEstudiantes.HeaderText = "Eliminar"
+        Me.EliminarEstudiantes.Name = "EliminarEstudiantes"
+        Me.EliminarEstudiantes.ReadOnly = True
+        Me.EliminarEstudiantes.Text = "Eliminar"
+        Me.EliminarEstudiantes.UseColumnTextForButtonValue = True
+        '
+        'AlumnosBindingSource
+        '
+        Me.AlumnosBindingSource.DataMember = "alumnos"
+        Me.AlumnosBindingSource.DataSource = Me.MatriculaPECDataSet
+        '
+        'MatriculaPECDataSet
+        '
+        Me.MatriculaPECDataSet.DataSetName = "MatriculaPECDataSet"
+        Me.MatriculaPECDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Label8
+        '
+        Me.Label8.AllowDrop = True
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label8.Location = New System.Drawing.Point(398, 199)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(195, 39)
+        Me.Label8.TabIndex = 15
+        Me.Label8.Text = "Estudiantes"
+        '
+        'ButtonEAtras
+        '
+        Me.ButtonEAtras.AllowDrop = True
+        Me.ButtonEAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonEAtras.Image = CType(resources.GetObject("ButtonEAtras.Image"), System.Drawing.Image)
+        Me.ButtonEAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonEAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonEAtras.Name = "ButtonEAtras"
+        Me.ButtonEAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonEAtras.TabIndex = 18
+        Me.ButtonEAtras.UseVisualStyleBackColor = True
+        '
+        'TabPagePeriodos
+        '
+        Me.TabPagePeriodos.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPagePeriodos.Controls.Add(Me.PictureBox11)
+        Me.TabPagePeriodos.Controls.Add(Me.PictureBox12)
+        Me.TabPagePeriodos.Controls.Add(Me.ComboBox5)
+        Me.TabPagePeriodos.Controls.Add(Me.Button9)
+        Me.TabPagePeriodos.Controls.Add(Me.TextBox5)
+        Me.TabPagePeriodos.Controls.Add(Me.Label9)
+        Me.TabPagePeriodos.Controls.Add(Me.ButtonPPeriodos)
+        Me.TabPagePeriodos.Controls.Add(Me.DataGridView5)
+        Me.TabPagePeriodos.Controls.Add(Me.Label10)
+        Me.TabPagePeriodos.Controls.Add(Me.ButtonPAtras)
+        Me.TabPagePeriodos.Location = New System.Drawing.Point(4, 24)
+        Me.TabPagePeriodos.Name = "TabPagePeriodos"
+        Me.TabPagePeriodos.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPagePeriodos.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPagePeriodos.TabIndex = 5
+        Me.TabPagePeriodos.Text = "Periodos"
         '
         'PictureBox11
         '
@@ -1336,6 +1101,87 @@ Partial Class Form1
         Me.TextBox5.Size = New System.Drawing.Size(222, 20)
         Me.TextBox5.TabIndex = 26
         '
+        'Label9
+        '
+        Me.Label9.AllowDrop = True
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.LightSkyBlue
+        Me.Label9.Location = New System.Drawing.Point(281, 199)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(111, 39)
+        Me.Label9.TabIndex = 24
+        Me.Label9.Text = "Menu/"
+        '
+        'ButtonPPeriodos
+        '
+        Me.ButtonPPeriodos.AllowDrop = True
+        Me.ButtonPPeriodos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonPPeriodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPPeriodos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonPPeriodos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ButtonPPeriodos.Location = New System.Drawing.Point(994, 199)
+        Me.ButtonPPeriodos.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPPeriodos.Name = "ButtonPPeriodos"
+        Me.ButtonPPeriodos.Size = New System.Drawing.Size(221, 77)
+        Me.ButtonPPeriodos.TabIndex = 22
+        Me.ButtonPPeriodos.Text = "Periodos"
+        Me.ButtonPPeriodos.UseVisualStyleBackColor = False
+        '
+        'DataGridView5
+        '
+        Me.DataGridView5.AllowDrop = True
+        Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView5.Location = New System.Drawing.Point(422, 293)
+        Me.DataGridView5.Name = "DataGridView5"
+        Me.DataGridView5.Size = New System.Drawing.Size(793, 274)
+        Me.DataGridView5.TabIndex = 21
+        '
+        'Label10
+        '
+        Me.Label10.AllowDrop = True
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label10.Location = New System.Drawing.Point(398, 199)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(152, 39)
+        Me.Label10.TabIndex = 20
+        Me.Label10.Text = "Periodos"
+        '
+        'ButtonPAtras
+        '
+        Me.ButtonPAtras.AllowDrop = True
+        Me.ButtonPAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonPAtras.Image = CType(resources.GetObject("ButtonPAtras.Image"), System.Drawing.Image)
+        Me.ButtonPAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonPAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPAtras.Name = "ButtonPAtras"
+        Me.ButtonPAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonPAtras.TabIndex = 23
+        Me.ButtonPAtras.UseVisualStyleBackColor = True
+        '
+        'TabPageDescuentos
+        '
+        Me.TabPageDescuentos.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageDescuentos.Controls.Add(Me.PictureBox13)
+        Me.TabPageDescuentos.Controls.Add(Me.PictureBox14)
+        Me.TabPageDescuentos.Controls.Add(Me.ComboBox6)
+        Me.TabPageDescuentos.Controls.Add(Me.Button10)
+        Me.TabPageDescuentos.Controls.Add(Me.TextBox6)
+        Me.TabPageDescuentos.Controls.Add(Me.Label11)
+        Me.TabPageDescuentos.Controls.Add(Me.ButtonDDescuentos)
+        Me.TabPageDescuentos.Controls.Add(Me.DataGridView6)
+        Me.TabPageDescuentos.Controls.Add(Me.Label12)
+        Me.TabPageDescuentos.Controls.Add(Me.ButtonDAtras)
+        Me.TabPageDescuentos.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageDescuentos.Name = "TabPageDescuentos"
+        Me.TabPageDescuentos.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageDescuentos.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPageDescuentos.TabIndex = 6
+        Me.TabPageDescuentos.Text = "Descuentos"
+        '
         'PictureBox13
         '
         Me.PictureBox13.Image = Global.MatriculaPEC.My.Resources.Resources.ec
@@ -1383,6 +1229,87 @@ Partial Class Form1
         Me.TextBox6.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.TextBox6.Size = New System.Drawing.Size(222, 20)
         Me.TextBox6.TabIndex = 30
+        '
+        'Label11
+        '
+        Me.Label11.AllowDrop = True
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.LightSkyBlue
+        Me.Label11.Location = New System.Drawing.Point(281, 199)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(111, 39)
+        Me.Label11.TabIndex = 29
+        Me.Label11.Text = "Menu/"
+        '
+        'ButtonDDescuentos
+        '
+        Me.ButtonDDescuentos.AllowDrop = True
+        Me.ButtonDDescuentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonDDescuentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonDDescuentos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonDDescuentos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ButtonDDescuentos.Location = New System.Drawing.Point(994, 199)
+        Me.ButtonDDescuentos.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonDDescuentos.Name = "ButtonDDescuentos"
+        Me.ButtonDDescuentos.Size = New System.Drawing.Size(221, 77)
+        Me.ButtonDDescuentos.TabIndex = 27
+        Me.ButtonDDescuentos.Text = "Descuentos"
+        Me.ButtonDDescuentos.UseVisualStyleBackColor = False
+        '
+        'DataGridView6
+        '
+        Me.DataGridView6.AllowDrop = True
+        Me.DataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView6.Location = New System.Drawing.Point(422, 293)
+        Me.DataGridView6.Name = "DataGridView6"
+        Me.DataGridView6.Size = New System.Drawing.Size(793, 274)
+        Me.DataGridView6.TabIndex = 26
+        '
+        'Label12
+        '
+        Me.Label12.AllowDrop = True
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label12.Location = New System.Drawing.Point(398, 199)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(197, 39)
+        Me.Label12.TabIndex = 25
+        Me.Label12.Text = "Descuentos"
+        '
+        'ButtonDAtras
+        '
+        Me.ButtonDAtras.AllowDrop = True
+        Me.ButtonDAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonDAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonDAtras.Image = CType(resources.GetObject("ButtonDAtras.Image"), System.Drawing.Image)
+        Me.ButtonDAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonDAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonDAtras.Name = "ButtonDAtras"
+        Me.ButtonDAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonDAtras.TabIndex = 28
+        Me.ButtonDAtras.UseVisualStyleBackColor = True
+        '
+        'TabPagePagos
+        '
+        Me.TabPagePagos.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPagePagos.Controls.Add(Me.PictureBox15)
+        Me.TabPagePagos.Controls.Add(Me.PictureBox16)
+        Me.TabPagePagos.Controls.Add(Me.ComboBox7)
+        Me.TabPagePagos.Controls.Add(Me.Button11)
+        Me.TabPagePagos.Controls.Add(Me.TextBox7)
+        Me.TabPagePagos.Controls.Add(Me.Label13)
+        Me.TabPagePagos.Controls.Add(Me.ButtonPPagos)
+        Me.TabPagePagos.Controls.Add(Me.DataGridView7)
+        Me.TabPagePagos.Controls.Add(Me.Label14)
+        Me.TabPagePagos.Controls.Add(Me.ButtonPaAtras)
+        Me.TabPagePagos.Location = New System.Drawing.Point(4, 24)
+        Me.TabPagePagos.Name = "TabPagePagos"
+        Me.TabPagePagos.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPagePagos.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPagePagos.TabIndex = 7
+        Me.TabPagePagos.Text = "Pagos"
         '
         'PictureBox15
         '
@@ -1432,6 +1359,87 @@ Partial Class Form1
         Me.TextBox7.Size = New System.Drawing.Size(222, 20)
         Me.TextBox7.TabIndex = 35
         '
+        'Label13
+        '
+        Me.Label13.AllowDrop = True
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.LightSkyBlue
+        Me.Label13.Location = New System.Drawing.Point(281, 199)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(111, 39)
+        Me.Label13.TabIndex = 34
+        Me.Label13.Text = "Menu/"
+        '
+        'ButtonPPagos
+        '
+        Me.ButtonPPagos.AllowDrop = True
+        Me.ButtonPPagos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonPPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPPagos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonPPagos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ButtonPPagos.Location = New System.Drawing.Point(994, 199)
+        Me.ButtonPPagos.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPPagos.Name = "ButtonPPagos"
+        Me.ButtonPPagos.Size = New System.Drawing.Size(221, 77)
+        Me.ButtonPPagos.TabIndex = 32
+        Me.ButtonPPagos.Text = "Pagos"
+        Me.ButtonPPagos.UseVisualStyleBackColor = False
+        '
+        'DataGridView7
+        '
+        Me.DataGridView7.AllowDrop = True
+        Me.DataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView7.Location = New System.Drawing.Point(422, 293)
+        Me.DataGridView7.Name = "DataGridView7"
+        Me.DataGridView7.Size = New System.Drawing.Size(793, 274)
+        Me.DataGridView7.TabIndex = 31
+        '
+        'Label14
+        '
+        Me.Label14.AllowDrop = True
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label14.Location = New System.Drawing.Point(398, 199)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(114, 39)
+        Me.Label14.TabIndex = 30
+        Me.Label14.Text = "Pagos"
+        '
+        'ButtonPaAtras
+        '
+        Me.ButtonPaAtras.AllowDrop = True
+        Me.ButtonPaAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPaAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonPaAtras.Image = CType(resources.GetObject("ButtonPaAtras.Image"), System.Drawing.Image)
+        Me.ButtonPaAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonPaAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPaAtras.Name = "ButtonPaAtras"
+        Me.ButtonPaAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonPaAtras.TabIndex = 33
+        Me.ButtonPaAtras.UseVisualStyleBackColor = True
+        '
+        'TabPageProfesores
+        '
+        Me.TabPageProfesores.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageProfesores.Controls.Add(Me.PictureBox17)
+        Me.TabPageProfesores.Controls.Add(Me.PictureBox18)
+        Me.TabPageProfesores.Controls.Add(Me.ComboBox8)
+        Me.TabPageProfesores.Controls.Add(Me.Button12)
+        Me.TabPageProfesores.Controls.Add(Me.TextBox8)
+        Me.TabPageProfesores.Controls.Add(Me.Label15)
+        Me.TabPageProfesores.Controls.Add(Me.ButtonPProfesores)
+        Me.TabPageProfesores.Controls.Add(Me.DataGridView8)
+        Me.TabPageProfesores.Controls.Add(Me.Label16)
+        Me.TabPageProfesores.Controls.Add(Me.ButtonPrAtras)
+        Me.TabPageProfesores.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageProfesores.Name = "TabPageProfesores"
+        Me.TabPageProfesores.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageProfesores.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPageProfesores.TabIndex = 8
+        Me.TabPageProfesores.Text = "Profesores"
+        '
         'PictureBox17
         '
         Me.PictureBox17.Image = Global.MatriculaPEC.My.Resources.Resources.ec
@@ -1479,6 +1487,82 @@ Partial Class Form1
         Me.TextBox8.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.TextBox8.Size = New System.Drawing.Size(222, 20)
         Me.TextBox8.TabIndex = 40
+        '
+        'Label15
+        '
+        Me.Label15.AllowDrop = True
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.LightSkyBlue
+        Me.Label15.Location = New System.Drawing.Point(281, 199)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(111, 39)
+        Me.Label15.TabIndex = 39
+        Me.Label15.Text = "Menu/"
+        '
+        'ButtonPProfesores
+        '
+        Me.ButtonPProfesores.AllowDrop = True
+        Me.ButtonPProfesores.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonPProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPProfesores.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonPProfesores.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ButtonPProfesores.Location = New System.Drawing.Point(994, 199)
+        Me.ButtonPProfesores.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPProfesores.Name = "ButtonPProfesores"
+        Me.ButtonPProfesores.Size = New System.Drawing.Size(221, 77)
+        Me.ButtonPProfesores.TabIndex = 37
+        Me.ButtonPProfesores.Text = "Profesores"
+        Me.ButtonPProfesores.UseVisualStyleBackColor = False
+        '
+        'DataGridView8
+        '
+        Me.DataGridView8.AllowDrop = True
+        Me.DataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView8.Location = New System.Drawing.Point(422, 293)
+        Me.DataGridView8.Name = "DataGridView8"
+        Me.DataGridView8.Size = New System.Drawing.Size(793, 274)
+        Me.DataGridView8.TabIndex = 36
+        '
+        'Label16
+        '
+        Me.Label16.AllowDrop = True
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label16.Location = New System.Drawing.Point(398, 199)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(181, 39)
+        Me.Label16.TabIndex = 35
+        Me.Label16.Text = "Profesores"
+        '
+        'ButtonPrAtras
+        '
+        Me.ButtonPrAtras.AllowDrop = True
+        Me.ButtonPrAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPrAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonPrAtras.Image = CType(resources.GetObject("ButtonPrAtras.Image"), System.Drawing.Image)
+        Me.ButtonPrAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonPrAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPrAtras.Name = "ButtonPrAtras"
+        Me.ButtonPrAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonPrAtras.TabIndex = 38
+        Me.ButtonPrAtras.UseVisualStyleBackColor = True
+        '
+        'TabPageUsuarios
+        '
+        Me.TabPageUsuarios.Controls.Add(Me.PictureBox19)
+        Me.TabPageUsuarios.Controls.Add(Me.PictureBox20)
+        Me.TabPageUsuarios.Controls.Add(Me.ComboBox9)
+        Me.TabPageUsuarios.Controls.Add(Me.Button13)
+        Me.TabPageUsuarios.Controls.Add(Me.TextBox9)
+        Me.TabPageUsuarios.Location = New System.Drawing.Point(4, 24)
+        Me.TabPageUsuarios.Name = "TabPageUsuarios"
+        Me.TabPageUsuarios.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageUsuarios.Size = New System.Drawing.Size(1358, 740)
+        Me.TabPageUsuarios.TabIndex = 9
+        Me.TabPageUsuarios.Text = "Usuarios"
+        Me.TabPageUsuarios.UseVisualStyleBackColor = True
         '
         'PictureBox19
         '
@@ -1528,69 +1612,81 @@ Partial Class Form1
         Me.TextBox9.Size = New System.Drawing.Size(222, 20)
         Me.TextBox9.TabIndex = 26
         '
+        'MatriculaPECDataSetBindingSource
+        '
+        Me.MatriculaPECDataSetBindingSource.DataSource = Me.MatriculaPECDataSet
+        Me.MatriculaPECDataSetBindingSource.Position = 0
+        '
+        'AlumnosTableAdapter
+        '
+        Me.AlumnosTableAdapter.ClearBeforeFill = True
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoSize = True
+        Me.AutoSize = true
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(1284, 729)
         Me.Controls.Add(Me.TabControlPrincipal)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Matricula Educación Continua"
-        Me.TabControlPrincipal.ResumeLayout(False)
-        Me.TabPageMenu.ResumeLayout(False)
-        Me.TabPageMenu.PerformLayout()
-        Me.TabPageMatricula.ResumeLayout(False)
-        Me.TabPageMatricula.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPageCursos.ResumeLayout(False)
-        Me.TabPageCursos.PerformLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPageGrupos.ResumeLayout(False)
-        Me.TabPageGrupos.PerformLayout()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPageEstudiante.ResumeLayout(False)
-        Me.TabPageEstudiante.PerformLayout()
-        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPagePeriodos.ResumeLayout(False)
-        Me.TabPagePeriodos.PerformLayout()
-        CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPageDescuentos.ResumeLayout(False)
-        Me.TabPageDescuentos.PerformLayout()
-        CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPagePagos.ResumeLayout(False)
-        Me.TabPagePagos.PerformLayout()
-        CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPageProfesores.ResumeLayout(False)
-        Me.TabPageProfesores.PerformLayout()
-        CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPageUsuarios.ResumeLayout(False)
-        Me.TabPageUsuarios.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
+        Me.TabControlPrincipal.ResumeLayout(false)
+        Me.TabPageMenu.ResumeLayout(false)
+        Me.TabPageMenu.PerformLayout
+        CType(Me.PictureBox2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPageMatricula.ResumeLayout(false)
+        Me.TabPageMatricula.PerformLayout
+        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.DataGridView1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPageCursos.ResumeLayout(false)
+        Me.TabPageCursos.PerformLayout
+        CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.DataGridView2,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPageGrupos.ResumeLayout(false)
+        Me.TabPageGrupos.PerformLayout
+        CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox8,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.DataGridView3,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPageEstudiante.ResumeLayout(false)
+        Me.TabPageEstudiante.PerformLayout
+        CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox10,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.DataGridView4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AlumnosBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MatriculaPECDataSet,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPagePeriodos.ResumeLayout(false)
+        Me.TabPagePeriodos.PerformLayout
+        CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox12,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.DataGridView5,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPageDescuentos.ResumeLayout(false)
+        Me.TabPageDescuentos.PerformLayout
+        CType(Me.PictureBox13,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox14,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.DataGridView6,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPagePagos.ResumeLayout(false)
+        Me.TabPagePagos.PerformLayout
+        CType(Me.PictureBox15,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox16,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.DataGridView7,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPageProfesores.ResumeLayout(false)
+        Me.TabPageProfesores.PerformLayout
+        CType(Me.PictureBox17,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox18,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.DataGridView8,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPageUsuarios.ResumeLayout(false)
+        Me.TabPageUsuarios.PerformLayout
+        CType(Me.PictureBox19,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox20,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MatriculaPECDataSetBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
 
-    End Sub
+End Sub
     Friend WithEvents TabControlPrincipal As System.Windows.Forms.TabControl
     Friend WithEvents TabPageMenu As System.Windows.Forms.TabPage
     Friend WithEvents TabPageMatricula As System.Windows.Forms.TabPage
@@ -1704,5 +1800,15 @@ Partial Class Form1
     Friend WithEvents ComboBox9 As System.Windows.Forms.ComboBox
     Friend WithEvents Button13 As System.Windows.Forms.Button
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents MatriculaPECDataSetBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents MatriculaPECDataSet As MatriculaPEC.MatriculaPECDataSet
+    Friend WithEvents AlumnosBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents AlumnosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.alumnosTableAdapter
+    Friend WithEvents CedulaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NombreDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Apellido1DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Apellido2DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TelefonoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EliminarEstudiantes As System.Windows.Forms.DataGridViewButtonColumn
 
 End Class

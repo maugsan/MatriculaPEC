@@ -2,6 +2,8 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        Me.AlumnosTableAdapter.Fill(Me.MatriculaPECDataSet.alumnos)
+
     End Sub
 
     Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPageMenu.Click
@@ -13,15 +15,9 @@
     End Sub
 
 
-
-
-
     Private Sub ButtonPeriodos_Click(sender As Object, e As EventArgs)
 
     End Sub
-
-
-
 
     Private Sub ButtonEstudintes_Click(sender As Object, e As EventArgs) Handles ButtonEstudintes.Click
         TabControlPrincipal.SelectTab(4)
@@ -66,11 +62,6 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ButtonAtras.Click
         TabControlPrincipal.SelectTab(0)
     End Sub
-
-
- 
-
- 
 
     Private Sub Button2_Click_2(sender As Object, e As EventArgs) Handles ButtonEAtras.Click
         TabControlPrincipal.SelectTab(0)
@@ -128,6 +119,11 @@
         ventana.Show()
     End Sub
 
+
+
+
+
+
     Private Sub ButtonPPeriodos_Click(sender As Object, e As EventArgs) Handles ButtonPPeriodos.Click
         Dim ventana As New Periodos
 
@@ -151,5 +147,31 @@
         Dim ventana As New Profesores
 
         ventana.Show()
+    End Sub
+
+
+    'Eliminar 
+
+
+
+    Private Sub DataGridView4_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView4.CellClick
+
+
+        Dim etableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
+
+
+        If e.ColumnIndex = 5 Then
+
+            Dim cedula As Int32
+
+            cedula = Convert.ToInt32((DataGridView4.Item(0, e.RowIndex).Value.ToString()))
+
+
+            etableAdapter.eliminar_alumno(cedula)
+
+            Form1_Load(sender, e)
+
+
+        End If
     End Sub
 End Class
