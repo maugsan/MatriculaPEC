@@ -1,10 +1,11 @@
-﻿Public Class Menu
+﻿Public Class MenuPrincipal
+
+
 
 
     Public codigoEstudiante As Integer
     Public estudiante As String
-
-
+    Public banderaEstudiante As Integer
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -25,6 +26,7 @@
 
         Me.AlumnosTableAdapter.Fill(Me.MatriculaPECDataSet.alumnos)
 
+        Me.estudiante = "----"
     End Sub
 
     'TABS DEL MENU PRINCIPAL
@@ -153,8 +155,6 @@
 
     Private Sub ButtonEEstudiantes_Click(sender As Object, e As EventArgs) Handles ButtonEEstudiantes.Click
         Dim ventana As New Estudiantes
-
-
         ventana.Show()
     End Sub
 
@@ -162,20 +162,16 @@
 
     Private Sub ButtonPPeriodos_Click(sender As Object, e As EventArgs) Handles ButtonPPeriodos.Click
         Dim ventana As New Periodos
-
         ventana.Show()
     End Sub
 
     Private Sub ButtonDDescuentos_Click(sender As Object, e As EventArgs) Handles ButtonDDescuentos.Click
         Dim ventana As New Descuentos
-
         ventana.Show()
     End Sub
 
     Private Sub ButtonPPagos_Click(sender As Object, e As EventArgs) Handles ButtonPPagos.Click
         Dim ventana As New Pagos
-
-
         ventana.Show()
     End Sub
 
@@ -214,6 +210,5 @@
     End Sub
 
 #End Region
-
 
 End Class

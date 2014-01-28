@@ -180,7 +180,7 @@ Partial Class Matricula3
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+
         Me.PictureBox1.Location = New System.Drawing.Point(37, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(220, 84)
