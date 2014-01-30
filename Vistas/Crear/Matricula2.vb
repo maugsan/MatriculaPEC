@@ -9,8 +9,9 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Hide()
-        MsgBox(MatriculaPEC.MenuPrincipal.codigoEstudiante)
+
         Matricula3.Show()
+        Matricula3.procesar()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -22,6 +23,30 @@
     End Sub
 
     Private Sub Matricula2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.DataTableGruposNombres' Puede moverla o quitarla según sea necesario.
+        Me.DataTableGruposNombresTableAdapter.Fill(Me.MatriculaPECDataSet.DataTableGruposNombres)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.grupos' Puede moverla o quitarla según sea necesario.
+        Me.GruposTableAdapter.Fill(Me.MatriculaPECDataSet.grupos)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.matriculas' Puede moverla o quitarla según sea necesario.
+        Me.MatriculasTableAdapter.Fill(Me.MatriculaPECDataSet.matriculas)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.alumnos_en_grupos' Puede moverla o quitarla según sea necesario.
+        Me.Alumnos_en_gruposTableAdapter.Fill(Me.MatriculaPECDataSet.alumnos_en_grupos)
+
+        Dim gtableAdapter As New MatriculaPECDataSetTableAdapters.gruposTableAdapter()
+
+        'ComboBox2.DataBindings = gtableAdapter.seleccionarGruposCombo()
+        'ComboBox2.DisplayMember = "x"
+        'ComboBox2.ValueMember = "cod_grupo"
+
+        'Dim Customers = gtableAdapter.seleccionarGruposCombo().Trim
+
+        ' For Each Customer In Customers.Split
+
+        'MsgBox(Customer)
+
+        ' Next
 
         If DataGridViewMatricula2.Rows.Count = 0 Then
 
@@ -41,68 +66,42 @@
     End Sub
 
 
-
-
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 
 
+        Dim encontrado As Boolean
+        encontrado = False
 
-        MsgBox(DataGridViewMatricula2.RowCount)
 
-
+        Dim row1 As String() = New String() {Me.ComboBox2.Text, ComboBox3.Text, ComboBox4.Text}
 
         If (DataGridViewMatricula2.RowCount = 0) Then
 
 
-
-            Dim row1 As String() = New String() {Me.ComboBox2.Text, ComboBox3.Text, ComboBox4.Text}
             DataGridViewMatricula2.Rows.Add(row1)
 
 
-
-
         Else
-
-
+     
             For Each row As DataGridViewRow In DataGridViewMatricula2.Rows
 
 
+                If Me.ComboBox2.Text.Trim = row.Cells.Item("Grupo").Value.trim Then
 
-                Dim rowindex As String
-                If row.Cells.Item("Grupo").Value = "" Then
-                    rowindex = row.Index.ToString()
+                    encontrado = True
 
-
-                    MsgBox("2")
-
-
-
-                ElseIf row.Cells.Item("GRUPO").Value = ComboBox2.Text Then
-                    rowindex = row.Index.ToString()
-
-
-                    MsgBox("3")
-
-                Else
-
-
-
-                    Dim row1 As String() = New String() {ComboBox2.Text, ComboBox3.Text, ComboBox4.Text}
-                    DataGridViewMatricula2.Rows.Add(row1)
-                    MsgBox("Diferente")
-
+                    MsgBox("El grupo seleccionado existe.")
 
                 End If
+
+
             Next
 
+            If encontrado = False Then
+                DataGridViewMatricula2.Rows.Add(row1)
+            End If
+
         End If
-
-
-
-
-
-
-        ' DataGridViewMatricula2.NewRowIndex
 
         Button2.Enabled = True
 
@@ -169,10 +168,6 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox4.Validating
 
 
 
-
-
-
-
 #Region " ELIMINAR DATAGRIDS "
 
     'Eliminar 
@@ -203,4 +198,41 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox4.Validating
 
 
 
+    Private Sub FillByGrupoToolStripButton_Click(sender As Object, e As EventArgs)
+        Try
+            Me.GruposTableAdapter.FillByGrupo(Me.MatriculaPECDataSet.grupos)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
+
+    End Sub
+
+    Private Sub FillByGrupoToolStripButton1_Click(sender As Object, e As EventArgs)
+        Try
+            Me.GruposTableAdapter.FillByGrupo(Me.MatriculaPECDataSet.grupos)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
+
+    End Sub
+
+    Private Sub FillByGrupoToolStripButton_Click_1(sender As Object, e As EventArgs)
+        Try
+            Me.GruposTableAdapter.FillByGrupo(Me.MatriculaPECDataSet.grupos)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
+
+    End Sub
+
+    Private Sub FillByGrupoToolStripButton1_Click_1(sender As Object, e As EventArgs)
+        Try
+            Me.GruposTableAdapter.FillByGrupo(Me.MatriculaPECDataSet.grupos)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
+
+    End Sub
+
+ 
 End Class

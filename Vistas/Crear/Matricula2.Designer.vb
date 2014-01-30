@@ -28,9 +28,15 @@ Partial Class Matricula2
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridViewMatricula2 = New System.Windows.Forms.DataGridView()
+        Me.Grupo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Forma = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Descuento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Eliminar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.CursosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MatriculaPECDataSet = New MatriculaPEC.MatriculaPECDataSet()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.DataTableGruposNombresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.FKgruposcodcurs0DAF0CB0BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GruposBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.FormasdepagoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -46,23 +52,31 @@ Partial Class Matricula2
         Me.DescuentosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.descuentosTableAdapter()
         Me.GruposTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.gruposTableAdapter()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.Grupo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Forma = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Descuento = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Eliminar = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.GruposBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.FKalumnosecodg38996AB5BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Alumnos_en_gruposTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.alumnos_en_gruposTableAdapter()
+        Me.FKmatriculacodg1DE57479BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MatriculasTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter()
+        Me.DataTableGruposNombresTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.DataTableGruposNombresTableAdapter()
         CType(Me.DataGridViewMatricula2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataTableGruposNombresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FKgruposcodcurs0DAF0CB0BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GruposBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FormasdepagoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DescuentosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GruposBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FKalumnosecodg38996AB5BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FKmatriculacodg1DE57479BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.Gray
+        Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -77,6 +91,7 @@ Partial Class Matricula2
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -91,6 +106,7 @@ Partial Class Matricula2
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -121,12 +137,38 @@ Partial Class Matricula2
         Me.DataGridViewMatricula2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.DataGridViewMatricula2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Grupo, Me.Forma, Me.Descuento, Me.Eliminar})
         Me.DataGridViewMatricula2.GridColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.DataGridViewMatricula2.Location = New System.Drawing.Point(319, 160)
+        Me.DataGridViewMatricula2.Location = New System.Drawing.Point(291, 160)
         Me.DataGridViewMatricula2.Name = "DataGridViewMatricula2"
         Me.DataGridViewMatricula2.ReadOnly = True
         Me.DataGridViewMatricula2.RowTemplate.Height = 40
-        Me.DataGridViewMatricula2.Size = New System.Drawing.Size(532, 221)
+        Me.DataGridViewMatricula2.Size = New System.Drawing.Size(563, 221)
         Me.DataGridViewMatricula2.TabIndex = 12
+        '
+        'Grupo
+        '
+        Me.Grupo.HeaderText = "Grupo"
+        Me.Grupo.Name = "Grupo"
+        Me.Grupo.ReadOnly = True
+        '
+        'Forma
+        '
+        Me.Forma.HeaderText = "Forma"
+        Me.Forma.Name = "Forma"
+        Me.Forma.ReadOnly = True
+        '
+        'Descuento
+        '
+        Me.Descuento.HeaderText = "Descuento"
+        Me.Descuento.Name = "Descuento"
+        Me.Descuento.ReadOnly = True
+        '
+        'Eliminar
+        '
+        Me.Eliminar.HeaderText = "Eliminar"
+        Me.Eliminar.Image = Global.MatriculaPEC.My.Resources.Resources.Close
+        Me.Eliminar.Name = "Eliminar"
+        Me.Eliminar.ReadOnly = True
+        Me.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         '
         'CursosBindingSource
         '
@@ -140,8 +182,8 @@ Partial Class Matricula2
         '
         'ComboBox2
         '
-        Me.ComboBox2.DataSource = Me.GruposBindingSource
-        Me.ComboBox2.DisplayMember = "numero"
+        Me.ComboBox2.DataSource = Me.DataTableGruposNombresBindingSource
+        Me.ComboBox2.DisplayMember = "Curso"
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -151,7 +193,17 @@ Partial Class Matricula2
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(215, 33)
         Me.ComboBox2.TabIndex = 14
-        Me.ComboBox2.ValueMember = "numero"
+        Me.ComboBox2.ValueMember = "Código"
+        '
+        'DataTableGruposNombresBindingSource
+        '
+        Me.DataTableGruposNombresBindingSource.DataMember = "DataTableGruposNombres"
+        Me.DataTableGruposNombresBindingSource.DataSource = Me.MatriculaPECDataSet
+        '
+        'FKgruposcodcurs0DAF0CB0BindingSource
+        '
+        Me.FKgruposcodcurs0DAF0CB0BindingSource.DataMember = "FK__grupos__cod_curs__0DAF0CB0"
+        Me.FKgruposcodcurs0DAF0CB0BindingSource.DataSource = Me.CursosBindingSource
         '
         'GruposBindingSource
         '
@@ -234,6 +286,7 @@ Partial Class Matricula2
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -247,7 +300,8 @@ Partial Class Matricula2
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(24, 24)
+        Me.PictureBox1.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox1.Location = New System.Drawing.Point(50, 23)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(216, 81)
         Me.PictureBox1.TabIndex = 22
@@ -273,37 +327,38 @@ Partial Class Matricula2
         '
         Me.ErrorProvider1.ContainerControl = Me
         '
-        'Grupo
+        'GruposBindingSource1
         '
-        Me.Grupo.HeaderText = "Grupo"
-        Me.Grupo.Name = "Grupo"
-        Me.Grupo.ReadOnly = True
+        Me.GruposBindingSource1.DataMember = "grupos"
+        Me.GruposBindingSource1.DataSource = Me.MatriculaPECDataSet
         '
-        'Forma
+        'FKalumnosecodg38996AB5BindingSource
         '
-        Me.Forma.HeaderText = "Forma"
-        Me.Forma.Name = "Forma"
-        Me.Forma.ReadOnly = True
+        Me.FKalumnosecodg38996AB5BindingSource.DataMember = "FK__alumnos_e__cod_g__38996AB5"
+        Me.FKalumnosecodg38996AB5BindingSource.DataSource = Me.GruposBindingSource
         '
-        'Descuento
+        'Alumnos_en_gruposTableAdapter
         '
-        Me.Descuento.HeaderText = "Descuento"
-        Me.Descuento.Name = "Descuento"
-        Me.Descuento.ReadOnly = True
+        Me.Alumnos_en_gruposTableAdapter.ClearBeforeFill = True
         '
-        'Eliminar
+        'FKmatriculacodg1DE57479BindingSource
         '
-        Me.Eliminar.HeaderText = "Eliminar"
-        Me.Eliminar.Image = Global.MatriculaPEC.My.Resources.Resources.Garbage_Closed
-        Me.Eliminar.Name = "Eliminar"
-        Me.Eliminar.ReadOnly = True
-        Me.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.FKmatriculacodg1DE57479BindingSource.DataMember = "FK__matricula__cod_g__1DE57479"
+        Me.FKmatriculacodg1DE57479BindingSource.DataSource = Me.GruposBindingSource
+        '
+        'MatriculasTableAdapter
+        '
+        Me.MatriculasTableAdapter.ClearBeforeFill = True
+        '
+        'DataTableGruposNombresTableAdapter
+        '
+        Me.DataTableGruposNombresTableAdapter.ClearBeforeFill = True
         '
         'Matricula2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(863, 503)
+        Me.ClientSize = New System.Drawing.Size(874, 514)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label4)
@@ -319,15 +374,20 @@ Partial Class Matricula2
         Me.MaximizeBox = False
         Me.Name = "Matricula2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Matricula"
+        Me.Text = "Matricular Estudiante - Paso 2"
         CType(Me.DataGridViewMatricula2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataTableGruposNombresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FKgruposcodcurs0DAF0CB0BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GruposBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FormasdepagoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DescuentosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GruposBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FKalumnosecodg38996AB5BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FKmatriculacodg1DE57479BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -354,6 +414,14 @@ Partial Class Matricula2
     Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents GruposBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents FKalumnosecodg38996AB5BindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Alumnos_en_gruposTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.alumnos_en_gruposTableAdapter
+    Friend WithEvents FKmatriculacodg1DE57479BindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents MatriculasTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter
+    Friend WithEvents FKgruposcodcurs0DAF0CB0BindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DataTableGruposNombresBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DataTableGruposNombresTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.DataTableGruposNombresTableAdapter
     Friend WithEvents Grupo As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Forma As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Descuento As System.Windows.Forms.DataGridViewTextBoxColumn

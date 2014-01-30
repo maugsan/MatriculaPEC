@@ -9,6 +9,11 @@
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.DataTableGruposNombres' Puede moverla o quitarla según sea necesario.
+        Me.DataTableGruposNombresTableAdapter.Fill(Me.MatriculaPECDataSet.DataTableGruposNombres)
+
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.matriculas' Puede moverla o quitarla según sea necesario.
+        Me.MatriculasTableAdapter.Fill(Me.MatriculaPECDataSet.matriculas)
         'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.matriculas' Puede moverla o quitarla según sea necesario.
         Me.MatriculasTableAdapter.Fill(Me.MatriculaPECDataSet.matriculas)
         'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.profesores' Puede moverla o quitarla según sea necesario.
@@ -68,7 +73,7 @@
         TabControlPrincipal.SelectTab(8)
     End Sub
 
-    Private Sub ButtonUsuarios_Click(sender As Object, e As EventArgs) Handles ButtonUsuarios.Click
+    Private Sub ButtonUsuarios_Click(sender As Object, e As EventArgs)
         TabControlPrincipal.SelectTab(9)
     End Sub
 
@@ -82,7 +87,7 @@
     End Sub
 
 
-    Private Sub ButtonListas_Click(sender As Object, e As EventArgs) Handles ButtonListas.Click
+    Private Sub ButtonListas_Click(sender As Object, e As EventArgs)
         TabControlPrincipal.SelectTab(12)
     End Sub
 
@@ -97,7 +102,7 @@
     End Sub
 
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ButtonAtras.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         TabControlPrincipal.SelectTab(0)
     End Sub
 
@@ -209,6 +214,63 @@
         End If
     End Sub
 
+
+
+    Private Sub DataGridView3_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView3.CellClick
+
+
+
+
+        Dim gtableAdapter As New MatriculaPECDataSetTableAdapters.gruposTableAdapter()
+
+
+
+
+        If e.ColumnIndex = 4 Then
+
+
+
+            If e.RowIndex <> -1 Then
+
+
+                gtableAdapter.BorrarGrupo(DataGridView3.Item(0, e.RowIndex).Value.ToString().TrimEnd())
+
+            End If
+
+            Form1_Load(sender, e)
+
+
+        End If
+
+
+
+    End Sub
+
+
 #End Region
+
+    Private Sub TabPageMenu_Click(sender As Object, e As EventArgs) Handles TabPageMenu.Click
+
+    End Sub
+
+    Private Sub PictureBox21_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs)
+        TabControlPrincipal.SelectTab(9)
+    End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub TabPageGrupos_Click(sender As Object, e As EventArgs) Handles TabPageGrupos.Click
+
+
+
+
+    End Sub
+
 
 End Class

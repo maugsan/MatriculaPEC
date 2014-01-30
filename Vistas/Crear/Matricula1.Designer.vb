@@ -44,7 +44,7 @@ Partial Class Matricula
         Me.CrearEstudiante.Location = New System.Drawing.Point(109, 263)
         Me.CrearEstudiante.Margin = New System.Windows.Forms.Padding(0)
         Me.CrearEstudiante.Name = "CrearEstudiante"
-        Me.CrearEstudiante.Size = New System.Drawing.Size(221, 77)
+        Me.CrearEstudiante.Size = New System.Drawing.Size(182, 77)
         Me.CrearEstudiante.TabIndex = 1
         Me.CrearEstudiante.Text = "Crear Estudiante"
         Me.CrearEstudiante.UseVisualStyleBackColor = False
@@ -54,14 +54,15 @@ Partial Class Matricula
         Me.TextBoxBuscar.AcceptsReturn = True
         Me.TextBoxBuscar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
         Me.TextBoxBuscar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem
-        Me.TextBoxBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBoxBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxBuscar.ForeColor = System.Drawing.Color.Gray
-        Me.TextBoxBuscar.Location = New System.Drawing.Point(394, 289)
+        Me.TextBoxBuscar.Location = New System.Drawing.Point(335, 289)
         Me.TextBoxBuscar.Margin = New System.Windows.Forms.Padding(6)
-        Me.TextBoxBuscar.MaximumSize = New System.Drawing.Size(300, 50)
+        Me.TextBoxBuscar.MaximumSize = New System.Drawing.Size(350, 50)
         Me.TextBoxBuscar.Name = "TextBoxBuscar"
         Me.TextBoxBuscar.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TextBoxBuscar.Size = New System.Drawing.Size(291, 30)
+        Me.TextBoxBuscar.Size = New System.Drawing.Size(350, 31)
         Me.TextBoxBuscar.TabIndex = 4
         '
         'Label1
@@ -137,7 +138,7 @@ Partial Class Matricula
         Me.Elegir.Location = New System.Drawing.Point(691, 289)
         Me.Elegir.Margin = New System.Windows.Forms.Padding(0)
         Me.Elegir.Name = "Elegir"
-        Me.Elegir.Size = New System.Drawing.Size(64, 30)
+        Me.Elegir.Size = New System.Drawing.Size(64, 31)
         Me.Elegir.TabIndex = 12
         Me.Elegir.Text = "Elegir"
         Me.Elegir.UseVisualStyleBackColor = False
