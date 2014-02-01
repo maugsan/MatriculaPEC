@@ -1,5 +1,4 @@
-﻿Public Class MenuPrincipal
-
+﻿Public Class Principal
 
     'variables globales para realizar Matricula
 
@@ -34,7 +33,7 @@
         'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.cursos' Puede moverla o quitarla según sea necesario.
         Me.CursosTableAdapter.Fill(Me.MatriculaPECDataSet.cursos)
 
-        DataGridView1.DataSource = ctableAdapter.GetData
+        '  DataGridView1.DataSource = ctableAdapter.GetData
 
         Me.AlumnosTableAdapter.Fill(Me.MatriculaPECDataSet.alumnos)
 
@@ -288,7 +287,7 @@
 
 
 
-        DataGridView1.DataSource = ctableAdapter.GetData
+        '  DataGridView1.DataSource = ctableAdapter.GetData
 
     End Sub
 

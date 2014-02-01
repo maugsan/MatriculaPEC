@@ -1,13 +1,17 @@
 ﻿Public Class Grupos
 
 
-    Dim etableAdapter As New MatriculaPECDataSetTableAdapters.gruposTableAdapter
+    Dim gtableAdapter As New MatriculaPECDataSetTableAdapters.gruposTableAdapter
 
     Dim ctableAdapter As New MatriculaPECDataSetTableAdapters.cursosTableAdapter
 
     Dim periodotableAdapter As New MatriculaPECDataSetTableAdapters.periodosTableAdapter
 
     Dim ptableAdapter As New MatriculaPECDataSetTableAdapters.profesoresTableAdapter
+
+    Dim qtableAdapter As New MatriculaPECDataSetTableAdapters.QueriesTableAdapter
+
+
 
     Private Sub Grupos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -33,7 +37,7 @@
         'Verificar si existe Grupo antes de insertar
 
 
-        If Not IsNumeric(etableAdapter.comprobarGrupo(ctableAdapter.burcarCodigoCurso(ComboBox2.Text.Trim), ComboBox1.Text.Trim)) Then
+        If Not IsNumeric(gtableAdapter.comprobarGrupo(ctableAdapter.buscarCodigoCurso(ComboBox2.Text.Trim), ComboBox1.Text.Trim)) Then
 
 
 
@@ -41,11 +45,11 @@
             ' grupo desde el precedimiento almacenado
 
 
-            etableAdapter.insertar_grupo(ctableAdapter.burcarCodigoCurso(ComboBox2.Text.Trim), ComboBox1.Text.Trim, periodotableAdapter.buscarCodigoPeriodo(ComboBox3.Text.Trim), ptableAdapter.buscarCodigoProfesor(ComboBox4.Text.Trim))
+            qtableAdapter.insertar_grupo(ctableAdapter.buscarCodigoCurso(ComboBox2.Text.Trim), ComboBox1.Text.Trim, periodotableAdapter.consultarCodigoPeriodo(ComboBox3.Text.Trim), 1)
 
             MatriculaPEC.MenuPrincipal.GruposTableAdapter.Fill(MatriculaPEC.MenuPrincipal.MatriculaPECDataSet.grupos)
 
-            MenuPrincipal.DataTableGruposNombresTableAdapter.Fill(MenuPrincipal.MatriculaPECDataSet.DataTableGruposNombres)
+            '  MenuPrincipal.DataTableGruposNombresTableAdapter.Fill(MenuPrincipal.MatriculaPECDataSet.DataTableGruposNombres)
 
 
             Me.Close()

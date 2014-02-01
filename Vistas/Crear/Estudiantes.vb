@@ -3,6 +3,7 @@
 
     Private cache As String = ""
     Private etableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
+    Private qtableAdapter As New MatriculaPECDataSetTableAdapters.QueriesTableAdapter()
     Private mCanceling As Boolean = False
 
 
@@ -53,7 +54,7 @@
 
 
 
-            etableAdapter.insertar_alumno(tfCedula.Text.Trim, tfNombre.Text.Trim, tfApellido1.Text.Trim,
+            qtableAdapter.insertar_alumno(tfCedula.Text.Trim, tfNombre.Text.Trim, tfApellido1.Text.Trim,
                                              tfApellido2.Text.Trim, tfResponsable.Text.Trim, tfTelefonoResponsable.Text.Trim,
                                              tfTelefono.Text.Trim, tfCorreo.Text.Trim)
 
@@ -62,7 +63,7 @@
 
             MatriculaPEC.MenuPrincipal.AlumnosTableAdapter.Fill(MatriculaPEC.MenuPrincipal.MatriculaPECDataSet.alumnos)
 
-            MatriculaPEC.MenuPrincipal.estudiante = tfNombre.Text.Trim & " " & tfApellido1.Text.Trim & " " & tfApellido2.Text.Trim & " COD " & etableAdapter.consultar_codigo_estudiante(Me.tfCedula.Text)
+            MatriculaPEC.MenuPrincipal.estudiante = tfNombre.Text.Trim & " " & tfApellido1.Text.Trim & " " & tfApellido2.Text.Trim & " - " & Me.tfCedula.Text
 
             If (MenuPrincipal.banderaEstudiante = 1) Then
 

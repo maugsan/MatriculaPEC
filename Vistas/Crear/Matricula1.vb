@@ -48,7 +48,7 @@
         For Each alumno As MatriculaPECDataSet.alumnosRow In etableAdapter.GetData
 
 
-            TextBoxBuscar.AutoCompleteCustomSource.Add(alumno.nombre.Trim & " " & alumno.apellido1.Trim & " " & alumno.apellido2.Trim & " COD " & alumno.cod_alumno)
+            TextBoxBuscar.AutoCompleteCustomSource.Add(alumno.nombre.Trim & " " & alumno.apellido1.Trim & " " & alumno.apellido2.Trim & " - " & alumno.cedula)
 
 
         Next alumno
@@ -59,7 +59,8 @@
     Public Sub Button4_Click(sender As Object, e As EventArgs) Handles Elegir.Click
 
 
-        '    Me.LEstudianteSeleccionado.Text 
+
+
 
 
         If Me.LEstudianteSeleccionado.Text = "" Then
@@ -85,14 +86,13 @@
 
 
 
-
     End Sub
 
     Public Sub agregarNombreALabel()
 
 
         Me.Siguiente.Enabled = False
-
+        MatriculaPEC.MenuPrincipal.estudiante = StrConv(MatriculaPEC.MenuPrincipal.estudiante, vbProperCase)
         Me.LEstudianteSeleccionado.Text = MatriculaPEC.MenuPrincipal.estudiante
         Me.LEstudianteSeleccionado.Update()
 
@@ -139,7 +139,7 @@
 
                 Dim etableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
 
-                If etableAdapter.comprobarEstudiante(valor) <> "" Then
+                If etableAdapter.consultar_codigo_estudiante(valor).ToString <> "" Then
 
                     retorno = True
 

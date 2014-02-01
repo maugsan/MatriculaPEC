@@ -1,8 +1,13 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class MenuPrincipal
-
-
+Partial Class Principal
     Inherits System.Windows.Forms.Form
+
+ 
+
+
+
+
+
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -52,8 +57,7 @@ Partial Class MenuPrincipal
         Me.ComboBox14 = New System.Windows.Forms.ComboBox()
         Me.ComboBox13 = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        '        Me.PeriodosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        '        Me.MatriculaPECDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+     
         Me.MatriculaPECDataSet = New MatriculaPEC.MatriculaPECDataSet()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -216,7 +220,7 @@ Partial Class MenuPrincipal
         Me.PagosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.pagosTableAdapter()
         Me.ProfesoresTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.profesoresTableAdapter()
         Me.MatriculasTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter()
-        ' Me.DataTableGruposNombresTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.DataTableGruposNombresTableAdapter()
+
         Me.MatriculasBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.CodmatriculaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CodgrupoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -232,8 +236,6 @@ Partial Class MenuPrincipal
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageMatricula.SuspendLayout()
-        '        CType(Me.PeriodosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        '        CType(Me.MatriculaPECDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -983,10 +985,8 @@ Partial Class MenuPrincipal
         'CursosBindingSource
         '
         Me.CursosBindingSource.DataMember = "cursos"
-        '        Me.CursosBindingSource.DataSource = Me.MatriculaPECDataSetBindingSource
         '
         'Label4
-        '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.DodgerBlue
@@ -2348,7 +2348,7 @@ Partial Class MenuPrincipal
         'GruposBindingSource
         '
         Me.GruposBindingSource.DataMember = "grupos"
-        '        '        Me.GruposBindingSource.DataSource = Me.MatriculaPECDataSetBindingSource
+        '        Me.GruposBindingSource.DataSource = Me.MatriculaPECDataSetBindingSource
         '
         'DataGridViewImageColumn1
         '
@@ -2486,7 +2486,7 @@ Partial Class MenuPrincipal
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageMatricula.ResumeLayout(False)
         Me.TabPageMatricula.PerformLayout()
-        '        '        CType(Me.PeriodosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        '        CType(Me.PeriodosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         '        CType(Me.MatriculaPECDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2504,12 +2504,10 @@ Partial Class MenuPrincipal
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
-        '        CType(Me.DataTableGruposNombresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageEstudiante.ResumeLayout(False)
         Me.TabPageEstudiante.PerformLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AlumnosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPagePeriodos.ResumeLayout(False)
         Me.TabPagePeriodos.PerformLayout()
@@ -2766,6 +2764,14 @@ Partial Class MenuPrincipal
     Friend WithEvents Apellido1DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Apellido2DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewCheckBoxColumn
+
+
+
+
+
+
+
+
 
 
 

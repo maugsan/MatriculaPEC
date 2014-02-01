@@ -57,7 +57,7 @@ Partial Class Matricula2
         Me.Alumnos_en_gruposTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.alumnos_en_gruposTableAdapter()
         Me.FKmatriculacodg1DE57479BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MatriculasTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter()
-        Me.DataTableGruposNombresTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.DataTableGruposNombresTableAdapter()
+        '   Me.DataTableGruposNombresTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.DataTableGruposNombresTableAdapter()
         CType(Me.DataGridViewMatricula2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -352,7 +352,7 @@ Partial Class Matricula2
         '
         'DataTableGruposNombresTableAdapter
         '
-        Me.DataTableGruposNombresTableAdapter.ClearBeforeFill = True
+        '   Me.DataTableGruposNombresTableAdapter.ClearBeforeFill = True
         '
         'Matricula2
         '
@@ -421,7 +421,7 @@ Partial Class Matricula2
     Friend WithEvents MatriculasTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter
     Friend WithEvents FKgruposcodcurs0DAF0CB0BindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents DataTableGruposNombresBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DataTableGruposNombresTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.DataTableGruposNombresTableAdapter
+    ' Friend WithEvents DataTableGruposNombresTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.DataTableGruposNombresTableAdapter
     Friend WithEvents Grupo As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Forma As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Descuento As System.Windows.Forms.DataGridViewTextBoxColumn
