@@ -4,17 +4,21 @@
     Public Sub Button2_Click(sender As Object, e As EventArgs) Handles Siguiente.Click
 
 
-
-
         Me.Hide()
+
+        Matricula2.ComboBox2.Text = "Ninguno"
+
+        Matricula2.ComboBox2.DataSource = Nothing
+        Matricula2.ComboBox2.Enabled = False
 
         Matricula2.Show()
 
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Cancelar.Click
+        Matricula2.DataGridViewMatricula2 = Nothing
 
-        MenuPrincipal.estudiante = "----"
+        Principal.estudiante = "----"
         Me.Close()
 
     End Sub
@@ -22,7 +26,7 @@
     Private Sub ButtonMatricula_Click(sender As Object, e As EventArgs) Handles CrearEstudiante.Click
 
 
-        MenuPrincipal.banderaEstudiante = 1
+        Principal.banderaEstudiante = 1
         Estudiantes.Show()
         Me.Close()
 
@@ -60,9 +64,6 @@
 
 
 
-
-
-
         If Me.LEstudianteSeleccionado.Text = "" Then
 
             Me.Siguiente.Enabled = False
@@ -74,17 +75,10 @@
 
         If comprobarEstudiante(Me.TextBoxBuscar.Text) Then
 
-
-            MatriculaPEC.MenuPrincipal.estudiante = Me.TextBoxBuscar.Text
+            MatriculaPEC.Principal.estudiante = Me.TextBoxBuscar.Text
             agregarNombreALabel()
 
-
-
         End If
-
-
-
-
 
     End Sub
 
@@ -92,8 +86,8 @@
 
 
         Me.Siguiente.Enabled = False
-        MatriculaPEC.MenuPrincipal.estudiante = StrConv(MatriculaPEC.MenuPrincipal.estudiante, vbProperCase)
-        Me.LEstudianteSeleccionado.Text = MatriculaPEC.MenuPrincipal.estudiante
+        Principal.estudiante = StrConv(MatriculaPEC.Principal.estudiante, vbProperCase)
+        Me.LEstudianteSeleccionado.Text = MatriculaPEC.Principal.estudiante
         Me.LEstudianteSeleccionado.Update()
 
 
@@ -147,10 +141,7 @@
                 End If
 
             End If
-
-
         End If
-
 
         Return retorno
 

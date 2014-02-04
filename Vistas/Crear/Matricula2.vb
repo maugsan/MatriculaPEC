@@ -31,19 +31,15 @@
     End Sub
 
     Private Sub Matricula2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.periodos' Puede moverla o quitarla según sea necesario.
+        Me.PeriodosTableAdapter.Fill(Me.MatriculaPECDataSet.periodos)
 
-
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.DataTableGruposNombres' Puede moverla o quitarla según sea necesario.
-        '   Me.DataTableGruposNombresTableAdapter.Fill(Me.MatriculaPECDataSet.DataTableGruposNombres)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.grupos' Puede moverla o quitarla según sea necesario.
         Me.GruposTableAdapter.Fill(Me.MatriculaPECDataSet.grupos)
         'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.matriculas' Puede moverla o quitarla según sea necesario.
         Me.MatriculasTableAdapter.Fill(Me.MatriculaPECDataSet.matriculas)
         'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.alumnos_en_grupos' Puede moverla o quitarla según sea necesario.
         Me.Alumnos_en_gruposTableAdapter.Fill(Me.MatriculaPECDataSet.alumnos_en_grupos)
-
         Dim gtableAdapter As New MatriculaPECDataSetTableAdapters.gruposTableAdapter()
-
 
         'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.grupos' Puede moverla o quitarla según sea necesario.
         Me.GruposTableAdapter.Fill(Me.MatriculaPECDataSet.grupos)
@@ -76,77 +72,67 @@
         Dim encontrado As Boolean
 
 
-        encontrado = False
+        If Me.ComboBox2.Text <> "" Then
 
 
-        nombreGrupo = Me.ComboBox2.Text.TrimEnd
-        nombreCurso = Split(nombreGrupo, " ")
-
-        If (DataGridViewMatricula2.RowCount = 0) Then
+            encontrado = False
 
 
+            nombreGrupo = Me.ComboBox2.Text.TrimEnd
+            nombreCurso = Split(nombreGrupo, " ")
 
-            If estaMatriculado(nombreCurso) = False Then
+            If (DataGridViewMatricula2.RowCount = 0) Then
+
+                If estaMatriculado(nombreCurso) = False Then
+
+                    DataGridViewMatricula2.Rows.Add(row1)
+                    Button2.Enabled = True
 
 
-                DataGridViewMatricula2.Rows.Add(row1)
+                End If
 
+            Else
+
+                For Each row As DataGridViewRow In DataGridViewMatricula2.Rows
+
+
+                    If estaMatriculado(nombreCurso) = True Then
+
+                        encontrado = True
+
+
+                    End If
+
+                Next
+
+
+                For Each row As DataGridViewRow In DataGridViewMatricula2.Rows
+
+
+                    If row.Cells.Item("Grupo").Value.ToString.TrimEnd = nombreGrupo Then
+
+                        encontrado = True
+
+                        MsgBox("El grupo seleccionado existe.")
+
+
+                    End If
+
+                Next
+
+                If encontrado = False Then
+
+                    DataGridViewMatricula2.Rows.Add(row1)
+                    Button2.Enabled = True
+
+                End If
 
             End If
 
 
 
-        Else
-
-            For Each row As DataGridViewRow In DataGridViewMatricula2.Rows
-
-
-                If estaMatriculado(nombreCurso) = True Then
-
-                    encontrado = True
-
-
-                End If
-
-
-         
-
-            Next
-
-
-            For Each row As DataGridViewRow In DataGridViewMatricula2.Rows
-
-
-                If row.Cells.Item("Grupo").Value.ToString.TrimEnd = nombreGrupo Then
-
-
-
-                    encontrado = True
-
-                    MsgBox("El grupo seleccionado existe.")
-
-
-
-                End If
-
-
-
-
-            Next
-
-
-      
-
-            If encontrado = False Then
-
-                DataGridViewMatricula2.Rows.Add(row1)
-
-            End If
 
         End If
-
-        Button2.Enabled = True
-
     End Sub
 
 
@@ -154,7 +140,7 @@
 
         Dim valor As String
         valor = ""
-        Dim TestArray() As String = Split(MenuPrincipal.estudiante)
+        Dim TestArray() As String = Split(Principal.estudiante)
         Dim LastNonEmpty As Integer = -1
 
 
@@ -204,8 +190,6 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox3.Validating
 
             End If
 
-
-
         End If
     End Sub
 
@@ -223,8 +207,6 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox4.Validating
 
 
             End If
-
-
 
         End If
     End Sub
@@ -260,44 +242,6 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox4.Validating
 #End Region
 
 
-
-    Private Sub FillByGrupoToolStripButton_Click(sender As Object, e As EventArgs)
-        Try
-            '   Me.GruposTableAdapter.FillByGrupo(Me.MatriculaPECDataSet.grupos)
-        Catch ex As System.Exception
-            System.Windows.Forms.MessageBox.Show(ex.Message)
-        End Try
-
-    End Sub
-
-    Private Sub FillByGrupoToolStripButton1_Click(sender As Object, e As EventArgs)
-        Try
-            '  Me.GruposTableAdapter.FillByGrupo(Me.MatriculaPECDataSet.grupos)
-        Catch ex As System.Exception
-            System.Windows.Forms.MessageBox.Show(ex.Message)
-        End Try
-
-    End Sub
-
-    Private Sub FillByGrupoToolStripButton_Click_1(sender As Object, e As EventArgs)
-        Try
-            ' Me.GruposTableAdapter.FillByGrupo(Me.MatriculaPECDataSet.grupos)
-        Catch ex As System.Exception
-            System.Windows.Forms.MessageBox.Show(ex.Message)
-        End Try
-
-    End Sub
-
-    Private Sub FillByGrupoToolStripButton1_Click_1(sender As Object, e As EventArgs)
-        Try
-            ' Me.GruposTableAdapter.FillByGrupo(Me.MatriculaPECDataSet.grupos)
-        Catch ex As System.Exception
-            System.Windows.Forms.MessageBox.Show(ex.Message)
-        End Try
-
-    End Sub
-
-
     Private Function estaMatriculado(nombreCurso() As String) As Boolean
 
         Dim matriculado As Boolean
@@ -307,11 +251,18 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox4.Validating
         Dim codEstudiante As Integer
 
 
+
         matriculado = True
 
-        codCurso = ctableAdapter.buscarCodigoCurso(nombreCurso(3) & " " & nombreCurso(4))
+        codCurso = ctableAdapter.buscarCodigoCurso(nombreCurso(1) & " " & nombreCurso(2))
+
+
         codEstudiante = atableAdapter.consultar_codigo_estudiante(obtenerCodigoEstudiante)
-        codGrupo = gtableAdapter.consultarCodigoGrupoPorNumeroYCurso(nombreCurso(1).Replace("G", ""), codCurso)
+
+
+        codGrupo = gtableAdapter.consultarCodigoGrupoPorNumeroYCurso(nombreCurso(0).Replace("G", ""), codCurso)
+
+
         codMatricula = mtableAdapter.consultarCodigoMatricula(codGrupo, codEstudiante)
 
 
@@ -339,4 +290,25 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox4.Validating
         Return 0
     End Function
  
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+
+
+        If gtableAdapter.GetDataByPeriodo(ComboBox1.Text).Rows.Count <> 0 Then
+
+
+            ComboBox2.Enabled = True
+            ComboBox2.DataSource = gtableAdapter.GetDataByPeriodo(ComboBox1.Text)
+            ComboBox2.DisplayMember = "Curso"
+
+
+
+        Else
+
+            ComboBox2.Enabled = False
+            ComboBox2.DataSource = Nothing
+        End If
+     
+    End Sub
 End Class

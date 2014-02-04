@@ -30,7 +30,7 @@ Partial Class Principal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControlPrincipal = New System.Windows.Forms.TabControl()
         Me.TabPageMenu = New System.Windows.Forms.TabPage()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -53,19 +53,19 @@ Partial Class Principal
         Me.TextBoxBuscar = New System.Windows.Forms.TextBox()
         Me.ButtonMatricula = New System.Windows.Forms.Button()
         Me.TabPageMatricula = New System.Windows.Forms.TabPage()
-        Me.ComboBox15 = New System.Windows.Forms.ComboBox()
         Me.ComboBox14 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox15 = New System.Windows.Forms.ComboBox()
         Me.ComboBox13 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-     
+        Me.MatriculasBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
         Me.MatriculaPECDataSet = New MatriculaPEC.MatriculaPECDataSet()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ButtonMMatricula = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MatriculasBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.ButtonRegresar = New System.Windows.Forms.Button()
@@ -78,10 +78,6 @@ Partial Class Principal
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ButtonCCursos = New System.Windows.Forms.Button()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.NombreDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DuracionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DescripcionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CostoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Eliminar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.CursosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label4 = New System.Windows.Forms.Label()
@@ -94,12 +90,7 @@ Partial Class Principal
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ButtonGGrupos = New System.Windows.Forms.Button()
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
-        Me.Código = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EliminarGrupos = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataTableGruposNombresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label6 = New System.Windows.Forms.Label()
         Me.ButtonGAtras = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -129,7 +120,6 @@ Partial Class Principal
         Me.Label9 = New System.Windows.Forms.Label()
         Me.ButtonPPeriodos = New System.Windows.Forms.Button()
         Me.DataGridView5 = New System.Windows.Forms.DataGridView()
-        Me.NombreDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EliminarPeriodo = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.ButtonPAtras = New System.Windows.Forms.Button()
@@ -142,8 +132,6 @@ Partial Class Principal
         Me.Label11 = New System.Windows.Forms.Label()
         Me.ButtonDDescuentos = New System.Windows.Forms.Button()
         Me.DataGridView6 = New System.Windows.Forms.DataGridView()
-        Me.NombreDataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PorcentajeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EliminarDescuento = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.DescuentosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label12 = New System.Windows.Forms.Label()
@@ -157,9 +145,6 @@ Partial Class Principal
         Me.Label13 = New System.Windows.Forms.Label()
         Me.ButtonPPagos = New System.Windows.Forms.Button()
         Me.DataGridView7 = New System.Windows.Forms.DataGridView()
-        Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MontoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CodmediopagoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EliminarPago = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.PagosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label14 = New System.Windows.Forms.Label()
@@ -173,11 +158,6 @@ Partial Class Principal
         Me.Label15 = New System.Windows.Forms.Label()
         Me.ButtonPProfesores = New System.Windows.Forms.Button()
         Me.DataGridView8 = New System.Windows.Forms.DataGridView()
-        Me.NombreDataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido1DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido2DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TelefonoDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CorreoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EliminarProfesor = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.ProfesoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label16 = New System.Windows.Forms.Label()
@@ -207,6 +187,8 @@ Partial Class Principal
         Me.ComboBox12 = New System.Windows.Forms.ComboBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.Button17 = New System.Windows.Forms.Button()
+        Me.MatriculasBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MatriculasBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.MatriculasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GruposBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
@@ -220,27 +202,19 @@ Partial Class Principal
         Me.PagosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.pagosTableAdapter()
         Me.ProfesoresTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.profesoresTableAdapter()
         Me.MatriculasTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter()
-
-        Me.MatriculasBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.CodmatriculaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CodgrupoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreDataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumeroDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreEstudianteDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido1DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido2DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.MatriculasBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MatriculasBindingSource5 = New System.Windows.Forms.BindingSource(Me.components)
         Me.TabControlPrincipal.SuspendLayout()
         Me.TabPageMenu.SuspendLayout()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageMatricula.SuspendLayout()
+        CType(Me.MatriculasBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MatriculasBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageCursos.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -250,7 +224,6 @@ Partial Class Principal
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataTableGruposNombresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageEstudiante.SuspendLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -287,11 +260,14 @@ Partial Class Principal
         Me.TabPageListas.SuspendLayout()
         CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MatriculasBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MatriculasBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MatriculasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GruposBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FKmatriculacodg1DE57479BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MatriculaPECDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MatriculasBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MatriculasBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MatriculasBindingSource5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControlPrincipal
@@ -622,8 +598,8 @@ Partial Class Principal
         'TabPageMatricula
         '
         Me.TabPageMatricula.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.TabPageMatricula.Controls.Add(Me.ComboBox15)
         Me.TabPageMatricula.Controls.Add(Me.ComboBox14)
+        Me.TabPageMatricula.Controls.Add(Me.ComboBox15)
         Me.TabPageMatricula.Controls.Add(Me.ComboBox13)
         Me.TabPageMatricula.Controls.Add(Me.ComboBox1)
         Me.TabPageMatricula.Controls.Add(Me.PictureBox1)
@@ -643,6 +619,22 @@ Partial Class Principal
         Me.TabPageMatricula.TabIndex = 1
         Me.TabPageMatricula.Text = "Matricula"
         '
+        'ComboBox14
+        '
+        Me.ComboBox14.AllowDrop = True
+        Me.ComboBox14.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox14.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.ComboBox14.DropDownHeight = 200
+        Me.ComboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ComboBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox14.IntegralHeight = False
+        Me.ComboBox14.ItemHeight = 24
+        Me.ComboBox14.Location = New System.Drawing.Point(91, 348)
+        Me.ComboBox14.Name = "ComboBox14"
+        Me.ComboBox14.Size = New System.Drawing.Size(262, 32)
+        Me.ComboBox14.TabIndex = 38
+        '
         'ComboBox15
         '
         Me.ComboBox15.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -655,22 +647,11 @@ Partial Class Principal
         Me.ComboBox15.Size = New System.Drawing.Size(262, 32)
         Me.ComboBox15.TabIndex = 37
         '
-        'ComboBox14
-        '
-        Me.ComboBox14.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox14.IntegralHeight = False
-        Me.ComboBox14.ItemHeight = 24
-        Me.ComboBox14.Items.AddRange(New Object() {"Cursos", "Descuentos", "Estudiantes", "Grupos", "Matricula", "Pagos", "Periodos", "Profesores", "Usuarios"})
-        Me.ComboBox14.Location = New System.Drawing.Point(91, 337)
-        Me.ComboBox14.Name = "ComboBox14"
-        Me.ComboBox14.Size = New System.Drawing.Size(262, 32)
-        Me.ComboBox14.TabIndex = 36
-        '
         'ComboBox13
         '
         Me.ComboBox13.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox13.DataSource = Me.MatriculasBindingSource4
+        Me.ComboBox13.DisplayMember = "Estudiante"
         Me.ComboBox13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox13.IntegralHeight = False
@@ -679,13 +660,24 @@ Partial Class Principal
         Me.ComboBox13.Name = "ComboBox13"
         Me.ComboBox13.Size = New System.Drawing.Size(262, 32)
         Me.ComboBox13.TabIndex = 35
+        Me.ComboBox13.ValueMember = "Estudiante"
+        '
+        'MatriculasBindingSource4
+        '
+        Me.MatriculasBindingSource4.DataMember = "matriculas"
+        Me.MatriculasBindingSource4.DataSource = Me.MatriculaPECDataSet
+        '
+        'MatriculaPECDataSet
+        '
+        Me.MatriculaPECDataSet.DataSetName = "MatriculaPECDataSet"
+        Me.MatriculaPECDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'ComboBox1
         '
         Me.ComboBox1.AllowDrop = True
         Me.ComboBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox1.Cursor = System.Windows.Forms.Cursors.No
-        '        Me.ComboBox1.DataSource = Me.PeriodosBindingSource
+        Me.ComboBox1.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.ComboBox1.DataSource = Me.BindingSource1
         Me.ComboBox1.DisplayMember = "nombre"
         Me.ComboBox1.DropDownHeight = 200
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -699,20 +691,10 @@ Partial Class Principal
         Me.ComboBox1.TabIndex = 34
         Me.ComboBox1.ValueMember = "cod_periodo"
         '
-        'PeriodosBindingSource
+        'BindingSource1
         '
-        '        Me.PeriodosBindingSource.DataMember = "periodos"
-        '        Me.PeriodosBindingSource.DataSource = Me.MatriculaPECDataSetBindingSource
-        '
-        'MatriculaPECDataSetBindingSource
-        '
-        '        Me.MatriculaPECDataSetBindingSource.DataSource = Me.MatriculaPECDataSet
-        '        Me.MatriculaPECDataSetBindingSource.Position = 0
-        '
-        'MatriculaPECDataSet
-        '
-        Me.MatriculaPECDataSet.DataSetName = "MatriculaPECDataSet"
-        Me.MatriculaPECDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.BindingSource1.DataMember = "periodos"
+        Me.BindingSource1.DataSource = Me.MatriculaPECDataSet
         '
         'PictureBox1
         '
@@ -773,12 +755,9 @@ Partial Class Principal
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodmatriculaDataGridViewTextBoxColumn, Me.CodgrupoDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn5, Me.FechaDataGridViewTextBoxColumn1, Me.NumeroDataGridViewTextBoxColumn, Me.NombreEstudianteDataGridViewTextBoxColumn, Me.Apellido1DataGridViewTextBoxColumn2, Me.Apellido2DataGridViewTextBoxColumn2, Me.Column1})
-        Me.DataGridView1.DataSource = Me.MatriculasBindingSource2
         Me.DataGridView1.GridColor = System.Drawing.SystemColors.ControlLightLight
         Me.DataGridView1.Location = New System.Drawing.Point(91, 398)
         Me.DataGridView1.Name = "DataGridView1"
@@ -789,11 +768,6 @@ Partial Class Principal
         Me.DataGridView1.RowTemplate.Height = 40
         Me.DataGridView1.Size = New System.Drawing.Size(1063, 274)
         Me.DataGridView1.TabIndex = 1
-        '
-        'MatriculasBindingSource1
-        '
-        Me.MatriculasBindingSource1.DataMember = "matriculas"
-        Me.MatriculasBindingSource1.DataSource = Me.MatriculaPECDataSet
         '
         'Label1
         '
@@ -937,7 +911,7 @@ Partial Class Principal
         Me.DataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView2.ColumnHeadersHeight = 40
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreDataGridViewTextBoxColumn1, Me.DuracionDataGridViewTextBoxColumn, Me.DescripcionDataGridViewTextBoxColumn, Me.CostoDataGridViewTextBoxColumn, Me.Eliminar})
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eliminar})
         Me.DataGridView2.DataSource = Me.CursosBindingSource
         Me.DataGridView2.Location = New System.Drawing.Point(204, 293)
         Me.DataGridView2.Name = "DataGridView2"
@@ -945,34 +919,6 @@ Partial Class Principal
         Me.DataGridView2.RowTemplate.Height = 40
         Me.DataGridView2.Size = New System.Drawing.Size(1011, 274)
         Me.DataGridView2.TabIndex = 6
-        '
-        'NombreDataGridViewTextBoxColumn1
-        '
-        Me.NombreDataGridViewTextBoxColumn1.DataPropertyName = "nombre"
-        Me.NombreDataGridViewTextBoxColumn1.HeaderText = "nombre"
-        Me.NombreDataGridViewTextBoxColumn1.Name = "NombreDataGridViewTextBoxColumn1"
-        Me.NombreDataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DuracionDataGridViewTextBoxColumn
-        '
-        Me.DuracionDataGridViewTextBoxColumn.DataPropertyName = "duracion"
-        Me.DuracionDataGridViewTextBoxColumn.HeaderText = "duracion"
-        Me.DuracionDataGridViewTextBoxColumn.Name = "DuracionDataGridViewTextBoxColumn"
-        Me.DuracionDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'DescripcionDataGridViewTextBoxColumn
-        '
-        Me.DescripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion"
-        Me.DescripcionDataGridViewTextBoxColumn.HeaderText = "descripcion"
-        Me.DescripcionDataGridViewTextBoxColumn.Name = "DescripcionDataGridViewTextBoxColumn"
-        Me.DescripcionDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'CostoDataGridViewTextBoxColumn
-        '
-        Me.CostoDataGridViewTextBoxColumn.DataPropertyName = "costo"
-        Me.CostoDataGridViewTextBoxColumn.HeaderText = "costo"
-        Me.CostoDataGridViewTextBoxColumn.Name = "CostoDataGridViewTextBoxColumn"
-        Me.CostoDataGridViewTextBoxColumn.ReadOnly = True
         '
         'Eliminar
         '
@@ -987,6 +933,7 @@ Partial Class Principal
         Me.CursosBindingSource.DataMember = "cursos"
         '
         'Label4
+        '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.DodgerBlue
@@ -1102,12 +1049,10 @@ Partial Class Principal
         Me.DataGridView3.AllowDrop = True
         Me.DataGridView3.AllowUserToAddRows = False
         Me.DataGridView3.AllowUserToDeleteRows = False
-        Me.DataGridView3.AutoGenerateColumns = False
         Me.DataGridView3.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Código, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.EliminarGrupos})
-        Me.DataGridView3.DataSource = Me.DataTableGruposNombresBindingSource
+        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EliminarGrupos})
         Me.DataGridView3.Location = New System.Drawing.Point(203, 293)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.ReadOnly = True
@@ -1115,45 +1060,12 @@ Partial Class Principal
         Me.DataGridView3.Size = New System.Drawing.Size(1012, 274)
         Me.DataGridView3.TabIndex = 11
         '
-        'Código
-        '
-        Me.Código.DataPropertyName = "Código"
-        Me.Código.HeaderText = "Código"
-        Me.Código.Name = "Código"
-        Me.Código.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Curso"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Curso"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Profesor"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Profesor"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Periodo"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Periodo"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        '
         'EliminarGrupos
         '
         Me.EliminarGrupos.HeaderText = "Eliminar"
         Me.EliminarGrupos.Image = Global.MatriculaPEC.My.Resources.Resources.Close
         Me.EliminarGrupos.Name = "EliminarGrupos"
         Me.EliminarGrupos.ReadOnly = True
-        '
-        'DataTableGruposNombresBindingSource
-        '
-        Me.DataTableGruposNombresBindingSource.DataMember = "DataTableGruposNombres"
-        Me.DataTableGruposNombresBindingSource.DataSource = Me.MatriculaPECDataSet
         '
         'Label6
         '
@@ -1340,11 +1252,11 @@ Partial Class Principal
         '
         Me.EliminarEstudiantes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
         Me.EliminarEstudiantes.DataPropertyName = "cod_alumno"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.DeepSkyBlue
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        Me.EliminarEstudiantes.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        Me.EliminarEstudiantes.DefaultCellStyle = DataGridViewCellStyle1
         Me.EliminarEstudiantes.HeaderText = "Eliminar"
         Me.EliminarEstudiantes.Name = "EliminarEstudiantes"
         Me.EliminarEstudiantes.ReadOnly = True
@@ -1486,22 +1398,13 @@ Partial Class Principal
         Me.DataGridView5.AllowDrop = True
         Me.DataGridView5.AllowUserToAddRows = False
         Me.DataGridView5.AllowUserToDeleteRows = False
-        Me.DataGridView5.AutoGenerateColumns = False
         Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView5.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreDataGridViewTextBoxColumn2, Me.EliminarPeriodo})
-        '        Me.DataGridView5.DataSource = Me.PeriodosBindingSource
+        Me.DataGridView5.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EliminarPeriodo})
         Me.DataGridView5.Location = New System.Drawing.Point(422, 293)
         Me.DataGridView5.Name = "DataGridView5"
         Me.DataGridView5.ReadOnly = True
         Me.DataGridView5.Size = New System.Drawing.Size(793, 274)
         Me.DataGridView5.TabIndex = 21
-        '
-        'NombreDataGridViewTextBoxColumn2
-        '
-        Me.NombreDataGridViewTextBoxColumn2.DataPropertyName = "nombre"
-        Me.NombreDataGridViewTextBoxColumn2.HeaderText = "nombre"
-        Me.NombreDataGridViewTextBoxColumn2.Name = "NombreDataGridViewTextBoxColumn2"
-        Me.NombreDataGridViewTextBoxColumn2.ReadOnly = True
         '
         'EliminarPeriodo
         '
@@ -1641,27 +1544,13 @@ Partial Class Principal
         Me.DataGridView6.AllowUserToDeleteRows = False
         Me.DataGridView6.AutoGenerateColumns = False
         Me.DataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView6.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreDataGridViewTextBoxColumn3, Me.PorcentajeDataGridViewTextBoxColumn, Me.EliminarDescuento})
+        Me.DataGridView6.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EliminarDescuento})
         Me.DataGridView6.DataSource = Me.DescuentosBindingSource
         Me.DataGridView6.Location = New System.Drawing.Point(422, 293)
         Me.DataGridView6.Name = "DataGridView6"
         Me.DataGridView6.ReadOnly = True
         Me.DataGridView6.Size = New System.Drawing.Size(793, 274)
         Me.DataGridView6.TabIndex = 26
-        '
-        'NombreDataGridViewTextBoxColumn3
-        '
-        Me.NombreDataGridViewTextBoxColumn3.DataPropertyName = "nombre"
-        Me.NombreDataGridViewTextBoxColumn3.HeaderText = "nombre"
-        Me.NombreDataGridViewTextBoxColumn3.Name = "NombreDataGridViewTextBoxColumn3"
-        Me.NombreDataGridViewTextBoxColumn3.ReadOnly = True
-        '
-        'PorcentajeDataGridViewTextBoxColumn
-        '
-        Me.PorcentajeDataGridViewTextBoxColumn.DataPropertyName = "porcentaje"
-        Me.PorcentajeDataGridViewTextBoxColumn.HeaderText = "porcentaje"
-        Me.PorcentajeDataGridViewTextBoxColumn.Name = "PorcentajeDataGridViewTextBoxColumn"
-        Me.PorcentajeDataGridViewTextBoxColumn.ReadOnly = True
         '
         'EliminarDescuento
         '
@@ -1672,7 +1561,6 @@ Partial Class Principal
         'DescuentosBindingSource
         '
         Me.DescuentosBindingSource.DataMember = "descuentos"
-        '        Me.DescuentosBindingSource.DataSource = Me.MatriculaPECDataSetBindingSource
         '
         'Label12
         '
@@ -1806,34 +1694,13 @@ Partial Class Principal
         Me.DataGridView7.AllowUserToDeleteRows = False
         Me.DataGridView7.AutoGenerateColumns = False
         Me.DataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView7.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.FechaDataGridViewTextBoxColumn, Me.MontoDataGridViewTextBoxColumn, Me.CodmediopagoDataGridViewTextBoxColumn, Me.EliminarPago})
+        Me.DataGridView7.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EliminarPago})
         Me.DataGridView7.DataSource = Me.PagosBindingSource
         Me.DataGridView7.Location = New System.Drawing.Point(422, 293)
         Me.DataGridView7.Name = "DataGridView7"
         Me.DataGridView7.ReadOnly = True
         Me.DataGridView7.Size = New System.Drawing.Size(793, 274)
         Me.DataGridView7.TabIndex = 31
-        '
-        'FechaDataGridViewTextBoxColumn
-        '
-        Me.FechaDataGridViewTextBoxColumn.DataPropertyName = "fecha"
-        Me.FechaDataGridViewTextBoxColumn.HeaderText = "fecha"
-        Me.FechaDataGridViewTextBoxColumn.Name = "FechaDataGridViewTextBoxColumn"
-        Me.FechaDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'MontoDataGridViewTextBoxColumn
-        '
-        Me.MontoDataGridViewTextBoxColumn.DataPropertyName = "monto"
-        Me.MontoDataGridViewTextBoxColumn.HeaderText = "monto"
-        Me.MontoDataGridViewTextBoxColumn.Name = "MontoDataGridViewTextBoxColumn"
-        Me.MontoDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'CodmediopagoDataGridViewTextBoxColumn
-        '
-        Me.CodmediopagoDataGridViewTextBoxColumn.DataPropertyName = "cod_mediopago"
-        Me.CodmediopagoDataGridViewTextBoxColumn.HeaderText = "cod_mediopago"
-        Me.CodmediopagoDataGridViewTextBoxColumn.Name = "CodmediopagoDataGridViewTextBoxColumn"
-        Me.CodmediopagoDataGridViewTextBoxColumn.ReadOnly = True
         '
         'EliminarPago
         '
@@ -1844,7 +1711,6 @@ Partial Class Principal
         'PagosBindingSource
         '
         Me.PagosBindingSource.DataMember = "pagos"
-        '        Me.PagosBindingSource.DataSource = Me.MatriculaPECDataSetBindingSource
         '
         'Label14
         '
@@ -1978,48 +1844,13 @@ Partial Class Principal
         Me.DataGridView8.AllowUserToDeleteRows = False
         Me.DataGridView8.AutoGenerateColumns = False
         Me.DataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView8.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreDataGridViewTextBoxColumn4, Me.Apellido1DataGridViewTextBoxColumn1, Me.Apellido2DataGridViewTextBoxColumn1, Me.TelefonoDataGridViewTextBoxColumn1, Me.CorreoDataGridViewTextBoxColumn, Me.EliminarProfesor})
+        Me.DataGridView8.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EliminarProfesor})
         Me.DataGridView8.DataSource = Me.ProfesoresBindingSource
         Me.DataGridView8.Location = New System.Drawing.Point(422, 293)
         Me.DataGridView8.Name = "DataGridView8"
         Me.DataGridView8.ReadOnly = True
         Me.DataGridView8.Size = New System.Drawing.Size(793, 274)
         Me.DataGridView8.TabIndex = 36
-        '
-        'NombreDataGridViewTextBoxColumn4
-        '
-        Me.NombreDataGridViewTextBoxColumn4.DataPropertyName = "nombre"
-        Me.NombreDataGridViewTextBoxColumn4.HeaderText = "nombre"
-        Me.NombreDataGridViewTextBoxColumn4.Name = "NombreDataGridViewTextBoxColumn4"
-        Me.NombreDataGridViewTextBoxColumn4.ReadOnly = True
-        '
-        'Apellido1DataGridViewTextBoxColumn1
-        '
-        Me.Apellido1DataGridViewTextBoxColumn1.DataPropertyName = "apellido1"
-        Me.Apellido1DataGridViewTextBoxColumn1.HeaderText = "apellido1"
-        Me.Apellido1DataGridViewTextBoxColumn1.Name = "Apellido1DataGridViewTextBoxColumn1"
-        Me.Apellido1DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'Apellido2DataGridViewTextBoxColumn1
-        '
-        Me.Apellido2DataGridViewTextBoxColumn1.DataPropertyName = "apellido2"
-        Me.Apellido2DataGridViewTextBoxColumn1.HeaderText = "apellido2"
-        Me.Apellido2DataGridViewTextBoxColumn1.Name = "Apellido2DataGridViewTextBoxColumn1"
-        Me.Apellido2DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'TelefonoDataGridViewTextBoxColumn1
-        '
-        Me.TelefonoDataGridViewTextBoxColumn1.DataPropertyName = "telefono"
-        Me.TelefonoDataGridViewTextBoxColumn1.HeaderText = "telefono"
-        Me.TelefonoDataGridViewTextBoxColumn1.Name = "TelefonoDataGridViewTextBoxColumn1"
-        Me.TelefonoDataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'CorreoDataGridViewTextBoxColumn
-        '
-        Me.CorreoDataGridViewTextBoxColumn.DataPropertyName = "correo"
-        Me.CorreoDataGridViewTextBoxColumn.HeaderText = "correo"
-        Me.CorreoDataGridViewTextBoxColumn.Name = "CorreoDataGridViewTextBoxColumn"
-        Me.CorreoDataGridViewTextBoxColumn.ReadOnly = True
         '
         'EliminarProfesor
         '
@@ -2030,7 +1861,6 @@ Partial Class Principal
         'ProfesoresBindingSource
         '
         Me.ProfesoresBindingSource.DataMember = "profesores"
-        '        Me.ProfesoresBindingSource.DataSource = Me.MatriculaPECDataSetBindingSource
         '
         'Label16
         '
@@ -2340,15 +2170,23 @@ Partial Class Principal
         Me.Button17.TabIndex = 31
         Me.Button17.UseVisualStyleBackColor = True
         '
+        'MatriculasBindingSource2
+        '
+        Me.MatriculasBindingSource2.DataMember = "matriculas"
+        Me.MatriculasBindingSource2.DataSource = Me.MatriculaPECDataSet
+        '
+        'MatriculasBindingSource1
+        '
+        Me.MatriculasBindingSource1.DataMember = "matriculas"
+        Me.MatriculasBindingSource1.DataSource = Me.MatriculaPECDataSet
+        '
         'MatriculasBindingSource
         '
         Me.MatriculasBindingSource.DataMember = "matriculas"
-        '        Me.MatriculasBindingSource.DataSource = Me.MatriculaPECDataSetBindingSource
         '
         'GruposBindingSource
         '
         Me.GruposBindingSource.DataMember = "grupos"
-        '        Me.GruposBindingSource.DataSource = Me.MatriculaPECDataSetBindingSource
         '
         'DataGridViewImageColumn1
         '
@@ -2395,79 +2233,17 @@ Partial Class Principal
         '
         Me.MatriculasTableAdapter.ClearBeforeFill = True
         '
-        'DataTableGruposNombresTableAdapter
+        'MatriculasBindingSource3
         '
-        '  Me.DataTableGruposNombresTableAdapter.ClearBeforeFill = True
+        Me.MatriculasBindingSource3.DataMember = "matriculas"
+        Me.MatriculasBindingSource3.DataSource = Me.MatriculaPECDataSet
         '
-        'MatriculasBindingSource2
+        'MatriculasBindingSource5
         '
-        Me.MatriculasBindingSource2.DataMember = "matriculas"
-        Me.MatriculasBindingSource2.DataSource = Me.MatriculaPECDataSet
+        Me.MatriculasBindingSource5.DataMember = "matriculas"
+        Me.MatriculasBindingSource5.DataSource = Me.MatriculaPECDataSet
         '
-        'CodmatriculaDataGridViewTextBoxColumn
-        '
-        Me.CodmatriculaDataGridViewTextBoxColumn.DataPropertyName = "cod_matricula"
-        Me.CodmatriculaDataGridViewTextBoxColumn.HeaderText = "cod_matricula"
-        Me.CodmatriculaDataGridViewTextBoxColumn.Name = "CodmatriculaDataGridViewTextBoxColumn"
-        Me.CodmatriculaDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'CodgrupoDataGridViewTextBoxColumn
-        '
-        Me.CodgrupoDataGridViewTextBoxColumn.DataPropertyName = "cod_grupo"
-        Me.CodgrupoDataGridViewTextBoxColumn.HeaderText = "cod_grupo"
-        Me.CodgrupoDataGridViewTextBoxColumn.Name = "CodgrupoDataGridViewTextBoxColumn"
-        Me.CodgrupoDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'NombreDataGridViewTextBoxColumn5
-        '
-        Me.NombreDataGridViewTextBoxColumn5.DataPropertyName = "nombre"
-        Me.NombreDataGridViewTextBoxColumn5.HeaderText = "nombre"
-        Me.NombreDataGridViewTextBoxColumn5.Name = "NombreDataGridViewTextBoxColumn5"
-        Me.NombreDataGridViewTextBoxColumn5.ReadOnly = True
-        '
-        'FechaDataGridViewTextBoxColumn1
-        '
-        Me.FechaDataGridViewTextBoxColumn1.DataPropertyName = "fecha"
-        Me.FechaDataGridViewTextBoxColumn1.HeaderText = "fecha"
-        Me.FechaDataGridViewTextBoxColumn1.Name = "FechaDataGridViewTextBoxColumn1"
-        Me.FechaDataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'NumeroDataGridViewTextBoxColumn
-        '
-        Me.NumeroDataGridViewTextBoxColumn.DataPropertyName = "numero"
-        Me.NumeroDataGridViewTextBoxColumn.HeaderText = "numero"
-        Me.NumeroDataGridViewTextBoxColumn.Name = "NumeroDataGridViewTextBoxColumn"
-        Me.NumeroDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'NombreEstudianteDataGridViewTextBoxColumn
-        '
-        Me.NombreEstudianteDataGridViewTextBoxColumn.DataPropertyName = "nombreEstudiante"
-        Me.NombreEstudianteDataGridViewTextBoxColumn.HeaderText = "nombreEstudiante"
-        Me.NombreEstudianteDataGridViewTextBoxColumn.Name = "NombreEstudianteDataGridViewTextBoxColumn"
-        Me.NombreEstudianteDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'Apellido1DataGridViewTextBoxColumn2
-        '
-        Me.Apellido1DataGridViewTextBoxColumn2.DataPropertyName = "apellido1"
-        Me.Apellido1DataGridViewTextBoxColumn2.HeaderText = "apellido1"
-        Me.Apellido1DataGridViewTextBoxColumn2.Name = "Apellido1DataGridViewTextBoxColumn2"
-        Me.Apellido1DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'Apellido2DataGridViewTextBoxColumn2
-        '
-        Me.Apellido2DataGridViewTextBoxColumn2.DataPropertyName = "apellido2"
-        Me.Apellido2DataGridViewTextBoxColumn2.HeaderText = "apellido2"
-        Me.Apellido2DataGridViewTextBoxColumn2.Name = "Apellido2DataGridViewTextBoxColumn2"
-        Me.Apellido2DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'Column1
-        '
-        Me.Column1.DataPropertyName = "cod_matricula"
-        Me.Column1.HeaderText = "Column1"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'MenuPrincipal
+        'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -2476,7 +2252,7 @@ Partial Class Principal
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(1284, 729)
         Me.Controls.Add(Me.TabControlPrincipal)
-        Me.Name = "MenuPrincipal"
+        Me.Name = "Principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Matricula Educación Continua"
         Me.TabControlPrincipal.ResumeLayout(False)
@@ -2486,13 +2262,12 @@ Partial Class Principal
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageMatricula.ResumeLayout(False)
         Me.TabPageMatricula.PerformLayout()
-        '        CType(Me.PeriodosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        '        CType(Me.MatriculaPECDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MatriculasBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MatriculasBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageCursos.ResumeLayout(False)
         Me.TabPageCursos.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2508,6 +2283,7 @@ Partial Class Principal
         Me.TabPageEstudiante.PerformLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AlumnosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPagePeriodos.ResumeLayout(False)
         Me.TabPagePeriodos.PerformLayout()
@@ -2548,11 +2324,14 @@ Partial Class Principal
         Me.TabPageListas.PerformLayout()
         CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MatriculasBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MatriculasBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MatriculasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GruposBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FKmatriculacodg1DE57479BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MatriculaPECDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MatriculasBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MatriculasBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MatriculasBindingSource5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2738,18 +2517,15 @@ Partial Class Principal
     Friend WithEvents MatriculaPECDataSet1 As MatriculaPEC.MatriculaPECDataSet
 
 
-    Friend WithEvents CursoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ProfesorDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PeriodoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CódigoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataTableGruposNombresBindingSource As System.Windows.Forms.BindingSource
+
     '  Friend WithEvents DataTableGruposNombresTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.DataTableGruposNombresTableAdapter
     Friend WithEvents Código As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents EliminarGrupos As System.Windows.Forms.DataGridViewImageColumn
-    Friend WithEvents ComboBox14 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox13 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox15 As System.Windows.Forms.ComboBox
@@ -2764,6 +2540,11 @@ Partial Class Principal
     Friend WithEvents Apellido1DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Apellido2DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents BindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents MatriculasBindingSource3 As System.Windows.Forms.BindingSource
+    Friend WithEvents MatriculasBindingSource4 As System.Windows.Forms.BindingSource
+    Friend WithEvents ComboBox14 As System.Windows.Forms.ComboBox
+    Friend WithEvents MatriculasBindingSource5 As System.Windows.Forms.BindingSource
 
 
 

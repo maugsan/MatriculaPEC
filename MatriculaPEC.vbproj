@@ -93,11 +93,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MatriculaPECDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.vb">
-      <DependentUpon>MenuPrincipal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MenuPrincipal.vb">
-      <SubType>Form</SubType>
+    <Compile Include="MatriculaPECDataSet.vb">
+      <DependentUpon>MatriculaPECDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Principal.Designer.vb">
       <DependentUpon>Principal.vb</DependentUpon>
@@ -184,8 +181,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MenuPrincipal.resx">
-      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Crear\Estudiantes.resx">
       <DependentUpon>Estudiantes.vb</DependentUpon>

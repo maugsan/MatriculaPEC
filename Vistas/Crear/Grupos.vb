@@ -47,7 +47,7 @@
 
             qtableAdapter.insertar_grupo(ctableAdapter.buscarCodigoCurso(ComboBox2.Text.Trim), ComboBox1.Text.Trim, periodotableAdapter.consultarCodigoPeriodo(ComboBox3.Text.Trim), 1)
 
-            MatriculaPEC.MenuPrincipal.GruposTableAdapter.Fill(MatriculaPEC.MenuPrincipal.MatriculaPECDataSet.grupos)
+            MatriculaPEC.Principal.GruposTableAdapter.Fill(MatriculaPEC.Principal.MatriculaPECDataSet.grupos)
 
             '  MenuPrincipal.DataTableGruposNombresTableAdapter.Fill(MenuPrincipal.MatriculaPECDataSet.DataTableGruposNombres)
 

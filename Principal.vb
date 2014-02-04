@@ -13,7 +13,8 @@
     Private estudianteMatricula As String
     Private estadoMatricula As String
 
-    Dim ctableAdapter As New MatriculaPECDataSetTableAdapters.matriculasTableAdapter
+    Dim mtableAdapter As New MatriculaPECDataSetTableAdapters.matriculasTableAdapter
+    Dim gtableAdapter As New MatriculaPECDataSetTableAdapters.gruposTableAdapter
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -33,7 +34,7 @@
         'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.cursos' Puede moverla o quitarla según sea necesario.
         Me.CursosTableAdapter.Fill(Me.MatriculaPECDataSet.cursos)
 
-        '  DataGridView1.DataSource = ctableAdapter.GetData
+        DataGridView1.DataSource = mtableAdapter.GetData
 
         Me.AlumnosTableAdapter.Fill(Me.MatriculaPECDataSet.alumnos)
 
@@ -280,16 +281,31 @@
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
 
-        '  ComboBox1.Items.Add(5)
         periodoMatricula = ComboBox1.Text
-        MsgBox(periodoMatricula)
+
+        If periodoMatricula <> "" Then
+            DataGridView1.DataSource = mtableAdapter.GetDataByPeriodo(periodoMatricula)
+
+            If gtableAdapter.GetDataByPeriodo(periodoMatricula).Rows.Count <> 0 Then
 
 
+                ComboBox14.Enabled = True
+                ComboBox14.DataSource = gtableAdapter.GetDataByPeriodo(periodoMatricula)
+                ComboBox14.DisplayMember = "Curso"
 
 
-        '  DataGridView1.DataSource = ctableAdapter.GetData
+            Else
+
+                ComboBox14.Enabled = False
+                ComboBox14.DataSource = Nothing
+            End If
+
+        End If
+
+
 
     End Sub
+
 
 
     Private Sub rellenarDataGridMatricula()
@@ -300,6 +316,17 @@
     End Sub
 
     Private Sub TabPageMatricula_Click(sender As Object, e As EventArgs) Handles TabPageMatricula.Click
+
+    End Sub
+
+
+
+    Private Sub ComboBox14_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ComboBox14.SelectedIndexChanged
+
+
+        DataGridView1.DataSource = mtableAdapter.GetDataByPeriodoYCurso(periodoMatricula, ComboBox14.Text)
+
+
 
     End Sub
 End Class

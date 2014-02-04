@@ -83,25 +83,11 @@ Partial Public Class MatriculaPECDataSet
     
     Private relationFK__alumnos_e__cod_a__398D8EEE As Global.System.Data.DataRelation
     
-    Private relationFK__alumnos_e__cod_g__38996AB5 As Global.System.Data.DataRelation
-    
     Private relationFK__facturas__cod_al__2B3F6F97 As Global.System.Data.DataRelation
     
     Private relationFK__facturas__cod_de__2E1BDC42 As Global.System.Data.DataRelation
     
     Private relationFK__facturas__cod_fo__2D27B809 As Global.System.Data.DataRelation
-    
-    Private relationFK__facturas__cod_ma__2C3393D0 As Global.System.Data.DataRelation
-    
-    Private relationFK__grupos__cod_curs__0DAF0CB0 As Global.System.Data.DataRelation
-    
-    Private relationFK__grupos__cod_peri__0EA330E9 As Global.System.Data.DataRelation
-    
-    Private relationFK__grupos__cod_prof__0CBAE877 As Global.System.Data.DataRelation
-    
-    Private relationFK__matricula__cod_a__1ED998B2 As Global.System.Data.DataRelation
-    
-    Private relationFK__matricula__cod_g__1DE57479 As Global.System.Data.DataRelation
     
     Private relationFK__pagos__cod_factu__32E0915F As Global.System.Data.DataRelation
     
@@ -869,16 +855,9 @@ Partial Public Class MatriculaPECDataSet
             End If
         End If
         Me.relationFK__alumnos_e__cod_a__398D8EEE = Me.Relations("FK__alumnos_e__cod_a__398D8EEE")
-        Me.relationFK__alumnos_e__cod_g__38996AB5 = Me.Relations("FK__alumnos_e__cod_g__38996AB5")
         Me.relationFK__facturas__cod_al__2B3F6F97 = Me.Relations("FK__facturas__cod_al__2B3F6F97")
         Me.relationFK__facturas__cod_de__2E1BDC42 = Me.Relations("FK__facturas__cod_de__2E1BDC42")
         Me.relationFK__facturas__cod_fo__2D27B809 = Me.Relations("FK__facturas__cod_fo__2D27B809")
-        Me.relationFK__facturas__cod_ma__2C3393D0 = Me.Relations("FK__facturas__cod_ma__2C3393D0")
-        Me.relationFK__grupos__cod_curs__0DAF0CB0 = Me.Relations("FK__grupos__cod_curs__0DAF0CB0")
-        Me.relationFK__grupos__cod_peri__0EA330E9 = Me.Relations("FK__grupos__cod_peri__0EA330E9")
-        Me.relationFK__grupos__cod_prof__0CBAE877 = Me.Relations("FK__grupos__cod_prof__0CBAE877")
-        Me.relationFK__matricula__cod_a__1ED998B2 = Me.Relations("FK__matricula__cod_a__1ED998B2")
-        Me.relationFK__matricula__cod_g__1DE57479 = Me.Relations("FK__matricula__cod_g__1DE57479")
         Me.relationFK__pagos__cod_factu__32E0915F = Me.Relations("FK__pagos__cod_factu__32E0915F")
         Me.relationFK__pagos__cod_medio__33D4B598 = Me.Relations("FK__pagos__cod_medio__33D4B598")
     End Sub
@@ -949,26 +928,12 @@ Partial Public Class MatriculaPECDataSet
         MyBase.Tables.Add(Me.tablenactualizarMatriculas)
         Me.relationFK__alumnos_e__cod_a__398D8EEE = New Global.System.Data.DataRelation("FK__alumnos_e__cod_a__398D8EEE", New Global.System.Data.DataColumn() {Me.tablealumnos.cod_alumnoColumn}, New Global.System.Data.DataColumn() {Me.tablealumnos_en_grupos.cod_alumnoColumn}, false)
         Me.Relations.Add(Me.relationFK__alumnos_e__cod_a__398D8EEE)
-        Me.relationFK__alumnos_e__cod_g__38996AB5 = New Global.System.Data.DataRelation("FK__alumnos_e__cod_g__38996AB5", New Global.System.Data.DataColumn() {Me.tablegrupos.cod_grupoColumn}, New Global.System.Data.DataColumn() {Me.tablealumnos_en_grupos.cod_grupoColumn}, false)
-        Me.Relations.Add(Me.relationFK__alumnos_e__cod_g__38996AB5)
         Me.relationFK__facturas__cod_al__2B3F6F97 = New Global.System.Data.DataRelation("FK__facturas__cod_al__2B3F6F97", New Global.System.Data.DataColumn() {Me.tablealumnos.cod_alumnoColumn}, New Global.System.Data.DataColumn() {Me.tablefacturas.cod_alumnoColumn}, false)
         Me.Relations.Add(Me.relationFK__facturas__cod_al__2B3F6F97)
         Me.relationFK__facturas__cod_de__2E1BDC42 = New Global.System.Data.DataRelation("FK__facturas__cod_de__2E1BDC42", New Global.System.Data.DataColumn() {Me.tabledescuentos.cod_descuentoColumn}, New Global.System.Data.DataColumn() {Me.tablefacturas.cod_descuentoColumn}, false)
         Me.Relations.Add(Me.relationFK__facturas__cod_de__2E1BDC42)
         Me.relationFK__facturas__cod_fo__2D27B809 = New Global.System.Data.DataRelation("FK__facturas__cod_fo__2D27B809", New Global.System.Data.DataColumn() {Me.tableformas_de_pago.cod_formapagoColumn}, New Global.System.Data.DataColumn() {Me.tablefacturas.cod_formapagoColumn}, false)
         Me.Relations.Add(Me.relationFK__facturas__cod_fo__2D27B809)
-        Me.relationFK__facturas__cod_ma__2C3393D0 = New Global.System.Data.DataRelation("FK__facturas__cod_ma__2C3393D0", New Global.System.Data.DataColumn() {Me.tablematriculas.cod_matriculaColumn}, New Global.System.Data.DataColumn() {Me.tablefacturas.cod_matriculaColumn}, false)
-        Me.Relations.Add(Me.relationFK__facturas__cod_ma__2C3393D0)
-        Me.relationFK__grupos__cod_curs__0DAF0CB0 = New Global.System.Data.DataRelation("FK__grupos__cod_curs__0DAF0CB0", New Global.System.Data.DataColumn() {Me.tablecursos.cod_cursoColumn}, New Global.System.Data.DataColumn() {Me.tablegrupos.cod_cursoColumn}, false)
-        Me.Relations.Add(Me.relationFK__grupos__cod_curs__0DAF0CB0)
-        Me.relationFK__grupos__cod_peri__0EA330E9 = New Global.System.Data.DataRelation("FK__grupos__cod_peri__0EA330E9", New Global.System.Data.DataColumn() {Me.tableperiodos.cod_periodoColumn}, New Global.System.Data.DataColumn() {Me.tablegrupos.cod_periodoColumn}, false)
-        Me.Relations.Add(Me.relationFK__grupos__cod_peri__0EA330E9)
-        Me.relationFK__grupos__cod_prof__0CBAE877 = New Global.System.Data.DataRelation("FK__grupos__cod_prof__0CBAE877", New Global.System.Data.DataColumn() {Me.tableprofesores.cod_profesorColumn}, New Global.System.Data.DataColumn() {Me.tablegrupos.cod_profesorColumn}, false)
-        Me.Relations.Add(Me.relationFK__grupos__cod_prof__0CBAE877)
-        Me.relationFK__matricula__cod_a__1ED998B2 = New Global.System.Data.DataRelation("FK__matricula__cod_a__1ED998B2", New Global.System.Data.DataColumn() {Me.tablealumnos.cod_alumnoColumn}, New Global.System.Data.DataColumn() {Me.tablematriculas.cod_alumnoColumn}, false)
-        Me.Relations.Add(Me.relationFK__matricula__cod_a__1ED998B2)
-        Me.relationFK__matricula__cod_g__1DE57479 = New Global.System.Data.DataRelation("FK__matricula__cod_g__1DE57479", New Global.System.Data.DataColumn() {Me.tablegrupos.cod_grupoColumn}, New Global.System.Data.DataColumn() {Me.tablematriculas.cod_grupoColumn}, false)
-        Me.Relations.Add(Me.relationFK__matricula__cod_g__1DE57479)
         Me.relationFK__pagos__cod_factu__32E0915F = New Global.System.Data.DataRelation("FK__pagos__cod_factu__32E0915F", New Global.System.Data.DataColumn() {Me.tablefacturas.cod_facturaColumn}, New Global.System.Data.DataColumn() {Me.tablepagos.cod_facturaColumn}, false)
         Me.Relations.Add(Me.relationFK__pagos__cod_factu__32E0915F)
         Me.relationFK__pagos__cod_medio__33D4B598 = New Global.System.Data.DataRelation("FK__pagos__cod_medio__33D4B598", New Global.System.Data.DataColumn() {Me.tablemedios_de_pago.cod_mediopagoColumn}, New Global.System.Data.DataColumn() {Me.tablepagos.cod_mediopagoColumn}, false)
@@ -1791,12 +1756,9 @@ Partial Public Class MatriculaPECDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function Addalumnos_en_gruposRow(ByVal parentgruposRowByFK__alumnos_e__cod_g__38996AB5 As gruposRow, ByVal parentalumnosRowByFK__alumnos_e__cod_a__398D8EEE As alumnosRow, ByVal nota As Integer, ByVal estado As String) As alumnos_en_gruposRow
+        Public Overloads Function Addalumnos_en_gruposRow(ByVal cod_grupo As Integer, ByVal parentalumnosRowByFK__alumnos_e__cod_a__398D8EEE As alumnosRow, ByVal nota As Integer, ByVal estado As String) As alumnos_en_gruposRow
             Dim rowalumnos_en_gruposRow As alumnos_en_gruposRow = CType(Me.NewRow,alumnos_en_gruposRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Nothing, Nothing, nota, estado}
-            If (Not (parentgruposRowByFK__alumnos_e__cod_g__38996AB5) Is Nothing) Then
-                columnValuesArray(1) = parentgruposRowByFK__alumnos_e__cod_g__38996AB5(0)
-            End If
+            Dim columnValuesArray() As Object = New Object() {Nothing, cod_grupo, Nothing, nota, estado}
             If (Not (parentalumnosRowByFK__alumnos_e__cod_a__398D8EEE) Is Nothing) Then
                 columnValuesArray(2) = parentalumnosRowByFK__alumnos_e__cod_a__398D8EEE(0)
             End If
@@ -2770,14 +2732,11 @@ Partial Public Class MatriculaPECDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddfacturasRow(ByVal parentalumnosRowByFK__facturas__cod_al__2B3F6F97 As alumnosRow, ByVal parentmatriculasRowByFK__facturas__cod_ma__2C3393D0 As matriculasRow, ByVal numero_recibo As Integer, ByVal sub_total As Integer, ByVal parentdescuentosRowByFK__facturas__cod_de__2E1BDC42 As descuentosRow, ByVal total As Decimal, ByVal saldo_pendiente As Decimal, ByVal parentformas_de_pagoRowByFK__facturas__cod_fo__2D27B809 As formas_de_pagoRow) As facturasRow
+        Public Overloads Function AddfacturasRow(ByVal parentalumnosRowByFK__facturas__cod_al__2B3F6F97 As alumnosRow, ByVal cod_matricula As Integer, ByVal numero_recibo As Integer, ByVal sub_total As Integer, ByVal parentdescuentosRowByFK__facturas__cod_de__2E1BDC42 As descuentosRow, ByVal total As Decimal, ByVal saldo_pendiente As Decimal, ByVal parentformas_de_pagoRowByFK__facturas__cod_fo__2D27B809 As formas_de_pagoRow) As facturasRow
             Dim rowfacturasRow As facturasRow = CType(Me.NewRow,facturasRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Nothing, Nothing, numero_recibo, sub_total, Nothing, total, saldo_pendiente, Nothing}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nothing, cod_matricula, numero_recibo, sub_total, Nothing, total, saldo_pendiente, Nothing}
             If (Not (parentalumnosRowByFK__facturas__cod_al__2B3F6F97) Is Nothing) Then
                 columnValuesArray(1) = parentalumnosRowByFK__facturas__cod_al__2B3F6F97(0)
-            End If
-            If (Not (parentmatriculasRowByFK__facturas__cod_ma__2C3393D0) Is Nothing) Then
-                columnValuesArray(2) = parentmatriculasRowByFK__facturas__cod_ma__2C3393D0(0)
             End If
             If (Not (parentdescuentosRowByFK__facturas__cod_de__2E1BDC42) Is Nothing) Then
                 columnValuesArray(5) = parentdescuentosRowByFK__facturas__cod_de__2E1BDC42(0)
@@ -3269,15 +3228,15 @@ Partial Public Class MatriculaPECDataSet
     Partial Public Class gruposDataTable
         Inherits Global.System.Data.TypedTableBase(Of gruposRow)
         
-        Private columncod_grupo As Global.System.Data.DataColumn
+        Private columnProfesor As Global.System.Data.DataColumn
         
-        Private columncod_curso As Global.System.Data.DataColumn
+        Private columnPeriodo As Global.System.Data.DataColumn
         
-        Private columnnumero As Global.System.Data.DataColumn
+        Private columnCodigo As Global.System.Data.DataColumn
         
-        Private columncod_periodo As Global.System.Data.DataColumn
+        Private columnCodigoCurso As Global.System.Data.DataColumn
         
-        Private columncod_profesor As Global.System.Data.DataColumn
+        Private columnCurso As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -3316,41 +3275,41 @@ Partial Public Class MatriculaPECDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property cod_grupoColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property ProfesorColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columncod_grupo
+                Return Me.columnProfesor
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property cod_cursoColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property PeriodoColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columncod_curso
+                Return Me.columnPeriodo
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property numeroColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property CodigoColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnnumero
+                Return Me.columnCodigo
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property cod_periodoColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property CodigoCursoColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columncod_periodo
+                Return Me.columnCodigoCurso
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property cod_profesorColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property CursoColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columncod_profesor
+                Return Me.columnCurso
             End Get
         End Property
         
@@ -3391,27 +3350,12 @@ Partial Public Class MatriculaPECDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddgruposRow(ByVal parentcursosRowByFK__grupos__cod_curs__0DAF0CB0 As cursosRow, ByVal numero As Integer, ByVal parentperiodosRowByFK__grupos__cod_peri__0EA330E9 As periodosRow, ByVal parentprofesoresRowByFK__grupos__cod_prof__0CBAE877 As profesoresRow) As gruposRow
+        Public Overloads Function AddgruposRow(ByVal Profesor As String, ByVal Periodo As String, ByVal Curso As String) As gruposRow
             Dim rowgruposRow As gruposRow = CType(Me.NewRow,gruposRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Nothing, numero, Nothing, Nothing}
-            If (Not (parentcursosRowByFK__grupos__cod_curs__0DAF0CB0) Is Nothing) Then
-                columnValuesArray(1) = parentcursosRowByFK__grupos__cod_curs__0DAF0CB0(0)
-            End If
-            If (Not (parentperiodosRowByFK__grupos__cod_peri__0EA330E9) Is Nothing) Then
-                columnValuesArray(3) = parentperiodosRowByFK__grupos__cod_peri__0EA330E9(0)
-            End If
-            If (Not (parentprofesoresRowByFK__grupos__cod_prof__0CBAE877) Is Nothing) Then
-                columnValuesArray(4) = parentprofesoresRowByFK__grupos__cod_prof__0CBAE877(0)
-            End If
+            Dim columnValuesArray() As Object = New Object() {Profesor, Periodo, Nothing, Nothing, Curso}
             rowgruposRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowgruposRow)
             Return rowgruposRow
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindBycod_grupo(ByVal cod_grupo As Integer) As gruposRow
-            Return CType(Me.Rows.Find(New Object() {cod_grupo}),gruposRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3431,36 +3375,41 @@ Partial Public Class MatriculaPECDataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
-            Me.columncod_grupo = MyBase.Columns("cod_grupo")
-            Me.columncod_curso = MyBase.Columns("cod_curso")
-            Me.columnnumero = MyBase.Columns("numero")
-            Me.columncod_periodo = MyBase.Columns("cod_periodo")
-            Me.columncod_profesor = MyBase.Columns("cod_profesor")
+            Me.columnProfesor = MyBase.Columns("Profesor")
+            Me.columnPeriodo = MyBase.Columns("Periodo")
+            Me.columnCodigo = MyBase.Columns("Codigo")
+            Me.columnCodigoCurso = MyBase.Columns("CodigoCurso")
+            Me.columnCurso = MyBase.Columns("Curso")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitClass()
-            Me.columncod_grupo = New Global.System.Data.DataColumn("cod_grupo", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columncod_grupo)
-            Me.columncod_curso = New Global.System.Data.DataColumn("cod_curso", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columncod_curso)
-            Me.columnnumero = New Global.System.Data.DataColumn("numero", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnnumero)
-            Me.columncod_periodo = New Global.System.Data.DataColumn("cod_periodo", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columncod_periodo)
-            Me.columncod_profesor = New Global.System.Data.DataColumn("cod_profesor", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columncod_profesor)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columncod_grupo}, true))
-            Me.columncod_grupo.AutoIncrement = true
-            Me.columncod_grupo.AutoIncrementSeed = -1
-            Me.columncod_grupo.AutoIncrementStep = -1
-            Me.columncod_grupo.AllowDBNull = false
-            Me.columncod_grupo.ReadOnly = true
-            Me.columncod_grupo.Unique = true
-            Me.columncod_curso.AllowDBNull = false
-            Me.columnnumero.AllowDBNull = false
-            Me.columncod_periodo.AllowDBNull = false
+            Me.columnProfesor = New Global.System.Data.DataColumn("Profesor", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnProfesor)
+            Me.columnPeriodo = New Global.System.Data.DataColumn("Periodo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPeriodo)
+            Me.columnCodigo = New Global.System.Data.DataColumn("Codigo", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCodigo)
+            Me.columnCodigoCurso = New Global.System.Data.DataColumn("CodigoCurso", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCodigoCurso)
+            Me.columnCurso = New Global.System.Data.DataColumn("Curso", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCurso)
+            Me.columnProfesor.MaxLength = 100
+            Me.columnPeriodo.AllowDBNull = false
+            Me.columnPeriodo.MaxLength = 100
+            Me.columnCodigo.AutoIncrement = true
+            Me.columnCodigo.AutoIncrementSeed = -1
+            Me.columnCodigo.AutoIncrementStep = -1
+            Me.columnCodigo.AllowDBNull = false
+            Me.columnCodigo.ReadOnly = true
+            Me.columnCodigoCurso.AutoIncrement = true
+            Me.columnCodigoCurso.AutoIncrementSeed = -1
+            Me.columnCodigoCurso.AutoIncrementStep = -1
+            Me.columnCodigoCurso.AllowDBNull = false
+            Me.columnCodigoCurso.ReadOnly = true
+            Me.columnCurso.ReadOnly = true
+            Me.columnCurso.MaxLength = 4000
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3598,13 +3547,17 @@ Partial Public Class MatriculaPECDataSet
     Partial Public Class matriculasDataTable
         Inherits Global.System.Data.TypedTableBase(Of matriculasRow)
         
-        Private columncod_matricula As Global.System.Data.DataColumn
+        Private columnPeriodo As Global.System.Data.DataColumn
         
-        Private columncod_grupo As Global.System.Data.DataColumn
+        Private columnCurso As Global.System.Data.DataColumn
         
-        Private columncod_alumno As Global.System.Data.DataColumn
+        Private columnEstudiante As Global.System.Data.DataColumn
         
-        Private columnfecha As Global.System.Data.DataColumn
+        Private columnTotal As Global.System.Data.DataColumn
+        
+        Private columnDescuento As Global.System.Data.DataColumn
+        
+        Private columnSaldo As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -3643,33 +3596,49 @@ Partial Public Class MatriculaPECDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property cod_matriculaColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property PeriodoColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columncod_matricula
+                Return Me.columnPeriodo
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property cod_grupoColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property CursoColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columncod_grupo
+                Return Me.columnCurso
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property cod_alumnoColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property EstudianteColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columncod_alumno
+                Return Me.columnEstudiante
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property fechaColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property TotalColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnfecha
+                Return Me.columnTotal
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property DescuentoColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDescuento
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property SaldoColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnSaldo
             End Get
         End Property
         
@@ -3710,24 +3679,12 @@ Partial Public Class MatriculaPECDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddmatriculasRow(ByVal parentgruposRowByFK__matricula__cod_g__1DE57479 As gruposRow, ByVal parentalumnosRowByFK__matricula__cod_a__1ED998B2 As alumnosRow, ByVal fecha As Date) As matriculasRow
+        Public Overloads Function AddmatriculasRow(ByVal Periodo As String, ByVal Curso As String, ByVal Estudiante As String, ByVal Total As Decimal, ByVal Descuento As String, ByVal Saldo As Decimal) As matriculasRow
             Dim rowmatriculasRow As matriculasRow = CType(Me.NewRow,matriculasRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Nothing, Nothing, fecha}
-            If (Not (parentgruposRowByFK__matricula__cod_g__1DE57479) Is Nothing) Then
-                columnValuesArray(1) = parentgruposRowByFK__matricula__cod_g__1DE57479(0)
-            End If
-            If (Not (parentalumnosRowByFK__matricula__cod_a__1ED998B2) Is Nothing) Then
-                columnValuesArray(2) = parentalumnosRowByFK__matricula__cod_a__1ED998B2(0)
-            End If
+            Dim columnValuesArray() As Object = New Object() {Periodo, Curso, Estudiante, Total, Descuento, Saldo}
             rowmatriculasRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowmatriculasRow)
             Return rowmatriculasRow
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindBycod_matricula(ByVal cod_matricula As Integer) As matriculasRow
-            Return CType(Me.Rows.Find(New Object() {cod_matricula}),matriculasRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3747,32 +3704,37 @@ Partial Public Class MatriculaPECDataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
-            Me.columncod_matricula = MyBase.Columns("cod_matricula")
-            Me.columncod_grupo = MyBase.Columns("cod_grupo")
-            Me.columncod_alumno = MyBase.Columns("cod_alumno")
-            Me.columnfecha = MyBase.Columns("fecha")
+            Me.columnPeriodo = MyBase.Columns("Periodo")
+            Me.columnCurso = MyBase.Columns("Curso")
+            Me.columnEstudiante = MyBase.Columns("Estudiante")
+            Me.columnTotal = MyBase.Columns("Total")
+            Me.columnDescuento = MyBase.Columns("Descuento")
+            Me.columnSaldo = MyBase.Columns("Saldo")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitClass()
-            Me.columncod_matricula = New Global.System.Data.DataColumn("cod_matricula", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columncod_matricula)
-            Me.columncod_grupo = New Global.System.Data.DataColumn("cod_grupo", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columncod_grupo)
-            Me.columncod_alumno = New Global.System.Data.DataColumn("cod_alumno", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columncod_alumno)
-            Me.columnfecha = New Global.System.Data.DataColumn("fecha", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnfecha)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columncod_matricula}, true))
-            Me.columncod_matricula.AutoIncrement = true
-            Me.columncod_matricula.AutoIncrementSeed = -1
-            Me.columncod_matricula.AutoIncrementStep = -1
-            Me.columncod_matricula.AllowDBNull = false
-            Me.columncod_matricula.ReadOnly = true
-            Me.columncod_matricula.Unique = true
-            Me.columncod_grupo.AllowDBNull = false
-            Me.columncod_alumno.AllowDBNull = false
+            Me.columnPeriodo = New Global.System.Data.DataColumn("Periodo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPeriodo)
+            Me.columnCurso = New Global.System.Data.DataColumn("Curso", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCurso)
+            Me.columnEstudiante = New Global.System.Data.DataColumn("Estudiante", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnEstudiante)
+            Me.columnTotal = New Global.System.Data.DataColumn("Total", GetType(Decimal), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTotal)
+            Me.columnDescuento = New Global.System.Data.DataColumn("Descuento", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDescuento)
+            Me.columnSaldo = New Global.System.Data.DataColumn("Saldo", GetType(Decimal), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnSaldo)
+            Me.columnPeriodo.AllowDBNull = false
+            Me.columnPeriodo.MaxLength = 100
+            Me.columnCurso.ReadOnly = true
+            Me.columnCurso.MaxLength = 103
+            Me.columnEstudiante.ReadOnly = true
+            Me.columnEstudiante.MaxLength = 4000
+            Me.columnDescuento.ReadOnly = true
+            Me.columnDescuento.MaxLength = 31
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -9728,16 +9690,6 @@ Partial Public Class MatriculaPECDataSet
                 Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK__facturas__cod_al__2B3F6F97")),facturasRow())
             End If
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function GetmatriculasRows() As matriculasRow()
-            If (Me.Table.ChildRelations("FK__matricula__cod_a__1ED998B2") Is Nothing) Then
-                Return New matriculasRow(-1) {}
-            Else
-                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK__matricula__cod_a__1ED998B2")),matriculasRow())
-            End If
-        End Function
     End Class
     
     '''<summary>
@@ -9834,17 +9786,6 @@ Partial Public Class MatriculaPECDataSet
             End Get
             Set
                 Me.SetParentRow(value, Me.Table.ParentRelations("FK__alumnos_e__cod_a__398D8EEE"))
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property gruposRow() As gruposRow
-            Get
-                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK__alumnos_e__cod_g__38996AB5")),gruposRow)
-            End Get
-            Set
-                Me.SetParentRow(value, Me.Table.ParentRelations("FK__alumnos_e__cod_g__38996AB5"))
             End Set
         End Property
         
@@ -9998,16 +9939,6 @@ Partial Public Class MatriculaPECDataSet
         Public Sub SetdescripcionNull()
             Me(Me.tablecursos.descripcionColumn) = Global.System.Convert.DBNull
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function GetgruposRows() As gruposRow()
-            If (Me.Table.ChildRelations("FK__grupos__cod_curs__0DAF0CB0") Is Nothing) Then
-                Return New gruposRow(-1) {}
-            Else
-                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK__grupos__cod_curs__0DAF0CB0")),gruposRow())
-            End If
-        End Function
     End Class
     
     '''<summary>
@@ -10250,17 +10181,6 @@ Partial Public Class MatriculaPECDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property matriculasRow() As matriculasRow
-            Get
-                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK__facturas__cod_ma__2C3393D0")),matriculasRow)
-            End Get
-            Set
-                Me.SetParentRow(value, Me.Table.ParentRelations("FK__facturas__cod_ma__2C3393D0"))
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function Iscod_alumnoNull() As Boolean
             Return Me.IsNull(Me.tablefacturas.cod_alumnoColumn)
         End Function
@@ -10431,127 +10351,90 @@ Partial Public Class MatriculaPECDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property cod_grupo() As Integer
-            Get
-                Return CType(Me(Me.tablegrupos.cod_grupoColumn),Integer)
-            End Get
-            Set
-                Me(Me.tablegrupos.cod_grupoColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property cod_curso() As Integer
-            Get
-                Return CType(Me(Me.tablegrupos.cod_cursoColumn),Integer)
-            End Get
-            Set
-                Me(Me.tablegrupos.cod_cursoColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property numero() As Integer
-            Get
-                Return CType(Me(Me.tablegrupos.numeroColumn),Integer)
-            End Get
-            Set
-                Me(Me.tablegrupos.numeroColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property cod_periodo() As Integer
-            Get
-                Return CType(Me(Me.tablegrupos.cod_periodoColumn),Integer)
-            End Get
-            Set
-                Me(Me.tablegrupos.cod_periodoColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property cod_profesor() As Integer
+        Public Property Profesor() As String
             Get
                 Try 
-                    Return CType(Me(Me.tablegrupos.cod_profesorColumn),Integer)
+                    Return CType(Me(Me.tablegrupos.ProfesorColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'cod_profesor' de la tabla 'grupos' es DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Profesor' de la tabla 'grupos' es DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablegrupos.cod_profesorColumn) = value
+                Me(Me.tablegrupos.ProfesorColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property cursosRow() As cursosRow
+        Public Property Periodo() As String
             Get
-                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK__grupos__cod_curs__0DAF0CB0")),cursosRow)
+                Return CType(Me(Me.tablegrupos.PeriodoColumn),String)
             End Get
             Set
-                Me.SetParentRow(value, Me.Table.ParentRelations("FK__grupos__cod_curs__0DAF0CB0"))
+                Me(Me.tablegrupos.PeriodoColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property periodosRow() As periodosRow
+        Public Property Codigo() As Integer
             Get
-                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK__grupos__cod_peri__0EA330E9")),periodosRow)
+                Return CType(Me(Me.tablegrupos.CodigoColumn),Integer)
             End Get
             Set
-                Me.SetParentRow(value, Me.Table.ParentRelations("FK__grupos__cod_peri__0EA330E9"))
+                Me(Me.tablegrupos.CodigoColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property profesoresRow() As profesoresRow
+        Public Property CodigoCurso() As Integer
             Get
-                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK__grupos__cod_prof__0CBAE877")),profesoresRow)
+                Return CType(Me(Me.tablegrupos.CodigoCursoColumn),Integer)
             End Get
             Set
-                Me.SetParentRow(value, Me.Table.ParentRelations("FK__grupos__cod_prof__0CBAE877"))
+                Me(Me.tablegrupos.CodigoCursoColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Iscod_profesorNull() As Boolean
-            Return Me.IsNull(Me.tablegrupos.cod_profesorColumn)
+        Public Property Curso() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tablegrupos.CursoColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Curso' de la tabla 'grupos' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablegrupos.CursoColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsProfesorNull() As Boolean
+            Return Me.IsNull(Me.tablegrupos.ProfesorColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Setcod_profesorNull()
-            Me(Me.tablegrupos.cod_profesorColumn) = Global.System.Convert.DBNull
+        Public Sub SetProfesorNull()
+            Me(Me.tablegrupos.ProfesorColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Getalumnos_en_gruposRows() As alumnos_en_gruposRow()
-            If (Me.Table.ChildRelations("FK__alumnos_e__cod_g__38996AB5") Is Nothing) Then
-                Return New alumnos_en_gruposRow(-1) {}
-            Else
-                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK__alumnos_e__cod_g__38996AB5")),alumnos_en_gruposRow())
-            End If
+        Public Function IsCursoNull() As Boolean
+            Return Me.IsNull(Me.tablegrupos.CursoColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function GetmatriculasRows() As matriculasRow()
-            If (Me.Table.ChildRelations("FK__matricula__cod_g__1DE57479") Is Nothing) Then
-                Return New matriculasRow(-1) {}
-            Else
-                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK__matricula__cod_g__1DE57479")),matriculasRow())
-            End If
-        End Function
+        Public Sub SetCursoNull()
+            Me(Me.tablegrupos.CursoColumn) = Global.System.Convert.DBNull
+        End Sub
     End Class
     
     '''<summary>
@@ -10571,95 +10454,149 @@ Partial Public Class MatriculaPECDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property cod_matricula() As Integer
+        Public Property Periodo() As String
             Get
-                Return CType(Me(Me.tablematriculas.cod_matriculaColumn),Integer)
+                Return CType(Me(Me.tablematriculas.PeriodoColumn),String)
             End Get
             Set
-                Me(Me.tablematriculas.cod_matriculaColumn) = value
+                Me(Me.tablematriculas.PeriodoColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property cod_grupo() As Integer
-            Get
-                Return CType(Me(Me.tablematriculas.cod_grupoColumn),Integer)
-            End Get
-            Set
-                Me(Me.tablematriculas.cod_grupoColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property cod_alumno() As Integer
-            Get
-                Return CType(Me(Me.tablematriculas.cod_alumnoColumn),Integer)
-            End Get
-            Set
-                Me(Me.tablematriculas.cod_alumnoColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property fecha() As Date
+        Public Property Curso() As String
             Get
                 Try 
-                    Return CType(Me(Me.tablematriculas.fechaColumn),Date)
+                    Return CType(Me(Me.tablematriculas.CursoColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'fecha' de la tabla 'matriculas' es DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Curso' de la tabla 'matriculas' es DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablematriculas.fechaColumn) = value
+                Me(Me.tablematriculas.CursoColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property alumnosRow() As alumnosRow
+        Public Property Estudiante() As String
             Get
-                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK__matricula__cod_a__1ED998B2")),alumnosRow)
+                Try 
+                    Return CType(Me(Me.tablematriculas.EstudianteColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Estudiante' de la tabla 'matriculas' es DBNull.", e)
+                End Try
             End Get
             Set
-                Me.SetParentRow(value, Me.Table.ParentRelations("FK__matricula__cod_a__1ED998B2"))
+                Me(Me.tablematriculas.EstudianteColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property gruposRow() As gruposRow
+        Public Property Total() As Decimal
             Get
-                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK__matricula__cod_g__1DE57479")),gruposRow)
+                Try 
+                    Return CType(Me(Me.tablematriculas.TotalColumn),Decimal)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Total' de la tabla 'matriculas' es DBNull.", e)
+                End Try
             End Get
             Set
-                Me.SetParentRow(value, Me.Table.ParentRelations("FK__matricula__cod_g__1DE57479"))
+                Me(Me.tablematriculas.TotalColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsfechaNull() As Boolean
-            Return Me.IsNull(Me.tablematriculas.fechaColumn)
+        Public Property Descuento() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tablematriculas.DescuentoColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Descuento' de la tabla 'matriculas' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablematriculas.DescuentoColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Saldo() As Decimal
+            Get
+                Try 
+                    Return CType(Me(Me.tablematriculas.SaldoColumn),Decimal)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Saldo' de la tabla 'matriculas' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablematriculas.SaldoColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCursoNull() As Boolean
+            Return Me.IsNull(Me.tablematriculas.CursoColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetfechaNull()
-            Me(Me.tablematriculas.fechaColumn) = Global.System.Convert.DBNull
+        Public Sub SetCursoNull()
+            Me(Me.tablematriculas.CursoColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function GetfacturasRows() As facturasRow()
-            If (Me.Table.ChildRelations("FK__facturas__cod_ma__2C3393D0") Is Nothing) Then
-                Return New facturasRow(-1) {}
-            Else
-                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK__facturas__cod_ma__2C3393D0")),facturasRow())
-            End If
+        Public Function IsEstudianteNull() As Boolean
+            Return Me.IsNull(Me.tablematriculas.EstudianteColumn)
         End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetEstudianteNull()
+            Me(Me.tablematriculas.EstudianteColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsTotalNull() As Boolean
+            Return Me.IsNull(Me.tablematriculas.TotalColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetTotalNull()
+            Me(Me.tablematriculas.TotalColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsDescuentoNull() As Boolean
+            Return Me.IsNull(Me.tablematriculas.DescuentoColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetDescuentoNull()
+            Me(Me.tablematriculas.DescuentoColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsSaldoNull() As Boolean
+            Return Me.IsNull(Me.tablematriculas.SaldoColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetSaldoNull()
+            Me(Me.tablematriculas.SaldoColumn) = Global.System.Convert.DBNull
+        End Sub
     End Class
     
     '''<summary>
@@ -10887,16 +10824,6 @@ Partial Public Class MatriculaPECDataSet
                 Me(Me.tableperiodos.nombreColumn) = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function GetgruposRows() As gruposRow()
-            If (Me.Table.ChildRelations("FK__grupos__cod_peri__0EA330E9") Is Nothing) Then
-                Return New gruposRow(-1) {}
-            Else
-                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK__grupos__cod_peri__0EA330E9")),gruposRow())
-            End If
-        End Function
     End Class
     
     '''<summary>
@@ -11027,16 +10954,6 @@ Partial Public Class MatriculaPECDataSet
         Public Sub SetcorreoNull()
             Me(Me.tableprofesores.correoColumn) = Global.System.Convert.DBNull
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function GetgruposRows() As gruposRow()
-            If (Me.Table.ChildRelations("FK__grupos__cod_prof__0CBAE877") Is Nothing) Then
-                Return New gruposRow(-1) {}
-            Else
-                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK__grupos__cod_prof__0CBAE877")),gruposRow())
-            End If
-        End Function
     End Class
     
     '''<summary>
@@ -15791,56 +15708,12 @@ Namespace MatriculaPECDataSetTableAdapters
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "grupos"
-            tableMapping.ColumnMappings.Add("cod_grupo", "cod_grupo")
-            tableMapping.ColumnMappings.Add("cod_curso", "cod_curso")
-            tableMapping.ColumnMappings.Add("numero", "numero")
-            tableMapping.ColumnMappings.Add("cod_periodo", "cod_periodo")
-            tableMapping.ColumnMappings.Add("cod_profesor", "cod_profesor")
+            tableMapping.ColumnMappings.Add("Profesor", "Profesor")
+            tableMapping.ColumnMappings.Add("Periodo", "Periodo")
+            tableMapping.ColumnMappings.Add("Codigo", "Codigo")
+            tableMapping.ColumnMappings.Add("CodigoCurso", "CodigoCurso")
+            tableMapping.ColumnMappings.Add("Curso", "Curso")
             Me._adapter.TableMappings.Add(tableMapping)
-            Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
-            Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[grupos] WHERE (([cod_grupo] = @Original_cod_grupo) AND ([cod_c"& _ 
-                "urso] = @Original_cod_curso) AND ([numero] = @Original_numero) AND ([cod_periodo"& _ 
-                "] = @Original_cod_periodo) AND ((@IsNull_cod_profesor = 1 AND [cod_profesor] IS "& _ 
-                "NULL) OR ([cod_profesor] = @Original_cod_profesor)))"
-            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_grupo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_grupo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_curso", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_curso", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_numero", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "numero", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_periodo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_periodo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_cod_profesor", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_profesor", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_profesor", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_profesor", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
-            Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[grupos] ([cod_curso], [numero], [cod_periodo], [cod_profesor])"& _ 
-                " VALUES (@cod_curso, @numero, @cod_periodo, @cod_profesor);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT cod_grupo, c"& _ 
-                "od_curso, numero, cod_periodo, cod_profesor FROM grupos WHERE (cod_grupo = SCOPE"& _ 
-                "_IDENTITY())"
-            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_curso", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_curso", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@numero", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "numero", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_periodo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_periodo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_profesor", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_profesor", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
-            Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[grupos] SET [cod_curso] = @cod_curso, [numero] = @numero, [cod_peri"& _ 
-                "odo] = @cod_periodo, [cod_profesor] = @cod_profesor WHERE (([cod_grupo] = @Origi"& _ 
-                "nal_cod_grupo) AND ([cod_curso] = @Original_cod_curso) AND ([numero] = @Original"& _ 
-                "_numero) AND ([cod_periodo] = @Original_cod_periodo) AND ((@IsNull_cod_profesor "& _ 
-                "= 1 AND [cod_profesor] IS NULL) OR ([cod_profesor] = @Original_cod_profesor)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT cod_grupo, cod_curso, numero, cod_periodo, cod_profesor FROM grupos WHER"& _ 
-                "E (cod_grupo = @cod_grupo)"
-            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_curso", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_curso", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@numero", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "numero", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_periodo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_periodo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_profesor", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_profesor", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_grupo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_grupo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_curso", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_curso", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_numero", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "numero", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_periodo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_periodo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_cod_profesor", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_profesor", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_profesor", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_profesor", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_grupo", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_grupo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -15853,10 +15726,16 @@ Namespace MatriculaPECDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(2) {}
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(3) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT cod_grupo, cod_curso, numero, cod_periodo, cod_profesor FROM dbo.grupos"
+            Me._commandCollection(0).CommandText = "SELECT        'G' + CONVERT(char(2), g.numero) + c.nombre AS Curso, REPLACE(p.nom"& _ 
+                "bre, ' ', '') + ' ' + REPLACE(p.apellido1, ' ', '') + ' ' + REPLACE(p.apellido2,"& _ 
+                " ' ', "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         '') AS Profesor, pe.nombre AS Periodo, g.cod_gr"& _ 
+                "upo AS Codigo, c.cod_curso AS CodigoCurso"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            grupos AS g INNER JOI"& _ 
+                "N"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         cursos AS c ON g.cod_curso = c.cod_curso INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         profesores AS p ON g.cod_profesor = p.cod_profesor INN"& _ 
+                "ER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         periodos AS pe ON g.cod_periodo = pe.cod_perio"& _ 
+                "do"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(1).Connection = Me.Connection
@@ -15872,6 +15751,17 @@ Namespace MatriculaPECDataSetTableAdapters
             Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@numero", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_curso", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._commandCollection(3) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(3).Connection = Me.Connection
+            Me._commandCollection(3).CommandText = "SELECT        'G' + CONVERT(char(2), g.numero) + c.nombre AS Curso, REPLACE(p.nom"& _ 
+                "bre, ' ', '') + ' ' + REPLACE(p.apellido1, ' ', '') + ' ' + REPLACE(p.apellido2,"& _ 
+                " ' ', "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         '') AS Profesor, pe.nombre AS Periodo, g.cod_gr"& _ 
+                "upo AS Codigo, c.cod_curso AS CodigoCurso"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            grupos AS g INNER JOI"& _ 
+                "N"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         cursos AS c ON g.cod_curso = c.cod_curso INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         profesores AS p ON g.cod_profesor = p.cod_profesor INN"& _ 
+                "ER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         periodos AS pe ON g.cod_periodo = pe.cod_perio"& _ 
+                "do "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"    pe.nombre = @nombre"
+            Me._commandCollection(3).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(3).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.NChar, 100, Global.System.Data.ParameterDirection.Input, 0, 0, "Periodo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -15900,137 +15790,36 @@ Namespace MatriculaPECDataSetTableAdapters
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As MatriculaPECDataSet.gruposDataTable) As Integer
-            Return Me.Adapter.Update(dataTable)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As MatriculaPECDataSet) As Integer
-            Return Me.Adapter.Update(dataSet, "grupos")
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
-            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
-            Return Me.Adapter.Update(dataRows)
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillByPeriodo(ByVal dataTable As MatriculaPECDataSet.gruposDataTable, ByVal nombre As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(3)
+            If (nombre Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("nombre")
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre,String)
+            End If
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_cod_grupo As Integer, ByVal Original_cod_curso As Integer, ByVal Original_numero As Integer, ByVal Original_cod_periodo As Integer, ByVal Original_cod_profesor As Global.System.Nullable(Of Integer)) As Integer
-            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_cod_grupo,Integer)
-            Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_cod_curso,Integer)
-            Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_numero,Integer)
-            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_cod_periodo,Integer)
-            If (Original_cod_profesor.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_cod_profesor.Value,Integer)
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
+        Public Overloads Overridable Function GetDataByPeriodo(ByVal nombre As String) As MatriculaPECDataSet.gruposDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(3)
+            If (nombre Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("nombre")
             Else
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(5).Value = Global.System.DBNull.Value
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre,String)
             End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
-            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.DeleteCommand.Connection.Open
-            End If
-            Try 
-                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.DeleteCommand.Connection.Close
-                End If
-            End Try
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal cod_curso As Integer, ByVal numero As Integer, ByVal cod_periodo As Integer, ByVal cod_profesor As Global.System.Nullable(Of Integer)) As Integer
-            Me.Adapter.InsertCommand.Parameters(0).Value = CType(cod_curso,Integer)
-            Me.Adapter.InsertCommand.Parameters(1).Value = CType(numero,Integer)
-            Me.Adapter.InsertCommand.Parameters(2).Value = CType(cod_periodo,Integer)
-            If (cod_profesor.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(3).Value = CType(cod_profesor.Value,Integer)
-            Else
-                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
-            End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
-            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.InsertCommand.Connection.Open
-            End If
-            Try 
-                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.InsertCommand.Connection.Close
-                End If
-            End Try
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal cod_curso As Integer, ByVal numero As Integer, ByVal cod_periodo As Integer, ByVal cod_profesor As Global.System.Nullable(Of Integer), ByVal Original_cod_grupo As Integer, ByVal Original_cod_curso As Integer, ByVal Original_numero As Integer, ByVal Original_cod_periodo As Integer, ByVal Original_cod_profesor As Global.System.Nullable(Of Integer), ByVal cod_grupo As Integer) As Integer
-            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(cod_curso,Integer)
-            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(numero,Integer)
-            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(cod_periodo,Integer)
-            If (cod_profesor.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(cod_profesor.Value,Integer)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
-            End If
-            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_cod_grupo,Integer)
-            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_cod_curso,Integer)
-            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Original_numero,Integer)
-            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_cod_periodo,Integer)
-            If (Original_cod_profesor.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_cod_profesor.Value,Integer)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
-            End If
-            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(cod_grupo,Integer)
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
-            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.UpdateCommand.Connection.Open
-            End If
-            Try 
-                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.UpdateCommand.Connection.Close
-                End If
-            End Try
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal cod_curso As Integer, ByVal numero As Integer, ByVal cod_periodo As Integer, ByVal cod_profesor As Global.System.Nullable(Of Integer), ByVal Original_cod_grupo As Integer, ByVal Original_cod_curso As Integer, ByVal Original_numero As Integer, ByVal Original_cod_periodo As Integer, ByVal Original_cod_profesor As Global.System.Nullable(Of Integer)) As Integer
-            Return Me.Update(cod_curso, numero, cod_periodo, cod_profesor, Original_cod_grupo, Original_cod_curso, Original_numero, Original_cod_periodo, Original_cod_profesor, Original_cod_grupo)
+            Dim dataTable As MatriculaPECDataSet.gruposDataTable = New MatriculaPECDataSet.gruposDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -16233,50 +16022,13 @@ Namespace MatriculaPECDataSetTableAdapters
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "matriculas"
-            tableMapping.ColumnMappings.Add("cod_matricula", "cod_matricula")
-            tableMapping.ColumnMappings.Add("cod_grupo", "cod_grupo")
-            tableMapping.ColumnMappings.Add("cod_alumno", "cod_alumno")
-            tableMapping.ColumnMappings.Add("fecha", "fecha")
+            tableMapping.ColumnMappings.Add("Periodo", "Periodo")
+            tableMapping.ColumnMappings.Add("Curso", "Curso")
+            tableMapping.ColumnMappings.Add("Estudiante", "Estudiante")
+            tableMapping.ColumnMappings.Add("Total", "Total")
+            tableMapping.ColumnMappings.Add("Descuento", "Descuento")
+            tableMapping.ColumnMappings.Add("Saldo", "Saldo")
             Me._adapter.TableMappings.Add(tableMapping)
-            Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
-            Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[matriculas] WHERE (([cod_matricula] = @Original_cod_matricula)"& _ 
-                " AND ([cod_grupo] = @Original_cod_grupo) AND ([cod_alumno] = @Original_cod_alumn"& _ 
-                "o) AND ((@IsNull_fecha = 1 AND [fecha] IS NULL) OR ([fecha] = @Original_fecha)))"& _ 
-                ""
-            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_matricula", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_matricula", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_grupo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_grupo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_alumno", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_alumno", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_fecha", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fecha", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_fecha", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fecha", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
-            Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[matriculas] ([cod_grupo], [cod_alumno], [fecha]) VALUES (@cod_"& _ 
-                "grupo, @cod_alumno, @fecha);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT cod_matricula, cod_grupo, cod_alumno, fecha"& _ 
-                " FROM matriculas WHERE (cod_matricula = SCOPE_IDENTITY())"
-            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_grupo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_grupo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_alumno", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_alumno", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fecha", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fecha", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
-            Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[matriculas] SET [cod_grupo] = @cod_grupo, [cod_alumno] = @cod_alumn"& _ 
-                "o, [fecha] = @fecha WHERE (([cod_matricula] = @Original_cod_matricula) AND ([cod"& _ 
-                "_grupo] = @Original_cod_grupo) AND ([cod_alumno] = @Original_cod_alumno) AND ((@"& _ 
-                "IsNull_fecha = 1 AND [fecha] IS NULL) OR ([fecha] = @Original_fecha)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT "& _ 
-                "cod_matricula, cod_grupo, cod_alumno, fecha FROM matriculas WHERE (cod_matricula"& _ 
-                " = @cod_matricula)"
-            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_grupo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_grupo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_alumno", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_alumno", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fecha", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fecha", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_matricula", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_matricula", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_grupo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_grupo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_cod_alumno", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_alumno", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_fecha", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fecha", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_fecha", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fecha", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_matricula", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "cod_matricula", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -16289,208 +16041,403 @@ Namespace MatriculaPECDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(1) {}
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(8) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT cod_matricula, cod_grupo, cod_alumno, fecha FROM dbo.matriculas"
+            Me._commandCollection(0).CommandText = "SELECT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " p.nombre as Periodo," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " 'G' + CONVERT(char(2), g.numero) + c.nombre AS Cu" & _
+                "rso,  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' +" & _
+                " REPLACE(a.apellido2, ' ',  '') AS Estudiante," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.total as Total," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "convert(varch" & _
+                "ar,d.porcentaje) +'%'  as Descuento," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.saldo_pendiente as Saldo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM dbo.m" & _
+                "atriculas m" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN grupos g on m.cod_grupo = g.cod_grupo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN curs" & _
+                "os c on g.cod_curso = c.cod_curso" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN periodos p on g.cod_periodo = p.co" & _
+                "d_periodo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN alumnos a on m.cod_alumno = a.cod_alumno" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN factu" & _
+                "ras f on f.cod_matricula = m.cod_matricula" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN descuentos d on d.cod_des" & _
+                "cuento = f.cod_descuento" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(1).Connection = Me.Connection
             Me._commandCollection(1).CommandText = "dbo.consultarCodigoMatricula"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.StoredProcedure
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_grupo", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_alumno", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_grupo", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cod_alumno", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(2) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(2).Connection = Me.Connection
+            Me._commandCollection(2).CommandText = "SELECT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " p.nombre as Periodo," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " 'G' + CONVERT(char(2), g.numero) + c.nombre AS Cu" & _
+                "rso,  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' +" & _
+                " REPLACE(a.apellido2, ' ',  '') AS Estudiante," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.total as Total," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "convert(varch" & _
+                "ar,d.porcentaje) +'%'  as Descuento," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.saldo_pendiente as Saldo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM dbo.m" & _
+                "atriculas m" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN grupos g on m.cod_grupo = g.cod_grupo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN curs" & _
+                "os c on g.cod_curso = c.cod_curso" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN periodos p on g.cod_periodo = p.co" & _
+                "d_periodo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN alumnos a on m.cod_alumno = a.cod_alumno" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN factu" & _
+                "ras f on f.cod_matricula = m.cod_matricula" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN descuentos d on d.cod_des" & _
+                "cuento = f.cod_descuento" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "where f.saldo_pendiente = 0"
+            Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(3) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(3).Connection = Me.Connection
+            Me._commandCollection(3).CommandText = "SELECT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " p.nombre as Periodo," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " 'G' + CONVERT(char(2), g.numero) + c.nombre AS Cu" & _
+                "rso,  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' +" & _
+                " REPLACE(a.apellido2, ' ',  '') AS Estudiante," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.total as Total," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "convert(varch" & _
+                "ar,d.porcentaje) +'%'  as Descuento," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.saldo_pendiente as Saldo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM dbo.m" & _
+                "atriculas m" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN grupos g on m.cod_grupo = g.cod_grupo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN curs" & _
+                "os c on g.cod_curso = c.cod_curso" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN periodos p on g.cod_periodo = p.co" & _
+                "d_periodo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN alumnos a on m.cod_alumno = a.cod_alumno" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN factu" & _
+                "ras f on f.cod_matricula = m.cod_matricula" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN descuentos d on d.cod_des" & _
+                "cuento = f.cod_descuento" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Where " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " 'G' + CONVERT(char(2), g.numero) + c.nombre" & _
+                " = @valor" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+            Me._commandCollection(3).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(3).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@valor", Global.System.Data.SqlDbType.VarChar, 1024, Global.System.Data.ParameterDirection.Input, 0, 0, "", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(4) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(4).Connection = Me.Connection
+            Me._commandCollection(4).CommandText = "SELECT DISTINCT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " 'G' + CONVERT(char(2), g.numero) + c.nombre AS Curso" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM " & _
+                "dbo.matriculas m" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN grupos g on m.cod_grupo = g.cod_grupo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN" & _
+                " cursos c on g.cod_curso = c.cod_curso" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN periodos p on g.cod_periodo =" & _
+                " p.cod_periodo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN alumnos a on m.cod_alumno = a.cod_alumno" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN " & _
+                "facturas f on f.cod_matricula = m.cod_matricula" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN descuentos d on d.co" & _
+                "d_descuento = f.cod_descuento" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "where p.nombre = @nombre"
+            Me._commandCollection(4).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(4).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.NChar, 100, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(5) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(5).Connection = Me.Connection
+            Me._commandCollection(5).CommandText = "SELECT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " p.nombre as Periodo," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " 'G' + CONVERT(char(2), g.numero) + c.nombre AS Cu" & _
+                "rso,  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' +" & _
+                " REPLACE(a.apellido2, ' ',  '') AS Estudiante," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.total as Total," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "convert(varch" & _
+                "ar,d.porcentaje) +'%'  as Descuento," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.saldo_pendiente as Saldo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM dbo.m" & _
+                "atriculas m" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN grupos g on m.cod_grupo = g.cod_grupo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN curs" & _
+                "os c on g.cod_curso = c.cod_curso" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN periodos p on g.cod_periodo = p.co" & _
+                "d_periodo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN alumnos a on m.cod_alumno = a.cod_alumno" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN factu" & _
+                "ras f on f.cod_matricula = m.cod_matricula" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN descuentos d on d.cod_des" & _
+                "cuento = f.cod_descuento" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "REPLACE(a.nombre, ' ', '') + ' ' + REPLACE" & _
+                "(a.apellido1, ' ', '') + ' ' + REPLACE(a.apellido2, ' ',  '') = @nombre "
+            Me._commandCollection(5).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(5).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.VarChar, 1024, Global.System.Data.ParameterDirection.Input, 0, 0, "", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(6) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(6).Connection = Me.Connection
+            Me._commandCollection(6).CommandText = "SELECT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " p.nombre as Periodo," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " 'G' + CONVERT(char(2), g.numero) + c.nombre AS Cu" & _
+                "rso,  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' +" & _
+                " REPLACE(a.apellido2, ' ',  '') AS Estudiante," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.total as Total," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "convert(varch" & _
+                "ar,d.porcentaje) +'%'  as Descuento," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.saldo_pendiente as Saldo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM dbo.m" & _
+                "atriculas m" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN grupos g on m.cod_grupo = g.cod_grupo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN curs" & _
+                "os c on g.cod_curso = c.cod_curso" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN periodos p on g.cod_periodo = p.co" & _
+                "d_periodo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN alumnos a on m.cod_alumno = a.cod_alumno" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN factu" & _
+                "ras f on f.cod_matricula = m.cod_matricula" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN descuentos d on d.cod_des" & _
+                "cuento = f.cod_descuento" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Where f.saldo_pendiente > 0"
+            Me._commandCollection(6).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(7) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(7).Connection = Me.Connection
+            Me._commandCollection(7).CommandText = "SELECT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " p.nombre as Periodo," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " 'G' + CONVERT(char(2), g.numero) + c.nombre AS Cu" & _
+                "rso,  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' +" & _
+                " REPLACE(a.apellido2, ' ',  '') AS Estudiante," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.total as Total," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "convert(varch" & _
+                "ar,d.porcentaje) +'%'  as Descuento," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.saldo_pendiente as Saldo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM dbo.m" & _
+                "atriculas m" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN grupos g on m.cod_grupo = g.cod_grupo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN curs" & _
+                "os c on g.cod_curso = c.cod_curso" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN periodos p on g.cod_periodo = p.co" & _
+                "d_periodo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN alumnos a on m.cod_alumno = a.cod_alumno" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN factu" & _
+                "ras f on f.cod_matricula = m.cod_matricula" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN descuentos d on d.cod_des" & _
+                "cuento = f.cod_descuento" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE p.nombre = @nombre"
+            Me._commandCollection(7).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(7).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.NChar, 100, Global.System.Data.ParameterDirection.Input, 0, 0, "Periodo", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(8) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(8).Connection = Me.Connection
+            Me._commandCollection(8).CommandText = "SELECT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " p.nombre as Periodo," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " 'G' + CONVERT(char(2), g.numero) + c.nombre AS Cu" & _
+                "rso,  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' +" & _
+                " REPLACE(a.apellido2, ' ',  '') AS Estudiante," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.total as Total," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "convert(varch" & _
+                "ar,d.porcentaje) +'%'  as Descuento," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "f.saldo_pendiente as Saldo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM dbo.m" & _
+                "atriculas m" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN grupos g on m.cod_grupo = g.cod_grupo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN curs" & _
+                "os c on g.cod_curso = c.cod_curso" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN periodos p on g.cod_periodo = p.co" & _
+                "d_periodo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN alumnos a on m.cod_alumno = a.cod_alumno" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN factu" & _
+                "ras f on f.cod_matricula = m.cod_matricula" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "INNER JOIN descuentos d on d.cod_des" & _
+                "cuento = f.cod_descuento" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Where p.nombre = @nombre and  'G' + CONVERT(char(2)," & _
+                " g.numero) + c.nombre = @valor"
+            Me._commandCollection(8).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(8).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.NChar, 100, Global.System.Data.ParameterDirection.Input, 0, 0, "Periodo", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(8).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@valor", Global.System.Data.SqlDbType.VarChar, 1024, Global.System.Data.ParameterDirection.Input, 0, 0, "", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As MatriculaPECDataSet.matriculasDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As MatriculaPECDataSet.matriculasDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As MatriculaPECDataSet.matriculasDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As MatriculaPECDataSet.matriculasDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As MatriculaPECDataSet.matriculasDataTable = New MatriculaPECDataSet.matriculasDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As MatriculaPECDataSet.matriculasDataTable) As Integer
-            Return Me.Adapter.Update(dataTable)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, False)> _
+        Public Overridable Overloads Function FillByCanceledo(ByVal dataTable As MatriculaPECDataSet.matriculasDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(2)
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As MatriculaPECDataSet) As Integer
-            Return Me.Adapter.Update(dataSet, "matriculas")
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetDataByCancelado() As MatriculaPECDataSet.matriculasDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(2)
+            Dim dataTable As MatriculaPECDataSet.matriculasDataTable = New MatriculaPECDataSet.matriculasDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
-            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
-            Return Me.Adapter.Update(dataRows)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_cod_matricula As Integer, ByVal Original_cod_grupo As Integer, ByVal Original_cod_alumno As Integer, ByVal Original_fecha As Global.System.Nullable(Of Date)) As Integer
-            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_cod_matricula,Integer)
-            Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_cod_grupo,Integer)
-            Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_cod_alumno,Integer)
-            If (Original_fecha.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_fecha.Value,Date)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, False)> _
+        Public Overridable Overloads Function FillByCurso(ByVal dataTable As MatriculaPECDataSet.matriculasDataTable, ByVal valor As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(3)
+            If (valor Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("valor")
             Else
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(valor, String)
             End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
-            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.DeleteCommand.Connection.Open
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
-            Try 
-                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.DeleteCommand.Connection.Close
-                End If
-            End Try
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal cod_grupo As Integer, ByVal cod_alumno As Integer, ByVal fecha As Global.System.Nullable(Of Date)) As Integer
-            Me.Adapter.InsertCommand.Parameters(0).Value = CType(cod_grupo,Integer)
-            Me.Adapter.InsertCommand.Parameters(1).Value = CType(cod_alumno,Integer)
-            If (fecha.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(fecha.Value,Date)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetDataByCurso(ByVal valor As String) As MatriculaPECDataSet.matriculasDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(3)
+            If (valor Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("valor")
             Else
-                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(valor, String)
             End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
-            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.InsertCommand.Connection.Open
-            End If
-            Try 
-                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.InsertCommand.Connection.Close
-                End If
-            End Try
+            Dim dataTable As MatriculaPECDataSet.matriculasDataTable = New MatriculaPECDataSet.matriculasDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal cod_grupo As Integer, ByVal cod_alumno As Integer, ByVal fecha As Global.System.Nullable(Of Date), ByVal Original_cod_matricula As Integer, ByVal Original_cod_grupo As Integer, ByVal Original_cod_alumno As Integer, ByVal Original_fecha As Global.System.Nullable(Of Date), ByVal cod_matricula As Integer) As Integer
-            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(cod_grupo,Integer)
-            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(cod_alumno,Integer)
-            If (fecha.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(fecha.Value,Date)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, False)> _
+        Public Overridable Overloads Function FillByCursoEnPeriodo(ByVal dataTable As MatriculaPECDataSet.matriculasDataTable, ByVal nombre As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(4)
+            If (nombre Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("nombre")
             Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre, String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_cod_matricula,Integer)
-            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_cod_grupo,Integer)
-            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_cod_alumno,Integer)
-            If (Original_fecha.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_fecha.Value,Date)
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetDataByCursoEnPeriodo(ByVal nombre As String) As MatriculaPECDataSet.matriculasDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(4)
+            If (nombre Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("nombre")
             Else
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre, String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(cod_matricula,Integer)
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
-            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.UpdateCommand.Connection.Open
+            Dim dataTable As MatriculaPECDataSet.matriculasDataTable = New MatriculaPECDataSet.matriculasDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, False)> _
+        Public Overridable Overloads Function FillByEstudiante(ByVal dataTable As MatriculaPECDataSet.matriculasDataTable, ByVal nombre As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(5)
+            If (nombre Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("nombre")
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre, String)
             End If
-            Try 
-                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.UpdateCommand.Connection.Close
-                End If
-            End Try
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal cod_grupo As Integer, ByVal cod_alumno As Integer, ByVal fecha As Global.System.Nullable(Of Date), ByVal Original_cod_matricula As Integer, ByVal Original_cod_grupo As Integer, ByVal Original_cod_alumno As Integer, ByVal Original_fecha As Global.System.Nullable(Of Date)) As Integer
-            Return Me.Update(cod_grupo, cod_alumno, fecha, Original_cod_matricula, Original_cod_grupo, Original_cod_alumno, Original_fecha, Original_cod_matricula)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetDataByEstudiante(ByVal nombre As String) As MatriculaPECDataSet.matriculasDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(5)
+            If (nombre Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("nombre")
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre, String)
+            End If
+            Dim dataTable As MatriculaPECDataSet.matriculasDataTable = New MatriculaPECDataSet.matriculasDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function consultarCodigoMatricula(ByVal cod_grupo As Global.System.Nullable(Of Integer), ByVal cod_alumno As Global.System.Nullable(Of Integer)) As Object
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, False)> _
+        Public Overridable Overloads Function FillByPendiente(ByVal dataTable As MatriculaPECDataSet.matriculasDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(6)
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetDataByPendiente() As MatriculaPECDataSet.matriculasDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(6)
+            Dim dataTable As MatriculaPECDataSet.matriculasDataTable = New MatriculaPECDataSet.matriculasDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, False)> _
+        Public Overridable Overloads Function FillByPeriodo(ByVal dataTable As MatriculaPECDataSet.matriculasDataTable, ByVal nombre As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(7)
+            If (nombre Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("nombre")
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre, String)
+            End If
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetDataByPeriodo(ByVal nombre As String) As MatriculaPECDataSet.matriculasDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(7)
+            If (nombre Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("nombre")
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre, String)
+            End If
+            Dim dataTable As MatriculaPECDataSet.matriculasDataTable = New MatriculaPECDataSet.matriculasDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, False)> _
+        Public Overridable Overloads Function FillByPeriodoYCurso(ByVal dataTable As MatriculaPECDataSet.matriculasDataTable, ByVal nombre As String, ByVal valor As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(8)
+            If (nombre Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("nombre")
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre, String)
+            End If
+            If (valor Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("valor")
+            Else
+                Me.Adapter.SelectCommand.Parameters(1).Value = CType(valor, String)
+            End If
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetDataByPeriodoYCurso(ByVal nombre As String, ByVal valor As String) As MatriculaPECDataSet.matriculasDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(8)
+            If (nombre Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("nombre")
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre, String)
+            End If
+            If (valor Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("valor")
+            Else
+                Me.Adapter.SelectCommand.Parameters(1).Value = CType(valor, String)
+            End If
+            Dim dataTable As MatriculaPECDataSet.matriculasDataTable = New MatriculaPECDataSet.matriculasDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function consultarCodigoMatricula(ByVal cod_grupo As Global.System.Nullable(Of Integer), ByVal cod_alumno As Global.System.Nullable(Of Integer)) As Object
             Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(1)
-            If (cod_grupo.HasValue = true) Then
-                command.Parameters(1).Value = CType(cod_grupo.Value,Integer)
+            If (cod_grupo.HasValue = True) Then
+                command.Parameters(1).Value = CType(cod_grupo.Value, Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            If (cod_alumno.HasValue = true) Then
-                command.Parameters(2).Value = CType(cod_alumno.Value,Integer)
+            If (cod_alumno.HasValue = True) Then
+                command.Parameters(2).Value = CType(cod_alumno.Value, Integer)
             Else
                 command.Parameters(2).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open
+                command.Connection.Open()
             End If
             Dim returnValue As Object
-            Try 
+            Try
                 returnValue = command.ExecuteScalar
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close
+                    command.Connection.Close()
                 End If
             End Try
-            If ((returnValue Is Nothing)  _
+            If ((returnValue Is Nothing) _
                         OrElse (returnValue.GetType Is GetType(Global.System.DBNull))) Then
                 Return Nothing
             Else
-                Return CType(returnValue,Object)
+                Return CType(returnValue, Object)
             End If
         End Function
     End Class
@@ -22053,10 +22000,6 @@ Namespace MatriculaPECDataSetTableAdapters
         
         Private _formas_de_pagoTableAdapter As formas_de_pagoTableAdapter
         
-        Private _gruposTableAdapter As gruposTableAdapter
-        
-        Private _matriculasTableAdapter As matriculasTableAdapter
-        
         Private _medios_de_pagoTableAdapter As medios_de_pagoTableAdapter
         
         Private _pagosTableAdapter As pagosTableAdapter
@@ -22163,34 +22106,6 @@ Namespace MatriculaPECDataSetTableAdapters
             End Get
             Set
                 Me._formas_de_pagoTableAdapter = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
-            "a", "System.Drawing.Design.UITypeEditor")>  _
-        Public Property gruposTableAdapter() As gruposTableAdapter
-            Get
-                Return Me._gruposTableAdapter
-            End Get
-            Set
-                Me._gruposTableAdapter = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
-            "a", "System.Drawing.Design.UITypeEditor")>  _
-        Public Property matriculasTableAdapter() As matriculasTableAdapter
-            Get
-                Return Me._matriculasTableAdapter
-            End Get
-            Set
-                Me._matriculasTableAdapter = value
             End Set
         End Property
         
@@ -22307,14 +22222,6 @@ Namespace MatriculaPECDataSetTableAdapters
                             AndAlso (Not (Me._formas_de_pagoTableAdapter.Connection) Is Nothing)) Then
                     Return Me._formas_de_pagoTableAdapter.Connection
                 End If
-                If ((Not (Me._gruposTableAdapter) Is Nothing)  _
-                            AndAlso (Not (Me._gruposTableAdapter.Connection) Is Nothing)) Then
-                    Return Me._gruposTableAdapter.Connection
-                End If
-                If ((Not (Me._matriculasTableAdapter) Is Nothing)  _
-                            AndAlso (Not (Me._matriculasTableAdapter.Connection) Is Nothing)) Then
-                    Return Me._matriculasTableAdapter.Connection
-                End If
                 If ((Not (Me._medios_de_pagoTableAdapter) Is Nothing)  _
                             AndAlso (Not (Me._medios_de_pagoTableAdapter.Connection) Is Nothing)) Then
                     Return Me._medios_de_pagoTableAdapter.Connection
@@ -22366,12 +22273,6 @@ Namespace MatriculaPECDataSetTableAdapters
                 If (Not (Me._formas_de_pagoTableAdapter) Is Nothing) Then
                     count = (count + 1)
                 End If
-                If (Not (Me._gruposTableAdapter) Is Nothing) Then
-                    count = (count + 1)
-                End If
-                If (Not (Me._matriculasTableAdapter) Is Nothing) Then
-                    count = (count + 1)
-                End If
                 If (Not (Me._medios_de_pagoTableAdapter) Is Nothing) Then
                     count = (count + 1)
                 End If
@@ -22398,48 +22299,12 @@ Namespace MatriculaPECDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Function UpdateUpdatedRows(ByVal dataSet As MatriculaPECDataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
-            If (Not (Me._profesoresTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.profesores.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
-                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
-                If ((Not (updatedRows) Is Nothing)  _
-                            AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._profesoresTableAdapter.Update(updatedRows))
-                    allChangedRows.AddRange(updatedRows)
-                End If
-            End If
-            If (Not (Me._cursosTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.cursos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
-                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
-                If ((Not (updatedRows) Is Nothing)  _
-                            AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._cursosTableAdapter.Update(updatedRows))
-                    allChangedRows.AddRange(updatedRows)
-                End If
-            End If
-            If (Not (Me._periodosTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.periodos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
-                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
-                If ((Not (updatedRows) Is Nothing)  _
-                            AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._periodosTableAdapter.Update(updatedRows))
-                    allChangedRows.AddRange(updatedRows)
-                End If
-            End If
             If (Not (Me._alumnosTableAdapter) Is Nothing) Then
                 Dim updatedRows() As Global.System.Data.DataRow = dataSet.alumnos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
                     result = (result + Me._alumnosTableAdapter.Update(updatedRows))
-                    allChangedRows.AddRange(updatedRows)
-                End If
-            End If
-            If (Not (Me._gruposTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.grupos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
-                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
-                If ((Not (updatedRows) Is Nothing)  _
-                            AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._gruposTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -22461,12 +22326,12 @@ Namespace MatriculaPECDataSetTableAdapters
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
-            If (Not (Me._matriculasTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.matriculas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+            If (Not (Me._facturasTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.facturas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._matriculasTableAdapter.Update(updatedRows))
+                    result = (result + Me._facturasTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -22479,15 +22344,6 @@ Namespace MatriculaPECDataSetTableAdapters
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
-            If (Not (Me._facturasTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.facturas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
-                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
-                If ((Not (updatedRows) Is Nothing)  _
-                            AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._facturasTableAdapter.Update(updatedRows))
-                    allChangedRows.AddRange(updatedRows)
-                End If
-            End If
             If (Not (Me._usuariosTableAdapter) Is Nothing) Then
                 Dim updatedRows() As Global.System.Data.DataRow = dataSet.usuarios.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
@@ -22497,12 +22353,39 @@ Namespace MatriculaPECDataSetTableAdapters
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
+            If (Not (Me._profesoresTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.profesores.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._profesoresTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+            If (Not (Me._periodosTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.periodos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._periodosTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
             If (Not (Me._pagosTableAdapter) Is Nothing) Then
                 Dim updatedRows() As Global.System.Data.DataRow = dataSet.pagos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
                     result = (result + Me._pagosTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+            If (Not (Me._cursosTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.cursos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._cursosTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -22525,43 +22408,11 @@ Namespace MatriculaPECDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Function UpdateInsertedRows(ByVal dataSet As MatriculaPECDataSet, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
-            If (Not (Me._profesoresTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.profesores.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
-                If ((Not (addedRows) Is Nothing)  _
-                            AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._profesoresTableAdapter.Update(addedRows))
-                    allAddedRows.AddRange(addedRows)
-                End If
-            End If
-            If (Not (Me._cursosTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.cursos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
-                If ((Not (addedRows) Is Nothing)  _
-                            AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._cursosTableAdapter.Update(addedRows))
-                    allAddedRows.AddRange(addedRows)
-                End If
-            End If
-            If (Not (Me._periodosTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.periodos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
-                If ((Not (addedRows) Is Nothing)  _
-                            AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._periodosTableAdapter.Update(addedRows))
-                    allAddedRows.AddRange(addedRows)
-                End If
-            End If
             If (Not (Me._alumnosTableAdapter) Is Nothing) Then
                 Dim addedRows() As Global.System.Data.DataRow = dataSet.alumnos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
                     result = (result + Me._alumnosTableAdapter.Update(addedRows))
-                    allAddedRows.AddRange(addedRows)
-                End If
-            End If
-            If (Not (Me._gruposTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.grupos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
-                If ((Not (addedRows) Is Nothing)  _
-                            AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._gruposTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -22581,11 +22432,11 @@ Namespace MatriculaPECDataSetTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
-            If (Not (Me._matriculasTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.matriculas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+            If (Not (Me._facturasTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.facturas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._matriculasTableAdapter.Update(addedRows))
+                    result = (result + Me._facturasTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -22597,14 +22448,6 @@ Namespace MatriculaPECDataSetTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
-            If (Not (Me._facturasTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.facturas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
-                If ((Not (addedRows) Is Nothing)  _
-                            AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._facturasTableAdapter.Update(addedRows))
-                    allAddedRows.AddRange(addedRows)
-                End If
-            End If
             If (Not (Me._usuariosTableAdapter) Is Nothing) Then
                 Dim addedRows() As Global.System.Data.DataRow = dataSet.usuarios.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
@@ -22613,11 +22456,35 @@ Namespace MatriculaPECDataSetTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
+            If (Not (Me._profesoresTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.profesores.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._profesoresTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
+            If (Not (Me._periodosTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.periodos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._periodosTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
             If (Not (Me._pagosTableAdapter) Is Nothing) Then
                 Dim addedRows() As Global.System.Data.DataRow = dataSet.pagos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
                     result = (result + Me._pagosTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
+            If (Not (Me._cursosTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.cursos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._cursosTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -22647,11 +22514,35 @@ Namespace MatriculaPECDataSetTableAdapters
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
+            If (Not (Me._cursosTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.cursos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._cursosTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
             If (Not (Me._pagosTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.pagos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
                     result = (result + Me._pagosTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
+            If (Not (Me._periodosTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.periodos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._periodosTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
+            If (Not (Me._profesoresTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.profesores.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._profesoresTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -22663,14 +22554,6 @@ Namespace MatriculaPECDataSetTableAdapters
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
-            If (Not (Me._facturasTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.facturas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
-                If ((Not (deletedRows) Is Nothing)  _
-                            AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._facturasTableAdapter.Update(deletedRows))
-                    allChangedRows.AddRange(deletedRows)
-                End If
-            End If
             If (Not (Me._medios_de_pagoTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.medios_de_pago.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
@@ -22679,11 +22562,11 @@ Namespace MatriculaPECDataSetTableAdapters
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
-            If (Not (Me._matriculasTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.matriculas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+            If (Not (Me._facturasTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.facturas.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._matriculasTableAdapter.Update(deletedRows))
+                    result = (result + Me._facturasTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -22703,43 +22586,11 @@ Namespace MatriculaPECDataSetTableAdapters
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
-            If (Not (Me._gruposTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.grupos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
-                If ((Not (deletedRows) Is Nothing)  _
-                            AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._gruposTableAdapter.Update(deletedRows))
-                    allChangedRows.AddRange(deletedRows)
-                End If
-            End If
             If (Not (Me._alumnosTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.alumnos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
                     result = (result + Me._alumnosTableAdapter.Update(deletedRows))
-                    allChangedRows.AddRange(deletedRows)
-                End If
-            End If
-            If (Not (Me._periodosTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.periodos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
-                If ((Not (deletedRows) Is Nothing)  _
-                            AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._periodosTableAdapter.Update(deletedRows))
-                    allChangedRows.AddRange(deletedRows)
-                End If
-            End If
-            If (Not (Me._cursosTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.cursos.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
-                If ((Not (deletedRows) Is Nothing)  _
-                            AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._cursosTableAdapter.Update(deletedRows))
-                    allChangedRows.AddRange(deletedRows)
-                End If
-            End If
-            If (Not (Me._profesoresTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.profesores.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
-                If ((Not (deletedRows) Is Nothing)  _
-                            AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._profesoresTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -22811,16 +22662,6 @@ Namespace MatriculaPECDataSetTableAdapters
             End If
             If ((Not (Me._formas_de_pagoTableAdapter) Is Nothing)  _
                         AndAlso (Me.MatchTableAdapterConnection(Me._formas_de_pagoTableAdapter.Connection) = false)) Then
-                Throw New Global.System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi"& _ 
-                        "sma cadena de conexión.")
-            End If
-            If ((Not (Me._gruposTableAdapter) Is Nothing)  _
-                        AndAlso (Me.MatchTableAdapterConnection(Me._gruposTableAdapter.Connection) = false)) Then
-                Throw New Global.System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi"& _ 
-                        "sma cadena de conexión.")
-            End If
-            If ((Not (Me._matriculasTableAdapter) Is Nothing)  _
-                        AndAlso (Me.MatchTableAdapterConnection(Me._matriculasTableAdapter.Connection) = false)) Then
                 Throw New Global.System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi"& _ 
                         "sma cadena de conexión.")
             End If
@@ -22933,24 +22774,6 @@ Namespace MatriculaPECDataSetTableAdapters
                     If Me._formas_de_pagoTableAdapter.Adapter.AcceptChangesDuringUpdate Then
                         Me._formas_de_pagoTableAdapter.Adapter.AcceptChangesDuringUpdate = false
                         adaptersWithAcceptChangesDuringUpdate.Add(Me._formas_de_pagoTableAdapter.Adapter)
-                    End If
-                End If
-                If (Not (Me._gruposTableAdapter) Is Nothing) Then
-                    revertConnections.Add(Me._gruposTableAdapter, Me._gruposTableAdapter.Connection)
-                    Me._gruposTableAdapter.Connection = CType(workConnection,Global.System.Data.SqlClient.SqlConnection)
-                    Me._gruposTableAdapter.Transaction = CType(workTransaction,Global.System.Data.SqlClient.SqlTransaction)
-                    If Me._gruposTableAdapter.Adapter.AcceptChangesDuringUpdate Then
-                        Me._gruposTableAdapter.Adapter.AcceptChangesDuringUpdate = false
-                        adaptersWithAcceptChangesDuringUpdate.Add(Me._gruposTableAdapter.Adapter)
-                    End If
-                End If
-                If (Not (Me._matriculasTableAdapter) Is Nothing) Then
-                    revertConnections.Add(Me._matriculasTableAdapter, Me._matriculasTableAdapter.Connection)
-                    Me._matriculasTableAdapter.Connection = CType(workConnection,Global.System.Data.SqlClient.SqlConnection)
-                    Me._matriculasTableAdapter.Transaction = CType(workTransaction,Global.System.Data.SqlClient.SqlTransaction)
-                    If Me._matriculasTableAdapter.Adapter.AcceptChangesDuringUpdate Then
-                        Me._matriculasTableAdapter.Adapter.AcceptChangesDuringUpdate = false
-                        adaptersWithAcceptChangesDuringUpdate.Add(Me._matriculasTableAdapter.Adapter)
                     End If
                 End If
                 If (Not (Me._medios_de_pagoTableAdapter) Is Nothing) Then
@@ -23081,14 +22904,6 @@ Namespace MatriculaPECDataSetTableAdapters
                 If (Not (Me._formas_de_pagoTableAdapter) Is Nothing) Then
                     Me._formas_de_pagoTableAdapter.Connection = CType(revertConnections(Me._formas_de_pagoTableAdapter),Global.System.Data.SqlClient.SqlConnection)
                     Me._formas_de_pagoTableAdapter.Transaction = Nothing
-                End If
-                If (Not (Me._gruposTableAdapter) Is Nothing) Then
-                    Me._gruposTableAdapter.Connection = CType(revertConnections(Me._gruposTableAdapter),Global.System.Data.SqlClient.SqlConnection)
-                    Me._gruposTableAdapter.Transaction = Nothing
-                End If
-                If (Not (Me._matriculasTableAdapter) Is Nothing) Then
-                    Me._matriculasTableAdapter.Connection = CType(revertConnections(Me._matriculasTableAdapter),Global.System.Data.SqlClient.SqlConnection)
-                    Me._matriculasTableAdapter.Transaction = Nothing
                 End If
                 If (Not (Me._medios_de_pagoTableAdapter) Is Nothing) Then
                     Me._medios_de_pagoTableAdapter.Connection = CType(revertConnections(Me._medios_de_pagoTableAdapter),Global.System.Data.SqlClient.SqlConnection)

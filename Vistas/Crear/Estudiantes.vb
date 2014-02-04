@@ -5,9 +5,6 @@
     Private etableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
     Private qtableAdapter As New MatriculaPECDataSetTableAdapters.QueriesTableAdapter()
     Private mCanceling As Boolean = False
-
-
-
     Private Sub Estudiantes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
@@ -18,16 +15,13 @@
 
     End Sub
 
-
-
-
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
         mCanceling = True
         Me.Close()
-        If MenuPrincipal.banderaEstudiante = 1 Then
+        If Principal.banderaEstudiante = 1 Then
             Matricula.Show()
-            MenuPrincipal.banderaEstudiante = 0
+            Principal.banderaEstudiante = 0
         End If
 
 
@@ -61,26 +55,23 @@
 
 
 
-            MatriculaPEC.MenuPrincipal.AlumnosTableAdapter.Fill(MatriculaPEC.MenuPrincipal.MatriculaPECDataSet.alumnos)
+            MatriculaPEC.Principal.AlumnosTableAdapter.Fill(MatriculaPEC.Principal.MatriculaPECDataSet.alumnos)
 
-            MatriculaPEC.MenuPrincipal.estudiante = tfNombre.Text.Trim & " " & tfApellido1.Text.Trim & " " & tfApellido2.Text.Trim & " - " & Me.tfCedula.Text
+            MatriculaPEC.Principal.estudiante = tfNombre.Text.Trim & " " & tfApellido1.Text.Trim & " " & tfApellido2.Text.Trim & " - " & Me.tfCedula.Text
 
-            If (MenuPrincipal.banderaEstudiante = 1) Then
+            If (Principal.banderaEstudiante = 1) Then
 
                 Matricula.Show()
 
             End If
 
-            MenuPrincipal.banderaEstudiante = 0
+            Principal.banderaEstudiante = 0
 
 
             Me.Close()
 
 
         End If
-
-
-
 
     End Sub
 
@@ -136,17 +127,22 @@
     Private Sub tfCedula_Validating(ByVal sender As Object, _
 ByVal e As System.ComponentModel.CancelEventArgs) Handles tfCedula.Validating
 
-
-
         If Not mCanceling Then
 
-            Dim x As Long
+            Dim x As Double
 
             If tfCedula.Text <> "" Then
-                x = CLng(tfCedula.Text.Trim())
+                x =  CDbl(tfCedula.Text.Trim())
             End If
 
+            If tfCedula.Text.Length > 10 Then
 
+                e.Cancel = True
+                ErrorProvider1.SetError(tfCedula,
+               "No cumple con el formato.")
+                tfCedula.BackColor = Color.LightPink
+
+            End If
 
             If IsNumeric(etableAdapter.consultar_codigo_estudiante(x)) Then
 

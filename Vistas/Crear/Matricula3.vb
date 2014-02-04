@@ -42,7 +42,7 @@
 
         Dim valor As String
         valor = ""
-        Dim TestArray() As String = Split(MenuPrincipal.estudiante)
+        Dim TestArray() As String = Split(Principal.estudiante)
         Dim LastNonEmpty As Integer = -1
 
 
@@ -87,7 +87,7 @@
         linea.Add("RECINTO DE GUÁPILES")
         linea.Add("----------------------------------------------------------")
         linea.Add("ESTUDIANTE")
-        linea.Add(MenuPrincipal.estudiante)
+        linea.Add(Principal.estudiante)
         linea.Add("----------------------------------------------------------")
         linea.Add("CURSOS")
         For Each row As DataGridViewRow In Matricula2.DataGridViewMatricula2.Rows
@@ -97,10 +97,10 @@
 
             nombreCurso = Split(nombreGrupo, " ")
 
-            codigoCurso = ctableAdapter.buscarCodigoCurso(nombreCurso(3) & " " & nombreCurso(4))
+            codigoCurso = ctableAdapter.buscarCodigoCurso(nombreCurso(1) & " " & nombreCurso(2))
 
 
-            listaCodigos.Add(CInt(gtableAdapter.consultarCodigoGrupoPorNumeroYCurso(nombreCurso(1).Replace("G", ""), codigoCurso)))
+            listaCodigos.Add(CInt(gtableAdapter.consultarCodigoGrupoPorNumeroYCurso(nombreCurso(0).Replace("G", ""), codigoCurso)))
 
 
             costo = ctableAdapter.consultarCosto(codigoCurso)
