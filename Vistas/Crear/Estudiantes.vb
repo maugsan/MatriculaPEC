@@ -2,8 +2,7 @@
 
 
     Private cache As String = ""
-    Private etableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
-    Private qtableAdapter As New MatriculaPECDataSetTableAdapters.QueriesTableAdapter()
+    Private atableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
     Private mCanceling As Boolean = False
     Private Sub Estudiantes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -48,14 +47,13 @@
 
 
 
-            qtableAdapter.insertar_alumno(tfCedula.Text.Trim, tfNombre.Text.Trim, tfApellido1.Text.Trim,
+            atableAdapter.insertar_alumno(tfCedula.Text.Trim, tfNombre.Text.Trim, tfApellido1.Text.Trim,
                                              tfApellido2.Text.Trim, tfResponsable.Text.Trim, tfTelefonoResponsable.Text.Trim,
                                              tfTelefono.Text.Trim, tfCorreo.Text.Trim)
 
 
 
 
-            MatriculaPEC.Principal.AlumnosTableAdapter.Fill(MatriculaPEC.Principal.MatriculaPECDataSet.alumnos)
 
             MatriculaPEC.Principal.estudiante = tfNombre.Text.Trim & " " & tfApellido1.Text.Trim & " " & tfApellido2.Text.Trim & " - " & Me.tfCedula.Text
 
@@ -144,7 +142,7 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles tfCedula.Validating
 
             End If
 
-            If IsNumeric(etableAdapter.consultar_codigo_estudiante(x)) Then
+            If IsNumeric(atableAdapter.consultar_cod_estudiante(x)) Then
 
                 e.Cancel = True
                 ErrorProvider1.SetError(tfCedula,

@@ -24,42 +24,42 @@ Partial Class Grupos
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Grupos))
-        Me.CursosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MatriculaPECDataSet = New MatriculaPEC.MatriculaPECDataSet()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.PeriodosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ProfesoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ButtonMatricula = New System.Windows.Forms.Button()
-        Me.CursosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.cursosTableAdapter()
-        Me.PeriodosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.periodosTableAdapter()
-        Me.ProfesoresTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.profesoresTableAdapter()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CursosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.cursosTableAdapter()
+        Me.GruposBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GruposTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.gruposTableAdapter()
+        Me.UsuariosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.UsuariosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.usuariosTableAdapter()
+        Me.BindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PeriodosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PeriodosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.periodosTableAdapter()
+        Me.ProfesoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProfesoresTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.profesoresTableAdapter()
+        Me.MatriculaPECDataSet1 = New MatriculaPEC.MatriculaPECDataSet()
+        Me.ProfesoresBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GruposBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UsuariosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PeriodosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProfesoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MatriculaPECDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProfesoresBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'CursosBindingSource
-        '
-        Me.CursosBindingSource.DataMember = "cursos"
-        Me.CursosBindingSource.DataSource = Me.MatriculaPECDataSet
         '
         'MatriculaPECDataSet
         '
@@ -68,10 +68,8 @@ Partial Class Grupos
         '
         'ComboBox3
         '
-        Me.ComboBox3.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.PeriodosBindingSource, "cod_periodo", True))
         Me.ComboBox3.DataSource = Me.PeriodosBindingSource
         Me.ComboBox3.DisplayMember = "nombre"
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox3.ForeColor = System.Drawing.Color.Gray
@@ -82,16 +80,10 @@ Partial Class Grupos
         Me.ComboBox3.TabIndex = 2
         Me.ComboBox3.ValueMember = "cod_periodo"
         '
-        'PeriodosBindingSource
-        '
-        Me.PeriodosBindingSource.DataMember = "periodos"
-        Me.PeriodosBindingSource.DataSource = Me.MatriculaPECDataSet
-        '
         'ComboBox4
         '
-        Me.ComboBox4.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.ProfesoresBindingSource, "cod_profesor", True))
-        Me.ComboBox4.DataSource = Me.ProfesoresBindingSource
-        Me.ComboBox4.DisplayMember = "nombre"
+        Me.ComboBox4.DataSource = Me.ProfesoresBindingSource1
+        Me.ComboBox4.DisplayMember = "Profesor"
         Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -101,12 +93,7 @@ Partial Class Grupos
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(243, 33)
         Me.ComboBox4.TabIndex = 3
-        Me.ComboBox4.ValueMember = "cod_profesor"
-        '
-        'ProfesoresBindingSource
-        '
-        Me.ProfesoresBindingSource.DataMember = "profesores"
-        Me.ProfesoresBindingSource.DataSource = Me.MatriculaPECDataSet
+        Me.ComboBox4.ValueMember = "Código"
         '
         'ButtonMatricula
         '
@@ -121,18 +108,6 @@ Partial Class Grupos
         Me.ButtonMatricula.TabIndex = 4
         Me.ButtonMatricula.Text = "Crear Grupo"
         Me.ButtonMatricula.UseVisualStyleBackColor = False
-        '
-        'CursosTableAdapter
-        '
-        Me.CursosTableAdapter.ClearBeforeFill = True
-        '
-        'PeriodosTableAdapter
-        '
-        Me.PeriodosTableAdapter.ClearBeforeFill = True
-        '
-        'ProfesoresTableAdapter
-        '
-        Me.ProfesoresTableAdapter.ClearBeforeFill = True
         '
         'Label2
         '
@@ -172,7 +147,7 @@ Partial Class Grupos
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label4.Location = New System.Drawing.Point(70, 301)
+        Me.Label4.Location = New System.Drawing.Point(70, 315)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(106, 25)
         Me.Label4.TabIndex = 22
@@ -193,90 +168,18 @@ Partial Class Grupos
         '
         'ComboBox2
         '
-        Me.ComboBox2.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.CursosBindingSource, "cod_curso", True))
-        Me.ComboBox2.DataSource = Me.CursosBindingSource
+        Me.ComboBox2.DataSource = Me.BindingSource2
         Me.ComboBox2.DisplayMember = "nombre"
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.ForeColor = System.Drawing.Color.Gray
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(77, 90)
+        Me.ComboBox2.Location = New System.Drawing.Point(75, 90)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(243, 33)
         Me.ComboBox2.TabIndex = 24
         Me.ComboBox2.ValueMember = "cod_curso"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label5.Location = New System.Drawing.Point(407, 51)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(129, 39)
-        Me.Label5.TabIndex = 25
-        Me.Label5.Text = "Horario"
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(414, 101)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(55, 17)
-        Me.CheckBox1.TabIndex = 26
-        Me.CheckBox1.Text = "Lunes"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(492, 101)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(58, 17)
-        Me.CheckBox2.TabIndex = 27
-        Me.CheckBox2.Text = "Martes"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(492, 135)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(61, 17)
-        Me.CheckBox3.TabIndex = 28
-        Me.CheckBox3.Text = "Viernes"
-        Me.CheckBox3.UseVisualStyleBackColor = True
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(571, 101)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(71, 17)
-        Me.CheckBox4.TabIndex = 29
-        Me.CheckBox4.Text = "Miercoles"
-        Me.CheckBox4.UseVisualStyleBackColor = True
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(571, 135)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(63, 17)
-        Me.CheckBox5.TabIndex = 30
-        Me.CheckBox5.Text = "Sábado"
-        Me.CheckBox5.UseVisualStyleBackColor = True
-        '
-        'CheckBox6
-        '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(414, 135)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(60, 17)
-        Me.CheckBox6.TabIndex = 31
-        Me.CheckBox6.Text = "Jueves"
-        Me.CheckBox6.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -303,6 +206,66 @@ Partial Class Grupos
         Me.DataGridView1.Size = New System.Drawing.Size(383, 208)
         Me.DataGridView1.TabIndex = 38
         '
+        'BindingSource1
+        '
+        Me.BindingSource1.DataMember = "cursos"
+        Me.BindingSource1.DataSource = Me.MatriculaPECDataSet
+        '
+        'CursosTableAdapter
+        '
+        Me.CursosTableAdapter.ClearBeforeFill = True
+        '
+        'GruposBindingSource
+        '
+        Me.GruposBindingSource.DataMember = "grupos"
+        Me.GruposBindingSource.DataSource = Me.MatriculaPECDataSet
+        '
+        'GruposTableAdapter
+        '
+        Me.GruposTableAdapter.ClearBeforeFill = True
+        '
+        'UsuariosBindingSource
+        '
+        Me.UsuariosBindingSource.DataMember = "usuarios"
+        Me.UsuariosBindingSource.DataSource = Me.MatriculaPECDataSet
+        '
+        'UsuariosTableAdapter
+        '
+        Me.UsuariosTableAdapter.ClearBeforeFill = True
+        '
+        'BindingSource2
+        '
+        Me.BindingSource2.DataMember = "cursos"
+        Me.BindingSource2.DataSource = Me.MatriculaPECDataSet
+        '
+        'PeriodosBindingSource
+        '
+        Me.PeriodosBindingSource.DataMember = "periodos"
+        Me.PeriodosBindingSource.DataSource = Me.MatriculaPECDataSet
+        '
+        'PeriodosTableAdapter
+        '
+        Me.PeriodosTableAdapter.ClearBeforeFill = True
+        '
+        'ProfesoresBindingSource
+        '
+        Me.ProfesoresBindingSource.DataMember = "profesores"
+        Me.ProfesoresBindingSource.DataSource = Me.MatriculaPECDataSet
+        '
+        'ProfesoresTableAdapter
+        '
+        Me.ProfesoresTableAdapter.ClearBeforeFill = True
+        '
+        'MatriculaPECDataSet1
+        '
+        Me.MatriculaPECDataSet1.DataSetName = "MatriculaPECDataSet"
+        Me.MatriculaPECDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProfesoresBindingSource1
+        '
+        Me.ProfesoresBindingSource1.DataMember = "profesores"
+        Me.ProfesoresBindingSource1.DataSource = Me.MatriculaPECDataSet1
+        '
         'Grupos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -311,13 +274,6 @@ Partial Class Grupos
         Me.ClientSize = New System.Drawing.Size(863, 503)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.CheckBox6)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label4)
@@ -330,39 +286,44 @@ Partial Class Grupos
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Grupos"
         Me.Text = "Crear grupo"
-        Me.TopMost = True
-        CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GruposBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UsuariosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PeriodosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProfesoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MatriculaPECDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProfesoresBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
     Friend WithEvents ButtonMatricula As System.Windows.Forms.Button
     Friend WithEvents MatriculaPECDataSet As MatriculaPEC.MatriculaPECDataSet
     Friend WithEvents CursosBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CursosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.cursosTableAdapter
-    Friend WithEvents PeriodosBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents PeriodosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.periodosTableAdapter
-    Friend WithEvents ProfesoresBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ProfesoresTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.profesoresTableAdapter
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents BindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents CursosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.cursosTableAdapter
+    Friend WithEvents GruposBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents GruposTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.gruposTableAdapter
+    Friend WithEvents UsuariosBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents UsuariosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.usuariosTableAdapter
+    Friend WithEvents BindingSource2 As System.Windows.Forms.BindingSource
+    Friend WithEvents PeriodosBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents PeriodosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.periodosTableAdapter
+    Friend WithEvents ProfesoresBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ProfesoresTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.profesoresTableAdapter
+    Friend WithEvents MatriculaPECDataSet1 As MatriculaPEC.MatriculaPECDataSet
+    Friend WithEvents ProfesoresBindingSource1 As System.Windows.Forms.BindingSource
 End Class

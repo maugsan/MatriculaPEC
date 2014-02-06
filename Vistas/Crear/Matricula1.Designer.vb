@@ -25,12 +25,12 @@ Partial Class Matricula
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Matricula))
         Me.CrearEstudiante = New System.Windows.Forms.Button()
         Me.TextBoxBuscar = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Siguiente = New System.Windows.Forms.Button()
         Me.Cancelar = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LEstudianteSeleccionado = New System.Windows.Forms.Label()
         Me.Elegir = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.LEstudianteSeleccionado = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,7 +41,7 @@ Partial Class Matricula
         Me.CrearEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CrearEstudiante.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CrearEstudiante.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CrearEstudiante.Location = New System.Drawing.Point(109, 269)
+        Me.CrearEstudiante.Location = New System.Drawing.Point(82, 212)
         Me.CrearEstudiante.Margin = New System.Windows.Forms.Padding(0)
         Me.CrearEstudiante.Name = "CrearEstudiante"
         Me.CrearEstudiante.Size = New System.Drawing.Size(182, 77)
@@ -57,24 +57,13 @@ Partial Class Matricula
         Me.TextBoxBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBoxBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxBuscar.ForeColor = System.Drawing.Color.Gray
-        Me.TextBoxBuscar.Location = New System.Drawing.Point(335, 295)
+        Me.TextBoxBuscar.Location = New System.Drawing.Point(365, 232)
         Me.TextBoxBuscar.Margin = New System.Windows.Forms.Padding(6)
         Me.TextBoxBuscar.MaximumSize = New System.Drawing.Size(350, 50)
         Me.TextBoxBuscar.Name = "TextBoxBuscar"
         Me.TextBoxBuscar.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.TextBoxBuscar.Size = New System.Drawing.Size(350, 31)
         Me.TextBoxBuscar.TabIndex = 4
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label1.Location = New System.Drawing.Point(346, 48)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(195, 39)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Estudiantes"
         '
         'Siguiente
         '
@@ -106,6 +95,45 @@ Partial Class Matricula
         Me.Cancelar.Text = "Cancelar"
         Me.Cancelar.UseVisualStyleBackColor = False
         '
+        'Elegir
+        '
+        Me.Elegir.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Elegir.FlatAppearance.BorderSize = 0
+        Me.Elegir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Elegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Elegir.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Elegir.Location = New System.Drawing.Point(721, 232)
+        Me.Elegir.Margin = New System.Windows.Forms.Padding(0)
+        Me.Elegir.Name = "Elegir"
+        Me.Elegir.Size = New System.Drawing.Size(64, 31)
+        Me.Elegir.TabIndex = 12
+        Me.Elegir.Text = "Elegir"
+        Me.Elegir.UseVisualStyleBackColor = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.DeepSkyBlue
+        Me.Label5.Location = New System.Drawing.Point(213, 162)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(416, 31)
+        Me.Label5.TabIndex = 26
+        Me.Label5.Text = "Seleccione o Cree un Estudiante:"
+        '
+        'LEstudianteSeleccionado
+        '
+        Me.LEstudianteSeleccionado.BackColor = System.Drawing.Color.Gainsboro
+        Me.LEstudianteSeleccionado.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LEstudianteSeleccionado.ForeColor = System.Drawing.Color.Gray
+        Me.LEstudianteSeleccionado.Image = CType(resources.GetObject("LEstudianteSeleccionado.Image"), System.Drawing.Image)
+        Me.LEstudianteSeleccionado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.LEstudianteSeleccionado.Location = New System.Drawing.Point(77, 303)
+        Me.LEstudianteSeleccionado.Name = "LEstudianteSeleccionado"
+        Me.LEstudianteSeleccionado.Size = New System.Drawing.Size(708, 73)
+        Me.LEstudianteSeleccionado.TabIndex = 11
+        Me.LEstudianteSeleccionado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -115,46 +143,18 @@ Partial Class Matricula
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
         '
-        'LEstudianteSeleccionado
-        '
-        Me.LEstudianteSeleccionado.BackColor = System.Drawing.Color.Gainsboro
-        Me.LEstudianteSeleccionado.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LEstudianteSeleccionado.ForeColor = System.Drawing.Color.Gray
-        Me.LEstudianteSeleccionado.Image = CType(resources.GetObject("LEstudianteSeleccionado.Image"), System.Drawing.Image)
-        Me.LEstudianteSeleccionado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.LEstudianteSeleccionado.Location = New System.Drawing.Point(104, 166)
-        Me.LEstudianteSeleccionado.Name = "LEstudianteSeleccionado"
-        Me.LEstudianteSeleccionado.Size = New System.Drawing.Size(651, 75)
-        Me.LEstudianteSeleccionado.TabIndex = 11
-        Me.LEstudianteSeleccionado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Elegir
-        '
-        Me.Elegir.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Elegir.FlatAppearance.BorderSize = 0
-        Me.Elegir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Elegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Elegir.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Elegir.Location = New System.Drawing.Point(691, 295)
-        Me.Elegir.Margin = New System.Windows.Forms.Padding(0)
-        Me.Elegir.Name = "Elegir"
-        Me.Elegir.Size = New System.Drawing.Size(64, 31)
-        Me.Elegir.TabIndex = 12
-        Me.Elegir.Text = "Elegir"
-        Me.Elegir.UseVisualStyleBackColor = False
-        '
         'Matricula
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(863, 503)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Elegir)
         Me.Controls.Add(Me.LEstudianteSeleccionado)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Cancelar)
         Me.Controls.Add(Me.Siguiente)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBoxBuscar)
         Me.Controls.Add(Me.CrearEstudiante)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -170,10 +170,10 @@ Partial Class Matricula
     End Sub
     Friend WithEvents CrearEstudiante As System.Windows.Forms.Button
     Friend WithEvents TextBoxBuscar As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Siguiente As System.Windows.Forms.Button
     Friend WithEvents Cancelar As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents LEstudianteSeleccionado As System.Windows.Forms.Label
     Friend WithEvents Elegir As System.Windows.Forms.Button
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

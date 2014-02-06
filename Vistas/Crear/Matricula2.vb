@@ -1,4 +1,5 @@
 ﻿Public Class Matricula2
+
     Dim mtableAdapter As New MatriculaPECDataSetTableAdapters.matriculasTableAdapter
     Dim atableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter
     Dim ctableAdapter As New MatriculaPECDataSetTableAdapters.cursosTableAdapter
@@ -12,6 +13,7 @@
         Me.borrarDatagridGrupos()
         Me.Hide()
         Matricula.Show()
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -31,31 +33,17 @@
     End Sub
 
     Private Sub Matricula2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.periodos' Puede moverla o quitarla según sea necesario.
-        Me.PeriodosTableAdapter.Fill(Me.MatriculaPECDataSet.periodos)
-
-        Me.GruposTableAdapter.Fill(Me.MatriculaPECDataSet.grupos)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.matriculas' Puede moverla o quitarla según sea necesario.
-        Me.MatriculasTableAdapter.Fill(Me.MatriculaPECDataSet.matriculas)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.alumnos_en_grupos' Puede moverla o quitarla según sea necesario.
-        Me.Alumnos_en_gruposTableAdapter.Fill(Me.MatriculaPECDataSet.alumnos_en_grupos)
-        Dim gtableAdapter As New MatriculaPECDataSetTableAdapters.gruposTableAdapter()
-
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.grupos' Puede moverla o quitarla según sea necesario.
-        Me.GruposTableAdapter.Fill(Me.MatriculaPECDataSet.grupos)
         'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.descuentos' Puede moverla o quitarla según sea necesario.
         Me.DescuentosTableAdapter.Fill(Me.MatriculaPECDataSet.descuentos)
         'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.formas_de_pago' Puede moverla o quitarla según sea necesario.
         Me.Formas_de_pagoTableAdapter.Fill(Me.MatriculaPECDataSet.formas_de_pago)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.cursos' Puede moverla o quitarla según sea necesario.
-        Me.CursosTableAdapter.Fill(Me.MatriculaPECDataSet.cursos)
-
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.periodos' Puede moverla o quitarla según sea necesario.
+        Me.PeriodosTableAdapter.Fill(Me.MatriculaPECDataSet.periodos)
 
 
         If DataGridViewMatricula2.Rows.Count = 0 Then
 
             Button2.Enabled = False
-
         End If
 
 
@@ -67,7 +55,7 @@
         Dim nombreGrupo As String
 
         Dim nombreCurso() As String
-   
+
         Dim row1 As String() = New String() {Me.ComboBox2.Text, ComboBox3.Text, ComboBox4.Text}
         Dim encontrado As Boolean
 
@@ -129,9 +117,6 @@
 
             End If
 
-
-
-
         End If
     End Sub
 
@@ -158,7 +143,7 @@
 
 
     Private Sub ComboBox2_Validating(ByVal sender As Object, _
-ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox2.Validating
+ByVal e As System.ComponentModel.CancelEventArgs)
 
         If Not mCanceling Then
 
@@ -177,7 +162,7 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox2.Validating
     End Sub
 
     Private Sub ComboBox3_Validating(ByVal sender As Object, _
-ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox3.Validating
+ByVal e As System.ComponentModel.CancelEventArgs)
 
         If Not mCanceling Then
 
@@ -195,7 +180,7 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox3.Validating
 
 
     Private Sub ComboBox4_Validating(ByVal sender As Object, _
-ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox4.Validating
+ByVal e As System.ComponentModel.CancelEventArgs)
 
         If Not mCanceling Then
 
@@ -227,7 +212,7 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox4.Validating
                 DataGridViewMatricula2.Rows.RemoveAt(e.RowIndex)
 
             End If
-       
+
 
         End If
 
@@ -251,27 +236,22 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox4.Validating
         Dim codEstudiante As Integer
 
 
-
         matriculado = True
 
-        codCurso = ctableAdapter.buscarCodigoCurso(nombreCurso(1) & " " & nombreCurso(2))
+        codCurso = ctableAdapter.consultar_cod_curso(nombreCurso(1) & " " & nombreCurso(2))
 
+        codEstudiante = atableAdapter.consultar_cod_estudiante(obtenerCodigoEstudiante)
 
-        codEstudiante = atableAdapter.consultar_codigo_estudiante(obtenerCodigoEstudiante)
+        MsgBox(gtableAdapter.consultarGrupo(nombreCurso(0).Replace("G", ""), codCurso))
 
+        codGrupo = gtableAdapter.consultarGrupo(nombreCurso(0).Replace("G", ""), codCurso)
 
-        codGrupo = gtableAdapter.consultarCodigoGrupoPorNumeroYCurso(nombreCurso(0).Replace("G", ""), codCurso)
-
-
-        codMatricula = mtableAdapter.consultarCodigoMatricula(codGrupo, codEstudiante)
-
+        codMatricula = mtableAdapter.consultar_cod_matricula(codGrupo, codEstudiante)
 
 
         If codMatricula = 0 Or codMatricula = Nothing Then
 
-
             matriculado = False
-
 
         Else
             MsgBox("Ya esta matriculado en este grupo.")
@@ -288,18 +268,21 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox4.Validating
         Me.DataGridViewMatricula2.Rows.Clear()
 
         Return 0
+
     End Function
- 
-
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
 
 
 
-        If gtableAdapter.GetDataByPeriodo(ComboBox1.Text).Rows.Count <> 0 Then
+
+    Private Sub ComboBox1_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+
+
+        If gtableAdapter.GetDataByGrupoPorPeriodo(ComboBox1.Text).Rows.Count <> 0 Then
 
 
             ComboBox2.Enabled = True
-            ComboBox2.DataSource = gtableAdapter.GetDataByPeriodo(ComboBox1.Text)
+            ComboBox2.DataSource = gtableAdapter.GetDataByGrupoPorPeriodo(ComboBox1.Text)
             ComboBox2.DisplayMember = "Curso"
 
 
@@ -309,6 +292,7 @@ ByVal e As System.ComponentModel.CancelEventArgs) Handles ComboBox4.Validating
             ComboBox2.Enabled = False
             ComboBox2.DataSource = Nothing
         End If
-     
+
+
     End Sub
 End Class

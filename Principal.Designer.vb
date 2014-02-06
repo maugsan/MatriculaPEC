@@ -2,9 +2,6 @@
 Partial Class Principal
     Inherits System.Windows.Forms.Form
 
- 
-
-
 
 
 
@@ -30,244 +27,261 @@ Partial Class Principal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControlPrincipal = New System.Windows.Forms.TabControl()
         Me.TabPageMenu = New System.Windows.Forms.TabPage()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.ButtonMedios = New System.Windows.Forms.Button()
         Me.ButtonFormas = New System.Windows.Forms.Button()
         Me.ComboBoxOpciones = New System.Windows.Forms.ComboBox()
         Me.ButtonDescuentos = New System.Windows.Forms.Button()
         Me.ButtonProfesores = New System.Windows.Forms.Button()
         Me.ButtonPeriodos = New System.Windows.Forms.Button()
-        Me.ButtonPagos = New System.Windows.Forms.Button()
-        Me.ButtonEstudintes = New System.Windows.Forms.Button()
         Me.ButtonGrupos = New System.Windows.Forms.Button()
         Me.ButtonCursos = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBoxBuscar = New System.Windows.Forms.TextBox()
         Me.ButtonMatricula = New System.Windows.Forms.Button()
         Me.TabPageMatricula = New System.Windows.Forms.TabPage()
         Me.ComboBox14 = New System.Windows.Forms.ComboBox()
         Me.ComboBox15 = New System.Windows.Forms.ComboBox()
         Me.ComboBox13 = New System.Windows.Forms.ComboBox()
-        Me.MatriculasBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MatriculaPECDataSet = New MatriculaPEC.MatriculaPECDataSet()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ButtonMMatricula = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.ButtonRegresar = New System.Windows.Forms.Button()
         Me.TabPageCursos = New System.Windows.Forms.TabPage()
-        Me.Button18 = New System.Windows.Forms.Button()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ButtonCCursos = New System.Windows.Forms.Button()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.Eliminar = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.CodcursoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CursosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MatriculaPECDataSet1 = New MatriculaPEC.MatriculaPECDataSet()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.TabPageGrupos = New System.Windows.Forms.TabPage()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ButtonGGrupos = New System.Windows.Forms.Button()
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
-        Me.EliminarGrupos = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.CodigoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CursoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PeriodoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProfesorDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GruposBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ButtonGAtras = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.TabPageEstudiante = New System.Windows.Forms.TabPage()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.ButtonEEstudiantes = New System.Windows.Forms.Button()
         Me.DataGridView4 = New System.Windows.Forms.DataGridView()
-        Me.CedulaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TelefonoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EliminarEstudiantes = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.AlumnosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ResponsableDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TelefonoresponsableDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AlumnosBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ButtonEAtras = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.TabPagePeriodos = New System.Windows.Forms.TabPage()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.ButtonPPeriodos = New System.Windows.Forms.Button()
         Me.DataGridView5 = New System.Windows.Forms.DataGridView()
-        Me.EliminarPeriodo = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.CodperiodoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ButtonPAtras = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.TabPageDescuentos = New System.Windows.Forms.TabPage()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.ButtonDDescuentos = New System.Windows.Forms.Button()
         Me.DataGridView6 = New System.Windows.Forms.DataGridView()
+        Me.CoddescuentoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EliminarDescuento = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.DescuentosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.ButtonDAtras = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
         Me.TabPagePagos = New System.Windows.Forms.TabPage()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.ButtonPPagos = New System.Windows.Forms.Button()
         Me.DataGridView7 = New System.Windows.Forms.DataGridView()
         Me.EliminarPago = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.PagosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.ButtonPaAtras = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
         Me.TabPageProfesores = New System.Windows.Forms.TabPage()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.ComboBox8 = New System.Windows.Forms.ComboBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.ButtonPProfesores = New System.Windows.Forms.Button()
         Me.DataGridView8 = New System.Windows.Forms.DataGridView()
-        Me.EliminarProfesor = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.CódigoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CédulaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProfesorDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TeléfonoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CorreoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ProfesoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MatriculaPECDataSet2 = New MatriculaPEC.MatriculaPECDataSet()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.ButtonPrAtras = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
         Me.TabPageUsuarios = New System.Windows.Forms.TabPage()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.ComboBox9 = New System.Windows.Forms.ComboBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.Button13 = New System.Windows.Forms.Button()
         Me.TabPageMedios = New System.Windows.Forms.TabPage()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.ComboBox10 = New System.Windows.Forms.ComboBox()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.Button14 = New System.Windows.Forms.Button()
         Me.TabPageFormas = New System.Windows.Forms.TabPage()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
+        Me.DataGridView9 = New System.Windows.Forms.DataGridView()
+        Me.CodformapagoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FormasdepagoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Button20 = New System.Windows.Forms.Button()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.ComboBox11 = New System.Windows.Forms.ComboBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.Button16 = New System.Windows.Forms.Button()
         Me.TabPageListas = New System.Windows.Forms.TabPage()
-        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
         Me.ComboBox12 = New System.Windows.Forms.ComboBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.MatriculasBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MatriculasBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MatriculasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.GruposBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.FKmatriculacodg1DE57479BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MatriculaPECDataSet1 = New MatriculaPEC.MatriculaPECDataSet()
-        Me.AlumnosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
-        Me.CursosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.cursosTableAdapter()
-        Me.GruposTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.gruposTableAdapter()
+        Me.AlumnosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.PeriodosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.periodosTableAdapter()
-        Me.DescuentosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.descuentosTableAdapter()
-        Me.PagosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.pagosTableAdapter()
+        Me.Formas_de_pagoTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.formas_de_pagoTableAdapter()
+        Me.CursosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.cursosTableAdapter()
         Me.ProfesoresTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.profesoresTableAdapter()
-        Me.MatriculasTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter()
-        Me.MatriculasBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MatriculasBindingSource5 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.AlumnosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
+        Me.GruposTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.gruposTableAdapter()
+        Me.DescuentosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.descuentosTableAdapter()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn3 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Button22 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.ButtonPagos = New System.Windows.Forms.Button()
+        Me.ButtonEstudintes = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button21 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.ButtonRegresar = New System.Windows.Forms.Button()
+        Me.Button18 = New System.Windows.Forms.Button()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Eliminar = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.EliminarGrupos = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.ButtonGAtras = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.ButtonEAtras = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.ButtonPAtras = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.ButtonDAtras = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.ButtonPaAtras = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.EliminarProfesor = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.ButtonPrAtras = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button19 = New System.Windows.Forms.Button()
+        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.Button17 = New System.Windows.Forms.Button()
         Me.TabControlPrincipal.SuspendLayout()
         Me.TabPageMenu.SuspendLayout()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageMatricula.SuspendLayout()
-        CType(Me.MatriculasBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageCursos.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MatriculaPECDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageGrupos.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GruposBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageEstudiante.SuspendLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AlumnosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AlumnosBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPagePeriodos.SuspendLayout()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageDescuentos.SuspendLayout()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DescuentosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPagePagos.SuspendLayout()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PagosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageProfesores.SuspendLayout()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProfesoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MatriculaPECDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageUsuarios.SuspendLayout()
+        Me.TabPageMedios.SuspendLayout()
+        Me.TabPageFormas.SuspendLayout()
+        CType(Me.DataGridView9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FormasdepagoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPageListas.SuspendLayout()
+        CType(Me.AlumnosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageMedios.SuspendLayout()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageFormas.SuspendLayout()
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPageListas.SuspendLayout()
         CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MatriculasBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MatriculasBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MatriculasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GruposBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FKmatriculacodg1DE57479BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MatriculaPECDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MatriculasBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MatriculasBindingSource5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControlPrincipal
@@ -298,6 +312,7 @@ Partial Class Principal
         '
         Me.TabPageMenu.AutoScroll = True
         Me.TabPageMenu.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageMenu.Controls.Add(Me.Button22)
         Me.TabPageMenu.Controls.Add(Me.Button4)
         Me.TabPageMenu.Controls.Add(Me.Button15)
         Me.TabPageMenu.Controls.Add(Me.Button3)
@@ -324,84 +339,6 @@ Partial Class Principal
         Me.TabPageMenu.TabIndex = 0
         Me.TabPageMenu.Text = "Menu"
         '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button4.Image = Global.MatriculaPEC.My.Resources.Resources.User_Profile1
-        Me.Button4.Location = New System.Drawing.Point(869, 410)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(150, 150)
-        Me.Button4.TabIndex = 31
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button15
-        '
-        Me.Button15.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button15.FlatAppearance.BorderSize = 0
-        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button15.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button15.Image = Global.MatriculaPEC.My.Resources.Resources.Help1
-        Me.Button15.Location = New System.Drawing.Point(1031, 458)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(150, 102)
-        Me.Button15.TabIndex = 30
-        Me.Button15.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Image = Global.MatriculaPEC.My.Resources.Resources.Settings_021
-        Me.Button3.Location = New System.Drawing.Point(1031, 186)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(150, 150)
-        Me.Button3.TabIndex = 23
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'PictureBox21
-        '
-        Me.PictureBox21.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox21.Location = New System.Drawing.Point(1071, 39)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox21.TabIndex = 28
-        Me.PictureBox21.TabStop = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(1031, 349)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(150, 96)
-        Me.Button2.TabIndex = 23
-        Me.Button2.Text = "Listas"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox2.Location = New System.Drawing.Point(83, 49)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
-        '
         'ButtonMedios
         '
         Me.ButtonMedios.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
@@ -414,7 +351,7 @@ Partial Class Principal
         Me.ButtonMedios.Name = "ButtonMedios"
         Me.ButtonMedios.Size = New System.Drawing.Size(150, 150)
         Me.ButtonMedios.TabIndex = 22
-        Me.ButtonMedios.Text = "Medios"
+        Me.ButtonMedios.Text = "FORMAS"
         Me.ButtonMedios.UseVisualStyleBackColor = False
         '
         'ButtonFormas
@@ -429,7 +366,7 @@ Partial Class Principal
         Me.ButtonFormas.Name = "ButtonFormas"
         Me.ButtonFormas.Size = New System.Drawing.Size(150, 150)
         Me.ButtonFormas.TabIndex = 21
-        Me.ButtonFormas.Text = "Formas"
+        Me.ButtonFormas.Text = "MEDIOS"
         Me.ButtonFormas.UseVisualStyleBackColor = False
         '
         'ComboBoxOpciones
@@ -458,7 +395,7 @@ Partial Class Principal
         Me.ButtonDescuentos.Name = "ButtonDescuentos"
         Me.ButtonDescuentos.Size = New System.Drawing.Size(221, 100)
         Me.ButtonDescuentos.TabIndex = 18
-        Me.ButtonDescuentos.Text = "Descuentos"
+        Me.ButtonDescuentos.Text = "DESCUENTOS"
         Me.ButtonDescuentos.UseVisualStyleBackColor = False
         '
         'ButtonProfesores
@@ -474,7 +411,7 @@ Partial Class Principal
         Me.ButtonProfesores.Name = "ButtonProfesores"
         Me.ButtonProfesores.Size = New System.Drawing.Size(291, 150)
         Me.ButtonProfesores.TabIndex = 17
-        Me.ButtonProfesores.Text = "Profesores"
+        Me.ButtonProfesores.Text = "PROFESORES"
         Me.ButtonProfesores.UseVisualStyleBackColor = False
         '
         'ButtonPeriodos
@@ -490,40 +427,8 @@ Partial Class Principal
         Me.ButtonPeriodos.Name = "ButtonPeriodos"
         Me.ButtonPeriodos.Size = New System.Drawing.Size(220, 100)
         Me.ButtonPeriodos.TabIndex = 16
-        Me.ButtonPeriodos.Text = "Periodos"
+        Me.ButtonPeriodos.Text = "PERIODOS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.ButtonPeriodos.UseVisualStyleBackColor = False
-        '
-        'ButtonPagos
-        '
-        Me.ButtonPagos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ButtonPagos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonPagos.FlatAppearance.BorderSize = 0
-        Me.ButtonPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPagos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonPagos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonPagos.Location = New System.Drawing.Point(83, 410)
-        Me.ButtonPagos.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPagos.Name = "ButtonPagos"
-        Me.ButtonPagos.Size = New System.Drawing.Size(150, 150)
-        Me.ButtonPagos.TabIndex = 15
-        Me.ButtonPagos.Text = "Pagos"
-        Me.ButtonPagos.UseVisualStyleBackColor = False
-        '
-        'ButtonEstudintes
-        '
-        Me.ButtonEstudintes.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ButtonEstudintes.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonEstudintes.FlatAppearance.BorderSize = 0
-        Me.ButtonEstudintes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEstudintes.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEstudintes.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonEstudintes.Location = New System.Drawing.Point(869, 186)
-        Me.ButtonEstudintes.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonEstudintes.Name = "ButtonEstudintes"
-        Me.ButtonEstudintes.Size = New System.Drawing.Size(150, 213)
-        Me.ButtonEstudintes.TabIndex = 14
-        Me.ButtonEstudintes.Text = "Estudiantes"
-        Me.ButtonEstudintes.UseVisualStyleBackColor = False
         '
         'ButtonGrupos
         '
@@ -538,7 +443,7 @@ Partial Class Principal
         Me.ButtonGrupos.Name = "ButtonGrupos"
         Me.ButtonGrupos.Size = New System.Drawing.Size(221, 100)
         Me.ButtonGrupos.TabIndex = 13
-        Me.ButtonGrupos.Text = "Grupos"
+        Me.ButtonGrupos.Text = "VER " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "GRUPOS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.ButtonGrupos.UseVisualStyleBackColor = False
         '
         'ButtonCursos
@@ -554,19 +459,8 @@ Partial Class Principal
         Me.ButtonCursos.Name = "ButtonCursos"
         Me.ButtonCursos.Size = New System.Drawing.Size(220, 100)
         Me.ButtonCursos.TabIndex = 12
-        Me.ButtonCursos.Text = "Cursos"
+        Me.ButtonCursos.Text = "VER" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " CURSOS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.ButtonCursos.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button1.Location = New System.Drawing.Point(824, 68)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(46, 34)
-        Me.Button1.TabIndex = 3
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBoxBuscar
         '
@@ -587,28 +481,28 @@ Partial Class Principal
         Me.ButtonMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonMatricula.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonMatricula.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonMatricula.Location = New System.Drawing.Point(83, 186)
+        Me.ButtonMatricula.Location = New System.Drawing.Point(83, 260)
         Me.ButtonMatricula.Margin = New System.Windows.Forms.Padding(0)
         Me.ButtonMatricula.Name = "ButtonMatricula"
-        Me.ButtonMatricula.Size = New System.Drawing.Size(311, 213)
+        Me.ButtonMatricula.Size = New System.Drawing.Size(311, 139)
         Me.ButtonMatricula.TabIndex = 0
-        Me.ButtonMatricula.Text = "Matriculas"
+        Me.ButtonMatricula.Text = "VER" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " MATRICULAS"
         Me.ButtonMatricula.UseVisualStyleBackColor = False
         '
         'TabPageMatricula
         '
         Me.TabPageMatricula.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.TabPageMatricula.Controls.Add(Me.Button21)
         Me.TabPageMatricula.Controls.Add(Me.ComboBox14)
         Me.TabPageMatricula.Controls.Add(Me.ComboBox15)
         Me.TabPageMatricula.Controls.Add(Me.ComboBox13)
         Me.TabPageMatricula.Controls.Add(Me.ComboBox1)
-        Me.TabPageMatricula.Controls.Add(Me.PictureBox1)
-        Me.TabPageMatricula.Controls.Add(Me.PictureBox3)
         Me.TabPageMatricula.Controls.Add(Me.TextBox1)
         Me.TabPageMatricula.Controls.Add(Me.Label2)
-        Me.TabPageMatricula.Controls.Add(Me.ButtonMMatricula)
         Me.TabPageMatricula.Controls.Add(Me.DataGridView1)
         Me.TabPageMatricula.Controls.Add(Me.Label1)
+        Me.TabPageMatricula.Controls.Add(Me.PictureBox1)
+        Me.TabPageMatricula.Controls.Add(Me.PictureBox3)
         Me.TabPageMatricula.Controls.Add(Me.Button5)
         Me.TabPageMatricula.Controls.Add(Me.ButtonRegresar)
         Me.TabPageMatricula.Location = New System.Drawing.Point(4, 24)
@@ -650,7 +544,6 @@ Partial Class Principal
         'ComboBox13
         '
         Me.ComboBox13.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox13.DataSource = Me.MatriculasBindingSource4
         Me.ComboBox13.DisplayMember = "Estudiante"
         Me.ComboBox13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -662,23 +555,12 @@ Partial Class Principal
         Me.ComboBox13.TabIndex = 35
         Me.ComboBox13.ValueMember = "Estudiante"
         '
-        'MatriculasBindingSource4
-        '
-        Me.MatriculasBindingSource4.DataMember = "matriculas"
-        Me.MatriculasBindingSource4.DataSource = Me.MatriculaPECDataSet
-        '
-        'MatriculaPECDataSet
-        '
-        Me.MatriculaPECDataSet.DataSetName = "MatriculaPECDataSet"
-        Me.MatriculaPECDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'ComboBox1
         '
         Me.ComboBox1.AllowDrop = True
         Me.ComboBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ComboBox1.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.ComboBox1.DataSource = Me.BindingSource1
-        Me.ComboBox1.DisplayMember = "nombre"
+        Me.ComboBox1.DisplayMember = "cod_periodo"
         Me.ComboBox1.DropDownHeight = 200
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
@@ -690,29 +572,6 @@ Partial Class Principal
         Me.ComboBox1.Size = New System.Drawing.Size(262, 32)
         Me.ComboBox1.TabIndex = 34
         Me.ComboBox1.ValueMember = "cod_periodo"
-        '
-        'BindingSource1
-        '
-        Me.BindingSource1.DataMember = "periodos"
-        Me.BindingSource1.DataSource = Me.MatriculaPECDataSet
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox1.Location = New System.Drawing.Point(1044, 47)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox1.TabIndex = 33
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox3.Location = New System.Drawing.Point(91, 47)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox3.TabIndex = 29
-        Me.PictureBox3.TabStop = False
         '
         'TextBox1
         '
@@ -735,21 +594,6 @@ Partial Class Principal
         Me.Label2.Size = New System.Drawing.Size(111, 39)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Menu/"
-        '
-        'ButtonMMatricula
-        '
-        Me.ButtonMMatricula.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonMMatricula.FlatAppearance.BorderSize = 0
-        Me.ButtonMMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonMMatricula.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonMMatricula.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ButtonMMatricula.Location = New System.Drawing.Point(933, 290)
-        Me.ButtonMMatricula.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonMMatricula.Name = "ButtonMMatricula"
-        Me.ButtonMMatricula.Size = New System.Drawing.Size(221, 77)
-        Me.ButtonMMatricula.TabIndex = 2
-        Me.ButtonMMatricula.Text = "Matricular"
-        Me.ButtonMMatricula.UseVisualStyleBackColor = False
         '
         'DataGridView1
         '
@@ -780,29 +624,6 @@ Partial Class Principal
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Matricula"
         '
-        'Button5
-        '
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button5.Location = New System.Drawing.Point(849, 75)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(46, 34)
-        Me.Button5.TabIndex = 31
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'ButtonRegresar
-        '
-        Me.ButtonRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonRegresar.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonRegresar.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
-        Me.ButtonRegresar.Location = New System.Drawing.Point(91, 157)
-        Me.ButtonRegresar.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonRegresar.Name = "ButtonRegresar"
-        Me.ButtonRegresar.Size = New System.Drawing.Size(84, 83)
-        Me.ButtonRegresar.TabIndex = 3
-        Me.ButtonRegresar.UseVisualStyleBackColor = True
-        '
         'TabPageCursos
         '
         Me.TabPageCursos.BackColor = System.Drawing.SystemColors.ButtonFace
@@ -822,36 +643,6 @@ Partial Class Principal
         Me.TabPageCursos.Size = New System.Drawing.Size(1358, 740)
         Me.TabPageCursos.TabIndex = 2
         Me.TabPageCursos.Text = "Cursos"
-        '
-        'Button18
-        '
-        Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button18.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button18.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
-        Me.Button18.Location = New System.Drawing.Point(178, 184)
-        Me.Button18.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(84, 83)
-        Me.Button18.TabIndex = 34
-        Me.Button18.UseVisualStyleBackColor = True
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox4.Location = New System.Drawing.Point(1069, 43)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox4.TabIndex = 33
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox5.Location = New System.Drawing.Point(81, 43)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox5.TabIndex = 29
-        Me.PictureBox5.TabStop = False
         '
         'ComboBox2
         '
@@ -911,7 +702,7 @@ Partial Class Principal
         Me.DataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView2.ColumnHeadersHeight = 40
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eliminar})
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodcursoDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.Eliminar})
         Me.DataGridView2.DataSource = Me.CursosBindingSource
         Me.DataGridView2.Location = New System.Drawing.Point(204, 293)
         Me.DataGridView2.Name = "DataGridView2"
@@ -920,17 +711,50 @@ Partial Class Principal
         Me.DataGridView2.Size = New System.Drawing.Size(1011, 274)
         Me.DataGridView2.TabIndex = 6
         '
-        'Eliminar
+        'CodcursoDataGridViewTextBoxColumn
         '
-        Me.Eliminar.HeaderText = "Eliminar"
-        Me.Eliminar.Image = Global.MatriculaPEC.My.Resources.Resources.Close
-        Me.Eliminar.Name = "Eliminar"
-        Me.Eliminar.ReadOnly = True
-        Me.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.CodcursoDataGridViewTextBoxColumn.DataPropertyName = "cod_curso"
+        Me.CodcursoDataGridViewTextBoxColumn.HeaderText = "cod_curso"
+        Me.CodcursoDataGridViewTextBoxColumn.Name = "CodcursoDataGridViewTextBoxColumn"
+        Me.CodcursoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "nombre"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "nombre"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "duracion"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "duracion"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "descripcion"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "descripcion"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "costo"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "costo"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
         '
         'CursosBindingSource
         '
         Me.CursosBindingSource.DataMember = "cursos"
+        Me.CursosBindingSource.DataSource = Me.MatriculaPECDataSet1
+        '
+        'MatriculaPECDataSet1
+        '
+        Me.MatriculaPECDataSet1.DataSetName = "MatriculaPECDataSet"
+        Me.MatriculaPECDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label4
         '
@@ -942,17 +766,6 @@ Partial Class Principal
         Me.Label4.Size = New System.Drawing.Size(125, 39)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Cursos"
-        '
-        'Button6
-        '
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button6.Location = New System.Drawing.Point(839, 71)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(46, 34)
-        Me.Button6.TabIndex = 31
-        Me.Button6.UseVisualStyleBackColor = True
         '
         'TabPageGrupos
         '
@@ -973,24 +786,6 @@ Partial Class Principal
         Me.TabPageGrupos.Size = New System.Drawing.Size(1358, 740)
         Me.TabPageGrupos.TabIndex = 3
         Me.TabPageGrupos.Text = "Grupos"
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox6.Location = New System.Drawing.Point(1072, 42)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox6.TabIndex = 33
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox7.Location = New System.Drawing.Point(84, 42)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox7.TabIndex = 29
-        Me.PictureBox7.TabStop = False
         '
         'ComboBox3
         '
@@ -1049,23 +844,52 @@ Partial Class Principal
         Me.DataGridView3.AllowDrop = True
         Me.DataGridView3.AllowUserToAddRows = False
         Me.DataGridView3.AllowUserToDeleteRows = False
+        Me.DataGridView3.AutoGenerateColumns = False
         Me.DataGridView3.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EliminarGrupos})
+        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodigoDataGridViewTextBoxColumn, Me.CursoDataGridViewTextBoxColumn, Me.PeriodoDataGridViewTextBoxColumn, Me.ProfesorDataGridViewTextBoxColumn1, Me.EliminarGrupos})
+        Me.DataGridView3.DataSource = Me.GruposBindingSource
         Me.DataGridView3.Location = New System.Drawing.Point(203, 293)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.ReadOnly = True
         Me.DataGridView3.RowTemplate.Height = 40
+        Me.DataGridView3.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView3.Size = New System.Drawing.Size(1012, 274)
         Me.DataGridView3.TabIndex = 11
         '
-        'EliminarGrupos
+        'CodigoDataGridViewTextBoxColumn
         '
-        Me.EliminarGrupos.HeaderText = "Eliminar"
-        Me.EliminarGrupos.Image = Global.MatriculaPEC.My.Resources.Resources.Close
-        Me.EliminarGrupos.Name = "EliminarGrupos"
-        Me.EliminarGrupos.ReadOnly = True
+        Me.CodigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo"
+        Me.CodigoDataGridViewTextBoxColumn.HeaderText = "Codigo"
+        Me.CodigoDataGridViewTextBoxColumn.Name = "CodigoDataGridViewTextBoxColumn"
+        Me.CodigoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'CursoDataGridViewTextBoxColumn
+        '
+        Me.CursoDataGridViewTextBoxColumn.DataPropertyName = "Curso"
+        Me.CursoDataGridViewTextBoxColumn.HeaderText = "Curso"
+        Me.CursoDataGridViewTextBoxColumn.Name = "CursoDataGridViewTextBoxColumn"
+        Me.CursoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'PeriodoDataGridViewTextBoxColumn
+        '
+        Me.PeriodoDataGridViewTextBoxColumn.DataPropertyName = "Periodo"
+        Me.PeriodoDataGridViewTextBoxColumn.HeaderText = "Periodo"
+        Me.PeriodoDataGridViewTextBoxColumn.Name = "PeriodoDataGridViewTextBoxColumn"
+        Me.PeriodoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'ProfesorDataGridViewTextBoxColumn1
+        '
+        Me.ProfesorDataGridViewTextBoxColumn1.DataPropertyName = "Profesor"
+        Me.ProfesorDataGridViewTextBoxColumn1.HeaderText = "Profesor"
+        Me.ProfesorDataGridViewTextBoxColumn1.Name = "ProfesorDataGridViewTextBoxColumn1"
+        Me.ProfesorDataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'GruposBindingSource
+        '
+        Me.GruposBindingSource.DataMember = "grupos"
+        Me.GruposBindingSource.DataSource = Me.MatriculaPECDataSet1
         '
         'Label6
         '
@@ -1078,30 +902,6 @@ Partial Class Principal
         Me.Label6.Size = New System.Drawing.Size(128, 39)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Grupos"
-        '
-        'ButtonGAtras
-        '
-        Me.ButtonGAtras.AllowDrop = True
-        Me.ButtonGAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonGAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonGAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
-        Me.ButtonGAtras.Location = New System.Drawing.Point(160, 174)
-        Me.ButtonGAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonGAtras.Name = "ButtonGAtras"
-        Me.ButtonGAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonGAtras.TabIndex = 13
-        Me.ButtonGAtras.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button7.Location = New System.Drawing.Point(842, 70)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(46, 34)
-        Me.Button7.TabIndex = 31
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'TabPageEstudiante
         '
@@ -1122,24 +922,6 @@ Partial Class Principal
         Me.TabPageEstudiante.Size = New System.Drawing.Size(1358, 740)
         Me.TabPageEstudiante.TabIndex = 4
         Me.TabPageEstudiante.Text = "Estudiante"
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox8.Location = New System.Drawing.Point(1074, 38)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox8.TabIndex = 33
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox9.Location = New System.Drawing.Point(86, 38)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox9.TabIndex = 29
-        Me.PictureBox9.TabStop = False
         '
         'ComboBox4
         '
@@ -1181,6 +963,7 @@ Partial Class Principal
         '
         Me.ButtonEEstudiantes.AllowDrop = True
         Me.ButtonEEstudiantes.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonEEstudiantes.FlatAppearance.BorderSize = 0
         Me.ButtonEEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonEEstudiantes.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonEEstudiantes.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -1203,70 +986,78 @@ Partial Class Principal
         Me.DataGridView4.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CedulaDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.Apellido1DataGridViewTextBoxColumn, Me.Apellido2DataGridViewTextBoxColumn, Me.TelefonoDataGridViewTextBoxColumn, Me.EliminarEstudiantes})
-        Me.DataGridView4.DataSource = Me.AlumnosBindingSource
+        Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.ResponsableDataGridViewTextBoxColumn, Me.TelefonoresponsableDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn21, Me.EmailDataGridViewTextBoxColumn})
+        Me.DataGridView4.DataSource = Me.AlumnosBindingSource1
         Me.DataGridView4.GridColor = System.Drawing.SystemColors.Control
-        Me.DataGridView4.Location = New System.Drawing.Point(422, 294)
+        Me.DataGridView4.Location = New System.Drawing.Point(197, 294)
         Me.DataGridView4.Name = "DataGridView4"
         Me.DataGridView4.ReadOnly = True
+        Me.DataGridView4.RowHeadersWidth = 40
         Me.DataGridView4.RowTemplate.Height = 40
-        Me.DataGridView4.Size = New System.Drawing.Size(793, 274)
+        Me.DataGridView4.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView4.Size = New System.Drawing.Size(1018, 274)
         Me.DataGridView4.TabIndex = 16
         '
-        'CedulaDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn17
         '
-        Me.CedulaDataGridViewTextBoxColumn.DataPropertyName = "cedula"
-        Me.CedulaDataGridViewTextBoxColumn.HeaderText = "cedula"
-        Me.CedulaDataGridViewTextBoxColumn.Name = "CedulaDataGridViewTextBoxColumn"
-        Me.CedulaDataGridViewTextBoxColumn.ReadOnly = True
+        Me.DataGridViewTextBoxColumn17.DataPropertyName = "cedula"
+        Me.DataGridViewTextBoxColumn17.HeaderText = "cedula"
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        Me.DataGridViewTextBoxColumn17.ReadOnly = True
         '
-        'NombreDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn18
         '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
+        Me.DataGridViewTextBoxColumn18.DataPropertyName = "nombre"
+        Me.DataGridViewTextBoxColumn18.HeaderText = "nombre"
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        Me.DataGridViewTextBoxColumn18.ReadOnly = True
         '
-        'Apellido1DataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn19
         '
-        Me.Apellido1DataGridViewTextBoxColumn.DataPropertyName = "apellido1"
-        Me.Apellido1DataGridViewTextBoxColumn.HeaderText = "apellido1"
-        Me.Apellido1DataGridViewTextBoxColumn.Name = "Apellido1DataGridViewTextBoxColumn"
-        Me.Apellido1DataGridViewTextBoxColumn.ReadOnly = True
+        Me.DataGridViewTextBoxColumn19.DataPropertyName = "apellido1"
+        Me.DataGridViewTextBoxColumn19.HeaderText = "apellido1"
+        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        Me.DataGridViewTextBoxColumn19.ReadOnly = True
         '
-        'Apellido2DataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn20
         '
-        Me.Apellido2DataGridViewTextBoxColumn.DataPropertyName = "apellido2"
-        Me.Apellido2DataGridViewTextBoxColumn.HeaderText = "apellido2"
-        Me.Apellido2DataGridViewTextBoxColumn.Name = "Apellido2DataGridViewTextBoxColumn"
-        Me.Apellido2DataGridViewTextBoxColumn.ReadOnly = True
+        Me.DataGridViewTextBoxColumn20.DataPropertyName = "apellido2"
+        Me.DataGridViewTextBoxColumn20.HeaderText = "apellido2"
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        Me.DataGridViewTextBoxColumn20.ReadOnly = True
         '
-        'TelefonoDataGridViewTextBoxColumn
+        'ResponsableDataGridViewTextBoxColumn
         '
-        Me.TelefonoDataGridViewTextBoxColumn.DataPropertyName = "telefono"
-        Me.TelefonoDataGridViewTextBoxColumn.HeaderText = "telefono"
-        Me.TelefonoDataGridViewTextBoxColumn.Name = "TelefonoDataGridViewTextBoxColumn"
-        Me.TelefonoDataGridViewTextBoxColumn.ReadOnly = True
+        Me.ResponsableDataGridViewTextBoxColumn.DataPropertyName = "responsable"
+        Me.ResponsableDataGridViewTextBoxColumn.HeaderText = "responsable"
+        Me.ResponsableDataGridViewTextBoxColumn.Name = "ResponsableDataGridViewTextBoxColumn"
+        Me.ResponsableDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'EliminarEstudiantes
+        'TelefonoresponsableDataGridViewTextBoxColumn
         '
-        Me.EliminarEstudiantes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.EliminarEstudiantes.DataPropertyName = "cod_alumno"
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        Me.EliminarEstudiantes.DefaultCellStyle = DataGridViewCellStyle1
-        Me.EliminarEstudiantes.HeaderText = "Eliminar"
-        Me.EliminarEstudiantes.Name = "EliminarEstudiantes"
-        Me.EliminarEstudiantes.ReadOnly = True
-        Me.EliminarEstudiantes.Text = "Eliminar"
-        Me.EliminarEstudiantes.UseColumnTextForButtonValue = True
+        Me.TelefonoresponsableDataGridViewTextBoxColumn.DataPropertyName = "telefono_responsable"
+        Me.TelefonoresponsableDataGridViewTextBoxColumn.HeaderText = "telefono_responsable"
+        Me.TelefonoresponsableDataGridViewTextBoxColumn.Name = "TelefonoresponsableDataGridViewTextBoxColumn"
+        Me.TelefonoresponsableDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'AlumnosBindingSource
+        'DataGridViewTextBoxColumn21
         '
-        Me.AlumnosBindingSource.DataMember = "alumnos"
-        Me.AlumnosBindingSource.DataSource = Me.MatriculaPECDataSet
+        Me.DataGridViewTextBoxColumn21.DataPropertyName = "telefono"
+        Me.DataGridViewTextBoxColumn21.HeaderText = "telefono"
+        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
+        Me.DataGridViewTextBoxColumn21.ReadOnly = True
+        '
+        'EmailDataGridViewTextBoxColumn
+        '
+        Me.EmailDataGridViewTextBoxColumn.DataPropertyName = "email"
+        Me.EmailDataGridViewTextBoxColumn.HeaderText = "email"
+        Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
+        Me.EmailDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'AlumnosBindingSource1
+        '
+        Me.AlumnosBindingSource1.DataMember = "alumnos"
+        Me.AlumnosBindingSource1.DataSource = Me.MatriculaPECDataSet1
         '
         'Label8
         '
@@ -1279,30 +1070,6 @@ Partial Class Principal
         Me.Label8.Size = New System.Drawing.Size(195, 39)
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "Estudiantes"
-        '
-        'ButtonEAtras
-        '
-        Me.ButtonEAtras.AllowDrop = True
-        Me.ButtonEAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonEAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonEAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
-        Me.ButtonEAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonEAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonEAtras.Name = "ButtonEAtras"
-        Me.ButtonEAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonEAtras.TabIndex = 18
-        Me.ButtonEAtras.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button8.Location = New System.Drawing.Point(844, 66)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(46, 34)
-        Me.Button8.TabIndex = 31
-        Me.Button8.UseVisualStyleBackColor = True
         '
         'TabPagePeriodos
         '
@@ -1323,24 +1090,6 @@ Partial Class Principal
         Me.TabPagePeriodos.Size = New System.Drawing.Size(1358, 740)
         Me.TabPagePeriodos.TabIndex = 5
         Me.TabPagePeriodos.Text = "Periodos"
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox10.Location = New System.Drawing.Point(1067, 43)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox10.TabIndex = 33
-        Me.PictureBox10.TabStop = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox11.Location = New System.Drawing.Point(79, 43)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox11.TabIndex = 29
-        Me.PictureBox11.TabStop = False
         '
         'ComboBox5
         '
@@ -1398,19 +1147,37 @@ Partial Class Principal
         Me.DataGridView5.AllowDrop = True
         Me.DataGridView5.AllowUserToAddRows = False
         Me.DataGridView5.AllowUserToDeleteRows = False
+        Me.DataGridView5.AutoGenerateColumns = False
+        Me.DataGridView5.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView5.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EliminarPeriodo})
+        Me.DataGridView5.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodperiodoDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn4})
+        Me.DataGridView5.DataSource = Me.BindingSource1
         Me.DataGridView5.Location = New System.Drawing.Point(422, 293)
         Me.DataGridView5.Name = "DataGridView5"
         Me.DataGridView5.ReadOnly = True
+        Me.DataGridView5.RowTemplate.Height = 40
+        Me.DataGridView5.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView5.Size = New System.Drawing.Size(793, 274)
         Me.DataGridView5.TabIndex = 21
         '
-        'EliminarPeriodo
+        'CodperiodoDataGridViewTextBoxColumn
         '
-        Me.EliminarPeriodo.HeaderText = "Eliminar"
-        Me.EliminarPeriodo.Name = "EliminarPeriodo"
-        Me.EliminarPeriodo.ReadOnly = True
+        Me.CodperiodoDataGridViewTextBoxColumn.DataPropertyName = "cod_periodo"
+        Me.CodperiodoDataGridViewTextBoxColumn.HeaderText = "cod_periodo"
+        Me.CodperiodoDataGridViewTextBoxColumn.Name = "CodperiodoDataGridViewTextBoxColumn"
+        Me.CodperiodoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "nombre"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "nombre"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        '
+        'BindingSource1
+        '
+        Me.BindingSource1.DataMember = "periodos"
+        Me.BindingSource1.DataSource = Me.MatriculaPECDataSet1
         '
         'Label10
         '
@@ -1423,30 +1190,6 @@ Partial Class Principal
         Me.Label10.Size = New System.Drawing.Size(152, 39)
         Me.Label10.TabIndex = 20
         Me.Label10.Text = "Periodos"
-        '
-        'ButtonPAtras
-        '
-        Me.ButtonPAtras.AllowDrop = True
-        Me.ButtonPAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonPAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
-        Me.ButtonPAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonPAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPAtras.Name = "ButtonPAtras"
-        Me.ButtonPAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonPAtras.TabIndex = 23
-        Me.ButtonPAtras.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button9.Location = New System.Drawing.Point(837, 71)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(46, 34)
-        Me.Button9.TabIndex = 31
-        Me.Button9.UseVisualStyleBackColor = True
         '
         'TabPageDescuentos
         '
@@ -1467,24 +1210,6 @@ Partial Class Principal
         Me.TabPageDescuentos.Size = New System.Drawing.Size(1358, 740)
         Me.TabPageDescuentos.TabIndex = 6
         Me.TabPageDescuentos.Text = "Descuentos"
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox12.Location = New System.Drawing.Point(1071, 41)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox12.TabIndex = 34
-        Me.PictureBox12.TabStop = False
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox13.Location = New System.Drawing.Point(83, 41)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox13.TabIndex = 30
-        Me.PictureBox13.TabStop = False
         '
         'ComboBox6
         '
@@ -1526,6 +1251,7 @@ Partial Class Principal
         '
         Me.ButtonDDescuentos.AllowDrop = True
         Me.ButtonDDescuentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonDDescuentos.FlatAppearance.BorderSize = 0
         Me.ButtonDDescuentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonDDescuentos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonDDescuentos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -1534,7 +1260,7 @@ Partial Class Principal
         Me.ButtonDDescuentos.Name = "ButtonDDescuentos"
         Me.ButtonDDescuentos.Size = New System.Drawing.Size(221, 77)
         Me.ButtonDDescuentos.TabIndex = 27
-        Me.ButtonDDescuentos.Text = "Descuentos"
+        Me.ButtonDDescuentos.Text = "Crear Descuento"
         Me.ButtonDDescuentos.UseVisualStyleBackColor = False
         '
         'DataGridView6
@@ -1543,14 +1269,37 @@ Partial Class Principal
         Me.DataGridView6.AllowUserToAddRows = False
         Me.DataGridView6.AllowUserToDeleteRows = False
         Me.DataGridView6.AutoGenerateColumns = False
+        Me.DataGridView6.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView6.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EliminarDescuento})
+        Me.DataGridView6.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CoddescuentoDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.EliminarDescuento})
         Me.DataGridView6.DataSource = Me.DescuentosBindingSource
         Me.DataGridView6.Location = New System.Drawing.Point(422, 293)
         Me.DataGridView6.Name = "DataGridView6"
         Me.DataGridView6.ReadOnly = True
+        Me.DataGridView6.RowTemplate.Height = 40
         Me.DataGridView6.Size = New System.Drawing.Size(793, 274)
         Me.DataGridView6.TabIndex = 26
+        '
+        'CoddescuentoDataGridViewTextBoxColumn
+        '
+        Me.CoddescuentoDataGridViewTextBoxColumn.DataPropertyName = "cod_descuento"
+        Me.CoddescuentoDataGridViewTextBoxColumn.HeaderText = "cod_descuento"
+        Me.CoddescuentoDataGridViewTextBoxColumn.Name = "CoddescuentoDataGridViewTextBoxColumn"
+        Me.CoddescuentoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn15
+        '
+        Me.DataGridViewTextBoxColumn15.DataPropertyName = "nombre"
+        Me.DataGridViewTextBoxColumn15.HeaderText = "nombre"
+        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
+        Me.DataGridViewTextBoxColumn15.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn16
+        '
+        Me.DataGridViewTextBoxColumn16.DataPropertyName = "porcentaje"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "porcentaje"
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        Me.DataGridViewTextBoxColumn16.ReadOnly = True
         '
         'EliminarDescuento
         '
@@ -1561,6 +1310,7 @@ Partial Class Principal
         'DescuentosBindingSource
         '
         Me.DescuentosBindingSource.DataMember = "descuentos"
+        Me.DescuentosBindingSource.DataSource = Me.MatriculaPECDataSet1
         '
         'Label12
         '
@@ -1573,30 +1323,6 @@ Partial Class Principal
         Me.Label12.Size = New System.Drawing.Size(197, 39)
         Me.Label12.TabIndex = 25
         Me.Label12.Text = "Descuentos"
-        '
-        'ButtonDAtras
-        '
-        Me.ButtonDAtras.AllowDrop = True
-        Me.ButtonDAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonDAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonDAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
-        Me.ButtonDAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonDAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonDAtras.Name = "ButtonDAtras"
-        Me.ButtonDAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonDAtras.TabIndex = 28
-        Me.ButtonDAtras.UseVisualStyleBackColor = True
-        '
-        'Button10
-        '
-        Me.Button10.FlatAppearance.BorderSize = 0
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button10.Location = New System.Drawing.Point(841, 69)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(46, 34)
-        Me.Button10.TabIndex = 32
-        Me.Button10.UseVisualStyleBackColor = True
         '
         'TabPagePagos
         '
@@ -1617,24 +1343,6 @@ Partial Class Principal
         Me.TabPagePagos.Size = New System.Drawing.Size(1358, 740)
         Me.TabPagePagos.TabIndex = 7
         Me.TabPagePagos.Text = "Pagos"
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox14.Location = New System.Drawing.Point(1075, 39)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox14.TabIndex = 39
-        Me.PictureBox14.TabStop = False
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox15.Location = New System.Drawing.Point(87, 39)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox15.TabIndex = 35
-        Me.PictureBox15.TabStop = False
         '
         'ComboBox7
         '
@@ -1692,10 +1400,8 @@ Partial Class Principal
         Me.DataGridView7.AllowDrop = True
         Me.DataGridView7.AllowUserToAddRows = False
         Me.DataGridView7.AllowUserToDeleteRows = False
-        Me.DataGridView7.AutoGenerateColumns = False
         Me.DataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView7.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EliminarPago})
-        Me.DataGridView7.DataSource = Me.PagosBindingSource
         Me.DataGridView7.Location = New System.Drawing.Point(422, 293)
         Me.DataGridView7.Name = "DataGridView7"
         Me.DataGridView7.ReadOnly = True
@@ -1708,10 +1414,6 @@ Partial Class Principal
         Me.EliminarPago.Name = "EliminarPago"
         Me.EliminarPago.ReadOnly = True
         '
-        'PagosBindingSource
-        '
-        Me.PagosBindingSource.DataMember = "pagos"
-        '
         'Label14
         '
         Me.Label14.AllowDrop = True
@@ -1723,30 +1425,6 @@ Partial Class Principal
         Me.Label14.Size = New System.Drawing.Size(114, 39)
         Me.Label14.TabIndex = 30
         Me.Label14.Text = "Pagos"
-        '
-        'ButtonPaAtras
-        '
-        Me.ButtonPaAtras.AllowDrop = True
-        Me.ButtonPaAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPaAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonPaAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
-        Me.ButtonPaAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonPaAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPaAtras.Name = "ButtonPaAtras"
-        Me.ButtonPaAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonPaAtras.TabIndex = 33
-        Me.ButtonPaAtras.UseVisualStyleBackColor = True
-        '
-        'Button11
-        '
-        Me.Button11.FlatAppearance.BorderSize = 0
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button11.Location = New System.Drawing.Point(845, 67)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(46, 34)
-        Me.Button11.TabIndex = 37
-        Me.Button11.UseVisualStyleBackColor = True
         '
         'TabPageProfesores
         '
@@ -1767,24 +1445,6 @@ Partial Class Principal
         Me.TabPageProfesores.Size = New System.Drawing.Size(1358, 740)
         Me.TabPageProfesores.TabIndex = 8
         Me.TabPageProfesores.Text = "Profesores"
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox16.Location = New System.Drawing.Point(1071, 42)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox16.TabIndex = 44
-        Me.PictureBox16.TabStop = False
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox17.Location = New System.Drawing.Point(83, 42)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox17.TabIndex = 40
-        Me.PictureBox17.TabStop = False
         '
         'ComboBox8
         '
@@ -1843,24 +1503,63 @@ Partial Class Principal
         Me.DataGridView8.AllowUserToAddRows = False
         Me.DataGridView8.AllowUserToDeleteRows = False
         Me.DataGridView8.AutoGenerateColumns = False
+        Me.DataGridView8.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView8.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EliminarProfesor})
+        Me.DataGridView8.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CódigoDataGridViewTextBoxColumn, Me.CédulaDataGridViewTextBoxColumn, Me.ProfesorDataGridViewTextBoxColumn, Me.TeléfonoDataGridViewTextBoxColumn, Me.CorreoDataGridViewTextBoxColumn, Me.EliminarProfesor})
         Me.DataGridView8.DataSource = Me.ProfesoresBindingSource
         Me.DataGridView8.Location = New System.Drawing.Point(422, 293)
         Me.DataGridView8.Name = "DataGridView8"
         Me.DataGridView8.ReadOnly = True
+        Me.DataGridView8.RowHeadersWidth = 40
+        Me.DataGridView8.RowTemplate.Height = 40
+        Me.DataGridView8.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView8.Size = New System.Drawing.Size(793, 274)
         Me.DataGridView8.TabIndex = 36
         '
-        'EliminarProfesor
+        'CódigoDataGridViewTextBoxColumn
         '
-        Me.EliminarProfesor.HeaderText = "Eliminar"
-        Me.EliminarProfesor.Name = "EliminarProfesor"
-        Me.EliminarProfesor.ReadOnly = True
+        Me.CódigoDataGridViewTextBoxColumn.DataPropertyName = "Código"
+        Me.CódigoDataGridViewTextBoxColumn.HeaderText = "Código"
+        Me.CódigoDataGridViewTextBoxColumn.Name = "CódigoDataGridViewTextBoxColumn"
+        Me.CódigoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'CédulaDataGridViewTextBoxColumn
+        '
+        Me.CédulaDataGridViewTextBoxColumn.DataPropertyName = "Cédula"
+        Me.CédulaDataGridViewTextBoxColumn.HeaderText = "Cédula"
+        Me.CédulaDataGridViewTextBoxColumn.Name = "CédulaDataGridViewTextBoxColumn"
+        Me.CédulaDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'ProfesorDataGridViewTextBoxColumn
+        '
+        Me.ProfesorDataGridViewTextBoxColumn.DataPropertyName = "Profesor"
+        Me.ProfesorDataGridViewTextBoxColumn.HeaderText = "Profesor"
+        Me.ProfesorDataGridViewTextBoxColumn.Name = "ProfesorDataGridViewTextBoxColumn"
+        Me.ProfesorDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TeléfonoDataGridViewTextBoxColumn
+        '
+        Me.TeléfonoDataGridViewTextBoxColumn.DataPropertyName = "Teléfono"
+        Me.TeléfonoDataGridViewTextBoxColumn.HeaderText = "Teléfono"
+        Me.TeléfonoDataGridViewTextBoxColumn.Name = "TeléfonoDataGridViewTextBoxColumn"
+        Me.TeléfonoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'CorreoDataGridViewTextBoxColumn
+        '
+        Me.CorreoDataGridViewTextBoxColumn.DataPropertyName = "Correo"
+        Me.CorreoDataGridViewTextBoxColumn.HeaderText = "Correo"
+        Me.CorreoDataGridViewTextBoxColumn.Name = "CorreoDataGridViewTextBoxColumn"
+        Me.CorreoDataGridViewTextBoxColumn.ReadOnly = True
         '
         'ProfesoresBindingSource
         '
         Me.ProfesoresBindingSource.DataMember = "profesores"
+        Me.ProfesoresBindingSource.DataSource = Me.MatriculaPECDataSet2
+        '
+        'MatriculaPECDataSet2
+        '
+        Me.MatriculaPECDataSet2.DataSetName = "MatriculaPECDataSet"
+        Me.MatriculaPECDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label16
         '
@@ -1873,30 +1572,6 @@ Partial Class Principal
         Me.Label16.Size = New System.Drawing.Size(181, 39)
         Me.Label16.TabIndex = 35
         Me.Label16.Text = "Profesores"
-        '
-        'ButtonPrAtras
-        '
-        Me.ButtonPrAtras.AllowDrop = True
-        Me.ButtonPrAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonPrAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ButtonPrAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
-        Me.ButtonPrAtras.Location = New System.Drawing.Point(143, 174)
-        Me.ButtonPrAtras.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonPrAtras.Name = "ButtonPrAtras"
-        Me.ButtonPrAtras.Size = New System.Drawing.Size(145, 83)
-        Me.ButtonPrAtras.TabIndex = 38
-        Me.ButtonPrAtras.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.FlatAppearance.BorderSize = 0
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button12.Location = New System.Drawing.Point(841, 70)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(46, 34)
-        Me.Button12.TabIndex = 42
-        Me.Button12.UseVisualStyleBackColor = True
         '
         'TabPageUsuarios
         '
@@ -1912,24 +1587,6 @@ Partial Class Principal
         Me.TabPageUsuarios.TabIndex = 9
         Me.TabPageUsuarios.Text = "Usuarios"
         Me.TabPageUsuarios.UseVisualStyleBackColor = True
-        '
-        'PictureBox18
-        '
-        Me.PictureBox18.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox18.Location = New System.Drawing.Point(1087, 44)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox18.TabIndex = 33
-        Me.PictureBox18.TabStop = False
-        '
-        'PictureBox19
-        '
-        Me.PictureBox19.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox19.Location = New System.Drawing.Point(99, 44)
-        Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox19.TabIndex = 29
-        Me.PictureBox19.TabStop = False
         '
         'ComboBox9
         '
@@ -1955,17 +1612,6 @@ Partial Class Principal
         Me.TextBox9.Size = New System.Drawing.Size(227, 31)
         Me.TextBox9.TabIndex = 30
         '
-        'Button13
-        '
-        Me.Button13.FlatAppearance.BorderSize = 0
-        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button13.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button13.Location = New System.Drawing.Point(857, 72)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(46, 34)
-        Me.Button13.TabIndex = 31
-        Me.Button13.UseVisualStyleBackColor = True
-        '
         'TabPageMedios
         '
         Me.TabPageMedios.Controls.Add(Me.PictureBox20)
@@ -1980,24 +1626,6 @@ Partial Class Principal
         Me.TabPageMedios.TabIndex = 10
         Me.TabPageMedios.Text = "Medios"
         Me.TabPageMedios.UseVisualStyleBackColor = True
-        '
-        'PictureBox20
-        '
-        Me.PictureBox20.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox20.Location = New System.Drawing.Point(1072, 44)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox20.TabIndex = 33
-        Me.PictureBox20.TabStop = False
-        '
-        'PictureBox22
-        '
-        Me.PictureBox22.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox22.Location = New System.Drawing.Point(84, 44)
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox22.TabIndex = 29
-        Me.PictureBox22.TabStop = False
         '
         'ComboBox10
         '
@@ -2023,23 +1651,18 @@ Partial Class Principal
         Me.TextBox10.Size = New System.Drawing.Size(227, 31)
         Me.TextBox10.TabIndex = 30
         '
-        'Button14
-        '
-        Me.Button14.FlatAppearance.BorderSize = 0
-        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button14.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button14.Location = New System.Drawing.Point(842, 72)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(46, 34)
-        Me.Button14.TabIndex = 31
-        Me.Button14.UseVisualStyleBackColor = True
-        '
         'TabPageFormas
         '
-        Me.TabPageFormas.Controls.Add(Me.PictureBox23)
-        Me.TabPageFormas.Controls.Add(Me.PictureBox24)
+        Me.TabPageFormas.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TabPageFormas.Controls.Add(Me.DataGridView9)
+        Me.TabPageFormas.Controls.Add(Me.Button20)
+        Me.TabPageFormas.Controls.Add(Me.Label17)
+        Me.TabPageFormas.Controls.Add(Me.Label18)
         Me.TabPageFormas.Controls.Add(Me.ComboBox11)
         Me.TabPageFormas.Controls.Add(Me.TextBox11)
+        Me.TabPageFormas.Controls.Add(Me.Button19)
+        Me.TabPageFormas.Controls.Add(Me.PictureBox23)
+        Me.TabPageFormas.Controls.Add(Me.PictureBox24)
         Me.TabPageFormas.Controls.Add(Me.Button16)
         Me.TabPageFormas.Location = New System.Drawing.Point(4, 24)
         Me.TabPageFormas.Name = "TabPageFormas"
@@ -2047,25 +1670,80 @@ Partial Class Principal
         Me.TabPageFormas.Size = New System.Drawing.Size(1358, 740)
         Me.TabPageFormas.TabIndex = 11
         Me.TabPageFormas.Text = "Formas"
-        Me.TabPageFormas.UseVisualStyleBackColor = True
         '
-        'PictureBox23
+        'DataGridView9
         '
-        Me.PictureBox23.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox23.Location = New System.Drawing.Point(1078, 45)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox23.TabIndex = 33
-        Me.PictureBox23.TabStop = False
+        Me.DataGridView9.AllowUserToAddRows = False
+        Me.DataGridView9.AllowUserToDeleteRows = False
+        Me.DataGridView9.AutoGenerateColumns = False
+        Me.DataGridView9.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.DataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView9.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodformapagoDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn5})
+        Me.DataGridView9.DataSource = Me.FormasdepagoBindingSource
+        Me.DataGridView9.Location = New System.Drawing.Point(174, 499)
+        Me.DataGridView9.Name = "DataGridView9"
+        Me.DataGridView9.ReadOnly = True
+        Me.DataGridView9.Size = New System.Drawing.Size(759, 150)
+        Me.DataGridView9.TabIndex = 40
+        Me.DataGridView9.TabStop = False
         '
-        'PictureBox24
+        'CodformapagoDataGridViewTextBoxColumn
         '
-        Me.PictureBox24.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox24.Location = New System.Drawing.Point(90, 45)
-        Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox24.TabIndex = 29
-        Me.PictureBox24.TabStop = False
+        Me.CodformapagoDataGridViewTextBoxColumn.DataPropertyName = "cod_formapago"
+        Me.CodformapagoDataGridViewTextBoxColumn.HeaderText = "cod_formapago"
+        Me.CodformapagoDataGridViewTextBoxColumn.Name = "CodformapagoDataGridViewTextBoxColumn"
+        Me.CodformapagoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "nombre"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "nombre"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        '
+        'FormasdepagoBindingSource
+        '
+        Me.FormasdepagoBindingSource.DataMember = "formas_de_pago"
+        Me.FormasdepagoBindingSource.DataSource = Me.MatriculaPECDataSet1
+        '
+        'Button20
+        '
+        Me.Button20.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button20.FlatAppearance.BorderSize = 0
+        Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button20.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button20.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button20.Location = New System.Drawing.Point(848, 268)
+        Me.Button20.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button20.Name = "Button20"
+        Me.Button20.Size = New System.Drawing.Size(221, 77)
+        Me.Button20.TabIndex = 37
+        Me.Button20.Text = "Crear Forma"
+        Me.Button20.UseVisualStyleBackColor = False
+        '
+        'Label17
+        '
+        Me.Label17.AllowDrop = True
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.LightSkyBlue
+        Me.Label17.Location = New System.Drawing.Point(250, 191)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(111, 39)
+        Me.Label17.TabIndex = 36
+        Me.Label17.Text = "Menu/"
+        '
+        'Label18
+        '
+        Me.Label18.AllowDrop = True
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label18.Location = New System.Drawing.Point(367, 191)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(264, 39)
+        Me.Label18.TabIndex = 34
+        Me.Label18.Text = "Formas de pago"
         '
         'ComboBox11
         '
@@ -2091,17 +1769,6 @@ Partial Class Principal
         Me.TextBox11.Size = New System.Drawing.Size(227, 31)
         Me.TextBox11.TabIndex = 30
         '
-        'Button16
-        '
-        Me.Button16.FlatAppearance.BorderSize = 0
-        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button16.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
-        Me.Button16.Location = New System.Drawing.Point(848, 73)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(46, 34)
-        Me.Button16.TabIndex = 31
-        Me.Button16.UseVisualStyleBackColor = True
-        '
         'TabPageListas
         '
         Me.TabPageListas.Controls.Add(Me.PictureBox25)
@@ -2116,24 +1783,6 @@ Partial Class Principal
         Me.TabPageListas.TabIndex = 12
         Me.TabPageListas.Text = "Listas"
         Me.TabPageListas.UseVisualStyleBackColor = True
-        '
-        'PictureBox25
-        '
-        Me.PictureBox25.Image = Global.MatriculaPEC.My.Resources.Resources.ec
-        Me.PictureBox25.Location = New System.Drawing.Point(1074, 50)
-        Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(110, 82)
-        Me.PictureBox25.TabIndex = 33
-        Me.PictureBox25.TabStop = False
-        '
-        'PictureBox26
-        '
-        Me.PictureBox26.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox26.Location = New System.Drawing.Point(86, 50)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(192, 82)
-        Me.PictureBox26.TabIndex = 29
-        Me.PictureBox26.TabStop = False
         '
         'ComboBox12
         '
@@ -2159,6 +1808,697 @@ Partial Class Principal
         Me.TextBox12.Size = New System.Drawing.Size(227, 31)
         Me.TextBox12.TabIndex = 30
         '
+        'AlumnosBindingSource
+        '
+        Me.AlumnosBindingSource.DataMember = "alumnos"
+        Me.AlumnosBindingSource.DataSource = Me.MatriculaPECDataSet1
+        '
+        'PeriodosTableAdapter
+        '
+        Me.PeriodosTableAdapter.ClearBeforeFill = True
+        '
+        'Formas_de_pagoTableAdapter
+        '
+        Me.Formas_de_pagoTableAdapter.ClearBeforeFill = True
+        '
+        'CursosTableAdapter
+        '
+        Me.CursosTableAdapter.ClearBeforeFill = True
+        '
+        'ProfesoresTableAdapter
+        '
+        Me.ProfesoresTableAdapter.ClearBeforeFill = True
+        '
+        'AlumnosTableAdapter
+        '
+        Me.AlumnosTableAdapter.ClearBeforeFill = True
+        '
+        'GruposTableAdapter
+        '
+        Me.GruposTableAdapter.ClearBeforeFill = True
+        '
+        'DescuentosTableAdapter
+        '
+        Me.DescuentosTableAdapter.ClearBeforeFill = True
+        '
+        'DataGridViewImageColumn1
+        '
+        Me.DataGridViewImageColumn1.HeaderText = "Eliminar"
+        Me.DataGridViewImageColumn1.Image = Global.MatriculaPEC.My.Resources.Resources.Close
+        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.ReadOnly = True
+        Me.DataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'DataGridViewImageColumn2
+        '
+        Me.DataGridViewImageColumn2.HeaderText = "Eliminar"
+        Me.DataGridViewImageColumn2.Image = Global.MatriculaPEC.My.Resources.Resources.Close
+        Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
+        Me.DataGridViewImageColumn2.ReadOnly = True
+        '
+        'DataGridViewImageColumn3
+        '
+        Me.DataGridViewImageColumn3.HeaderText = "Eliminar"
+        Me.DataGridViewImageColumn3.Image = Global.MatriculaPEC.My.Resources.Resources.Close
+        Me.DataGridViewImageColumn3.Name = "DataGridViewImageColumn3"
+        Me.DataGridViewImageColumn3.ReadOnly = True
+        Me.DataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Button22
+        '
+        Me.Button22.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button22.FlatAppearance.BorderSize = 0
+        Me.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button22.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button22.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button22.Image = Global.MatriculaPEC.My.Resources.Resources.Media_Play
+        Me.Button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button22.Location = New System.Drawing.Point(83, 186)
+        Me.Button22.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button22.Name = "Button22"
+        Me.Button22.Size = New System.Drawing.Size(311, 62)
+        Me.Button22.TabIndex = 33
+        Me.Button22.Text = "MATRICULAR" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button22.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button4.Image = Global.MatriculaPEC.My.Resources.Resources.User_Profile1
+        Me.Button4.Location = New System.Drawing.Point(869, 410)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(150, 150)
+        Me.Button4.TabIndex = 31
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button15
+        '
+        Me.Button15.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button15.FlatAppearance.BorderSize = 0
+        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button15.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button15.Image = Global.MatriculaPEC.My.Resources.Resources.Help1
+        Me.Button15.Location = New System.Drawing.Point(1031, 410)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(150, 150)
+        Me.Button15.TabIndex = 30
+        Me.Button15.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button3.Image = Global.MatriculaPEC.My.Resources.Resources.Settings_021
+        Me.Button3.Location = New System.Drawing.Point(1031, 186)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(150, 150)
+        Me.Button3.TabIndex = 23
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox21.Location = New System.Drawing.Point(1071, 39)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox21.TabIndex = 28
+        Me.PictureBox21.TabStop = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Image = Global.MatriculaPEC.My.Resources.Resources.Bullets
+        Me.Button2.Location = New System.Drawing.Point(1031, 347)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(150, 50)
+        Me.Button2.TabIndex = 23
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox2.Location = New System.Drawing.Point(83, 49)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
+        'ButtonPagos
+        '
+        Me.ButtonPagos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.ButtonPagos.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonPagos.FlatAppearance.BorderSize = 0
+        Me.ButtonPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPagos.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonPagos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ButtonPagos.Image = Global.MatriculaPEC.My.Resources.Resources.Cent
+        Me.ButtonPagos.Location = New System.Drawing.Point(83, 410)
+        Me.ButtonPagos.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPagos.Name = "ButtonPagos"
+        Me.ButtonPagos.Size = New System.Drawing.Size(150, 150)
+        Me.ButtonPagos.TabIndex = 15
+        Me.ButtonPagos.Text = "PAGOS"
+        Me.ButtonPagos.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ButtonPagos.UseVisualStyleBackColor = False
+        '
+        'ButtonEstudintes
+        '
+        Me.ButtonEstudintes.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.ButtonEstudintes.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonEstudintes.FlatAppearance.BorderSize = 0
+        Me.ButtonEstudintes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEstudintes.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonEstudintes.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ButtonEstudintes.Image = Global.MatriculaPEC.My.Resources.Resources.Student_Read_041
+        Me.ButtonEstudintes.Location = New System.Drawing.Point(869, 186)
+        Me.ButtonEstudintes.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonEstudintes.Name = "ButtonEstudintes"
+        Me.ButtonEstudintes.Size = New System.Drawing.Size(150, 213)
+        Me.ButtonEstudintes.TabIndex = 14
+        Me.ButtonEstudintes.Text = "VER" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " ESTUDIANTES"
+        Me.ButtonEstudintes.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ButtonEstudintes.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button1.Location = New System.Drawing.Point(824, 68)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(46, 34)
+        Me.Button1.TabIndex = 3
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button21
+        '
+        Me.Button21.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button21.FlatAppearance.BorderSize = 0
+        Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button21.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button21.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button21.Image = Global.MatriculaPEC.My.Resources.Resources.Media_Play
+        Me.Button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button21.Location = New System.Drawing.Point(863, 290)
+        Me.Button21.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button21.Name = "Button21"
+        Me.Button21.Size = New System.Drawing.Size(291, 79)
+        Me.Button21.TabIndex = 39
+        Me.Button21.Text = "MATRICULAR" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button21.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox1.Location = New System.Drawing.Point(1044, 47)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox1.TabIndex = 33
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox3.Location = New System.Drawing.Point(91, 47)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox3.TabIndex = 29
+        Me.PictureBox3.TabStop = False
+        '
+        'Button5
+        '
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button5.Location = New System.Drawing.Point(849, 75)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(46, 34)
+        Me.Button5.TabIndex = 31
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'ButtonRegresar
+        '
+        Me.ButtonRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonRegresar.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonRegresar.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
+        Me.ButtonRegresar.Location = New System.Drawing.Point(91, 157)
+        Me.ButtonRegresar.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonRegresar.Name = "ButtonRegresar"
+        Me.ButtonRegresar.Size = New System.Drawing.Size(84, 83)
+        Me.ButtonRegresar.TabIndex = 3
+        Me.ButtonRegresar.UseVisualStyleBackColor = True
+        '
+        'Button18
+        '
+        Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button18.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button18.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
+        Me.Button18.Location = New System.Drawing.Point(178, 184)
+        Me.Button18.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(84, 83)
+        Me.Button18.TabIndex = 34
+        Me.Button18.UseVisualStyleBackColor = True
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox4.Location = New System.Drawing.Point(1069, 43)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox4.TabIndex = 33
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox5.Location = New System.Drawing.Point(81, 43)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox5.TabIndex = 29
+        Me.PictureBox5.TabStop = False
+        '
+        'Eliminar
+        '
+        Me.Eliminar.HeaderText = "Eliminar"
+        Me.Eliminar.Image = Global.MatriculaPEC.My.Resources.Resources.Close
+        Me.Eliminar.Name = "Eliminar"
+        Me.Eliminar.ReadOnly = True
+        Me.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Button6
+        '
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button6.Location = New System.Drawing.Point(839, 71)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(46, 34)
+        Me.Button6.TabIndex = 31
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox6.Location = New System.Drawing.Point(1072, 42)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox6.TabIndex = 33
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox7.Location = New System.Drawing.Point(84, 42)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox7.TabIndex = 29
+        Me.PictureBox7.TabStop = False
+        '
+        'EliminarGrupos
+        '
+        Me.EliminarGrupos.HeaderText = "Eliminar"
+        Me.EliminarGrupos.Image = Global.MatriculaPEC.My.Resources.Resources.Close
+        Me.EliminarGrupos.Name = "EliminarGrupos"
+        Me.EliminarGrupos.ReadOnly = True
+        '
+        'ButtonGAtras
+        '
+        Me.ButtonGAtras.AllowDrop = True
+        Me.ButtonGAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonGAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonGAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
+        Me.ButtonGAtras.Location = New System.Drawing.Point(160, 174)
+        Me.ButtonGAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonGAtras.Name = "ButtonGAtras"
+        Me.ButtonGAtras.Size = New System.Drawing.Size(79, 83)
+        Me.ButtonGAtras.TabIndex = 13
+        Me.ButtonGAtras.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button7.Location = New System.Drawing.Point(842, 70)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(46, 34)
+        Me.Button7.TabIndex = 31
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox8.Location = New System.Drawing.Point(1074, 38)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox8.TabIndex = 33
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox9.Location = New System.Drawing.Point(86, 38)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox9.TabIndex = 29
+        Me.PictureBox9.TabStop = False
+        '
+        'ButtonEAtras
+        '
+        Me.ButtonEAtras.AllowDrop = True
+        Me.ButtonEAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonEAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonEAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
+        Me.ButtonEAtras.Location = New System.Drawing.Point(180, 175)
+        Me.ButtonEAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonEAtras.Name = "ButtonEAtras"
+        Me.ButtonEAtras.Size = New System.Drawing.Size(83, 83)
+        Me.ButtonEAtras.TabIndex = 18
+        Me.ButtonEAtras.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button8.Location = New System.Drawing.Point(844, 66)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(46, 34)
+        Me.Button8.TabIndex = 31
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox10.Location = New System.Drawing.Point(1067, 43)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox10.TabIndex = 33
+        Me.PictureBox10.TabStop = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox11.Location = New System.Drawing.Point(79, 43)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox11.TabIndex = 29
+        Me.PictureBox11.TabStop = False
+        '
+        'ButtonPAtras
+        '
+        Me.ButtonPAtras.AllowDrop = True
+        Me.ButtonPAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonPAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
+        Me.ButtonPAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonPAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPAtras.Name = "ButtonPAtras"
+        Me.ButtonPAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonPAtras.TabIndex = 23
+        Me.ButtonPAtras.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button9.Location = New System.Drawing.Point(837, 71)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(46, 34)
+        Me.Button9.TabIndex = 31
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox12.Location = New System.Drawing.Point(1071, 41)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox12.TabIndex = 34
+        Me.PictureBox12.TabStop = False
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox13.Location = New System.Drawing.Point(83, 41)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox13.TabIndex = 30
+        Me.PictureBox13.TabStop = False
+        '
+        'ButtonDAtras
+        '
+        Me.ButtonDAtras.AllowDrop = True
+        Me.ButtonDAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonDAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonDAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
+        Me.ButtonDAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonDAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonDAtras.Name = "ButtonDAtras"
+        Me.ButtonDAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonDAtras.TabIndex = 28
+        Me.ButtonDAtras.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button10.Location = New System.Drawing.Point(841, 69)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(46, 34)
+        Me.Button10.TabIndex = 32
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox14.Location = New System.Drawing.Point(1075, 39)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox14.TabIndex = 39
+        Me.PictureBox14.TabStop = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox15.Location = New System.Drawing.Point(87, 39)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox15.TabIndex = 35
+        Me.PictureBox15.TabStop = False
+        '
+        'ButtonPaAtras
+        '
+        Me.ButtonPaAtras.AllowDrop = True
+        Me.ButtonPaAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPaAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonPaAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
+        Me.ButtonPaAtras.Location = New System.Drawing.Point(143, 174)
+        Me.ButtonPaAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPaAtras.Name = "ButtonPaAtras"
+        Me.ButtonPaAtras.Size = New System.Drawing.Size(145, 83)
+        Me.ButtonPaAtras.TabIndex = 33
+        Me.ButtonPaAtras.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.FlatAppearance.BorderSize = 0
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button11.Location = New System.Drawing.Point(845, 67)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(46, 34)
+        Me.Button11.TabIndex = 37
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox16.Location = New System.Drawing.Point(1071, 42)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox16.TabIndex = 44
+        Me.PictureBox16.TabStop = False
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox17.Location = New System.Drawing.Point(83, 42)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox17.TabIndex = 40
+        Me.PictureBox17.TabStop = False
+        '
+        'EliminarProfesor
+        '
+        Me.EliminarProfesor.HeaderText = "Eliminar"
+        Me.EliminarProfesor.Image = Global.MatriculaPEC.My.Resources.Resources.Close
+        Me.EliminarProfesor.Name = "EliminarProfesor"
+        Me.EliminarProfesor.ReadOnly = True
+        Me.EliminarProfesor.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'ButtonPrAtras
+        '
+        Me.ButtonPrAtras.AllowDrop = True
+        Me.ButtonPrAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPrAtras.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.ButtonPrAtras.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
+        Me.ButtonPrAtras.Location = New System.Drawing.Point(171, 184)
+        Me.ButtonPrAtras.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonPrAtras.Name = "ButtonPrAtras"
+        Me.ButtonPrAtras.Size = New System.Drawing.Size(83, 83)
+        Me.ButtonPrAtras.TabIndex = 38
+        Me.ButtonPrAtras.UseVisualStyleBackColor = True
+        '
+        'Button12
+        '
+        Me.Button12.FlatAppearance.BorderSize = 0
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button12.Location = New System.Drawing.Point(841, 70)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(46, 34)
+        Me.Button12.TabIndex = 42
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox18.Location = New System.Drawing.Point(1087, 44)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox18.TabIndex = 33
+        Me.PictureBox18.TabStop = False
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox19.Location = New System.Drawing.Point(99, 44)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox19.TabIndex = 29
+        Me.PictureBox19.TabStop = False
+        '
+        'Button13
+        '
+        Me.Button13.FlatAppearance.BorderSize = 0
+        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button13.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button13.Location = New System.Drawing.Point(857, 72)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(46, 34)
+        Me.Button13.TabIndex = 31
+        Me.Button13.UseVisualStyleBackColor = True
+        '
+        'PictureBox20
+        '
+        Me.PictureBox20.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox20.Location = New System.Drawing.Point(1072, 44)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox20.TabIndex = 33
+        Me.PictureBox20.TabStop = False
+        '
+        'PictureBox22
+        '
+        Me.PictureBox22.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox22.Location = New System.Drawing.Point(84, 44)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox22.TabIndex = 29
+        Me.PictureBox22.TabStop = False
+        '
+        'Button14
+        '
+        Me.Button14.FlatAppearance.BorderSize = 0
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button14.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button14.Location = New System.Drawing.Point(842, 72)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(46, 34)
+        Me.Button14.TabIndex = 31
+        Me.Button14.UseVisualStyleBackColor = True
+        '
+        'Button19
+        '
+        Me.Button19.AllowDrop = True
+        Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button19.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button19.Image = Global.MatriculaPEC.My.Resources.Resources.Previous
+        Me.Button19.Location = New System.Drawing.Point(146, 167)
+        Me.Button19.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button19.Name = "Button19"
+        Me.Button19.Size = New System.Drawing.Size(89, 83)
+        Me.Button19.TabIndex = 35
+        Me.Button19.UseVisualStyleBackColor = True
+        '
+        'PictureBox23
+        '
+        Me.PictureBox23.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox23.Location = New System.Drawing.Point(1078, 45)
+        Me.PictureBox23.Name = "PictureBox23"
+        Me.PictureBox23.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox23.TabIndex = 33
+        Me.PictureBox23.TabStop = False
+        '
+        'PictureBox24
+        '
+        Me.PictureBox24.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox24.Location = New System.Drawing.Point(90, 45)
+        Me.PictureBox24.Name = "PictureBox24"
+        Me.PictureBox24.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox24.TabIndex = 29
+        Me.PictureBox24.TabStop = False
+        '
+        'Button16
+        '
+        Me.Button16.FlatAppearance.BorderSize = 0
+        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button16.Image = Global.MatriculaPEC.My.Resources.Resources.Search_Find
+        Me.Button16.Location = New System.Drawing.Point(848, 73)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(46, 34)
+        Me.Button16.TabIndex = 31
+        Me.Button16.UseVisualStyleBackColor = True
+        '
+        'PictureBox25
+        '
+        Me.PictureBox25.Image = Global.MatriculaPEC.My.Resources.Resources.ec
+        Me.PictureBox25.Location = New System.Drawing.Point(1074, 50)
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.PictureBox25.Size = New System.Drawing.Size(110, 82)
+        Me.PictureBox25.TabIndex = 33
+        Me.PictureBox25.TabStop = False
+        '
+        'PictureBox26
+        '
+        Me.PictureBox26.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
+        Me.PictureBox26.Location = New System.Drawing.Point(86, 50)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(192, 82)
+        Me.PictureBox26.TabIndex = 29
+        Me.PictureBox26.TabStop = False
+        '
         'Button17
         '
         Me.Button17.FlatAppearance.BorderSize = 0
@@ -2169,79 +2509,6 @@ Partial Class Principal
         Me.Button17.Size = New System.Drawing.Size(46, 34)
         Me.Button17.TabIndex = 31
         Me.Button17.UseVisualStyleBackColor = True
-        '
-        'MatriculasBindingSource2
-        '
-        Me.MatriculasBindingSource2.DataMember = "matriculas"
-        Me.MatriculasBindingSource2.DataSource = Me.MatriculaPECDataSet
-        '
-        'MatriculasBindingSource1
-        '
-        Me.MatriculasBindingSource1.DataMember = "matriculas"
-        Me.MatriculasBindingSource1.DataSource = Me.MatriculaPECDataSet
-        '
-        'MatriculasBindingSource
-        '
-        Me.MatriculasBindingSource.DataMember = "matriculas"
-        '
-        'GruposBindingSource
-        '
-        Me.GruposBindingSource.DataMember = "grupos"
-        '
-        'DataGridViewImageColumn1
-        '
-        Me.DataGridViewImageColumn1.HeaderText = "Eliminar"
-        Me.DataGridViewImageColumn1.Image = Global.MatriculaPEC.My.Resources.Resources.Close
-        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
-        Me.DataGridViewImageColumn1.ReadOnly = True
-        Me.DataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'MatriculaPECDataSet1
-        '
-        Me.MatriculaPECDataSet1.DataSetName = "MatriculaPECDataSet"
-        Me.MatriculaPECDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'AlumnosTableAdapter
-        '
-        Me.AlumnosTableAdapter.ClearBeforeFill = True
-        '
-        'CursosTableAdapter
-        '
-        Me.CursosTableAdapter.ClearBeforeFill = True
-        '
-        'GruposTableAdapter
-        '
-        Me.GruposTableAdapter.ClearBeforeFill = True
-        '
-        'PeriodosTableAdapter
-        '
-        Me.PeriodosTableAdapter.ClearBeforeFill = True
-        '
-        'DescuentosTableAdapter
-        '
-        Me.DescuentosTableAdapter.ClearBeforeFill = True
-        '
-        'PagosTableAdapter
-        '
-        Me.PagosTableAdapter.ClearBeforeFill = True
-        '
-        'ProfesoresTableAdapter
-        '
-        Me.ProfesoresTableAdapter.ClearBeforeFill = True
-        '
-        'MatriculasTableAdapter
-        '
-        Me.MatriculasTableAdapter.ClearBeforeFill = True
-        '
-        'MatriculasBindingSource3
-        '
-        Me.MatriculasBindingSource3.DataMember = "matriculas"
-        Me.MatriculasBindingSource3.DataSource = Me.MatriculaPECDataSet
-        '
-        'MatriculasBindingSource5
-        '
-        Me.MatriculasBindingSource5.DataMember = "matriculas"
-        Me.MatriculasBindingSource5.DataSource = Me.MatriculaPECDataSet
         '
         'Principal
         '
@@ -2258,80 +2525,75 @@ Partial Class Principal
         Me.TabControlPrincipal.ResumeLayout(False)
         Me.TabPageMenu.ResumeLayout(False)
         Me.TabPageMenu.PerformLayout()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageMatricula.ResumeLayout(False)
         Me.TabPageMatricula.PerformLayout()
-        CType(Me.MatriculasBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageCursos.ResumeLayout(False)
         Me.TabPageCursos.PerformLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MatriculaPECDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageGrupos.ResumeLayout(False)
         Me.TabPageGrupos.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GruposBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageEstudiante.ResumeLayout(False)
         Me.TabPageEstudiante.PerformLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AlumnosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AlumnosBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPagePeriodos.ResumeLayout(False)
         Me.TabPagePeriodos.PerformLayout()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageDescuentos.ResumeLayout(False)
         Me.TabPageDescuentos.PerformLayout()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DescuentosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPagePagos.ResumeLayout(False)
         Me.TabPagePagos.PerformLayout()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PagosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageProfesores.ResumeLayout(False)
         Me.TabPageProfesores.PerformLayout()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProfesoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MatriculaPECDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageUsuarios.ResumeLayout(False)
         Me.TabPageUsuarios.PerformLayout()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageMedios.ResumeLayout(False)
         Me.TabPageMedios.PerformLayout()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageFormas.ResumeLayout(False)
         Me.TabPageFormas.PerformLayout()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FormasdepagoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageListas.ResumeLayout(False)
         Me.TabPageListas.PerformLayout()
+        CType(Me.AlumnosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MatriculasBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MatriculasBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MatriculasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GruposBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FKmatriculacodg1DE57479BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MatriculaPECDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MatriculasBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MatriculasBindingSource5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2357,7 +2619,6 @@ Partial Class Principal
     Friend WithEvents TabPagePagos As System.Windows.Forms.TabPage
     Friend WithEvents TabPageProfesores As System.Windows.Forms.TabPage
     Friend WithEvents TabPageUsuarios As System.Windows.Forms.TabPage
-    Friend WithEvents ButtonMMatricula As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ButtonRegresar As System.Windows.Forms.Button
@@ -2401,8 +2662,6 @@ Partial Class Principal
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents MatriculaPECDataSetBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents MatriculaPECDataSet As MatriculaPEC.MatriculaPECDataSet
-    Friend WithEvents AlumnosBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents AlumnosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.alumnosTableAdapter
     Friend WithEvents CedulaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NombreDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Apellido1DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -2412,35 +2671,19 @@ Partial Class Principal
     Friend WithEvents TabPageMedios As System.Windows.Forms.TabPage
     Friend WithEvents TabPageFormas As System.Windows.Forms.TabPage
     Friend WithEvents TabPageListas As System.Windows.Forms.TabPage
-    Friend WithEvents CursosBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CursosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.cursosTableAdapter
-    Friend WithEvents GruposBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents GruposTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.gruposTableAdapter
     Friend WithEvents PeriodosBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents PeriodosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.periodosTableAdapter
     Friend WithEvents NombreDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EliminarPeriodo As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents DescuentosBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DescuentosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.descuentosTableAdapter
     Friend WithEvents NombreDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PorcentajeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents EliminarDescuento As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents PagosBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents PagosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.pagosTableAdapter
     Friend WithEvents FechaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MontoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CodmediopagoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents EliminarPago As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents ProfesoresBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ProfesoresTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.profesoresTableAdapter
     Friend WithEvents NombreDataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Apellido1DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Apellido2DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TelefonoDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CorreoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EliminarProfesor As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents MatriculasBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents MatriculasTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.matriculasTableAdapter
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents PictureBox21 As System.Windows.Forms.PictureBox
     Friend WithEvents Button15 As System.Windows.Forms.Button
@@ -2510,27 +2753,19 @@ Partial Class Principal
     Friend WithEvents DuracionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescripcionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CostoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Eliminar As System.Windows.Forms.DataGridViewImageColumn
     Friend WithEvents DataGridViewImageColumn1 As System.Windows.Forms.DataGridViewImageColumn
     Friend WithEvents CodalumnoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents FKmatriculacodg1DE57479BindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents MatriculaPECDataSet1 As MatriculaPEC.MatriculaPECDataSet
 
 
-    Friend WithEvents ProfesorDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CódigoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 
     '  Friend WithEvents DataTableGruposNombresTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.DataTableGruposNombresTableAdapter
     Friend WithEvents Código As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EliminarGrupos As System.Windows.Forms.DataGridViewImageColumn
     Friend WithEvents ComboBox13 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox15 As System.Windows.Forms.ComboBox
-    Friend WithEvents MatriculasBindingSource1 As System.Windows.Forms.BindingSource
-    Friend WithEvents MatriculasBindingSource2 As System.Windows.Forms.BindingSource
     Friend WithEvents CodmatriculaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CodgrupoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NombreDataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -2540,11 +2775,74 @@ Partial Class Principal
     Friend WithEvents Apellido1DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Apellido2DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents BindingSource1 As System.Windows.Forms.BindingSource
-    Friend WithEvents MatriculasBindingSource3 As System.Windows.Forms.BindingSource
     Friend WithEvents MatriculasBindingSource4 As System.Windows.Forms.BindingSource
     Friend WithEvents ComboBox14 As System.Windows.Forms.ComboBox
-    Friend WithEvents MatriculasBindingSource5 As System.Windows.Forms.BindingSource
+    Friend WithEvents MatriculaPECDataSet1 As MatriculaPEC.MatriculaPECDataSet
+    Friend WithEvents BindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents PeriodosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.periodosTableAdapter
+    Friend WithEvents CodperiodoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Button19 As System.Windows.Forms.Button
+    Friend WithEvents Button20 As System.Windows.Forms.Button
+    Friend WithEvents DataGridViewImageColumn2 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents DataGridView9 As System.Windows.Forms.DataGridView
+    Friend WithEvents FormasdepagoBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Formas_de_pagoTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.formas_de_pagoTableAdapter
+    Friend WithEvents CodformapagoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CursosBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents CursosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.cursosTableAdapter
+    Friend WithEvents CodcursoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Eliminar As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents MatriculaPECDataSet2 As MatriculaPEC.MatriculaPECDataSet
+    Friend WithEvents ProfesoresBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ProfesoresTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.profesoresTableAdapter
+    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AlumnosBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents AlumnosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.alumnosTableAdapter
+    Friend WithEvents CódigoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CédulaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ProfesorDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TeléfonoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CorreoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EliminarProfesor As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents GruposBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents GruposTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.gruposTableAdapter
+    Friend WithEvents DataGridViewTextBoxColumn13 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CodcursoDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn14 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CodperiodoDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CodprofesorDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AlumnosBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents DataGridViewTextBoxColumn17 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn18 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn19 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn20 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ResponsableDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TelefonoresponsableDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn21 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmailDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CodigoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CursoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PeriodoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ProfesorDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EliminarGrupos As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents DescuentosBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DescuentosTableAdapter As MatriculaPEC.MatriculaPECDataSetTableAdapters.descuentosTableAdapter
+    Friend WithEvents CoddescuentoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn16 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewImageColumn3 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents Button22 As System.Windows.Forms.Button
+    Friend WithEvents Button21 As System.Windows.Forms.Button
 
 
 
@@ -2557,3 +2855,4 @@ Partial Class Principal
 
 
 End Class
+

@@ -9,13 +9,14 @@
     Dim factura As Double
     Dim descuento As Integer
     Dim ctableAdapter As New MatriculaPECDataSetTableAdapters.cursosTableAdapter
-    Dim qtableAdapter As New MatriculaPECDataSetTableAdapters.QueriesTableAdapter
+
     Dim gtableAdapter As New MatriculaPECDataSetTableAdapters.gruposTableAdapter
     Dim mtableAdapter As New MatriculaPECDataSetTableAdapters.matriculasTableAdapter
     Dim dtableAdapter As New MatriculaPECDataSetTableAdapters.descuentosTableAdapter
     Dim etableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter
     Dim ftableAdapter As New MatriculaPECDataSetTableAdapters.formas_de_pagoTableAdapter
     Dim destableAdapter As New MatriculaPECDataSetTableAdapters.descuentosTableAdapter
+    Dim fatableAdapter As New MatriculaPECDataSetTableAdapters.facturasTableAdapter
 
     Private Sub Matricula3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -39,6 +40,7 @@
         Dim codigoEstudiante As Integer
         Dim codigoDescuento As Integer
         Dim codigoFormaPago As Integer
+        Dim costoPorCurso As Integer
 
         Dim valor As String
         valor = ""
@@ -55,19 +57,23 @@
 
         Next
 
-        codigoEstudiante = etableAdapter.consultar_codigo_estudiante(valor)
+        codigoEstudiante = etableAdapter.consultar_cod_estudiante(valor)
 
 
         For Each codigoGrupo As String In listaCodigos
 
+            costoPorCurso = ctableAdapter.consultar_costo_curso(codigoGrupo)
 
-            qtableAdapter.insertar_matricula(codigoGrupo, codigoEstudiante)
-            codigoFormaPago = ftableAdapter.consultarCodigoFormadePago(Matricula2.ComboBox3.Text)
-            codigoDescuento = destableAdapter.consultarCodigoDescuento(Matricula2.ComboBox4.Text.TrimEnd)
-            qtableAdapter.insertar_factura(codigoEstudiante, mtableAdapter.consultarCodigoMatricula(codigoGrupo, codigoEstudiante), 0, codigoDescuento, codigoFormaPago, total, subtotal, total)
+            mtableAdapter.insertar_matricula(codigoGrupo, codigoEstudiante, 1)
+            codigoFormaPago = ftableAdapter.consultar_cod_formaPago(Matricula2.ComboBox3.Text)
+            codigoDescuento = destableAdapter.consultar_cod_descuento(Matricula2.ComboBox4.Text.TrimEnd)
+            fatableAdapter.insertar_factura(codigoEstudiante, mtableAdapter.consultar_cod_matricula(codigoGrupo, codigoEstudiante), codigoDescuento, codigoFormaPago, total, subtotal, total)
 
         Next
 
+
+
+        Principal.DataGridView1.DataSource = mtableAdapter.GetData
 
         Me.Close()
     End Sub
@@ -77,7 +83,9 @@
 
         Dim linea As New List(Of String)
         Dim codigoCurso As New Integer
+        Dim cod_grupo As Integer
         listaCodigos = New List(Of Integer)
+        Dim nombreGrupo As String
 
 
         linea.Add("----------------------------------------------------------")
@@ -92,27 +100,31 @@
         linea.Add("CURSOS")
         For Each row As DataGridViewRow In Matricula2.DataGridViewMatricula2.Rows
 
-            Dim nombreGrupo As String
+
+
             nombreGrupo = row.Cells.Item("Grupo").Value.ToString.TrimEnd
 
             nombreCurso = Split(nombreGrupo, " ")
 
-            codigoCurso = ctableAdapter.buscarCodigoCurso(nombreCurso(1) & " " & nombreCurso(2))
+            codigoCurso = ctableAdapter.consultar_cod_curso(nombreCurso(1) & " " & nombreCurso(2))
+
+            cod_grupo = CInt(gtableAdapter.consultarGrupo(nombreCurso(0).Replace("G", ""), codigoCurso))
+
+            listaCodigos.Add(cod_grupo)
 
 
-            listaCodigos.Add(CInt(gtableAdapter.consultarCodigoGrupoPorNumeroYCurso(nombreCurso(0).Replace("G", ""), codigoCurso)))
+            costo = ctableAdapter.consultar_costo_curso(cod_grupo)
+            MsgBox(cod_grupo & " " & costo)
 
 
-            costo = ctableAdapter.consultarCosto(codigoCurso)
-           
-            descuento = dtableAdapter.consultarPorcentaje(row.Cells.Item("Descuento").Value.trim)
+            descuento = dtableAdapter.consultar_porcentaje_descuento(dtableAdapter.consultar_cod_descuento(row.Cells.Item("Descuento").Value))
             subtotal += costo
             total += costo - costo * (descuento / 100)
 
 
             linea.Add(nombreGrupo & " - " & row.Cells.Item("Forma").Value.trim & " - ¢" & costo & " - " & descuento & "%")
 
-
+          
         Next
         linea.Add("----------------------------------------------------------")
         linea.Add(Date.Now)

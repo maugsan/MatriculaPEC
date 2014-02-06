@@ -1,5 +1,4 @@
 ﻿Public Class Principal
-
     'variables globales para realizar Matricula
 
     Public codigoEstudiante As Integer
@@ -14,31 +13,30 @@
     Private estadoMatricula As String
 
     Dim mtableAdapter As New MatriculaPECDataSetTableAdapters.matriculasTableAdapter
+    Dim atableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter
     Dim gtableAdapter As New MatriculaPECDataSetTableAdapters.gruposTableAdapter
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.DataTableGruposNombres' Puede moverla o quitarla según sea necesario.
-        '      Me.DataTableGruposNombresTableAdapter.Fill(Me.MatriculaPECDataSet.DataTableGruposNombres)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet1.descuentos' Puede moverla o quitarla según sea necesario.
+        Me.DescuentosTableAdapter.Fill(Me.MatriculaPECDataSet1.descuentos)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet1.grupos' Puede moverla o quitarla según sea necesario.
+        Me.GruposTableAdapter.Fill(Me.MatriculaPECDataSet1.grupos)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet1.alumnos' Puede moverla o quitarla según sea necesario.
+        Me.AlumnosTableAdapter.Fill(Me.MatriculaPECDataSet1.alumnos)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet2.profesores' Puede moverla o quitarla según sea necesario.
+        Me.ProfesoresTableAdapter.Fill(Me.MatriculaPECDataSet2.profesores)
 
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.profesores' Puede moverla o quitarla según sea necesario.
-        Me.ProfesoresTableAdapter.Fill(Me.MatriculaPECDataSet.profesores)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.pagos' Puede moverla o quitarla según sea necesario.
-        Me.PagosTableAdapter.Fill(Me.MatriculaPECDataSet.pagos)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.descuentos' Puede moverla o quitarla según sea necesario.
-        Me.DescuentosTableAdapter.Fill(Me.MatriculaPECDataSet.descuentos)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.periodos' Puede moverla o quitarla según sea necesario.
-        Me.PeriodosTableAdapter.Fill(Me.MatriculaPECDataSet.periodos)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.grupos' Puede moverla o quitarla según sea necesario.
-        Me.GruposTableAdapter.Fill(Me.MatriculaPECDataSet.grupos)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.cursos' Puede moverla o quitarla según sea necesario.
-        Me.CursosTableAdapter.Fill(Me.MatriculaPECDataSet.cursos)
+        Me.CursosTableAdapter.Fill(Me.MatriculaPECDataSet1.cursos)
+
+        Me.Formas_de_pagoTableAdapter.Fill(Me.MatriculaPECDataSet1.formas_de_pago)
+
+        Me.PeriodosTableAdapter.Fill(Me.MatriculaPECDataSet1.periodos)
 
         DataGridView1.DataSource = mtableAdapter.GetData
 
-        Me.AlumnosTableAdapter.Fill(Me.MatriculaPECDataSet.alumnos)
-
         Me.estudiante = "----"
+
     End Sub
 
     'TABS DEL MENU PRINCIPAL
@@ -144,7 +142,7 @@
 #Region " ABRIR VENTANAS "
 
 
-    Private Sub ButtonMMatricula_Click(sender As Object, e As EventArgs) Handles ButtonMMatricula.Click
+    Private Sub ButtonMMatricula_Click(sender As Object, e As EventArgs)
         Dim ventana As New Matricula
         ventana.Show()
 
@@ -205,7 +203,7 @@
 
 
         Dim etableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
-        Dim qtableAdapter As New MatriculaPECDataSetTableAdapters.QueriesTableAdapter
+
 
 
         If e.ColumnIndex = 5 Then
@@ -214,7 +212,7 @@
 
             cedula = Convert.ToInt32((DataGridView4.Item(0, e.RowIndex).Value.ToString()))
 
-            qtableAdapter.eliminar_alumno(cedula)
+            atableAdapter.eliminar_alumno(cedula)
 
             Form1_Load(sender, e)
 
@@ -284,13 +282,13 @@
         periodoMatricula = ComboBox1.Text
 
         If periodoMatricula <> "" Then
-            DataGridView1.DataSource = mtableAdapter.GetDataByPeriodo(periodoMatricula)
+            DataGridView1.DataSource = mtableAdapter.GetDataByMatriculaPorPeriodo(periodoMatricula)
 
-            If gtableAdapter.GetDataByPeriodo(periodoMatricula).Rows.Count <> 0 Then
+            If gtableAdapter.GetDataByGrupoPorPeriodo(periodoMatricula).Rows.Count <> 0 Then
 
 
                 ComboBox14.Enabled = True
-                ComboBox14.DataSource = gtableAdapter.GetDataByPeriodo(periodoMatricula)
+                ComboBox14.DataSource = gtableAdapter.GetDataByGrupoPorPeriodo(periodoMatricula)
                 ComboBox14.DisplayMember = "Curso"
 
 
@@ -324,9 +322,68 @@
     Private Sub ComboBox14_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ComboBox14.SelectedIndexChanged
 
 
-        DataGridView1.DataSource = mtableAdapter.GetDataByPeriodoYCurso(periodoMatricula, ComboBox14.Text)
+        DataGridView1.DataSource = mtableAdapter.GetDataByMatriculaPorPeriodo(periodoMatricula)
 
 
+    End Sub
+
+    Private Sub TabPagePeriodos_Click(sender As Object, e As EventArgs) Handles TabPagePeriodos.Click
+
+    End Sub
+
+    Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
+
+        Formas.Show()
+
+
+    End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub TabPageFormas_Click(sender As Object, e As EventArgs) Handles TabPageFormas.Click
+
+    End Sub
+
+
+
+    Public Sub BorderColor(ByRef _Control As Control, ByVal _Color As Color)
+
+        ' Variables para metodos graficos
+
+        Dim g As Graphics = Me.CreateGraphics
+
+        Dim pen As New Pen(_Color, 2.0)
+
+
+
+        ' Cambia el borde
+
+        g.DrawRectangle(pen, New Rectangle(_Control.Location, _Control.Size))
+
+
+
+        ' Libera los recursos
+
+        pen.Dispose()
+
+        g = Nothing
+
+    End Sub
+
+    Private Sub TabPageEstudiante_Click(sender As Object, e As EventArgs) Handles TabPageEstudiante.Click
+
+    End Sub
+
+    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
+        Matricula.Show()
+
+
+    End Sub
+
+    Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
+        Matricula.Show()
 
     End Sub
 End Class

@@ -1,12 +1,12 @@
 
-
+use MatriculaPEC
 -- Eliminar Alumno ---------------------------------------------------------------
 IF ( OBJECT_ID('eliminar_alumno') IS NOT NULL ) 
    DROP PROCEDURE eliminar_alumno
 GO
 
 CREATE PROCEDURE eliminar_alumno
-       @cedula   INT         
+       @cedula   bigint         
                      
 AS 
 

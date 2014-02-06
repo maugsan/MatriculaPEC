@@ -33,6 +33,7 @@ Partial Class Matricula3
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -83,18 +84,18 @@ Partial Class Matricula3
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label1.Location = New System.Drawing.Point(367, 44)
+        Me.Label1.Location = New System.Drawing.Point(262, 53)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(132, 39)
+        Me.Label1.Size = New System.Drawing.Size(389, 39)
         Me.Label1.TabIndex = 23
-        Me.Label1.Text = "Factura"
+        Me.Label1.Text = "Información de matricula"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label6.Location = New System.Drawing.Point(458, 213)
+        Me.Label6.Location = New System.Drawing.Point(505, 182)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(131, 25)
         Me.Label6.TabIndex = 28
@@ -105,7 +106,7 @@ Partial Class Matricula3
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label7.Location = New System.Drawing.Point(456, 238)
+        Me.Label7.Location = New System.Drawing.Point(503, 249)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(136, 39)
         Me.Label7.TabIndex = 29
@@ -133,7 +134,7 @@ Partial Class Matricula3
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label2.Location = New System.Drawing.Point(589, 238)
+        Me.Label2.Location = New System.Drawing.Point(636, 238)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(0, 39)
         Me.Label2.TabIndex = 33
@@ -143,7 +144,7 @@ Partial Class Matricula3
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label3.Location = New System.Drawing.Point(591, 213)
+        Me.Label3.Location = New System.Drawing.Point(638, 213)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(0, 25)
         Me.Label3.TabIndex = 34
@@ -159,8 +160,19 @@ Partial Class Matricula3
         Me.ListBox1.Location = New System.Drawing.Point(53, 143)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.ScrollAlwaysVisible = True
-        Me.ListBox1.Size = New System.Drawing.Size(373, 224)
+        Me.ListBox1.Size = New System.Drawing.Size(404, 224)
         Me.ListBox1.TabIndex = 35
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.DeepSkyBlue
+        Me.Label4.Location = New System.Drawing.Point(505, 213)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(138, 25)
+        Me.Label4.TabIndex = 36
+        Me.Label4.Text = "DESCUENTO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Matricula3
         '
@@ -168,6 +180,7 @@ Partial Class Matricula3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(863, 503)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -200,4 +213,5 @@ Partial Class Matricula3
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

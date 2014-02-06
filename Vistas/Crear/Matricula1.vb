@@ -6,10 +6,6 @@
 
         Me.Hide()
 
-        Matricula2.ComboBox2.Text = "Ninguno"
-
-        Matricula2.ComboBox2.DataSource = Nothing
-        Matricula2.ComboBox2.Enabled = False
 
         Matricula2.Show()
 
@@ -133,7 +129,7 @@
 
                 Dim etableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
 
-                If etableAdapter.consultar_codigo_estudiante(valor).ToString <> "" Then
+                If etableAdapter.consultar_cod_estudiante(valor).ToString <> "" Then
 
                     retorno = True
 
