@@ -62,16 +62,19 @@
 
         For Each codigoGrupo As String In listaCodigos
 
+            MsgBox(codigoGrupo & "---- " & codigoEstudiante)
+
             costoPorCurso = ctableAdapter.consultar_costo_curso(codigoGrupo)
 
             mtableAdapter.insertar_matricula(codigoGrupo, codigoEstudiante, 1)
+
             codigoFormaPago = ftableAdapter.consultar_cod_formaPago(Matricula2.ComboBox3.Text)
             codigoDescuento = destableAdapter.consultar_cod_descuento(Matricula2.ComboBox4.Text.TrimEnd)
-            fatableAdapter.insertar_factura(codigoEstudiante, mtableAdapter.consultar_cod_matricula(codigoGrupo, codigoEstudiante), codigoDescuento, codigoFormaPago, total, subtotal, total)
+            fatableAdapter.insertar_factura(codigoEstudiante,
+                                            mtableAdapter.consultar_cod_matricula(codigoGrupo, codigoEstudiante),
+                                            codigoDescuento, codigoFormaPago, total, subtotal, total)
 
         Next
-
-
 
         Principal.DataGridView1.DataSource = mtableAdapter.GetData
 
@@ -108,23 +111,19 @@
 
             codigoCurso = ctableAdapter.consultar_cod_curso(nombreCurso(1) & " " & nombreCurso(2))
 
-            cod_grupo = CInt(gtableAdapter.consultarGrupo(nombreCurso(0).Replace("G", ""), codigoCurso))
+            cod_grupo = CInt(gtableAdapter.consultarGrupo(codigoCurso, nombreCurso(0).Replace("G", "")))
 
             listaCodigos.Add(cod_grupo)
 
-
             costo = ctableAdapter.consultar_costo_curso(cod_grupo)
-            MsgBox(cod_grupo & " " & costo)
-
 
             descuento = dtableAdapter.consultar_porcentaje_descuento(dtableAdapter.consultar_cod_descuento(row.Cells.Item("Descuento").Value))
             subtotal += costo
             total += costo - costo * (descuento / 100)
 
-
             linea.Add(nombreGrupo & " - " & row.Cells.Item("Forma").Value.trim & " - ¢" & costo & " - " & descuento & "%")
 
-          
+
         Next
         linea.Add("----------------------------------------------------------")
         linea.Add(Date.Now)
@@ -133,8 +132,6 @@
 
         Label3.Text = "¢" & subtotal
         Label2.Text = "¢" & total
-
-       
 
 
     End Sub

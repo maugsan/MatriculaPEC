@@ -37,6 +37,11 @@
 
         Me.estudiante = "----"
 
+
+        Dim utableAdapter As New MatriculaPECDataSetTableAdapters.usuariosTableAdapter
+
+        ' utableAdapter.Insert("Admin", "Admin", "Admin", "Admin", 1)
+
     End Sub
 
     'TABS DEL MENU PRINCIPAL
@@ -92,15 +97,51 @@
     End Sub
 
 
-    Private Sub ButtonListas_Click(sender As Object, e As EventArgs)
+
+
+
+    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
         TabControlPrincipal.SelectTab(12)
+
+
     End Sub
+
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        Matricula.Show()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        TabControlPrincipal.SelectTab(15)
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        TabControlPrincipal.SelectTab(14)
+    End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        TabControlPrincipal.SelectTab(13)
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        TabControlPrincipal.SelectTab(9)
+    End Sub
+
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+        TabControlPrincipal.SelectTab(16)
+    End Sub
+
 
 
 #End Region
 
 #Region " BOTONES RETORNO "
     'boton atras
+
+    Private Sub Button31_Click(sender As Object, e As EventArgs) Handles Button31.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
 
     Private Sub ButtonRegresar_Click(sender As Object, e As EventArgs) Handles ButtonRegresar.Click
         TabControlPrincipal.SelectTab(0)
@@ -135,6 +176,34 @@
         TabControlPrincipal.SelectTab(0)
     End Sub
 
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub Button28_Click(sender As Object, e As EventArgs) Handles Button28.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+    Private Sub Button30_Click(sender As Object, e As EventArgs) Handles Button30.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
+
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        TabControlPrincipal.SelectTab(0)
+    End Sub
 
 
 #End Region
@@ -372,18 +441,14 @@
 
     End Sub
 
-    Private Sub TabPageEstudiante_Click(sender As Object, e As EventArgs) Handles TabPageEstudiante.Click
-
-    End Sub
-
-    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
-        Matricula.Show()
+ 
 
 
-    End Sub
-
+  
     Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
         Matricula.Show()
 
     End Sub
+
+
 End Class

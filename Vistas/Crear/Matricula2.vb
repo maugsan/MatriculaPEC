@@ -9,8 +9,8 @@
     Private mCanceling As Boolean = False
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-
         Me.borrarDatagridGrupos()
+
         Me.Hide()
         Matricula.Show()
 
@@ -40,20 +40,21 @@
         'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.periodos' Puede moverla o quitarla según sea necesario.
         Me.PeriodosTableAdapter.Fill(Me.MatriculaPECDataSet.periodos)
 
-
+        DataGridViewMatricula2.Refresh()
         If DataGridViewMatricula2.Rows.Count = 0 Then
 
             Button2.Enabled = False
-        End If
 
+        End If
 
     End Sub
 
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 
-        Dim nombreGrupo As String
 
+
+        Dim nombreGrupo As String
         Dim nombreCurso() As String
 
         Dim row1 As String() = New String() {Me.ComboBox2.Text, ComboBox3.Text, ComboBox4.Text}
@@ -62,11 +63,9 @@
 
         If Me.ComboBox2.Text <> "" Then
 
-
             encontrado = False
 
-
-            nombreGrupo = Me.ComboBox2.Text.TrimEnd
+            nombreGrupo = Me.ComboBox2.Text
             nombreCurso = Split(nombreGrupo, " ")
 
             If (DataGridViewMatricula2.RowCount = 0) Then
@@ -76,18 +75,15 @@
                     DataGridViewMatricula2.Rows.Add(row1)
                     Button2.Enabled = True
 
-
                 End If
 
             Else
 
                 For Each row As DataGridViewRow In DataGridViewMatricula2.Rows
 
-
                     If estaMatriculado(nombreCurso) = True Then
 
                         encontrado = True
-
 
                     End If
 
@@ -97,7 +93,7 @@
                 For Each row As DataGridViewRow In DataGridViewMatricula2.Rows
 
 
-                    If row.Cells.Item("Grupo").Value.ToString.TrimEnd = nombreGrupo Then
+                    If row.Cells.Item("Grupo").Value.ToString = nombreGrupo Then
 
                         encontrado = True
 
@@ -118,6 +114,9 @@
             End If
 
         End If
+
+
+
     End Sub
 
 
@@ -127,7 +126,6 @@
         valor = ""
         Dim TestArray() As String = Split(Principal.estudiante)
         Dim LastNonEmpty As Integer = -1
-
 
         For i As Integer = 0 To TestArray.Length - 1
             If TestArray(i) <> "" Then
@@ -155,8 +153,6 @@ ByVal e As System.ComponentModel.CancelEventArgs)
 
 
             End If
-
-
 
         End If
     End Sub
@@ -197,15 +193,13 @@ ByVal e As System.ComponentModel.CancelEventArgs)
     End Sub
 
 
-
 #Region " ELIMINAR DATAGRIDS "
 
     'Eliminar 
 
 
 
-    Private Sub DataGridViewMatricula2_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridViewMatricula2.CellClick
-
+    Private Sub DataGridViewMatricula2_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewMatricula2.CellContentClick
         If e.ColumnIndex = 3 Then
 
             If e.RowIndex <> -1 Then
@@ -224,6 +218,7 @@ ByVal e As System.ComponentModel.CancelEventArgs)
         End If
     End Sub
 
+
 #End Region
 
 
@@ -240,15 +235,14 @@ ByVal e As System.ComponentModel.CancelEventArgs)
 
         codCurso = ctableAdapter.consultar_cod_curso(nombreCurso(1) & " " & nombreCurso(2))
 
+
         codEstudiante = atableAdapter.consultar_cod_estudiante(obtenerCodigoEstudiante)
+    
 
-        MsgBox(gtableAdapter.consultarGrupo(nombreCurso(0).Replace("G", ""), codCurso))
-
-        codGrupo = gtableAdapter.consultarGrupo(nombreCurso(0).Replace("G", ""), codCurso)
+        codGrupo = gtableAdapter.consultarGrupo(codCurso, nombreCurso(0).Replace("G", ""))
 
         codMatricula = mtableAdapter.consultar_cod_matricula(codGrupo, codEstudiante)
-
-
+     
         If codMatricula = 0 Or codMatricula = Nothing Then
 
             matriculado = False
@@ -260,13 +254,13 @@ ByVal e As System.ComponentModel.CancelEventArgs)
 
 
         Return matriculado
+
     End Function
 
 
     Public Function borrarDatagridGrupos() As Integer
 
         Me.DataGridViewMatricula2.Rows.Clear()
-
         Return 0
 
     End Function
@@ -286,7 +280,6 @@ ByVal e As System.ComponentModel.CancelEventArgs)
             ComboBox2.DisplayMember = "Curso"
 
 
-
         Else
 
             ComboBox2.Enabled = False
@@ -295,4 +288,6 @@ ByVal e As System.ComponentModel.CancelEventArgs)
 
 
     End Sub
+
+
 End Class
