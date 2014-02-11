@@ -21,6 +21,6 @@
 
         End If
         Me.Close()
-        Principal.PeriodosTableAdapter.Fill(Principal.MatriculaPECDataSet1.periodos)
+
     End Sub
 End Class

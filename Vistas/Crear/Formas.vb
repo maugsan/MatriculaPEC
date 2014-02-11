@@ -17,7 +17,7 @@
 
             ftableAdapter.insertar_formadepago(nombre)
             Me.Close()
-            Principal.Formas_de_pagoTableAdapter.Fill(Principal.MatriculaPECDataSet1.formas_de_pago)
+
         End If
 
 

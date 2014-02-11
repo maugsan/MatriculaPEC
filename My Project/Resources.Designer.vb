@@ -153,6 +153,26 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Costa_Rican_Cólon3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Costa Rican-Cólon3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Costa_Rican_Cólon31() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Costa Rican-Cólon31", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Device_Bell() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Device-Bell", resourceCulture)
@@ -246,6 +266,16 @@ Namespace My.Resources
         Friend ReadOnly Property Previous() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Previous", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Printer() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Printer", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -19,7 +19,7 @@
     Dim fatableAdapter As New MatriculaPECDataSetTableAdapters.facturasTableAdapter
 
     Private Sub Matricula3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Principal.SendToBack()
 
     End Sub
 
@@ -33,6 +33,8 @@
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Close()
+
+        Principal.Enabled = True
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -62,23 +64,28 @@
 
         For Each codigoGrupo As String In listaCodigos
 
-            MsgBox(codigoGrupo & "---- " & codigoEstudiante)
+
 
             costoPorCurso = ctableAdapter.consultar_costo_curso(codigoGrupo)
 
             mtableAdapter.insertar_matricula(codigoGrupo, codigoEstudiante, 1)
 
             codigoFormaPago = ftableAdapter.consultar_cod_formaPago(Matricula2.ComboBox3.Text)
+
             codigoDescuento = destableAdapter.consultar_cod_descuento(Matricula2.ComboBox4.Text.TrimEnd)
-            fatableAdapter.insertar_factura(codigoEstudiante,
+
+
+            fatableAdapter.Insert(codigoEstudiante,
                                             mtableAdapter.consultar_cod_matricula(codigoGrupo, codigoEstudiante),
-                                            codigoDescuento, codigoFormaPago, total, subtotal, total)
+                                            subtotal,
+                                            codigoDescuento, total, total, codigoFormaPago)
 
         Next
+        Principal.MatriculasTableAdapter.Fill(Principal.MatriculaPECDataSet.matriculas)
 
-        Principal.DataGridView1.DataSource = mtableAdapter.GetData
 
         Me.Close()
+
     End Sub
 
 
@@ -132,6 +139,7 @@
 
         Label3.Text = "¢" & subtotal
         Label2.Text = "¢" & total
+        linea.Add("----------------------------------------------------------")
 
 
     End Sub

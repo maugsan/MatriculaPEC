@@ -54,7 +54,7 @@
             gtableAdapter.insertar_grupo(ctableAdapter.consultar_cod_curso(ComboBox2.Text.Trim),
             ComboBox1.Text.Trim,
             periodotableAdapter.consultar_cod_periodo(ComboBox3.Text.Trim), ptableAdapter.consultar_ced_profesor(Me.ComboBox4.Text.Trim))
-            Principal.GruposTableAdapter.Fill(Principal.MatriculaPECDataSet1.grupos)
+
             Me.Close()
 
         Else

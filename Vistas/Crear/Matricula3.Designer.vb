@@ -39,6 +39,7 @@ Partial Class Matricula3
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -53,6 +54,7 @@ Partial Class Matricula3
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.Gray
+        Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -67,6 +69,7 @@ Partial Class Matricula3
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -83,7 +86,7 @@ Partial Class Matricula3
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label1.Location = New System.Drawing.Point(262, 53)
+        Me.Label1.Location = New System.Drawing.Point(273, 59)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(389, 39)
         Me.Label1.TabIndex = 23
@@ -94,7 +97,7 @@ Partial Class Matricula3
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label6.Location = New System.Drawing.Point(507, 202)
+        Me.Label6.Location = New System.Drawing.Point(489, 213)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(131, 25)
         Me.Label6.TabIndex = 28
@@ -105,7 +108,7 @@ Partial Class Matricula3
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label7.Location = New System.Drawing.Point(503, 238)
+        Me.Label7.Location = New System.Drawing.Point(484, 238)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(136, 39)
         Me.Label7.TabIndex = 29
@@ -147,16 +150,16 @@ Partial Class Matricula3
         Me.ListBox1.ForeColor = System.Drawing.SystemColors.Highlight
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(53, 143)
+        Me.ListBox1.Location = New System.Drawing.Point(36, 122)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.ScrollAlwaysVisible = True
-        Me.ListBox1.Size = New System.Drawing.Size(404, 224)
+        Me.ListBox1.Size = New System.Drawing.Size(412, 272)
         Me.ListBox1.TabIndex = 35
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox1.Location = New System.Drawing.Point(24, 21)
+        Me.PictureBox1.Location = New System.Drawing.Point(36, 32)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(220, 84)
         Me.PictureBox1.TabIndex = 30
@@ -180,10 +183,10 @@ Partial Class Matricula3
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.MinimizeBox = False
         Me.Name = "Matricula3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Matricular Estudiante - Paso 3"
-        Me.TopMost = True
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

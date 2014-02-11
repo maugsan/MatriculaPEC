@@ -15,7 +15,7 @@
 
             dtableAdapter.Insert(Me.TextBox1.Text, Me.TextBox2.Text)
             Me.Close()
-            Principal.DescuentosTableAdapter.Fill(Principal.MatriculaPECDataSet1.descuentos)
+
         End If
 
 

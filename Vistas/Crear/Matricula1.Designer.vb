@@ -41,7 +41,7 @@ Partial Class Matricula
         Me.CrearEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CrearEstudiante.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CrearEstudiante.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CrearEstudiante.Location = New System.Drawing.Point(82, 212)
+        Me.CrearEstudiante.Location = New System.Drawing.Point(71, 187)
         Me.CrearEstudiante.Margin = New System.Windows.Forms.Padding(0)
         Me.CrearEstudiante.Name = "CrearEstudiante"
         Me.CrearEstudiante.Size = New System.Drawing.Size(182, 77)
@@ -57,7 +57,7 @@ Partial Class Matricula
         Me.TextBoxBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBoxBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxBuscar.ForeColor = System.Drawing.Color.Gray
-        Me.TextBoxBuscar.Location = New System.Drawing.Point(365, 232)
+        Me.TextBoxBuscar.Location = New System.Drawing.Point(359, 207)
         Me.TextBoxBuscar.Margin = New System.Windows.Forms.Padding(6)
         Me.TextBoxBuscar.MaximumSize = New System.Drawing.Size(350, 50)
         Me.TextBoxBuscar.Name = "TextBoxBuscar"
@@ -102,7 +102,7 @@ Partial Class Matricula
         Me.Elegir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Elegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Elegir.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Elegir.Location = New System.Drawing.Point(721, 232)
+        Me.Elegir.Location = New System.Drawing.Point(715, 207)
         Me.Elegir.Margin = New System.Windows.Forms.Padding(0)
         Me.Elegir.Name = "Elegir"
         Me.Elegir.Size = New System.Drawing.Size(64, 31)
@@ -115,7 +115,7 @@ Partial Class Matricula
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label5.Location = New System.Drawing.Point(213, 162)
+        Me.Label5.Location = New System.Drawing.Point(221, 133)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(416, 31)
         Me.Label5.TabIndex = 26
@@ -128,7 +128,7 @@ Partial Class Matricula
         Me.LEstudianteSeleccionado.ForeColor = System.Drawing.Color.Gray
         Me.LEstudianteSeleccionado.Image = CType(resources.GetObject("LEstudianteSeleccionado.Image"), System.Drawing.Image)
         Me.LEstudianteSeleccionado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.LEstudianteSeleccionado.Location = New System.Drawing.Point(77, 303)
+        Me.LEstudianteSeleccionado.Location = New System.Drawing.Point(71, 278)
         Me.LEstudianteSeleccionado.Name = "LEstudianteSeleccionado"
         Me.LEstudianteSeleccionado.Size = New System.Drawing.Size(708, 73)
         Me.LEstudianteSeleccionado.TabIndex = 11

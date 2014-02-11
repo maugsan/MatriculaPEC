@@ -35,14 +35,14 @@ Partial Class Matricula2
         Me.PeriodosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.periodosTableAdapter()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.FormasdepagoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MatriculaPECDataSet = New MatriculaPEC.MatriculaPECDataSet()
         Me.Formas_de_pagoTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.formas_de_pagoTableAdapter()
         Me.DescuentosTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.descuentosTableAdapter()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.DescuentosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.DescuentosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MatriculaPECDataSet = New MatriculaPEC.MatriculaPECDataSet()
-        Me.FormasdepagoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.PeriodosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GrupoPorPeriodoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GrupoPorPeriodoTableAdapter = New MatriculaPEC.MatriculaPECDataSetTableAdapters.GrupoPorPeriodoTableAdapter()
@@ -55,9 +55,9 @@ Partial Class Matricula2
         Me.Descuento = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Eliminar = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DescuentosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FormasdepagoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DescuentosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PeriodosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GrupoPorPeriodoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -117,31 +117,31 @@ Partial Class Matricula2
         Me.Label2.ForeColor = System.Drawing.Color.DeepSkyBlue
         Me.Label2.Location = New System.Drawing.Point(34, 191)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(174, 25)
+        Me.Label2.Size = New System.Drawing.Size(180, 25)
         Me.Label2.TabIndex = 18
-        Me.Label2.Text = "Seleccionar Grupo"
+        Me.Label2.Text = "Seleccionar Grupo:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label3.Location = New System.Drawing.Point(35, 255)
+        Me.Label3.Location = New System.Drawing.Point(34, 262)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(181, 25)
+        Me.Label3.Size = New System.Drawing.Size(187, 25)
         Me.Label3.TabIndex = 19
-        Me.Label3.Text = "Seleccionar  Forma"
+        Me.Label3.Text = "Seleccionar  Forma:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label4.Location = New System.Drawing.Point(33, 326)
+        Me.Label4.Location = New System.Drawing.Point(34, 332)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(214, 25)
+        Me.Label4.Size = New System.Drawing.Size(220, 25)
         Me.Label4.TabIndex = 20
-        Me.Label4.Text = "Seleccionar Descuento"
+        Me.Label4.Text = "Seleccionar Descuento:"
         '
         'Button4
         '
@@ -167,7 +167,7 @@ Partial Class Matricula2
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.DeepSkyBlue
-        Me.Label5.Location = New System.Drawing.Point(322, 71)
+        Me.Label5.Location = New System.Drawing.Point(324, 74)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(521, 31)
         Me.Label5.TabIndex = 25
@@ -202,6 +202,16 @@ Partial Class Matricula2
         Me.ComboBox3.TabIndex = 28
         Me.ComboBox3.ValueMember = "cod_formapago"
         '
+        'FormasdepagoBindingSource
+        '
+        Me.FormasdepagoBindingSource.DataMember = "formas_de_pago"
+        Me.FormasdepagoBindingSource.DataSource = Me.MatriculaPECDataSet
+        '
+        'MatriculaPECDataSet
+        '
+        Me.MatriculaPECDataSet.DataSetName = "MatriculaPECDataSet"
+        Me.MatriculaPECDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Formas_de_pagoTableAdapter
         '
         Me.Formas_de_pagoTableAdapter.ClearBeforeFill = True
@@ -223,6 +233,11 @@ Partial Class Matricula2
         Me.ComboBox4.Size = New System.Drawing.Size(283, 33)
         Me.ComboBox4.TabIndex = 29
         Me.ComboBox4.ValueMember = "cod_descuento"
+        '
+        'DescuentosBindingSource
+        '
+        Me.DescuentosBindingSource.DataMember = "descuentos"
+        Me.DescuentosBindingSource.DataSource = Me.MatriculaPECDataSet
         '
         'Label1
         '
@@ -249,21 +264,6 @@ Partial Class Matricula2
         Me.ComboBox1.TabIndex = 26
         Me.ComboBox1.ValueMember = "cod_periodo"
         '
-        'DescuentosBindingSource
-        '
-        Me.DescuentosBindingSource.DataMember = "descuentos"
-        Me.DescuentosBindingSource.DataSource = Me.MatriculaPECDataSet
-        '
-        'MatriculaPECDataSet
-        '
-        Me.MatriculaPECDataSet.DataSetName = "MatriculaPECDataSet"
-        Me.MatriculaPECDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'FormasdepagoBindingSource
-        '
-        Me.FormasdepagoBindingSource.DataMember = "formas_de_pago"
-        Me.FormasdepagoBindingSource.DataSource = Me.MatriculaPECDataSet
-        '
         'PeriodosBindingSource
         '
         Me.PeriodosBindingSource.DataMember = "periodos"
@@ -289,7 +289,7 @@ Partial Class Matricula2
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.MatriculaPEC.My.Resources.Resources.MATRICULA_PEC
-        Me.PictureBox1.Location = New System.Drawing.Point(31, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(38, 24)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(216, 81)
         Me.PictureBox1.TabIndex = 22
@@ -303,12 +303,12 @@ Partial Class Matricula2
         Me.DataGridViewMatricula2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridViewMatricula2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridViewMatricula2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Grupo, Me.Forma, Me.Descuento, Me.Eliminar})
-        Me.DataGridViewMatricula2.Location = New System.Drawing.Point(402, 176)
+        Me.DataGridViewMatricula2.Location = New System.Drawing.Point(355, 150)
         Me.DataGridViewMatricula2.Name = "DataGridViewMatricula2"
         Me.DataGridViewMatricula2.ReadOnly = True
         Me.DataGridViewMatricula2.RowTemplate.Height = 40
         Me.DataGridViewMatricula2.RowTemplate.ReadOnly = True
-        Me.DataGridViewMatricula2.Size = New System.Drawing.Size(443, 201)
+        Me.DataGridViewMatricula2.Size = New System.Drawing.Size(490, 246)
         Me.DataGridViewMatricula2.TabIndex = 30
         '
         'Grupo
@@ -338,7 +338,7 @@ Partial Class Matricula2
         '
         'Matricula2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(874, 514)
         Me.Controls.Add(Me.DataGridViewMatricula2)
@@ -356,15 +356,15 @@ Partial Class Matricula2
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.MaximizeBox = false
+        Me.MaximizeBox = False
         Me.Name = "Matricula2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Matricular Estudiante - Paso 2"
-        CType(Me.ErrorProvider1,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.DescuentosBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.MatriculaPECDataSet,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.FormasdepagoBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PeriodosBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FormasdepagoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MatriculaPECDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DescuentosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PeriodosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GrupoPorPeriodoBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.DataTableGruposNombresBindingSource,System.ComponentModel.ISupportInitialize).EndInit

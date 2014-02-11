@@ -15,10 +15,10 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        ctableAdapter.insertar_curso(Me.tfNombre.Text, Me.tfDuracion.Text, Me.tfDescripcion.Text, Me.tfCosto.Text)
+        ctableAdapter.Insert(Me.tfNombre.Text, Me.tfDuracion.Text, Me.tfDescripcion.Text, Me.tfCosto.Text)
 
         Me.Close()
-        Principal.CursosTableAdapter.Fill(Principal.MatriculaPECDataSet1.cursos)
+
 
     End Sub
 

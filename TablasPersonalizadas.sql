@@ -1,6 +1,10 @@
+-- Eatudiantes en grupos
 
-
-  
+  SELECT        a.cedula AS Cédula, REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' + REPLACE(a.apellido2, ' ', '') AS Estudiante, a.telefono AS Teléfono, 
+                         a.email AS Correo, ag.nota AS Nota, ag.estado AS Estado
+FROM            alumnos_en_grupos AS ag INNER JOIN
+                         grupos AS g ON g.cod_grupo = ag.cod_grupo INNER JOIN
+                         alumnos AS a ON a.cod_alumno = ag.cod_alumno
 
 
 -- Profesores

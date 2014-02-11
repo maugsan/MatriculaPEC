@@ -12,10 +12,12 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Cancelar.Click
+
         Matricula2.DataGridViewMatricula2 = Nothing
 
         Principal.estudiante = "----"
         Me.Close()
+
 
     End Sub
 
@@ -32,8 +34,6 @@
     Private Sub Matricula_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
-
-     
 
 
 

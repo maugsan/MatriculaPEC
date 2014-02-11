@@ -15,7 +15,7 @@
 
             ptableAdapter.insertar_profesor(Me.tfCedula.Text, Me.tfNombre.Text, Me.tfApellido1.Text, Me.tfApellido2.Text, Me.tfTelefono.Text, Me.tfCorreo.Text)
             Me.Close()
-            Principal.ProfesoresTableAdapter.Fill(Principal.MatriculaPECDataSet2.profesores)
+
 
 
         Else

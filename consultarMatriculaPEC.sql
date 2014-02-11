@@ -1,5 +1,109 @@
 use MatriculaPEC
 
+
+-- Consultar Grupo por nombre ---------------------------------------------------------------
+IF ( OBJECT_ID('consultar_cod_grupo_por_curso') IS NOT NULL ) 
+   DROP PROCEDURE consultar_cod_grupo_por_curso
+GO
+
+CREATE PROCEDURE consultar_cod_grupo_por_curso
+       @nombreGrupo varchar(50)
+                     
+AS 
+
+BEGIN 
+    
+    SET NOCOUNT ON 
+	
+	
+	select g.cod_grupo
+	FROM grupos AS g 
+	INNER JOIN
+	cursos AS c ON g.cod_curso = c.cod_curso 
+
+	WHERE 'G' + CONVERT(char(2), g.numero) + c.nombre  = @nombreGrupo
+    
+
+END 
+
+
+
+
+
+-- Consultar lista de Estudiantes ---------------------------------------------------------------
+IF ( OBJECT_ID('consultar_lista_por_grupo_perido') IS NOT NULL ) 
+   DROP PROCEDURE consultar_lista_por_grupo_perido
+GO
+
+CREATE PROCEDURE consultar_lista_por_grupo_perido
+       @nombre nvarchar(50),
+        @curso nvarchar(50)
+     
+                     
+AS 
+
+
+BEGIN 
+
+SELECT
+p.nombre as Periodo,
+'G' + CONVERT(char(2), g.numero) + c.nombre AS Curso,  a.cedula AS Cédula, 
+REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' + REPLACE(a.apellido2, ' ',  '') AS Estudiante,
+f.total as Total,
+convert(varchar,d.porcentaje) +'%'  as Descuento,
+f.saldo_pendiente as Saldo
+
+
+FROM dbo.matriculas m
+
+INNER JOIN grupos g on m.cod_grupo = g.cod_grupo
+INNER JOIN cursos c on g.cod_curso = c.cod_curso
+INNER JOIN periodos p on g.cod_periodo = p.cod_periodo
+INNER JOIN alumnos a on m.cod_alumno = a.cod_alumno
+INNER JOIN facturas f on f.cod_matricula = m.cod_matricula
+INNER JOIN descuentos d on d.cod_descuento = f.cod_descuento
+
+where p.nombre = @nombre and 'G' + CONVERT(char(2), g.numero) + c.nombre  = @curso
+
+
+END 
+
+
+
+
+
+
+-- Consultar lista de Estudiantes ---------------------------------------------------------------
+IF ( OBJECT_ID('consultar_lista_por_grupo') IS NOT NULL ) 
+   DROP PROCEDURE consultar_lista_por_grupo
+GO
+
+CREATE PROCEDURE consultar_lista_por_grupo
+       @valor nvarchar(50)
+     
+                     
+AS 
+
+
+BEGIN 
+
+  select  a.cedula AS Cédula, REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' + REPLACE(a.apellido2, ' ', '') AS Estudiante, a.telefono AS Teléfono, 
+                         a.email AS Correo, ag.nota AS Nota, ag.estado AS Estado
+FROM   alumnos_en_grupos AS ag 
+INNER JOIN
+      grupos AS g ON g.cod_grupo = ag.cod_grupo 
+                         
+INNER JOIN
+     alumnos AS a ON a.cod_alumno = ag.cod_alumno
+INNER JOIN
+     cursos AS c ON c.cod_curso = g.cod_curso
+    WHERE  'G' + CONVERT(char(2), g.numero) + c.nombre = @valor
+
+END 
+
+
+
+
 -- Consultar cedula profesor por Nombre y apellidos ---------------------------------------------------------------
 IF ( OBJECT_ID('consultar_ced_profesor') IS NOT NULL ) 
    DROP PROCEDURE consultar_ced_profesor
@@ -167,18 +271,17 @@ BEGIN
 END 
 
 
+-- Consultar matricula Morosa---------------------------------------------------------------
 
 
-
--- Consultar codigo matricula ---------------------------------------------------------------
-IF ( OBJECT_ID('consultar_cod_matricula') IS NOT NULL ) 
-   DROP PROCEDURE consultar_cod_matricula
+IF ( OBJECT_ID('consultar_matricula_morosas') IS NOT NULL ) 
+   DROP PROCEDURE consultar_matricula_morosas
 GO
 
-CREATE PROCEDURE consultar_cod_matricula
-       @cod_grupo int,
-         @cod_alumno  int
-     
+CREATE PROCEDURE consultar_matricula_morosas
+        @valor  varchar(50)
+    
+
                      
 AS 
 
@@ -186,13 +289,69 @@ AS
 BEGIN 
     
     SET NOCOUNT ON 
-	SELECT cod_matricula FROM dbo.matriculas
-	WHERE  cod_grupo = @cod_grupo and  cod_alumno = @cod_alumno
+SELECT
+p.nombre as Periodo,
+'G' + CONVERT(char(2), g.numero) + c.nombre AS Curso,  a.cedula AS Cédula, 
+REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' + REPLACE(a.apellido2, ' ',  '') AS Estudiante,
+f.total as Total,
+convert(varchar,d.porcentaje) +'%'  as Descuento,
+f.saldo_pendiente as Saldo
 
 
-    
+FROM dbo.matriculas m
+
+INNER JOIN grupos g on m.cod_grupo = g.cod_grupo
+INNER JOIN cursos c on g.cod_curso = c.cod_curso
+INNER JOIN periodos p on g.cod_periodo = p.cod_periodo
+INNER JOIN alumnos a on m.cod_alumno = a.cod_alumno
+INNER JOIN facturas f on f.cod_matricula = m.cod_matricula
+INNER JOIN descuentos d on d.cod_descuento = f.cod_descuento
+
+Where f.saldo_pendiente != 0 and  'G' + CONVERT(char(2), g.numero) + c.nombre  = @valor
+
+
+
 
 END 
+
+
+
+
+
+-- Consultar matricula Morosa---------------------------------------------------------------
+
+
+IF ( OBJECT_ID('consultar_cod_matricula') IS NOT NULL ) 
+   DROP PROCEDURE consultar_cod_matricula
+GO
+
+CREATE PROCEDURE consultar_cod_matricula
+        @cod_grupo  int,
+         @cod_alumno  int
+        
+    
+
+                     
+AS 
+
+
+BEGIN 
+    
+SET NOCOUNT ON 
+SELECT m.cod_matricula
+
+FROM dbo.matriculas m
+
+Where m.cod_grupo = @cod_grupo  and m.cod_alumno = @cod_alumno 
+
+
+
+
+END 
+
+
+
+
 
 
 
@@ -444,7 +603,7 @@ BEGIN
     SET NOCOUNT ON 
 	SELECT
 p.nombre as Periodo,
-'G' + CONVERT(char(2), g.numero) + c.nombre AS Curso,  
+'G' + CONVERT(char(2), g.numero) + c.nombre AS Curso,   a.cedula AS Cédula, 
 REPLACE(a.nombre, ' ', '') + ' ' + REPLACE(a.apellido1, ' ', '') + ' ' + REPLACE(a.apellido2, ' ',  '') AS Estudiante,
 f.total as Total,
 convert(varchar,d.porcentaje) +'%'  as Descuento,
@@ -493,3 +652,5 @@ END
 
 exec ProfesoresPorNombreYApellidos
 select * from alumnos
+
+

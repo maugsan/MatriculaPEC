@@ -22,6 +22,7 @@
         Matricula3.procesar()
         Matricula3.Show()
 
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -29,6 +30,7 @@
 
         DataGridViewMatricula2.Rows.Clear()
         DataGridViewMatricula2.Refresh()
+
 
     End Sub
 
@@ -40,12 +42,9 @@
         'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.periodos' Puede moverla o quitarla según sea necesario.
         Me.PeriodosTableAdapter.Fill(Me.MatriculaPECDataSet.periodos)
 
-        DataGridViewMatricula2.Refresh()
-        If DataGridViewMatricula2.Rows.Count = 0 Then
+   
+        Principal.SendToBack()
 
-            Button2.Enabled = False
-
-        End If
 
     End Sub
 
@@ -273,6 +272,7 @@ ByVal e As System.ComponentModel.CancelEventArgs)
 
 
         If gtableAdapter.GetDataByGrupoPorPeriodo(ComboBox1.Text).Rows.Count <> 0 Then
+
 
 
             ComboBox2.Enabled = True

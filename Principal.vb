@@ -15,32 +15,45 @@
     Dim mtableAdapter As New MatriculaPECDataSetTableAdapters.matriculasTableAdapter
     Dim atableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter
     Dim gtableAdapter As New MatriculaPECDataSetTableAdapters.gruposTableAdapter
+    Dim ptableAdapter As New MatriculaPECDataSetTableAdapters.periodosTableAdapter
+    Dim utableAdapter As New MatriculaPECDataSetTableAdapters.usuariosTableAdapter
+    Dim agtableAdapter As New MatriculaPECDataSetTableAdapters.alumnos_en_gruposTableAdapter
+
+
+
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet1.descuentos' Puede moverla o quitarla según sea necesario.
-        Me.DescuentosTableAdapter.Fill(Me.MatriculaPECDataSet1.descuentos)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet1.grupos' Puede moverla o quitarla según sea necesario.
-        Me.GruposTableAdapter.Fill(Me.MatriculaPECDataSet1.grupos)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet1.alumnos' Puede moverla o quitarla según sea necesario.
-        Me.AlumnosTableAdapter.Fill(Me.MatriculaPECDataSet1.alumnos)
-        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet2.profesores' Puede moverla o quitarla según sea necesario.
-        Me.ProfesoresTableAdapter.Fill(Me.MatriculaPECDataSet2.profesores)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.matriculas' Puede moverla o quitarla según sea necesario.
+        Me.MatriculasTableAdapter.Fill(Me.MatriculaPECDataSet.matriculas)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.alumnos_en_grupos' Puede moverla o quitarla según sea necesario.
+        Me.Alumnos_en_gruposTableAdapter.Fill(Me.MatriculaPECDataSet.alumnos_en_grupos)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.profesores' Puede moverla o quitarla según sea necesario.
+        Me.ProfesoresTableAdapter.Fill(Me.MatriculaPECDataSet.profesores)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.descuentos' Puede moverla o quitarla según sea necesario.
+        Me.DescuentosTableAdapter.Fill(Me.MatriculaPECDataSet.descuentos)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.facturas' Puede moverla o quitarla según sea necesario.
+        Me.FacturasTableAdapter.Fill(Me.MatriculaPECDataSet.facturas)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.periodos' Puede moverla o quitarla según sea necesario.
+        Me.PeriodosTableAdapter.Fill(Me.MatriculaPECDataSet.periodos)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.alumnos' Puede moverla o quitarla según sea necesario.
+        Me.AlumnosTableAdapter.Fill(Me.MatriculaPECDataSet.alumnos)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.grupos' Puede moverla o quitarla según sea necesario.
+        Me.GruposTableAdapter.Fill(Me.MatriculaPECDataSet.grupos)
+        'TODO: esta línea de código carga datos en la tabla 'MatriculaPECDataSet.cursos' Puede moverla o quitarla según sea necesario.
+        Me.CursosTableAdapter.Fill(Me.MatriculaPECDataSet.cursos)
 
-        Me.CursosTableAdapter.Fill(Me.MatriculaPECDataSet1.cursos)
 
-        Me.Formas_de_pagoTableAdapter.Fill(Me.MatriculaPECDataSet1.formas_de_pago)
 
-        Me.PeriodosTableAdapter.Fill(Me.MatriculaPECDataSet1.periodos)
+        ListBox2.SelectedItem = Nothing
+        ListBox1.SelectedItem = Nothing
 
-        DataGridView1.DataSource = mtableAdapter.GetData
-
+        ' DataGridView1.DataSource = mtableAdapter.
         Me.estudiante = "----"
 
 
-        Dim utableAdapter As New MatriculaPECDataSetTableAdapters.usuariosTableAdapter
 
-        ' utableAdapter.Insert("Admin", "Admin", "Admin", "Admin", 1)
+
 
     End Sub
 
@@ -98,17 +111,14 @@
 
 
 
-
-
     Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
         TabControlPrincipal.SelectTab(12)
-
-
     End Sub
 
 
     Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
         Matricula.Show()
+        Me.SendToBack()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -130,8 +140,6 @@
     Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
         TabControlPrincipal.SelectTab(16)
     End Sub
-
-
 
 #End Region
 
@@ -192,7 +200,7 @@
         TabControlPrincipal.SelectTab(0)
     End Sub
 
-    Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
+    Private Sub Button29_Click(sender As Object, e As EventArgs)
         TabControlPrincipal.SelectTab(0)
     End Sub
 
@@ -217,7 +225,7 @@
 
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 
@@ -264,39 +272,35 @@
 
 #Region " ELIMINAR DATAGRIDS "
 
-    'Eliminar 
+    'Eliminar Matriculas
 
 
 
-    Private Sub DataGridView4_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView4.CellClick
+
+    Private Sub DataGridView10_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView10.CellContentClick
 
 
-        Dim etableAdapter As New MatriculaPECDataSetTableAdapters.alumnosTableAdapter()
+        If e.ColumnIndex = 7 Then
 
+            Dim answer As DialogResult
+            answer = MessageBox.Show("¿Desea Eliminar esta matricula? ", "Eliminar Matricula", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+            If answer = vbYes Then
 
+                mtableAdapter.eliminar_matricula(gtableAdapter.consultar_cod_grupo_por_curso(DataGridView10.Item(1, e.RowIndex).Value),
+                                                 atableAdapter.consultar_cod_estudiante(DataGridView10.Item(2, e.RowIndex).Value))
+                Me.MatriculasTableAdapter.Fill(Me.MatriculaPECDataSet.matriculas)
+            End If
 
-        If e.ColumnIndex = 5 Then
-
-            Dim cedula As Int32
-
-            cedula = Convert.ToInt32((DataGridView4.Item(0, e.RowIndex).Value.ToString()))
-
-            atableAdapter.eliminar_alumno(cedula)
-
-            Form1_Load(sender, e)
 
 
         End If
+
     End Sub
 
 
 
     Private Sub DataGridView3_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView3.CellClick
 
-
-
-
-        Dim gtableAdapter As New MatriculaPECDataSetTableAdapters.gruposTableAdapter()
 
 
         If e.ColumnIndex = 4 Then
@@ -318,6 +322,10 @@
 
 
     End Sub
+
+
+
+
 
 
 #End Region
@@ -351,20 +359,23 @@
         periodoMatricula = ComboBox1.Text
 
         If periodoMatricula <> "" Then
-            DataGridView1.DataSource = mtableAdapter.GetDataByMatriculaPorPeriodo(periodoMatricula)
+
+            DataGridView10.DataSource = mtableAdapter.GetDataByMatriculaPorPeriodo2(periodoMatricula)
 
             If gtableAdapter.GetDataByGrupoPorPeriodo(periodoMatricula).Rows.Count <> 0 Then
 
 
-                ComboBox14.Enabled = True
-                ComboBox14.DataSource = gtableAdapter.GetDataByGrupoPorPeriodo(periodoMatricula)
-                ComboBox14.DisplayMember = "Curso"
+                ComboBox13.Enabled = True
+                ComboBox13.DataSource = gtableAdapter.GetDataByGrupoPorPeriodo(periodoMatricula)
+                ComboBox13.DisplayMember = "Curso"
 
 
             Else
 
-                ComboBox14.Enabled = False
-                ComboBox14.DataSource = Nothing
+                ComboBox13.Enabled = False
+                ComboBox13.DataSource = Nothing
+                DataGridView10.DataSource = Nothing
+
             End If
 
         End If
@@ -375,12 +386,7 @@
 
 
 
-    Private Sub rellenarDataGridMatricula()
 
-
-
-
-    End Sub
 
     Private Sub TabPageMatricula_Click(sender As Object, e As EventArgs) Handles TabPageMatricula.Click
 
@@ -388,10 +394,10 @@
 
 
 
-    Private Sub ComboBox14_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ComboBox14.SelectedIndexChanged
+    Private Sub ComboBox14_SelectedIndexChanged_1(sender As Object, e As EventArgs)
 
 
-        DataGridView1.DataSource = mtableAdapter.GetDataByMatriculaPorPeriodo(periodoMatricula)
+        '  DataGridView1.DataSource = mtableAdapter.GetDataByMatriculaPorPeriodo(periodoMatricula)
 
 
     End Sub
@@ -442,7 +448,12 @@
     End Sub
 
  
+    Private Sub ButtonRegresarListas_Click(sender As Object, e As EventArgs)
 
+        ListBox1.SelectedItem = Nothing
+        ListBox2.SelectedItem = Nothing
+        TabControlPrincipal.SelectTab(0)
+    End Sub
 
   
     Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
@@ -451,4 +462,57 @@
     End Sub
 
 
+
+  
+    Private Sub ButtonRegresarListas_Click_1(sender As Object, e As EventArgs) Handles ButtonRegresarListas.Click
+
+        ListBox2.SelectedItem = Nothing
+        ListBox1.SelectedItem = Nothing
+        TabControlPrincipal.SelectTab(0)
+
+    End Sub
+
+    Private Sub ListBox1_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
+
+        ListBox2.DataSource = gtableAdapter.GetDataByGrupoPorPeriodo(ListBox1.Text)
+        ListBox2.DisplayMember = "Curso"
+
+    End Sub
+
+    Private Sub ListBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox2.SelectedIndexChanged
+
+
+        DataGridView1.DataSource = agtableAdapter.GetDataByListaPorGrupo(ListBox2.Text)
+    End Sub
+
+    Private Sub TabPageListas_Click(sender As Object, e As EventArgs) Handles TabPageListas.Click
+
+    End Sub
+
+    Private Sub ListBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox3.SelectedIndexChanged
+
+        ListBox4.DataSource = gtableAdapter.GetDataByGrupoPorPeriodo(ListBox3.Text)
+        ListBox4.DisplayMember = "Curso"
+
+    End Sub
+
+    Private Sub ListBox4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox4.SelectedIndexChanged
+
+
+        DataGridView11.DataSource = mtableAdapter.GetDataByMatriculaMorosa(ListBox4.Text)
+
+
+    End Sub
+
+   
+    Private Sub ComboBox13_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox13.SelectedIndexChanged
+
+        DataGridView10.DataSource = Nothing
+
+        DataGridView10.DataSource = mtableAdapter.GetDataByGrupoYPeriodo(periodoMatricula, ComboBox13.Text)
+
+
+    End Sub
+
+ 
 End Class

@@ -101,12 +101,10 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="MatriculaPECDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MatriculaPECDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="MatriculaPECDataSet.vb">
       <DependentUpon>MatriculaPECDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Principal.Designer.vb">
@@ -250,13 +248,12 @@
     </None>
     <None Include="MatriculaPECDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MatriculaPECDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
-      <LastGenOutput>MatriculaPECDataSet1.Designer.vb</LastGenOutput>
     </None>
     <None Include="MatriculaPECDataSet.xss">
       <DependentUpon>MatriculaPECDataSet.xsd</DependentUpon>
     </None>
-    <None Include="MatriculaPEC_ClaveTemporal.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -373,6 +370,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Device-Bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Costa Rican-Cólon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Costa Rican-Cólon31.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
